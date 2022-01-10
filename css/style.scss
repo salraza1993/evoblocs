@@ -1,0 +1,901 @@
+@import "mixins";
+@import "variables";
+@import "colors";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// patterns
+$bgPattern: 'https://shahsafimemorialtrust.com/assets/f257d754/img/body-pattern.png';
+
+// html, body {overflow: hidden;}
+body {
+  scroll-behavior: smooth;
+  background-color: $baseBgColor;
+  font-family: $recoletaRegular;
+  color: $textColor !important;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Common Element's css Begins*/
+  h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+  h2, .h2, .h2_heading {
+    font-size: clamp(1.8rem, 5vw, 4.75rem);
+    font-family: $recoletaSemiBold;
+    .textLight, .text-light, .lightText, .light-text {
+      font-family: $recoletaThin;
+      color: inherit !important;
+    }
+  }
+
+  .font-recoleta-thin,
+  .recoleta-thin {font-family: $recoletaThin;};
+  .font-recoleta-light,
+  .recoleta-light {font-family: $recoletaLight;};
+  .font-recoleta-regular,
+  .recoleta-regular {font-family: $recoletaRegular;};
+  .font-recoleta-medium,
+  .recoleta-medium {font-family: $recoletaMedium;};
+  .font-recoleta-semiBold,
+  .recoleta-semiBold {font-family: $recoletaSemiBold;};
+  .font-recoleta-bold,
+  .recoleta-bold {font-family: $recoletaBold;};
+  .font-recoleta-bold,
+  .recoleta-bold {font-family: $recoletaBlack;};
+  
+  .font-roboto-regular,
+  .font-roboto {font-family: $roboto; font-weight: 400;}
+  .font-roboto-thin,
+  .roboto-thin {font-family: $roboto; font-weight: 100;}
+  .font-roboto-light,
+  .roboto-light {font-family: $roboto; font-weight: 300;}
+  .font-roboto-medium,
+  .roboto-medium {font-family: $roboto; font-weight: 500;}
+  .font-roboto-bold,
+  .roboto-bold {font-family: $roboto; font-weight: 700;}
+  .font-roboto-black,
+  .roboto-black {font-family: $roboto; font-weight: 900;}
+
+  .primary-color, .primaryColor { color: $primary !important; }
+  .primary-bg-color, .primaryBgColor { background-color: $primary !important; }
+  .secondary-color, .secondaryColor { color: $secondary !important; }
+  .secondary-bg-color, .secondaryBgColor { background-color: $primary !important; }
+  
+
+  .width-10, .w-10 {width: 10% !important; max-width: 10% !important;}
+  .width-15, .w-15 {width: 15% !important; max-width: 15% !important;}
+  .width-20, .w-20 {width: 20% !important; max-width: 20% !important;}
+  .width-25, .w-25 {width: 25% !important; max-width: 25% !important;}
+  .width-30, .w-30 {width: 30% !important; max-width: 30% !important;}
+  .width-35, .w-35 {width: 35% !important; max-width: 35% !important;}
+  .width-40, .w-40 {width: 40% !important; max-width: 40% !important;}
+  .width-45, .w-45 {width: 45% !important; max-width: 45% !important;}
+  .width-45, .w-45 {width: 50% !important; max-width: 50% !important;}
+  .width-45, .w-45 {width: 55% !important; max-width: 55% !important;}
+  .width-45, .w-45 {width: 60% !important; max-width: 60% !important;}
+  .width-45, .w-45 {width: 65% !important; max-width: 65% !important;}
+  .width-45, .w-45 {width: 70% !important; max-width: 70% !important;}
+  .width-45, .w-45 {width: 75% !important; max-width: 75% !important;}
+  .width-45, .w-45 {width: 80% !important; max-width: 80% !important;}
+  .width-45, .w-45 {width: 85% !important; max-width: 85% !important;}
+  .width-45, .w-45 {width: 90% !important; max-width: 90% !important;}
+  .width-45, .w-45 {width: 95% !important; max-width: 95% !important;}
+  .width-45, .w-45 {width: 100% !important; max-width: 100% !important;}
+
+
+  p {
+    font-family: $roboto;
+    font-size: clamp(1rem, 1.7vw, 1.25rem);
+    line-height: clamp(1.5rem, 2.5vw, 2.3rem);
+  }
+
+  a {
+    text-decoration: none;
+    color: $textColor;
+  }
+  ul {list-style: none; padding: 0;}
+  img {display: inline-block; max-width: 100%;}
+
+  ::selection {
+    background-color: $secondary;
+    color: $white;
+  }
+  section {position: relative;}
+  @media (min-width: 1279px) {
+    .container { width: $containerWidth; }
+  }
+
+  .text-columns { column-count: 2; gap: 5rem; }
+
+/* Common Element's css Ends*/
+
+/* Header Begins */
+$headerTopGap: .75rem;
+header {
+  position: relative;
+  width: 100%;
+  height: $headerHeight;
+  background-color: rgba($baseBgColor, 0.5);
+  // border-bottom: 1px solid $borderColor;
+  @include flexCeter($jc: space-between, $ai: center);
+  padding: $headerTopGap 2rem;
+  position: fixed;
+  z-index: 10;
+  &.fixed {background-color: rgba($baseBgColor, 1);}
+  .logo__container {
+    position: relative;
+    @include flexCeter($ai: center);
+    a {
+      display: inline-flex;
+      max-width: 220px;
+    }
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
+    max-width: 670px;
+    display: flex;
+    .menu {
+      width: 100%;
+      display: flex;
+      height: $headerHeight;
+      @include flexCeter($jc: space-between, $ai: center);
+      
+      > li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: $transition;
+        height: 100%;
+        > a {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          font-size: 1.35rem;
+          color: $white;
+          transition: inherit;
+        }
+        .subMenu {
+          position: absolute;
+          background-color: $secondary;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          min-width: 220px;
+          white-space: nowrap;
+          width: fit-content;
+          overflow: hidden;
+          font-family: $roboto;
+          li {
+            position: relative;
+            margin-top: -100%;
+            transition: margin-top .3s ease;
+            a {
+              color: $white;
+              width: 100%;
+              font-size: 1.1rem;
+              display: inline-block;
+              padding: 1rem 1.2rem;
+              transition: $transition;
+              
+              &:hover {
+                padding-left: 1.75rem;
+                background-color: $primary;
+              }
+            }
+          }
+        }
+        &:hover {
+          box-shadow: inset 0 -7px 0 $primary;
+          > a { color: $primary; }
+          .subMenu li {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .rightMenuContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .moreMenus {
+      margin-left: 1rem;
+      position: relative;
+      width: $ctaButtonHeight + 5;
+      height: $ctaButtonHeight + 5;
+      border-radius: $ctaButtonHeight;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      @include flexCeter($jc: center, $ai: center);
+      transition: $transition;
+      i {pointer-events: none; position: relative; z-index: 1;}
+      
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background-color: $secondary;
+        z-index: 0;
+        transition: inherit;
+        transform: scale(0.0);
+      }
+      &:hover::after {transform: scale(1.0);}
+    }
+  }
+  
+  
+
+}
+/* Header Ends */
+
+/* ----------------[ CTA Button Begins ]---------------- */
+$buttonHeight: 55px;
+$padding: 1.5rem;
+.ctaButtonContainer {
+  box-sizing: content-box;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-left: $padding - .20;
+  padding-right: $padding;
+  font-size: 1.4rem;
+  color: $white;
+  height: $ctaButtonHeight - 5;
+  white-space: nowrap;
+  transition: $transition;
+  line-height: 1.4rem;
+  max-width: fit-content;
+  &::before {
+    content: attr(buttonVal);
+    position: absolute;
+    width: $buttonHeight + 5;
+    height: $buttonHeight + 5;
+    border-radius: $buttonHeight / 1;
+    left: 0;
+    overflow: hidden;
+    background-color: $primary;
+    color: $white;
+    background-image: $gradient_1;
+
+    white-space: inherit;
+    padding-left: inherit;
+    display: inherit;
+    align-items: inherit;
+    transition: inherit;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+      height: $buttonHeight;
+    }
+  }
+  &.whiteButton {
+    color: $white;
+    &::before {
+      color: $black;
+      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    }
+  }
+  &.primaryButton {
+    color: $white;
+    &::before {
+      color: inherit;
+      background-image: none;
+      background-color: $primary;
+    }
+  }
+  &.secondaryButton {
+    color: $white;
+    &::before {
+      color: inherit;
+      background-image: none;
+      background-color: $secondary;
+    }
+  }
+}
+
+/* Slider Section Begins */
+.sliderSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ccc;
+  z-index: 0;
+  .lineContainer {z-index: 0;}
+}
+.particals_container {
+  background-color: $baseBgColor;
+  position: absolute;
+  inset: 0;
+  user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+
+.sliderContainer {
+  width: 100%;
+  height: 100%;
+  @include flexCeter($jc: center, $ai: center);
+  position: relative;
+  inset: 0;
+  z-index: 1;
+  padding: $headerHeight + 1.5 0;
+  .simpleTextSlider {
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    .simpleTextBox {
+      position: relative;
+      text-align: center;
+      h4 {
+        font-size: 2.5rem;
+        color: $white;
+        font-family: $recoletaRegular;
+        font-size: clamp(1.3rem, 2.2vw, 2.5rem);
+        line-height: clamp(2rem, 3vw, 3.3rem);
+      }
+      h2 {
+        font-size: clamp(3.5rem, 7.5vw, 6.25rem);
+        line-height: clamp(4rem, 7.5vw, 7.25rem);
+        margin: 1rem 0;
+        font-family: $recoletaBold;
+        color: $primary;
+      }
+      p {
+        font-size: clamp(1.3rem, 1.5vw, 1.8rem);
+        line-height: clamp(2rem, 3vw, 3.3rem);
+        margin-bottom: 3rem !important;
+        max-width: 700px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.moreMenuAnimativeBox {
+  position: fixed;
+  top: 14px;
+  right: 32px;
+  width: 50vw;
+  height: 50vw;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 11;
+  transition: 1000ms ease-in-out;
+  transform: scale(0);
+  display: flex;
+  flex: 0 0 auto;
+  
+  &.active {
+    transform: scale(1);
+    transition: 1000ms ease-in-out;    
+  }
+}
+
+/* Line graph begins */
+.lineContainer {
+  $lineColor: hsla(0,0%,100%,0.1);
+  position: relative;
+  width: 100%;
+  max-width: $containerWidth;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: calc(50% - #{$containerWidth / 2});
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  z-index: -1;
+  .col {
+    width: 100%;
+    border-right: 1px solid $lineColor;
+    &:first-child {border-left: 1px solid $lineColor;}
+  }
+}
+/* Line graph Ends */ 
+
+/* Home About Section Begins */
+.homeAboutSection {
+  position: relative;
+  width: 100%;
+  $sectionHeight: 650px;
+  $topGap: 75px;
+  
+  .whoWeAreSection {
+    position: relative;
+    width: 100%;
+    background-color: #ccc;
+    background-image: $gradient_1;
+    height: $sectionHeight;
+    margin-top: -$topGap;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      background-image: url('../images/evoblockIcon.svg');
+      background-repeat: no-repeat;
+      background-position: right -200px top 0;
+      opacity: .04;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .aboutImageBanner {
+      width: 100%;
+      height: $sectionHeight;
+      overflow: hidden;
+      position: relative;
+      top: $topGap;
+      left: 10px;
+      box-shadow: 0 20px 50px rgba($baseBgColor, 0.2);
+      background-position: center center;
+      background-size: auto 100%;
+    }
+    .aboutContentBox {
+      position: relative;
+      width: 100%;
+      height: $sectionHeight;
+      padding: $topGap 2vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {font-size: clamp(1.5rem, 2.3vw, 2.5rem);}
+      .whoWeAreText {
+        font-size: clamp(.9rem, 1.5vw, 1.6rem);
+        letter-spacing: 1rem;
+      }
+    }
+  }
+}
+/* Home About Section Ends */
+
+.boldIdeaBoldResult {
+  width: 100%;
+  padding: 11rem 0 5rem;
+}
+
+/* Common Section Heading Begins */
+.headingText {
+  position: relative;
+  .smallText {letter-spacing: 1rem;}
+}
+/* Common Section Heading Ends */
+
+/* Home Services Section Begins */
+.sectionHeading {
+  position: relative;
+  width: 100%;
+}
+.servicesTabContainer {
+  background-color: #2c2c2c;
+  // background-color: $baseBgColor;
+  width: 100%;
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 2.5vw;
+  display: flex;
+
+  .tabListContainer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding-right: 1rem;
+    .tabLists {
+      position: relative;
+      width: 100%;
+      $tabHeight: 80px;
+      margin: 0;
+      padding-top: 2rem;
+      li {
+        position: relative;
+        display: flex;
+        background-color: #3a3939;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        border-radius: .5rem;
+        &:not(:last-child) {margin-bottom: .75rem;}
+        svg {opacity: .6;}
+        .icon {
+          width: $tabHeight;
+          min-width: $tabHeight;
+          height: $tabHeight;
+          margin-right: 2rem;
+          @include flexCeter($jc: center, $ai: center);
+        }
+        &:hover { background-color: lighten(#3a3939, 5%); }
+        &.active {
+          background-color: $secondary;
+          transform: scale(1.25);
+          transform-origin: center left;
+          margin: 1.6rem 0;
+          order: -1;
+          color: $white;
+          font-family: $recoletaSemiBold;
+          svg {opacity: 1;}
+        }
+      }
+    }
+  }
+  .tabDataContainer {
+    width: 100%;
+    box-shadow: inset 0 0 0 .25rem $secondary;
+    padding: 3% 3vw 3% clamp(120px, 6vw, 120px);
+    border-radius: 15px;
+    .servicetabData {
+      position: relative;
+      width: 100%;
+      &:not(.active) {display: none;}
+
+      .topContent {
+        position: relative;
+        height: 100%;
+        > p:first-child {
+          // display: -webkit-box;
+          // max-width: 100%;
+          // -webkit-line-clamp: 4;
+          // -webkit-box-orient: vertical;
+          // overflow: hidden;
+          line-height: 32px;
+        } 
+      }
+    }
+  }
+}
+.weServeThrough {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.25rem;
+  ._block {
+    position: relative;
+    @include flexCeter(center, center);
+    gap: 1.5rem;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 200s ease-in;
+    $iconWidth: 80px;
+    cursor: pointer;
+    background-color: #3c3c3c;
+    text-align: center;
+    padding: 1rem;
+    text-align: center;
+    min-height: 250px;
+    .icon {
+      width: $iconWidth;
+      height: $iconWidth;
+      @include flexCeter(center, center);
+      svg {width: 100% !important; height: 100%;}
+    }
+    &._knowMoreBlock {
+      background-color: rgba($white, .20);
+    }
+  }
+}
+/* Home Services Section Ends */
+
+/* Latest Technologies section begins */
+.latestTechContainer {
+  position: relative;
+  width: 100%;
+  background-color: $secondary;
+  background-image: $gradient_2;
+  $topGap: 3rem;
+  color: $white;
+  
+  h3 {font-size: 2.8rem;}
+  p {line-height: 30px;}
+  
+  .discussProject {
+    position: relative;
+    padding: $topGap 1rem $topGap 0;
+    &:after {
+      content: '';
+      position: absolute;
+      left: -$topGap;
+      width: 1px;
+      height: 50%;
+      top: 25%;
+      background-color: rgba($white, .4);
+    }
+  }
+  .technoligesContainer {
+    position: relative;
+    padding: $topGap;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .technoList {
+      position: relative;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      display: flex;
+      gap: .75rem;
+      height: 100%;
+      li {
+        &:not(:last-child) {
+          min-width: 120px;
+          border: 1px solid rgba($white, .3);
+          border-radius: .5rem;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          $iconWidth: 70px;
+          .icon {
+            width: $iconWidth;
+            height: $iconWidth;
+            @include flexCeter(center, center);
+          }
+          p {margin-bottom: 0; font-weight: 300;}
+        }
+        &:last-child {
+          font-family: $roboto;
+          font-style: italic;
+          font-weight: 300;
+          line-height: 20px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          max-width: 70px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Home Client Section Begins */
+.homeClientSection {
+  width: 100%;
+
+  .clientsContainer {
+    position: relative;
+    width: 100%;
+    .clientsBoxContainer {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 25%;
+        height: 180px;
+        border: 1px solid rgba($borderColor, .25);
+        padding: 1.5rem;
+        @include flexCeter(center, center);
+        transition: all .3s ease-in;
+        background-color: #333;
+        
+        img {
+          transition: all .3s ease-in;
+          max-width: 100%;
+          max-height: 100%;
+          filter: grayscale(1);
+        }
+
+        &:hover {
+          background-color: rgba($white, .3);
+          img {filter: grayscale(0);}
+        }
+      }
+    }
+  }
+
+}
+/* Home Client Section Ends */
+
+
+/* footer Begins */ 
+footer {
+  width: 100%;
+  position: relative;
+}
+/* ----------------[  VideoBox Before Footer ]---------------- */
+  .qoutBxCnt {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    .qoutBxVideo {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .qoutBxVideo::-webkit-media-controls {display: none; }
+
+    .qtCntntCnt {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      padding: 4rem 3rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      @include flexCeter(space-between, center);
+
+      .qtCntnt {
+        flex: 1 0 auto;
+        position: relative;
+        h3 {
+          font-size: 2.85rem;
+          font-family: $recoletaSemiBold;
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-top: 5px;
+          font-family: $roboto;
+          font-weight: 300;
+          a {color: $white;}
+        }
+      }
+    }
+  }
+/* ----------------[ // VideoBox Before Footer ]---------------- */
+
+.footerLinksContainer {
+  position: relative;
+  width: 100%;
+
+  .footer-links-block {
+    flex: 1;
+    position: relative;
+
+    h5 {
+      color: $primary;
+      margin-bottom: 2.5rem;
+      position: relative;
+      font-family: $recoletaLight;
+      font-size: 1.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background-color: $secondary;
+      }
+    }
+    > ul {
+      position: relative;
+      font-family: $roboto;    
+          
+      li {
+        position: relative;
+        a {
+          display: inline-block;
+          position: relative;
+          transition: $transition;
+          font-size: 16px;
+          line-height: 40px;
+          
+          &::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            right: 0;
+            bottom: 0;
+            background-color: $secondary;
+            transition: all .3s ease-in-out;
+          }
+          &:hover {
+            color: $secondary;
+            &::after {width: 100%; left: 0;}
+          }
+        }
+      }
+    }
+  
+  &.footerAdressBlock {
+    display: flex;
+    flex-direction: column;
+    font-family: $roboto;
+    height: 100%;
+
+    .footerAdress {
+      position: relative;
+      width: 100%;
+      display: flex;
+      margin-bottom: 1rem;
+      padding-right: 1rem;
+      line-height: 1.8rem;
+      i {
+        color: $secondary;
+        min-width: 30px;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-right: 1rem;
+        &.fa-map-marker-alt {font-size: 1.45rem;}
+      }
+    }
+
+    .footerGoogleMap {
+      margin-top: 2rem;
+      width: 100%;
+      height: 100%;
+      iframe {width: 100%;}
+    }
+  }
+
+}
+
+  .copyrightText {
+    background-color: $baseBgColor;
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    @include flexCeter(space-between, center);
+    font-family: $roboto;
+    font-weight: 300;
+    p {font-size: 1rem; margin: 0;}
+
+    .footerSocialMedia {
+      position: relative;
+      display: flex;
+      align-items: center;
+      span {display: inline-block; margin-right: 1.5rem;}
+      .sm {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        li {
+          position: relative;
+          a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            font-size: 1.3rem;
+            transition: all 300ms ease-in-out;
+            &:hover {background-color: $secondary; color: $white;}
+          }
+        }
+      }
+      
+    }
+  }
+}
+/* footer Ends */ 
