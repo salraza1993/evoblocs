@@ -1,9 +1,55 @@
-  <footer style="">
+  <footer>
 		<?php include('includes/lineContainer.php') ?>
     <div class="container p-0">
       <?php include('includes/videoQuote.php') ?>
+      <div class="callNCareerContainer">
+        <div class="row m-0">
+          <div class="col-md-12 col-lg-6 p-0">
+            <div class="getACallContainer">
+              <h3>
+                <span class="recoleta-light">Get a</span> 
+                <span class="recoleta-semiBold">Call </span> 
+                <span class="recoleta-light">within</span> 
+                <span class="recoleta-semiBold">55 Seconds </span>
+                <span class="recoleta-light">only</span>
+              </h3>
+              <p class="roboto-light">Leave your number below and we'll call you right away!</p>
+              <div class="inputContainer">
+                <form action="" class="d-flex justify-content-between">
+                  <div>
+                    <select name="" id="">
+                      <option value="">+91</option>
+                      <option value="">+91</option>
+                      <option value="">+91</option>
+                      <option value="">+91</option>
+                      <option value="">+91</option>
+                      <option value="">+91</option>
+                    </select>
+                    <input type="number" name="" id="" placeholder="e.g. 7838367864">
+                  </div>
+                  <button buttonval="Get a Qoute" class="ctaButtonContainer secondaryButton blackNWhite">Get a Qoute</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 p-0">
+            <div class="footerCareerElemContainer">
+              <div class="icon"><?php include('images/hand-shake.svg') ?></div>
+              <div class="content">
+                <p class="mb-0">Looking for new</p>
+                <h3 class="recoleta-semiBold">Career Opportunity?</h3>
+                <p class="mb-4">
+                  Drop your CV at:  
+                  <a class="primary-color" href="mailto:career@evoblocks.com">career@evoblocks.com</a>
+                  <span class="or">or</span>
+                </p>
+                <a href="javascript:;" class="ctaButtonContainer" buttonval="Explore All Openings">Explore All Openings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
     <div class="footerLinksContainer pt-5">
       <div class="container">
         <div class="row">

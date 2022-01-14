@@ -5,9 +5,11 @@
 	<?php include("includes/css.php") ?>
 </head>
 <body>
-
+<!-- Header Begin -->
 	<?php include('includes/header.php') ?>
+<!-- Header End -->
 
+<!-- Home Slider section Begin -->
 	<section class="sliderSection">
 		<div class="particals_container"><div id="particles-js"></div></div>
 		<?php include('includes/lineContainer.php') ?>
@@ -43,7 +45,9 @@
 		</div>
 		<!-- simple text slider Ends -->
 	</section>
+<!-- Home Slider section End -->
 
+<!-- Home About section Begin -->
 	<section class="homeAboutSection">
 		<?php include('includes/lineContainer.php') ?>
 		<div class="container">
@@ -82,7 +86,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="boldIdeaBoldResult">
 		<?php include('includes/lineContainer.php') ?>
 		<div class="container">
@@ -112,7 +115,9 @@
 			</div>
 		</div>
 	</section>
+<!-- Home About section End -->
 
+<!-- Home Services section Begin -->
 	<section class="homeServicesSection">
 		<div class="sectionHeader">
 			<?php include('includes/lineContainer.php') ?>
@@ -230,7 +235,9 @@
 			</div>
 		</div>
 	</section>
+<!-- Home Services section End -->
 
+<!-- Home Latest Technologies section Begin -->
 	<section class="latestTechnoSection py-5">
   	<?php include('includes/lineContainer.php') ?>
 		<div class="container">
@@ -239,8 +246,10 @@
 			</div>
 		</div>
 	</section>
+<!-- Home Latest Technologies section End -->
 
-	<section class="homePortfolio py-3" style="height: 500px;">
+<!-- Home Portfolio section Begin -->
+	<section class="homePortfolioSection py-3">
 		<?php include('includes/lineContainer.php') ?>
 		<div class="container">
 			<div class="row">
@@ -255,15 +264,30 @@
 					</div>
 					<a href="javascript:;" class="ctaButtonContainer mt-5" style="margin-right: -25px;" buttonval="Explore All Works">Explore All Works</a>
 				</div>
+				<div class="homProtfolioWorkContainer my-4 px-0">
+					<div class="porfolioImageBlock">
+						<div class="_header">
+							<div class="_dots"></div>
+							<div class="_url">
+								<a href="javascript:;">
+									<span>https://www.xyz.com</span>
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+<!-- Home Portfolio section End -->
 
-	<section class="homeTestimonials py-3" style="height: 500px;">
+<!-- Home Testimonials section Begin -->
+	<section class="homeTestimonialSection py-5">
 		<?php include('includes/lineContainer.php') ?>
 		<div class="container">
 			<div class="row">
-				<div class="sectionHeading d-flex justify-content-between align-items-center p-0">
+				<div class="sectionHeading d-flex justify-content-between align-items-center p-0 mb-5">
 					<div class="headingText width-70">
 						<p class="smallText text-uppercase roboto-light">what our clients say</p>
 						<h2>
@@ -273,10 +297,56 @@
 					</div>
 				</div>
 			</div>
+			<div class="row align-items-center">
+				<div class="col-6 px-0">
+					<div class="homeTestimonialsContainer">
+						<div class="homeTestimonialsWrapper">
+							<div class="homeTestimonials">
+								<div class="profileImage">
+									<img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+								</div>
+								<div class="comment">
+									<p>
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit accusantium laboriosam minus voluptates ab. Corrupti nesciunt officia ipsam aliquam autem. Architecto incidunt, cumque provident consectetur voluptas molestiae nobis quisquam tenetur?
+									</p>
+								</div>
+								<div class="profileDetail">
+									<h3 class="primaryColor recoleta-medium">Austin Distel</h3>
+									<p>Founder of company name, USA</p>
+									<div class="reviews">
+										<i class="fas fa-star" style="color: orange;"></i>
+										<i class="fas fa-star" style="color: orange;"></i>
+										<i class="fas fa-star" style="color: orange;"></i>
+										<i class="fas fa-star" style="color: orange;"></i>
+										<i class="far fa-star" style="color: gray;"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 p-0">
+					<div class="ctaSection">
+						<h3>
+							<span class="recoleta-light">Let’s create</span>
+							<span class="recoleta-semiBold">Your Success Story </span>
+							<span class="recoleta-light">together</span>
+						</h3>
+						<ul class="list">
+							<li><span class="star">*</span> Digital solutions and development are in our blood. </li>
+							<li><span class="star">*</span> We revolutionize brands and generate demand. </li>
+							<li><span class="star">*</span> Choosing us will be your best decision.</li>
+						</ul>
+						<a href="javascript:;" class="ctaButtonContainer whiteButton" buttonval="Let's get started">Let's get started</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
+<!-- Home Testimonials section End -->
 
-	<section class="homeClientSection py-3 pb-5">
+<!-- Client's Section Begin -->
+	<section class="homeClientSection py-5">
 		<?php include('includes/lineContainer.php') ?>
 		<div class="container">
 			<div class="row">
@@ -305,10 +375,13 @@
 			</div>
 		</div>
 	</section>
+<!-- Client's Section Begin -->
 
 	<!-- <div class="moreMenuAnimativeBox"></div>
 	<section class="moreMenuOverlay"></section> -->
 
-<script src="js/particles.js"></script>
+	<script src="js/particles.js"></script>
 <script src="js/app.js"></script>
+<!-- footer begin -->
 <?php include('includes/footer.php') ?>
+<!-- footer End -->

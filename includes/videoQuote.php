@@ -10,7 +10,7 @@
               <span class="recoleta-light">or</span> 
               Social Media
             </h3>
-            <p>
+            <p class="mb-0">
               Or Email us your project requirements to 
               <a href="mailto:sales@evoblocs.com"> <u>sales@evoblocs.com</u> </a>
             </p>
