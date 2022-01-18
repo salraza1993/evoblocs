@@ -253,7 +253,7 @@
 		<?php include('includes/lineContainer.php') ?>
 		<div class="container">
 			<div class="row">
-				<div class="sectionHeading d-flex justify-content-between align-items-center p-0">
+				<div class="sectionHeading d-flex justify-content-between align-items-center p-0 mb-4">
 					<div class="headingText width-70">
 						<p class="smallText text-uppercase roboto-light">Our portfolio</p>
 						<h2>
@@ -264,17 +264,34 @@
 					</div>
 					<a href="javascript:;" class="ctaButtonContainer mt-5" style="margin-right: -25px;" buttonval="Explore All Works">Explore All Works</a>
 				</div>
-				<div class="homProtfolioWorkContainer my-4 px-0">
-					<div class="porfolioImageBlock">
-						<div class="_header">
-							<div class="_dots"></div>
-							<div class="_url">
-								<a href="javascript:;">
-									<span>https://www.xyz.com</span>
-									<i class="fas fa-arrow-right"></i>
-								</a>
+				<div class="homProtfolioWorkContainer my-4 px-0 d-flex">
+					<div class="porfolioImageBlock w-75">
+						<div class="subWrapper">
+							<div class="_header">
+								<div class="_dots">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<div class="_url">
+									<a href="javascript:;" target="_blank" title="https://www.xyz.com">
+										<span>https://www.xyz.com</span>
+										<i class="fas fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+							<div class="_thumbnailContainer">
+								<img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
 							</div>
 						</div>
+					</div>
+					<div class="porfolioContent w-25">
+						<h3 class="highlighted recoleta-semiBold">EvoBlocs</h3>
+						<h3 class="primaryColor">Website Re-design</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+						</p>
+						<a href="javascript:;" class="ctaButtonContainer" buttonval="Discover More">Discover More</a>
 					</div>
 				</div>
 			</div>
@@ -380,7 +397,8 @@
 	<!-- <div class="moreMenuAnimativeBox"></div>
 	<section class="moreMenuOverlay"></section> -->
 
-	<script src="js/particles.js"></script>
+
+<script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <!-- footer begin -->
 <?php include('includes/footer.php') ?>

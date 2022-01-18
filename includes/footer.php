@@ -124,6 +124,11 @@
     </div>
 
   </footer>
+  
+  <?php include("includes/hamburger-menu.php") ?>
+  <div class="hamburgerMenuButtonContainer">
+    <button class="hamburgerMenuButton"><i class="fas fa-ellipsis-v"></i></button>
+  </div>
   <?php include("includes/scripts.php") ?>
 </body>
 </html>

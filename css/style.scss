@@ -8,6 +8,18 @@
   padding: 0;
 }
 
+:root {
+  // Colors
+  $primary: #91DDEA;
+  $secondary: #926CDC;
+  $subSecondary: #649ABD;
+  $borderColor: #727272;
+  $baseBgColor: #232323;
+  $textColor: #CBCBCB;
+
+  $white: #ffffff;
+  $black: #232323;
+}
 // patterns
 $bgPattern: 'https://shahsafimemorialtrust.com/assets/f257d754/img/body-pattern.png';
 
@@ -19,6 +31,12 @@ body {
   color: $textColor !important;
   font-size: 16px;
   font-weight: normal;
+
+
+  &.lightMode {
+    $baseBgColor: #ccc;
+    background-color: $baseBgColor;
+  }
 }
 
 /* Common Element's css Begins*/
@@ -74,17 +92,17 @@ body {
   .width-35, .w-35 {width: 35% !important; max-width: 35% !important;}
   .width-40, .w-40 {width: 40% !important; max-width: 40% !important;}
   .width-45, .w-45 {width: 45% !important; max-width: 45% !important;}
-  .width-45, .w-45 {width: 50% !important; max-width: 50% !important;}
-  .width-45, .w-45 {width: 55% !important; max-width: 55% !important;}
-  .width-45, .w-45 {width: 60% !important; max-width: 60% !important;}
-  .width-45, .w-45 {width: 65% !important; max-width: 65% !important;}
-  .width-45, .w-45 {width: 70% !important; max-width: 70% !important;}
-  .width-45, .w-45 {width: 75% !important; max-width: 75% !important;}
-  .width-45, .w-45 {width: 80% !important; max-width: 80% !important;}
-  .width-45, .w-45 {width: 85% !important; max-width: 85% !important;}
-  .width-45, .w-45 {width: 90% !important; max-width: 90% !important;}
-  .width-45, .w-45 {width: 95% !important; max-width: 95% !important;}
-  .width-45, .w-45 {width: 100% !important; max-width: 100% !important;}
+  .width-50, .w-50 {width: 50% !important; max-width: 50% !important;}
+  .width-55, .w-55 {width: 55% !important; max-width: 55% !important;}
+  .width-60, .w-60 {width: 60% !important; max-width: 60% !important;}
+  .width-65, .w-65 {width: 65% !important; max-width: 65% !important;}
+  .width-70, .w-70 {width: 70% !important; max-width: 70% !important;}
+  .width-75, .w-75 {width: 75% !important; max-width: 75% !important;}
+  .width-80, .w-80 {width: 80% !important; max-width: 80% !important;}
+  .width-85, .w-85 {width: 85% !important; max-width: 85% !important;}
+  .width-90, .w-90 {width: 90% !important; max-width: 90% !important;}
+  .width-95, .w-95 {width: 95% !important; max-width: 95% !important;}
+  .width-100, .w-100 {width: 100% !important; max-width: 100% !important;}
 
 
   p {
@@ -231,7 +249,7 @@ header {
         transition: inherit;
         transform: scale(0.0);
       }
-      &:hover::after {transform: scale(1.0);}
+      // &:hover::after {transform: scale(1.0);}
     }
   }
   
@@ -1106,7 +1124,396 @@ footer { width: 100%; position: relative; }
   .homProtfolioWorkContainer {
     position: relative;
     width: 100%;
-    height: 500px;
+
+    .porfolioImageBlock {
+      position: relative;
+      z-index: 1;
+      .subWrapper {
+        position: relative;
+        width: 94%;
+        height: 600px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: $white;
+        
+        ._header {
+          background-color: #EEEEEE;
+          position: relative;
+          width: 100%;
+          height: 70px;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          $dotWidth: 11%;
+          ._dots {
+            width: $dotWidth;
+            position: relative;
+            display: flex;
+            padding-left: .6rem;
+            gap: .7rem;
+            span {
+              width: 12px;
+              height: 12px;
+              border-radius: 12px;
+              background-color: red;
+              &:nth-child(1) {background-color: #926CDC;}
+              &:nth-child(2) {background-color: #FF9900;}
+              &:nth-child(3) {background-color: #85C43D;}
+            }
+          }
+
+          ._url {
+            position: relative;
+            width: 100%;
+            max-width: calc(100% - #{$dotWidth});
+            background-color: $white;
+            box-shadow: 0 0 15px rgba($black, .06);
+            border-radius: 6px;
+            padding: .15rem 1rem;
+            font-family: $roboto;
+            transition: $transition;
+            a {
+              height: 40px;
+              color: $black;
+              position: relative;
+              transition: $transition;
+              @include flexCeter(space-between, center);
+            }
+            &:hover { 
+              background-color: $secondary; 
+              a {color: $white; }
+            }
+          }
+        }
+        ._thumbnailContainer {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+          }
+        }
+      }
+    }
+    .porfolioContent {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 3rem;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      h3 {
+        font-size: 38px;
+        line-height: 50px;
+        &.highlighted {
+          background-color: $secondary;
+          color: $white;
+          width: fit-content;
+          padding-right: 1.25rem;
+          padding-top: 0.4rem;
+          padding-bottom: 0.4rem;
+          margin-bottom: 1rem;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            right: 100%;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            background-color: $secondary;
+          }
+        }
+        &:last-child {margin-bottom: 2rem;}
+      }
+      p {
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
 /* Home portfolio Ends */
+
+/* Hamburger Menu Starts */
+.menuSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100vh;
+  z-index: 11;
+  background-color: $baseBgColor;
+  background-image: url('../images/abstract-patten.png');
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  transition: width 1s linear;
+  white-space: nowrap;
+  overflow: hidden;
+  &.opened {
+    left: initial;
+    right: 0;
+  }
+  .subMenuSection {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .infoContentContainer {
+      position: relative;
+      width: 100%;
+      padding: 12vh 10vw 6vh;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 0%;
+        height: 100%;
+        transition: width .5s linear;
+      }
+      .contentContainer {
+        position: relative;
+        width: 100%;
+        max-width: 20vw;
+        min-width: 20vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        white-space: normal;
+        p {
+          font-weight: 300;
+          line-height: 26px;
+          font-size: 16px;
+          a {
+            position: relative;
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: -30%;
+              right: 0;
+              width: 0%;
+              height: 1px;
+              background-color: $primary;
+              transition: $transition;
+            }
+            &:hover {
+              color: $primary;
+              &::after {width: 100%;left: 0;}
+            }
+          }
+        }
+        h3 {
+          font-size: clamp(1.5rem, 3.75vw, 3.75rem);
+          line-height: clamp(2rem, 3.75vw, 4.75rem);
+        }
+
+        .menuSMContainer {
+          position: relative;
+          width: 100%;
+          display: flex;
+          margin-top: 1.5rem;
+          padding-top: 1.5rem;
+          gap: .5rem;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2.5rem;
+            height: 3px;
+            background-color: $secondary;
+          }
+          li {
+            position: relative;
+            a {
+              width: 30px;
+              height: 30px;
+              font-size: 1.2rem;
+              @include flexCeter(center, center);
+              transition: $transition;
+              &:hover { background-color: $primary; color: $white; }
+            }
+          }
+        }
+      }
+    }
+    .asideMenu {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      background-color: $secondary;
+      padding: 12vh 0vw 6vh 6vw;
+
+      .menus {
+        position: relative;
+        font-family: $recoletaThin;
+        overflow: hidden;
+        li {
+          position: relative;
+          a {
+            font-size: clamp(2.25rem, 5vw, 4.5rem);
+            line-height: 130%;
+            display: flex;
+            transition: all 100ms ease-in-out;
+            position: relative;
+
+            &::after {
+              content: attr(name);
+              position: absolute;
+              right: 0;
+              font-family: $recoletaBold;
+              transition: all 500ms ease-in-out;
+              width: 0%;
+              color: $white;
+              opacity: 1;
+            }
+            &:hover {
+              color: transparent;
+              &::after { left: 0; width: 100%; opacity: 1;}
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+.animationWrapper {
+  position: fixed;
+  width: 0%;
+  height: 100vh;
+  z-index: 1;
+  background-color: $primary;
+  z-index: 19;
+  transition: width 500ms linear;
+  top: 0;
+  left: 0;
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 0%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   transition: width 750ms linear;
+  //   transition-delay: 500ms;
+  //   background-color: $secondary;
+  // }
+  &.active {
+    width: 100%;
+    &::after {width: 100%;}
+  }
+  &.removeActive {
+    transition-delay: 650ms;
+    width: 0%;
+    right: 0;
+    left: initial;
+    &::after {width: 0%; right: 0;left: initial;}
+  }
+}
+
+.lightModeButton {
+  position: absolute;
+  color: $white;
+  font-size: 1.3rem;
+  top: 1.5rem;
+  left: 2.5rem;
+  border: 1px solid rgba($white, .35);
+  padding: 0.35rem 1rem 0.35rem 0.75rem;
+  font-size: .9rem;
+  border-radius: 50px;
+  font-family: $roboto;
+  display: flex;
+  align-items: center;
+  transition: $transition;
+  cursor: pointer;
+  i { font-size: 1.2rem; margin-right: .6rem; }
+  &:hover {
+    background-color: $white;
+    color: $secondary;
+  }
+}
+.hamburgerMenuButtonContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 88px;
+  height: 88px;
+  z-index: 20;
+  // overflow: hidden;
+  // &::before, &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 14px;
+  //   right: 32px;
+  //   width: $ctaButtonHeight + 5;
+  //   height: $ctaButtonHeight + 5;
+  //   border-radius: $ctaButtonHeight;
+  //   transition: all 700ms linear;
+  //   z-index: 0;
+  //   // opacity: 0;
+  //   // visibility: hidden;
+  // }
+  &::after { transition-delay: 350ms; }
+  &.opened {
+    // width: 100%;
+    // height: 100vh;
+
+    &::before { background-color: $secondary; }
+    &::after {
+      background-color: $primary;
+      transition-delay: 350ms;
+    }
+    &::before, &::after { transform: scale(80); }
+  }
+
+  .hamburgerMenuButton {
+    margin-left: 1rem;
+    position: absolute;
+    top: 14px;
+    right: 32px;
+    width: $ctaButtonHeight + 5;
+    height: $ctaButtonHeight + 5;
+    border-radius: $ctaButtonHeight;
+    transition: $transition;
+    color: white;
+    font-size: 1.5rem;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    z-index: 1;
+    cursor: pointer;
+    @include flexCeter($jc: center, $ai: center);
+    i {
+      pointer-events: none;
+      position: relative; 
+      z-index: 1;
+      transition: all .3s ease-in-out;
+    }
+    &.active {
+      i {transform: rotate(90deg);}
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background-color: $secondary;
+      z-index: 0;
+      transition: inherit;
+      transform: scale(0.0);
+    }
+    &:hover::after {transform: scale(1.0);}
+  }
+}
+/* Hamburger Menu Ends */

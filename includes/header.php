@@ -34,7 +34,7 @@
 				<a href="javascript:;" class="buttonVal" buttonVal="Get a Qoute">Get a Qoute</a>
 		</button> -->
 		<div class="moreMenus">
-			<i class="fas fa-ellipsis-v"></i>
+			<!-- <i class="fas fa-ellipsis-v"></i> -->
 		</div>		
 	</div>
 </header>
