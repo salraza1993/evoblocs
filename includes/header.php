@@ -1,7 +1,7 @@
 <header id="topHeader">
 	<div class="logo__container">
 		<a href="index.php">
-			<img src="images/logo_white.svg" alt="">
+			<img src="images/logo_color.svg" alt="">
 		</a>
 	</div>
 	<nav class="navigation">
@@ -34,7 +34,7 @@
 				<a href="javascript:;" class="buttonVal" buttonVal="Get a Qoute">Get a Qoute</a>
 		</button> -->
 		<div class="moreMenus">
-			<!-- <i class="fas fa-ellipsis-v"></i> -->
+			<i class="fas fa-ellipsis-v"></i>
 		</div>		
 	</div>
 </header>

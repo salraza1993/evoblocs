@@ -23,7 +23,6 @@
     <aside class="asideMenu">
       <div class="lightModeButton">
         <i class="fas fa-sun"></i>
-        <span>Light Mode</span>
       </div>
       <ul class="menus">
         <li><a href="javascript:;" name="Home">Home</a></li>

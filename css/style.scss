@@ -1,6 +1,6 @@
 @import "mixins";
 @import "variables";
-@import "colors";
+// @import "colors";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -10,33 +10,34 @@
 
 :root {
   // Colors
-  $primary: #91DDEA;
-  $secondary: #926CDC;
-  $subSecondary: #649ABD;
-  $borderColor: #727272;
-  $baseBgColor: #232323;
-  $textColor: #CBCBCB;
+  --primary: rgb(145, 221, 234);
+  --secondary: rgb(146, 108, 220);
+  --subSecondary: rgb(100, 154, 189);
 
-  $white: #ffffff;
-  $black: #232323;
+  --borderColor: rgb(114, 114, 114);
+  --baseBgColor: rgb(35, 35, 35);
+  --textColor: rgb(203, 203, 203);
+
+  --white: rgb(255,255,255);
+  --black: rgb(35, 35, 35);
+  
+  --particalBgColor: rgb(35, 35, 35);
+
+  --headerBgColor: rgba(35, 35, 35, 0.5);
+  --stickyHeaderBgColor: rgba(35, 35, 35, 1);
 }
+
 // patterns
 $bgPattern: 'https://shahsafimemorialtrust.com/assets/f257d754/img/body-pattern.png';
 
 // html, body {overflow: hidden;}
 body {
   scroll-behavior: smooth;
-  background-color: $baseBgColor;
+  background-color: var(--baseBgColor);
   font-family: $recoletaRegular;
-  color: $textColor !important;
+  color: var(--textColor) !important;
   font-size: 16px;
   font-weight: normal;
-
-
-  &.lightMode {
-    $baseBgColor: #ccc;
-    background-color: $baseBgColor;
-  }
 }
 
 /* Common Element's css Begins*/
@@ -78,10 +79,10 @@ body {
   .font-roboto-black,
   .roboto-black {font-family: $roboto; font-weight: 900;}
 
-  .primary-color, .primaryColor { color: $primary !important; }
-  .primary-bg-color, .primaryBgColor { background-color: $primary !important; }
-  .secondary-color, .secondaryColor { color: $secondary !important; }
-  .secondary-bg-color, .secondaryBgColor { background-color: $primary !important; }
+  .primary-color, .primaryColor { color: var(--primary) !important; }
+  .primary-bg-color, .primaryBgColor { background-color: var(--primary) !important; }
+  .secondary-color, .secondaryColor { color: var(--secondary) !important; }
+  .secondary-bg-color, .secondaryBgColor { background-color: var(--primary) !important; }
   
 
   .width-10, .w-10 {width: 10% !important; max-width: 10% !important;}
@@ -113,14 +114,14 @@ body {
 
   a {
     text-decoration: none;
-    color: $textColor;
+    color: var(--textColor);
   }
   ul {list-style: none; padding: 0;}
   img {display: inline-block; max-width: 100%;}
 
   ::selection {
-    background-color: $secondary;
-    color: $white;
+    background-color: var(--secondary);
+    color: var(--white);
   }
   section {position: relative;}
   @media (min-width: 1279px) {
@@ -137,13 +138,13 @@ header {
   position: relative;
   width: 100%;
   height: $headerHeight;
-  background-color: rgba($baseBgColor, 0.5);
-  // border-bottom: 1px solid $borderColor;
+  background-color: var(--headerBgColor);
+  // border-bottom: 1px solid var(--borderColor);
   @include flexCeter($jc: space-between, $ai: center);
   padding: $headerTopGap 2rem;
   position: fixed;
   z-index: 10;
-  &.fixed {background-color: rgba($baseBgColor, 1);}
+  &.fixed {background-color: var(--stickyHeaderBgColor);}
   .logo__container {
     position: relative;
     @include flexCeter($ai: center);
@@ -162,6 +163,7 @@ header {
       width: 100%;
       display: flex;
       height: $headerHeight;
+      margin: 0;
       @include flexCeter($jc: space-between, $ai: center);
       
       > li {
@@ -175,12 +177,12 @@ header {
           align-items: center;
           height: 100%;
           font-size: 1.35rem;
-          color: $white;
+          color: var(--white);
           transition: inherit;
         }
         .subMenu {
           position: absolute;
-          background-color: $secondary;
+          background-color: var(--secondary);
           top: 100%;
           left: 50%;
           transform: translateX(-50%);
@@ -194,7 +196,7 @@ header {
             margin-top: -100%;
             transition: margin-top .3s ease;
             a {
-              color: $white;
+              color: var(--white);
               width: 100%;
               font-size: 1.1rem;
               display: inline-block;
@@ -203,14 +205,14 @@ header {
               
               &:hover {
                 padding-left: 1.75rem;
-                background-color: $primary;
+                background-color: var(--primary);
               }
             }
           }
         }
         &:hover {
-          box-shadow: inset 0 -7px 0 $primary;
-          > a { color: $primary; }
+          box-shadow: inset 0 -7px 0 var(--primary);
+          > a { color: var(--primary); }
           .subMenu li {
             margin-top: 0;
           }
@@ -230,7 +232,7 @@ header {
       width: $ctaButtonHeight + 5;
       height: $ctaButtonHeight + 5;
       border-radius: $ctaButtonHeight;
-      color: white;
+      color: var(--white);
       font-size: 1.5rem;
       cursor: pointer;
       @include flexCeter($jc: center, $ai: center);
@@ -244,17 +246,14 @@ header {
         width: 100%;
         height: 100%;
         border-radius: inherit;
-        background-color: $secondary;
+        background-color: var(--secondary);
         z-index: 0;
         transition: inherit;
         transform: scale(0.0);
       }
-      // &:hover::after {transform: scale(1.0);}
+      &:hover::after {transform: scale(1.0);}
     }
   }
-  
-  
-
 }
 /* Header Ends */
 
@@ -269,7 +268,7 @@ $padding: 1.5rem;
   padding-left: $padding - .20;
   padding-right: $padding;
   font-size: 1.4rem;
-  color: $white;
+  color: var(--white);
   height: $ctaButtonHeight - 5;
   white-space: nowrap;
   transition: $transition;
@@ -285,8 +284,8 @@ $padding: 1.5rem;
     border-radius: $buttonHeight / 1;
     left: 0;
     overflow: hidden;
-    background-color: $primary;
-    color: $white;
+    background-color: var(--primary);
+    color: var(--white);
     background-image: $gradient_1;
 
     white-space: inherit;
@@ -302,34 +301,34 @@ $padding: 1.5rem;
     }
   }
   &.whiteButton {
-    color: $white;
+    color: var(--white);
     &::before {
-      color: $black;
+      color: var(--black);
       background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     }
   }
   &.primaryButton {
-    color: $white;
+    color: var(--white);
     &::before {
       color: inherit;
       background-image: none;
-      background-color: $primary;
+      background-color: var(--primary);
     }
     &.blackNWhite {
-      color: $black;
-      &::before {color: $white;}
+      color: var(--black);
+      &::before {color: var(--white);}
     }
   }
   &.secondaryButton {
-    color: $white;
+    color: var(--white);
     &::before {
       color: inherit;
       background-image: none;
-      background-color: $secondary;
+      background-color: var(--secondary);
     }
     &.blackNWhite {
-      color: $black;
-      &::before {color: $white;}
+      color: var(--black);
+      &::before {color: var(--white);}
     }
   }
 }
@@ -339,12 +338,12 @@ $padding: 1.5rem;
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: $baseBgColor;
+  background-color: var(--baseBgColor);
   z-index: 0;
   .lineContainer {z-index: 0;}
 }
 .particals_container {
-  background-color: $baseBgColor;
+  background-color: var(--particalBgColor);
   position: absolute;
   inset: 0;
   user-select: none;
@@ -379,7 +378,7 @@ $padding: 1.5rem;
       text-align: center;
       h4 {
         font-size: 2.5rem;
-        color: $white;
+        color: var(--white);
         font-family: $recoletaRegular;
         font-size: clamp(1.3rem, 2.2vw, 2.5rem);
         line-height: clamp(2rem, 3vw, 3.3rem);
@@ -389,7 +388,7 @@ $padding: 1.5rem;
         line-height: clamp(4rem, 7.5vw, 7.25rem);
         margin: 1rem 0;
         font-family: $recoletaBold;
-        color: $primary;
+        color: var(--primary);
       }
       p {
         font-size: clamp(1.3rem, 1.5vw, 1.8rem);
@@ -465,7 +464,7 @@ $padding: 1.5rem;
       width: 100%;
       height: 100%;
       inset: 0;
-      background-image: url('../images/evoblockIcon.svg');
+      background-image: url('../images/evoblocsIcon.svg');
       background-repeat: no-repeat;
       background-position: right -200px top 0;
       opacity: .04;
@@ -480,7 +479,7 @@ $padding: 1.5rem;
       position: relative;
       top: $topGap;
       left: 10px;
-      box-shadow: 0 20px 50px rgba($baseBgColor, 0.2);
+      box-shadow: 0 20px 50px rgba(var(--baseBgColor), 0.2);
       background-position: center center;
       background-size: auto 100%;
     }
@@ -521,7 +520,7 @@ $padding: 1.5rem;
 }
 .servicesTabContainer {
   background-color: #2c2c2c;
-  // background-color: $baseBgColor;
+  // background-color: var(--baseBgColor);
   width: 100%;
   max-width: 95vw;
   margin: 0 auto;
@@ -559,12 +558,12 @@ $padding: 1.5rem;
         }
         &:hover { background-color: lighten(#3a3939, 5%); }
         &.active {
-          background-color: $secondary;
+          background-color: var(--secondary);
           transform: scale(1.25);
           transform-origin: center left;
           margin: 1.6rem 0;
           order: -1;
-          color: $white;
+          color: var(--white);
           font-family: $recoletaSemiBold;
           svg {opacity: 1;}
         }
@@ -573,7 +572,7 @@ $padding: 1.5rem;
   }
   .tabDataContainer {
     width: 100%;
-    box-shadow: inset 0 0 0 .25rem $secondary;
+    box-shadow: inset 0 0 0 .25rem var(--secondary);
     padding: 3% 3vw 3% clamp(120px, 6vw, 120px);
     border-radius: 15px;
     .servicetabData {
@@ -624,7 +623,7 @@ $padding: 1.5rem;
       svg {width: 100% !important; height: 100%;}
     }
     &._knowMoreBlock {
-      background-color: rgba($white, .20);
+      background-color: rgba(#ffffff, .20);
     }
   }
 }
@@ -634,10 +633,10 @@ $padding: 1.5rem;
 .latestTechContainer {
   position: relative;
   width: 100%;
-  background-color: $secondary;
+  background-color: var(--secondary);
   background-image: $gradient_2;
   $topGap: 3rem;
-  color: $white;
+  color: var(--white);
   
   h3 {font-size: 2.8rem;}
   p {line-height: 30px;}
@@ -652,7 +651,7 @@ $padding: 1.5rem;
       width: 1px;
       height: 50%;
       top: 25%;
-      background-color: rgba($white, .4);
+      background-color: rgba(var(--white), .4);
     }
   }
   .technoligesContainer {
@@ -673,7 +672,7 @@ $padding: 1.5rem;
       li {
         &:not(:last-child) {
           min-width: 120px;
-          border: 1px solid rgba($white, .3);
+          border: 1px solid rgba(var(--white), .3);
           border-radius: .5rem;
           padding: 1rem;
           display: flex;
@@ -704,8 +703,6 @@ $padding: 1.5rem;
   }
 }
 
-
-
 /* Home Client Section Begins */
 .homeClientSection {
   width: 100%;
@@ -721,7 +718,7 @@ $padding: 1.5rem;
       li {
         width: 25%;
         height: 180px;
-        border: 1px solid rgba($borderColor, .25);
+        border: 1px solid rgba(var(--borderColor), .25);
         padding: 1.5rem;
         @include flexCeter(center, center);
         transition: all .3s ease-in;
@@ -735,7 +732,7 @@ $padding: 1.5rem;
         }
 
         &:hover {
-          background-color: rgba($white, .3);
+          background-color: rgba(var(--white), .3);
           img {filter: grayscale(0);}
         }
       }
@@ -764,8 +761,8 @@ $padding: 1.5rem;
       &::before, &::after {
         content: '';
         position: absolute;
-        background-color: $baseBgColor;
-        border: 1px solid $borderColor;
+        background-color: var(--baseBgColor);
+        border: 1px solid var(--borderColor);
         z-index: -1;
       }
       &::before {
@@ -781,8 +778,8 @@ $padding: 1.5rem;
         position: relative;
         width: 100%;
         height: 700px;
-        border: 1px solid $primary;
-        background-color: $baseBgColor;
+        border: 1px solid var(--primary);
+        background-color: var(--baseBgColor);
         z-index: 1;
       }
     }
@@ -803,7 +800,7 @@ $padding: 1.5rem;
         height: 150px;
         border-radius: 100px;
         overflow: hidden;
-        box-shadow: 0 10px 20px rgba($black, 0.3);
+        box-shadow: 0 10px 20px rgba(var(--black), 0.3);
         margin: 0 auto 40px;
       }
       .comment {
@@ -823,7 +820,7 @@ $padding: 1.5rem;
           width: 100px;
           height: 2px;
           left: calc(50% - 50px);
-          background-color: $secondary;
+          background-color: var(--secondary);
         }
         h3 {font-size: 26px;}
         p {font-size: 16px; margin-bottom: 10px; line-height: normal;}
@@ -840,10 +837,10 @@ $padding: 1.5rem;
 .ctaSection {
   position: relative;
   width: 100%;
-  background-color: $primary;
+  background-color: var(--primary);
   padding: 2.5vw;
   background-image: $gradient_4;
-  color: $white;
+  color: var(--white);
   h3 {
     margin-bottom: 1.5rem;
     font-size: 3.5rem;
@@ -863,50 +860,50 @@ $padding: 1.5rem;
 
 /* footer Begins */ 
 footer { width: 100%; position: relative; }
-  /* VideoBox Before Footer  */
-    .qoutBxCnt {
-      position: relative;
+/* VideoBox Before Footer  */
+  .qoutBxCnt {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    .qoutBxVideo {
       width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .qoutBxVideo::-webkit-media-controls {display: none; }
+
+    .qtCntntCnt {
+      position: relative;
       z-index: 1;
-      overflow: hidden;
-      .qoutBxVideo {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        pointer-events: none;
-      }
-      .qoutBxVideo::-webkit-media-controls {display: none; }
+      width: 100%;
+      height: 100%;
+      color: var(--white);
+      padding: 4rem 3rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      @include flexCeter(space-between, center);
 
-      .qtCntntCnt {
+      .qtCntnt {
+        flex: 1 0 auto;
         position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        color: $white;
-        padding: 4rem 3rem;
-        background-color: rgba(0, 0, 0, 0.2);
-        @include flexCeter(space-between, center);
-
-        .qtCntnt {
-          flex: 1 0 auto;
-          position: relative;
-          h3 {
-            font-size: 2.85rem;
-            font-family: $recoletaSemiBold;
-            margin-bottom: 1rem;
-          }
-          p {
-            margin-top: 5px;
-            font-family: $roboto;
-            font-weight: 300;
-            a {color: $white;}
-          }
+        h3 {
+          font-size: 2.85rem;
+          font-family: $recoletaSemiBold;
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-top: 5px;
+          font-family: $roboto;
+          font-weight: 300;
+          a {color: var(--white);}
         }
       }
     }
-  /* VideoBox Before Footer */
+  }
+/* VideoBox Before Footer */
 
 .footerLinksContainer {
   position: relative;
@@ -917,7 +914,7 @@ footer { width: 100%; position: relative; }
     position: relative;
 
     h5 {
-      color: $primary;
+      color: var(--primary);
       margin-bottom: 2.5rem;
       position: relative;
       font-family: $recoletaLight;
@@ -930,7 +927,7 @@ footer { width: 100%; position: relative; }
         left: 0;
         width: 40px;
         height: 2px;
-        background-color: $secondary;
+        background-color: var(--secondary);
       }
     }
     > ul {
@@ -953,11 +950,11 @@ footer { width: 100%; position: relative; }
             height: 1px;
             right: 0;
             bottom: 0;
-            background-color: $secondary;
+            background-color: var(--secondary);
             transition: all .3s ease-in-out;
           }
           &:hover {
-            color: $secondary;
+            color: var(--secondary);
             &::after {width: 100%; left: 0;}
           }
         }
@@ -978,7 +975,7 @@ footer { width: 100%; position: relative; }
         padding-right: 1rem;
         line-height: 1.8rem;
         i {
-          color: $secondary;
+          color: var(--secondary);
           min-width: 30px;
           font-size: 1.2rem;
           line-height: 1.6rem;
@@ -997,13 +994,13 @@ footer { width: 100%; position: relative; }
   }
 
   .copyrightText {
-    background-color: $baseBgColor;
+    background-color: var(--baseBgColor);
     position: relative;
     width: 100%;
     margin: 2rem 0;
     padding: 1rem 0;
-    border-top: 1px solid $borderColor;
-    border-bottom: 1px solid $borderColor;
+    border-top: 1px solid var(--borderColor);
+    border-bottom: 1px solid var(--borderColor);
     @include flexCeter(space-between, center);
     font-family: $roboto;
     font-weight: 300;
@@ -1028,7 +1025,7 @@ footer { width: 100%; position: relative; }
             height: 50px;
             font-size: 1.3rem;
             transition: all 300ms ease-in-out;
-            &:hover {background-color: $secondary; color: $white;}
+            &:hover {background-color: var(--secondary); color: var(--white);}
           }
         }
       }
@@ -1041,11 +1038,11 @@ footer { width: 100%; position: relative; }
   width: 100%;
   margin: 3.5rem 0 1rem;
   $gap: 2.5rem 2rem;
-  color: $white;
+  color: var(--white);
   $minBoxHeight: 290px;
   .getACallContainer {
     position: relative;
-    background-color: $secondary;
+    background-color: var(--secondary);
     background-image: $gradient_3;
     padding: $gap;
     min-height: $minBoxHeight;
@@ -1053,7 +1050,7 @@ footer { width: 100%; position: relative; }
       font-size: 36px;
     }
     .inputContainer {
-      background-color: $white;
+      background-color: var(--white);
       width: 100%;
       position: relative;
       margin-top: 1.5rem;
@@ -1092,8 +1089,8 @@ footer { width: 100%; position: relative; }
   }
   .footerCareerElemContainer {
     position: relative;
-    border: 1px solid $secondary;
-    background-color: $baseBgColor;
+    border: 1px solid var(--secondary);
+    background-color: var(--baseBgColor);
     border-left: 0;
     height: 100%;
     padding: $gap;
@@ -1109,10 +1106,9 @@ footer { width: 100%; position: relative; }
       @include flexCeter(flex-end, center);
       margin-right: 1.5rem;
     }
-    h3 {font-size: 2.25rem; color: $secondary;}
+    h3 {font-size: 2.25rem; color: var(--secondary);}
   }
 }
-
 /* footer Ends */ 
 
 
@@ -1134,7 +1130,7 @@ footer { width: 100%; position: relative; }
         height: 600px;
         border-radius: 12px;
         overflow: hidden;
-        background-color: $white;
+        background-color: var(--white);
         
         ._header {
           background-color: #EEEEEE;
@@ -1166,22 +1162,22 @@ footer { width: 100%; position: relative; }
             position: relative;
             width: 100%;
             max-width: calc(100% - #{$dotWidth});
-            background-color: $white;
-            box-shadow: 0 0 15px rgba($black, .06);
+            background-color: var(--white);
+            box-shadow: 0 0 15px rgba(var(--black), .06);
             border-radius: 6px;
             padding: .15rem 1rem;
             font-family: $roboto;
             transition: $transition;
             a {
               height: 40px;
-              color: $black;
+              color: var(--black);
               position: relative;
               transition: $transition;
               @include flexCeter(space-between, center);
             }
             &:hover { 
-              background-color: $secondary; 
-              a {color: $white; }
+              background-color: var(--secondary); 
+              a {color: var(--white); }
             }
           }
         }
@@ -1210,8 +1206,8 @@ footer { width: 100%; position: relative; }
         font-size: 38px;
         line-height: 50px;
         &.highlighted {
-          background-color: $secondary;
-          color: $white;
+          background-color: var(--secondary);
+          color: var(--white);
           width: fit-content;
           padding-right: 1.25rem;
           padding-top: 0.4rem;
@@ -1225,7 +1221,7 @@ footer { width: 100%; position: relative; }
             height: 100%;
             width: 50%;
             top: 0;
-            background-color: $secondary;
+            background-color: var(--secondary);
           }
         }
         &:last-child {margin-bottom: 2rem;}
@@ -1248,7 +1244,7 @@ footer { width: 100%; position: relative; }
   width: 0%;
   height: 100vh;
   z-index: 11;
-  background-color: $baseBgColor;
+  background-color: var(--baseBgColor);
   background-image: url('../images/abstract-patten.png');
   background-blend-mode: soft-light;
   background-attachment: fixed;
@@ -1300,18 +1296,18 @@ footer { width: 100%; position: relative; }
               right: 0;
               width: 0%;
               height: 1px;
-              background-color: $primary;
+              background-color: var(--primary);
               transition: $transition;
             }
             &:hover {
-              color: $primary;
+              color: var(--primary);
               &::after {width: 100%;left: 0;}
             }
           }
         }
         h3 {
           font-size: clamp(1.5rem, 3.75vw, 3.75rem);
-          line-height: clamp(2rem, 3.75vw, 4.75rem);
+          line-height: clamp(2rem, 3.75vw, 4rem);
         }
 
         .menuSMContainer {
@@ -1328,7 +1324,7 @@ footer { width: 100%; position: relative; }
             left: 0;
             width: 2.5rem;
             height: 3px;
-            background-color: $secondary;
+            background-color: var(--secondary);
           }
           li {
             position: relative;
@@ -1338,7 +1334,7 @@ footer { width: 100%; position: relative; }
               font-size: 1.2rem;
               @include flexCeter(center, center);
               transition: $transition;
-              &:hover { background-color: $primary; color: $white; }
+              &:hover { background-color: var(--primary); color: var(--white); }
             }
           }
         }
@@ -1348,7 +1344,7 @@ footer { width: 100%; position: relative; }
       position: relative;
       width: 100%;
       max-width: 700px;
-      background-color: $secondary;
+      background-color: var(--secondary);
       padding: 12vh 0vw 6vh 6vw;
 
       .menus {
@@ -1361,7 +1357,7 @@ footer { width: 100%; position: relative; }
             font-size: clamp(2.25rem, 5vw, 4.5rem);
             line-height: 130%;
             display: flex;
-            transition: all 100ms ease-in-out;
+            // transition: all 100ms ease-in-out;
             position: relative;
 
             &::after {
@@ -1369,9 +1365,9 @@ footer { width: 100%; position: relative; }
               position: absolute;
               right: 0;
               font-family: $recoletaBold;
-              transition: all 500ms ease-in-out;
+              transition: all 400ms ease-out;
               width: 0%;
-              color: $white;
+              color: var(--white);
               opacity: 1;
             }
             &:hover {
@@ -1390,42 +1386,55 @@ footer { width: 100%; position: relative; }
   width: 0%;
   height: 100vh;
   z-index: 1;
-  background-color: $primary;
+  background-color: var(--primary);
   z-index: 19;
   transition: width 500ms linear;
   top: 0;
   left: 0;
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   width: 0%;
-  //   height: 100%;
-  //   top: 0;
-  //   left: 0;
-  //   transition: width 750ms linear;
-  //   transition-delay: 500ms;
-  //   background-color: $secondary;
-  // }
+  background-image: url('../images/logo_white.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50vh;
+  background-attachment: fixed;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: width 750ms linear 500ms;
+    background-color: var(--secondary);
+    background-image: url('../images/logo_color.svg');
+    background-repeat: inherit;
+    background-position: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+  }
   &.active {
-    width: 100%;
-    &::after {width: 100%;}
+    // // width: 100%;
+    &::after { 
+      width: 100%;
+      transition: width 700ms;
+      transition-delay: 500ms;
+    }
   }
   &.removeActive {
-    transition-delay: 650ms;
-    width: 0%;
+    transition-delay: 500ms;
+    width: 0;
     right: 0;
     left: initial;
-    &::after {width: 0%; right: 0;left: initial;}
+    &::after {width: 0%; right: 0;left: initial; transition-delay: 250ms;}
   }
 }
 
 .lightModeButton {
   position: absolute;
-  color: $white;
+  color: var(--white);
   font-size: 1.3rem;
   top: 1.5rem;
   left: 2.5rem;
-  border: 1px solid rgba($white, .35);
+  border: 1px solid rgba(#ffffff, .35);
   padding: 0.35rem 1rem 0.35rem 0.75rem;
   font-size: .9rem;
   border-radius: 50px;
@@ -1435,9 +1444,14 @@ footer { width: 100%; position: relative; }
   transition: $transition;
   cursor: pointer;
   i { font-size: 1.2rem; margin-right: .6rem; }
-  &:hover {
-    background-color: $white;
-    color: $secondary;
+  &::after {content: 'Light Mode';}
+  &.active {
+    &::after {content: 'Dark Mode';}
+    i:before {content: "\f186";}
+  }
+  &:hover, &.active {
+    background-color: var(--white);
+    color: var(--secondary);
   }
 }
 .hamburgerMenuButtonContainer {
@@ -1466,9 +1480,9 @@ footer { width: 100%; position: relative; }
     // width: 100%;
     // height: 100vh;
 
-    &::before { background-color: $secondary; }
+    &::before { background-color: var(--secondary); }
     &::after {
-      background-color: $primary;
+      background-color: var(--primary);
       transition-delay: 350ms;
     }
     &::before, &::after { transform: scale(80); }
@@ -1483,7 +1497,7 @@ footer { width: 100%; position: relative; }
     height: $ctaButtonHeight + 5;
     border-radius: $ctaButtonHeight;
     transition: $transition;
-    color: white;
+    color: var(--white);
     font-size: 1.5rem;
     border: 0;
     background-color: transparent;
@@ -1508,7 +1522,7 @@ footer { width: 100%; position: relative; }
       width: 100%;
       height: 100%;
       border-radius: inherit;
-      background-color: $secondary;
+      background-color: var(--secondary);
       z-index: 0;
       transition: inherit;
       transform: scale(0.0);
@@ -1517,3 +1531,131 @@ footer { width: 100%; position: relative; }
   }
 }
 /* Hamburger Menu Ends */
+
+
+/* ----------------------------- Light Mode [Starts] -------------------------------- */
+body.lightMode {
+  --baseBgColor: rgb(241, 241, 241);
+  --textColor: rgb(78, 78, 78);
+  --white: rgb(35, 35, 35);
+  --black: rgb(255,255,255);
+  --baseBgColor: rgb(241, 241, 241);
+  --textColor: rgb(78, 78, 78);
+
+  --headerBgColor: rgba(241, 241, 241, 1);
+  --stickyHeaderBgColor: rgba(241, 241, 241, 1);
+}
+body.lightMode {
+  header.fixed {background-color: var(--stickyHeaderBgColor);}
+  .lightModeButton {
+    border-color: var(--secondary);
+    &.active { 
+      background-color: var(--secondary);
+      color: var(--black); 
+    }
+    &:hover { 
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: var(--black); 
+    }
+  }
+  ::selection {
+    background-color: var(--primary);
+    color: var(--black);
+  }
+  .menuSection {
+    background-blend-mode: multiply;
+    .subMenuSection {
+      .infoContentContainer {
+        .contentContainer {
+          h3 {color: var(--secondary) !important;}
+          p {font-weight: 400;}
+        }
+      }
+      .asideMenu {
+        background-color: #ffffff;
+        box-shadow: -20px 0 50px rgba(#000000, .1);
+        .menus {
+          li {
+            a {
+              color: var(--secondary);
+              &::after {color: var(--black);}
+              &:hover {
+                color: var(--black);
+                &::after {color: var(--secondary);}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hamburgerMenuButtonContainer .hamburgerMenuButton:hover {color: var(--black);}
+
+  .ctaButtonContainer {
+    box-sizing: content-box;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-left: $padding - .20;
+    padding-right: $padding;
+    font-size: 1.4rem;
+    color: var(--white);
+    height: $ctaButtonHeight - 5;
+    white-space: nowrap;
+    transition: $transition;
+    line-height: 1.4rem;
+    max-width: fit-content;
+    border: none;
+    background-color: transparent;
+    &::before { color: var(--black); }
+    &.whiteButton {
+      color: var(--black);
+      &::before { color: var(--white); }
+    }
+    &.primaryButton {
+      color: var(--black);
+      &.blackNWhite {
+        color: var(--white);
+        &::before {color: var(--black);}
+      }
+    }
+    &.secondaryButton {
+      color: var(--white);
+      &.blackNWhite {
+        color: var(--black);
+        &::before {color: var(--white);}
+      }
+    }
+  }
+
+  .servicesTabContainer {
+    background-color: transparent;
+    .tabListContainer {
+      .tabLists {
+        li {
+          background-color: var(--black);
+          svg path {fill:var(--white); }
+          &.active {
+            background-color: var(--primary);
+            color: var(--black);
+            svg path {fill:var(--black); }
+          }
+          &:hover {
+            background-color: #e8dcff;
+          }
+        }
+      }
+    }
+    .tabDataContainer {background-color: var(--black);}
+  }
+  .weServeThrough {
+    ._block {
+      &._knowMoreBlock {
+        background-color: rgba(#000000, .20);
+      }
+    }
+  }
+}
+/* ----------------------------- Light Mode [Ends] -------------------------------- */
