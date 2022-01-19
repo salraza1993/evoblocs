@@ -1642,9 +1642,7 @@ body.lightMode {
             color: var(--black);
             svg path {fill:var(--black); }
           }
-          &:hover {
-            background-color: #e8dcff;
-          }
+          &:not(.active):hover { background-color: #e8dcff; }
         }
       }
     }
@@ -1659,3 +1657,5 @@ body.lightMode {
   }
 }
 /* ----------------------------- Light Mode [Ends] -------------------------------- */
+
+// Try to change variable names like text-white bg-white etc.

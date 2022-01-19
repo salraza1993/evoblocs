@@ -2446,7 +2446,7 @@ body.lightMode .servicesTabContainer .tabListContainer .tabLists li.active svg p
   fill: var(--black);
 }
 
-body.lightMode .servicesTabContainer .tabListContainer .tabLists li:hover {
+body.lightMode .servicesTabContainer .tabListContainer .tabLists li:not(.active):hover {
   background-color: #e8dcff;
 }
 
