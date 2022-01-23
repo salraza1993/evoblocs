@@ -1,6 +1,6 @@
 <div class="latestTechContainer my-5">
   <div class="row">
-    <div class="col-9 p-0">
+    <div class="col-12 col-md-9 p-0">
       <div class="technoligesContainer">
         <div class="topContent">
           <p class="mb-2 roboto-light">We always deal with</p>
@@ -33,7 +33,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-3 p-0">
+    <div class="col-12 col-md-3 p-0">
       <div class="discussProject">
         <p class="mb-2 roboto-light">Let's discuss about</p>
         <h3 class="recoleta-semiBold">Your Project</h3>

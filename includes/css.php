@@ -5,5 +5,5 @@
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 <link rel="stylesheet" href="css/bootstrap.css" />
-<!-- <link rel="stylesheet" href="css/style.css?v=0" /> -->
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />

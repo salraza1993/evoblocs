@@ -54,10 +54,10 @@
 			<div class="row">
 				<div class="whoWeAreSection">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<div class="aboutImageBanner" style="background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
 						</div>
-						<div class="col-9">
+						<div class="col-12 col-md-9">
 							<div class="aboutContentSlider overflow-hidden" id="aboutContentSlider">
 								<div class="swiper-wrapper">
 									<div class="aboutContentBox swiper-slide">
@@ -90,7 +90,7 @@
 		<?php include('includes/lineContainer.php') ?>
 		<div class="container">
 			<div class="row">
-				<div class="offset-3 col-9 p-0">
+				<div class="offset-sm-3 col-md-9 col-mm-9 p-0">
 					<h2 class="mb-4">
 						<span class="text-light">Big</span> 
 						<span class="primary-color">Ideas</span> - 
@@ -123,7 +123,7 @@
 			<?php include('includes/lineContainer.php') ?>
 			<div class="container">
 				<div class="row">
-					<div class="offset-3 col-9 p-0">
+					<div class="col-12 offset-md-3 col-md-9 p-sm-0">
 						<div class="sectionHeading d-flex justify-content-between align-items-center pb-5">
 							<div class="headingText width-70">
 								<p class="smallText text-uppercase roboto-light">Services</p>
@@ -315,7 +315,7 @@
 				</div>
 			</div>
 			<div class="row align-items-center">
-				<div class="col-6 px-0">
+				<div class="col-12 col-md-6 px-0">
 					<div class="homeTestimonialsContainer">
 						<div class="homeTestimonialsWrapper">
 							<div class="homeTestimonials">
@@ -342,7 +342,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 p-0">
+				<div class="col-12 col-md-6 p-0">
 					<div class="ctaSection">
 						<h3>
 							<span class="recoleta-light">Let’s create</span>

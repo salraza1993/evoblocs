@@ -119,11 +119,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
   lightModeButton.addEventListener('click', function () {
     lightMode = localStorage.getItem('lightMode');
     if (lightMode !== 'enabled') {
-      enableLightMode();
-      this.classList.add('active');
+      setTimeout(() => {
+        enableLightMode();
+        this.classList.add('active');
+      }, 500);
     } else {
-      diableLightMode();
-      this.classList.remove('active');
+      setTimeout(() => {
+        diableLightMode();
+        this.classList.remove('active');
+      }, 500);
     }
 
     hamburgerMenuButton.classList.remove('active');

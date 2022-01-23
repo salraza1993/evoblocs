@@ -9,5 +9,40 @@ $textColor: #CBCBCB;
 $white: #ffffff;
 $black: #232323;
 
+:root {
+  // Colors
+  $primary: rgb(145, 221, 234);
+  $secondary: rgb(146, 108, 220);
+  $subSecondary: rgb(100, 154, 189);
 
+  $borderColor: rgb(114, 114, 114);
+  $baseBgColor: rgb(35, 35, 35);
+  $textColor: rgb(203, 203, 203);
+
+  $white: rgb(255,255,255);
+  $black: rgb(35, 35, 35);
+
+  $sticyHeader: $baseBgColor;
+}
+
+// patterns
+$bgPattern: 'https://shahsafimemorialtrust.com/assets/f257d754/img/body-pattern.png';
+
+// html, body {overflow: hidden;}
+body {
+  scroll-behavior: smooth;
+  background-color: $baseBgColor;
+  font-family: $recoletaRegular;
+  color: $textColor !important;
+  font-size: 16px;
+  font-weight: normal;
+  
+  &.lightMode {
+    $baseBgColor: rgb(241, 241, 241);
+    $textColor: rgb(78, 78, 78);
+    $white: $black;
+    $black: $white;
+    $sticyHeader: $baseBgColor;
+  }
+}
 

@@ -1,4 +1,4 @@
-@mixin flexCeter($jc: initial, $ai: initial, $ac: initial) {
+@mixin flexCenter($jc: initial, $ai: initial, $ac: initial) {
   display: flex;
   justify-content: $jc;
   align-items: $ai;

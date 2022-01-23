@@ -27,7 +27,7 @@
                     </select>
                     <input type="number" name="" id="" placeholder="e.g. 7838367864">
                   </div>
-                  <button buttonval="Get a Qoute" class="ctaButtonContainer secondaryButton blackNWhite">Get a Qoute</button>
+                  <button buttonval="Call Me Now" class="ctaButtonContainer secondaryButton blackNWhite">Call Me Now</button>
                 </form>
               </div>
             </div>
@@ -53,7 +53,7 @@
     <div class="footerLinksContainer pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-3 p-0">
+          <div class="col-3 p-0 hidden-xs">
             <div class="footer-links-block">
               <h5>Services</h5>
               <ul class="links">
@@ -67,7 +67,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-3 p-0">
+          <div class="col-3 p-0 hidden-xs">
             <div class="footer-links-block">
               <h5>Quick Links</h5>
               <ul class="links">
@@ -81,17 +81,17 @@
               </ul>
             </div>
           </div>
-          <div class="col-6 p-0">
+          <div class="col-12 col-md-6 p-0">
             <div class="footer-links-block footerAdressBlock">
               <h5>Contact</h5>
               <div class="row mx-0">
-                <div class="col-6 p-0">
+                <div class="col-12 col-md-6 p-0">
                   <div class="footerAdress">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>1927 B Corporate Square Blvd, Slidell LA 70458, <br> United States</span>
                   </div>
                 </div>
-                <div class="col-6 p-0">
+                <div class="col-12 col-md-6 p-0">
                   <div class="footerAdress">
                     <i class="fas fa-phone-alt"></i>
                     <a href="tel:+918954482719">+91 89544 82719</a>
@@ -124,7 +124,15 @@
     </div>
 
   </footer>
-  
+  <div class="mobileFtrBtnCnt">
+    <a href="javascript:;" class="ctaButtonContainer" buttonVal="Get a Qoute">Get a Qoute</a>
+    <div class="numbers d-flex">
+      <a href="tel:+971552495750" class="phoneNumber"><i class="fas fa-phone-alt"></i></a>
+      <a class="whtsAppBtn" target="_blank" href="https://wa.me/971552495750/?text=Web Design, SEO, SMM, Ecommerce, SSL Certificates services">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
   <?php include("includes/hamburger-menu.php") ?>
   <div class="hamburgerMenuButtonContainer">
     <button class="hamburgerMenuButton"><i class="fas fa-ellipsis-v"></i></button>

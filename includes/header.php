@@ -4,7 +4,7 @@
 			<img src="images/logo_color.svg" alt="">
 		</a>
 	</div>
-	<nav class="navigation">
+	<nav class="navigation hidden-xs">
 		<ul class="menu">
 			<li>
 				<a href="javascript:;">About</a>
@@ -28,13 +28,8 @@
 			<li><a href="javascript:;">Blog</a></li>
 		</ul>
 	</nav>
-	<div class="rightMenuContainer">
+	<div class="rightMenuContainer hidden-xs">
 		<a href="javascript:;" class="ctaButtonContainer" buttonVal="Get a Qoute">Get a Qoute</a>
-		<!-- <button type="button" class="getAQouteBtn quotationBtn">
-				<a href="javascript:;" class="buttonVal" buttonVal="Get a Qoute">Get a Qoute</a>
-		</button> -->
-		<div class="moreMenus">
-			<i class="fas fa-ellipsis-v"></i>
-		</div>		
+		<div class="moreMenus"> <i class="fas fa-ellipsis-v"></i> </div>		
 	</div>
 </header>

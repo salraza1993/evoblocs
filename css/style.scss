@@ -16,7 +16,13 @@
 
   --borderColor: rgb(114, 114, 114);
   --baseBgColor: rgb(35, 35, 35);
+
   --textColor: rgb(203, 203, 203);
+
+  --text-light: rgb(255,255,255);
+  --text-dark: rgb(35, 35, 35);
+  --bg-light: rgb(255,255,255);
+  --bg-dark: rgb(35, 35, 35);
 
   --white: rgb(255,255,255);
   --black: rgb(35, 35, 35);
@@ -26,6 +32,8 @@
   --headerBgColor: rgba(35, 35, 35, 0.5);
   --stickyHeaderBgColor: rgba(35, 35, 35, 1);
 }
+
+$border: 1px solid rgba(114, 114, 114, 0.25);
 
 // patterns
 $bgPattern: 'https://shahsafimemorialtrust.com/assets/f257d754/img/body-pattern.png';
@@ -140,14 +148,14 @@ header {
   height: $headerHeight;
   background-color: var(--headerBgColor);
   // border-bottom: 1px solid var(--borderColor);
-  @include flexCeter($jc: space-between, $ai: center);
+  @include flexCenter($jc: space-between, $ai: center);
   padding: $headerTopGap 2rem;
   position: fixed;
   z-index: 10;
   &.fixed {background-color: var(--stickyHeaderBgColor);}
   .logo__container {
     position: relative;
-    @include flexCeter($ai: center);
+    @include flexCenter($ai: center);
     a {
       display: inline-flex;
       max-width: 220px;
@@ -164,7 +172,7 @@ header {
       display: flex;
       height: $headerHeight;
       margin: 0;
-      @include flexCeter($jc: space-between, $ai: center);
+      @include flexCenter($jc: space-between, $ai: center);
       
       > li {
         position: relative;
@@ -196,7 +204,7 @@ header {
             margin-top: -100%;
             transition: margin-top .3s ease;
             a {
-              color: var(--white);
+              color: var(--text-light);
               width: 100%;
               font-size: 1.1rem;
               display: inline-block;
@@ -235,7 +243,7 @@ header {
       color: var(--white);
       font-size: 1.5rem;
       cursor: pointer;
-      @include flexCeter($jc: center, $ai: center);
+      @include flexCenter($jc: center, $ai: center);
       transition: $transition;
       i {pointer-events: none; position: relative; z-index: 1;}
       
@@ -332,7 +340,7 @@ $padding: 1.5rem;
     }
   }
 }
-
+.mobileFtrBtnCnt {display: none;}
 /* Slider Section Begins */
 .sliderSection {
   position: relative;
@@ -364,7 +372,7 @@ $padding: 1.5rem;
 .sliderContainer {
   width: 100%;
   height: 100%;
-  @include flexCeter($jc: center, $ai: center);
+  @include flexCenter($jc: center, $ai: center);
   position: relative;
   inset: 0;
   z-index: 1;
@@ -378,25 +386,27 @@ $padding: 1.5rem;
       text-align: center;
       h4 {
         font-size: 2.5rem;
-        color: var(--white);
+        color: var(--text-light);
         font-family: $recoletaRegular;
         font-size: clamp(1.3rem, 2.2vw, 2.5rem);
         line-height: clamp(2rem, 3vw, 3.3rem);
       }
       h2 {
-        font-size: clamp(3.5rem, 7.5vw, 6.25rem);
+        font-size: clamp(3rem, 7.5vw, 6.25rem);
         line-height: clamp(4rem, 7.5vw, 7.25rem);
         margin: 1rem 0;
         font-family: $recoletaBold;
         color: var(--primary);
       }
       p {
-        font-size: clamp(1.3rem, 1.5vw, 1.8rem);
-        line-height: clamp(2rem, 3vw, 3.3rem);
+        font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+        line-height: clamp(1.8rem, 3vw, 3.3rem);
         margin-bottom: 3rem !important;
         max-width: 700px;
         margin: auto;
+        color: var(--text-light);
       }
+      .ctaButtonContainer {color: var(--text-light);}
     }
   }
 }
@@ -430,7 +440,9 @@ $padding: 1.5rem;
   height: 100%;
   position: absolute;
   top: 0;
-  left: calc(50% - #{$containerWidth / 2});
+  // left: calc(50% - #{$containerWidth / 2});
+  left: 50%;
+  transform: translateX(-50%);
   pointer-events: none;
   user-select: none;
   display: flex;
@@ -554,7 +566,7 @@ $padding: 1.5rem;
           min-width: $tabHeight;
           height: $tabHeight;
           margin-right: 2rem;
-          @include flexCeter($jc: center, $ai: center);
+          @include flexCenter($jc: center, $ai: center);
         }
         &:hover { background-color: lighten(#3a3939, 5%); }
         &.active {
@@ -604,11 +616,11 @@ $padding: 1.5rem;
   gap: 1.25rem;
   ._block {
     position: relative;
-    @include flexCeter(center, center);
+    @include flexCenter(center, center);
     gap: 1.5rem;
     flex-direction: column;
     border-radius: 10px;
-    transition: all 200s ease-in;
+    transition: all 200ms ease-in;
     $iconWidth: 80px;
     cursor: pointer;
     background-color: #3c3c3c;
@@ -619,7 +631,7 @@ $padding: 1.5rem;
     .icon {
       width: $iconWidth;
       height: $iconWidth;
-      @include flexCeter(center, center);
+      @include flexCenter(center, center);
       svg {width: 100% !important; height: 100%;}
     }
     &._knowMoreBlock {
@@ -636,7 +648,7 @@ $padding: 1.5rem;
   background-color: var(--secondary);
   background-image: $gradient_2;
   $topGap: 3rem;
-  color: var(--white);
+  color: var(--text-light);
   
   h3 {font-size: 2.8rem;}
   p {line-height: 30px;}
@@ -672,7 +684,7 @@ $padding: 1.5rem;
       li {
         &:not(:last-child) {
           min-width: 120px;
-          border: 1px solid rgba(var(--white), .3);
+          border: 1px solid rgba(#ffffff, .2);
           border-radius: .5rem;
           padding: 1rem;
           display: flex;
@@ -683,7 +695,7 @@ $padding: 1.5rem;
           .icon {
             width: $iconWidth;
             height: $iconWidth;
-            @include flexCeter(center, center);
+            @include flexCenter(center, center);
           }
           p {margin-bottom: 0; font-weight: 300;}
         }
@@ -718,9 +730,9 @@ $padding: 1.5rem;
       li {
         width: 25%;
         height: 180px;
-        border: 1px solid rgba(var(--borderColor), .25);
+        border: $border;
         padding: 1.5rem;
-        @include flexCeter(center, center);
+        @include flexCenter(center, center);
         transition: all .3s ease-in;
         background-color: #333;
         
@@ -840,10 +852,10 @@ $padding: 1.5rem;
   background-color: var(--primary);
   padding: 2.5vw;
   background-image: $gradient_4;
-  color: var(--white);
+  color: var(--text-light);
   h3 {
     margin-bottom: 1.5rem;
-    font-size: 3.5rem;
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
   }
   .list {
     position: relative;
@@ -861,48 +873,48 @@ $padding: 1.5rem;
 /* footer Begins */ 
 footer { width: 100%; position: relative; }
 /* VideoBox Before Footer  */
-  .qoutBxCnt {
-    position: relative;
+.qoutBxCnt {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  .qoutBxVideo {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .qoutBxVideo::-webkit-media-controls {display: none; }
+
+  .qtCntntCnt {
+    position: relative;
     z-index: 1;
-    overflow: hidden;
-    .qoutBxVideo {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-    .qoutBxVideo::-webkit-media-controls {display: none; }
+    width: 100%;
+    height: 100%;
+    color: var(--text-light);
+    padding: 4rem 3rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    @include flexCenter(space-between, center);
 
-    .qtCntntCnt {
+    .qtCntnt {
+      flex: 1 0 auto;
       position: relative;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      color: var(--white);
-      padding: 4rem 3rem;
-      background-color: rgba(0, 0, 0, 0.2);
-      @include flexCeter(space-between, center);
-
-      .qtCntnt {
-        flex: 1 0 auto;
-        position: relative;
-        h3 {
-          font-size: 2.85rem;
-          font-family: $recoletaSemiBold;
-          margin-bottom: 1rem;
-        }
-        p {
-          margin-top: 5px;
-          font-family: $roboto;
-          font-weight: 300;
-          a {color: var(--white);}
-        }
+      h3 {
+        font-size: 2.85rem;
+        font-family: $recoletaSemiBold;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-top: 5px;
+        font-family: $roboto;
+        font-weight: 300;
+        a {color: var(--white);}
       }
     }
   }
+}
 /* VideoBox Before Footer */
 
 .footerLinksContainer {
@@ -1001,7 +1013,7 @@ footer { width: 100%; position: relative; }
     padding: 1rem 0;
     border-top: 1px solid var(--borderColor);
     border-bottom: 1px solid var(--borderColor);
-    @include flexCeter(space-between, center);
+    @include flexCenter(space-between, center);
     font-family: $roboto;
     font-weight: 300;
     p {font-size: 1rem; margin: 0;}
@@ -1046,16 +1058,17 @@ footer { width: 100%; position: relative; }
     background-image: $gradient_3;
     padding: $gap;
     min-height: $minBoxHeight;
+    color: var(--text-light);
     h3 {
       font-size: 36px;
     }
     .inputContainer {
-      background-color: var(--white);
+      background-color: var(--bg-light);
       width: 100%;
       position: relative;
       margin-top: 1.5rem;
       border-radius: .25rem;
-      padding: 1rem;
+      padding: .75rem 1rem;
       form {
         width: 100%; 
         position: relative;
@@ -1090,7 +1103,7 @@ footer { width: 100%; position: relative; }
   .footerCareerElemContainer {
     position: relative;
     border: 1px solid var(--secondary);
-    background-color: var(--baseBgColor);
+    background-color: var(--bg-light);
     border-left: 0;
     height: 100%;
     padding: $gap;
@@ -1103,7 +1116,7 @@ footer { width: 100%; position: relative; }
       min-width: 200px;
       height: 100%;
       padding-right: .7rem;
-      @include flexCeter(flex-end, center);
+      @include flexCenter(flex-end, center);
       margin-right: 1.5rem;
     }
     h3 {font-size: 2.25rem; color: var(--secondary);}
@@ -1173,7 +1186,7 @@ footer { width: 100%; position: relative; }
               color: var(--black);
               position: relative;
               transition: $transition;
-              @include flexCeter(space-between, center);
+              @include flexCenter(space-between, center);
             }
             &:hover { 
               background-color: var(--secondary); 
@@ -1306,8 +1319,8 @@ footer { width: 100%; position: relative; }
           }
         }
         h3 {
-          font-size: clamp(1.5rem, 3.75vw, 3.75rem);
-          line-height: clamp(2rem, 3.75vw, 4rem);
+          font-size: clamp(2rem, 4vw, 3.75rem);
+          line-height: clamp(2.5rem, 3.75vw, 4rem);
         }
 
         .menuSMContainer {
@@ -1332,7 +1345,7 @@ footer { width: 100%; position: relative; }
               width: 30px;
               height: 30px;
               font-size: 1.2rem;
-              @include flexCeter(center, center);
+              @include flexCenter(center, center);
               transition: $transition;
               &:hover { background-color: var(--primary); color: var(--white); }
             }
@@ -1458,8 +1471,8 @@ footer { width: 100%; position: relative; }
   position: fixed;
   top: 0;
   right: 0;
-  width: 88px;
-  height: 88px;
+  width: $headerHeight;
+  height: $headerHeight;
   z-index: 20;
   // overflow: hidden;
   // &::before, &::after {
@@ -1504,7 +1517,7 @@ footer { width: 100%; position: relative; }
     outline: none;
     z-index: 1;
     cursor: pointer;
-    @include flexCeter($jc: center, $ai: center);
+    @include flexCenter($jc: center, $ai: center);
     i {
       pointer-events: none;
       position: relative; 
@@ -1535,7 +1548,7 @@ footer { width: 100%; position: relative; }
 
 /* ----------------------------- Light Mode [Starts] -------------------------------- */
 body.lightMode {
-  --baseBgColor: rgb(241, 241, 241);
+  --baseBgColor: rgb(245, 245, 245);
   --textColor: rgb(78, 78, 78);
   --white: rgb(35, 35, 35);
   --black: rgb(255,255,255);
@@ -1544,8 +1557,19 @@ body.lightMode {
 
   --headerBgColor: rgba(241, 241, 241, 1);
   --stickyHeaderBgColor: rgba(241, 241, 241, 1);
+
+  // --text-light: rgb(35, 35, 35);
+  // --text-dark: rgb(255,255,255);
+
+  $border: 1px solid rgba(0, 0, 0, 0.1);
 }
 body.lightMode {
+  .lineContainer {
+    .col {
+      &:first-child {border-left: 1px solid rgba(0, 0, 0, 0.07);}
+      border-right: 1px solid rgba(0, 0, 0, 0.07);
+    }
+  }
   header.fixed {background-color: var(--stickyHeaderBgColor);}
   .lightModeButton {
     border-color: var(--secondary);
@@ -1650,11 +1674,90 @@ body.lightMode {
   }
   .weServeThrough {
     ._block {
-      &._knowMoreBlock {
-        background-color: rgba(#000000, .20);
+      background-color: var(--baseBgColor);
+      &._knowMoreBlock { background-color: var(--primary); }
+      .icon {
+        svg path[fill="#cbcbcb"] {fill: #555555;}
       }
     }
   }
+
+  .homePortfolioSection {
+    .homProtfolioWorkContainer {
+      .porfolioImageBlock {
+        .subWrapper {
+          background-color: var(--black);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, .1), 0 25px 50px rgba(0, 0, 0, .05);
+          ._header {
+            background-color: var(--black);
+            ._url {
+              background-color: #e6e6e6;
+              a {
+                color: var(--white);
+              }
+              &:hover {
+                background-color: var(--secondary);
+                a{color: var(--black);}
+              }
+            }
+          }
+        }
+      }
+      .porfolioContent {
+        h3 {
+          &:not(.highlighted) {
+            color: var(--secondary) !important;
+          }
+          &.highlighted {
+            background-color: var(--primary);
+            &::after {background-color: var(--primary);}
+          }
+        }
+      }
+    }
+  }
+  .qoutBxCnt .qtCntntCnt {
+    .ctaButtonContainer.secondaryButton {color: var(--text-light);}
+  }
+  .callNCareerContainer .getACallContainer {
+    .inputContainer .ctaButtonContainer.secondaryButton.blackNWhite {
+      color: var(--white);
+      &::before {color: var(--black);}
+    }
+  }
+  .homeClientSection {
+    .clientsContainer {
+      .clientsBoxContainer {
+        li {
+          background-color: var(--bg-light);
+          
+        }
+      }
+    }
+  }
+  .footerLinksContainer {
+    .footer-links-block {
+      h5 { font-family: $recoletaRegular; color: var(--secondary); }
+    }
+    .copyrightText { 
+      border-color: #ddd; 
+      .footerSocialMedia .sm li a:hover {color: var(--black);}
+    }
+  }
+  .homeTestimonialSection {
+    .homeTestimonialsContainer {
+      .homeTestimonialsWrapper {
+        .homeTestimonials {
+          background-image: linear-gradient(-45deg, #E6FCFF, #ffffff);
+        }
+        &::before, &::after {
+          border-color: #ddd;
+          background-color: #f6f6f6;
+        }
+      }
+    }
+  }
+
 }
 /* ----------------------------- Light Mode [Ends] -------------------------------- */
 
