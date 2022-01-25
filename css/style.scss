@@ -49,94 +49,123 @@ body {
 }
 
 /* Common Element's css Begins*/
-  h1, h2, h3, h4, h5, h6 {font-weight: normal;}
-  h2, .h2, .h2_heading {
-    font-size: clamp(1.8rem, 5vw, 4.75rem);
-    font-family: $recoletaSemiBold;
-    .textLight, .text-light, .lightText, .light-text {
-      font-family: $recoletaThin;
-      color: inherit !important;
-    }
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+h2, .h2, .h2_heading {
+  font-size: clamp(1.8rem, 5vw, 4.75rem);
+  font-family: $recoletaSemiBold;
+  .textLight, .text-light, .lightText, .light-text {
+    font-family: $recoletaThin;
+    color: inherit !important;
   }
+}
 
-  .font-recoleta-thin,
-  .recoleta-thin {font-family: $recoletaThin;};
-  .font-recoleta-light,
-  .recoleta-light {font-family: $recoletaLight;};
-  .font-recoleta-regular,
-  .recoleta-regular {font-family: $recoletaRegular;};
-  .font-recoleta-medium,
-  .recoleta-medium {font-family: $recoletaMedium;};
-  .font-recoleta-semiBold,
-  .recoleta-semiBold {font-family: $recoletaSemiBold;};
-  .font-recoleta-bold,
-  .recoleta-bold {font-family: $recoletaBold;};
-  .font-recoleta-bold,
-  .recoleta-bold {font-family: $recoletaBlack;};
+.font-recoleta-thin,
+.recoleta-thin {font-family: $recoletaThin;};
+.font-recoleta-light,
+.recoleta-light {font-family: $recoletaLight;};
+.font-recoleta-regular,
+.recoleta-regular {font-family: $recoletaRegular;};
+.font-recoleta-medium,
+.recoleta-medium {font-family: $recoletaMedium;};
+.font-recoleta-semiBold,
+.recoleta-semiBold {font-family: $recoletaSemiBold;};
+.font-recoleta-bold,
+.recoleta-bold {font-family: $recoletaBold;};
+.font-recoleta-bold,
+.recoleta-bold {font-family: $recoletaBlack;};
+
+.font-roboto-regular,
+.font-roboto {font-family: $roboto; font-weight: 400;}
+.font-roboto-thin,
+.roboto-thin {font-family: $roboto; font-weight: 100;}
+.font-roboto-light,
+.roboto-light {font-family: $roboto; font-weight: 300;}
+.font-roboto-medium,
+.roboto-medium {font-family: $roboto; font-weight: 500;}
+.font-roboto-bold,
+.roboto-bold {font-family: $roboto; font-weight: 700;}
+.font-roboto-black,
+.roboto-black {font-family: $roboto; font-weight: 900;}
+
+.primary-color, .primaryColor { color: var(--primary) !important; }
+.primary-bg-color, .primaryBgColor { background-color: var(--primary) !important; }
+.secondary-color, .secondaryColor { color: var(--secondary) !important; }
+.secondary-bg-color, .secondaryBgColor { background-color: var(--primary) !important; }
+
+
+.width-10, .w-10 {width: 10% !important; max-width: 10% !important;}
+.width-15, .w-15 {width: 15% !important; max-width: 15% !important;}
+.width-20, .w-20 {width: 20% !important; max-width: 20% !important;}
+.width-25, .w-25 {width: 25% !important; max-width: 25% !important;}
+.width-30, .w-30 {width: 30% !important; max-width: 30% !important;}
+.width-35, .w-35 {width: 35% !important; max-width: 35% !important;}
+.width-40, .w-40 {width: 40% !important; max-width: 40% !important;}
+.width-45, .w-45 {width: 45% !important; max-width: 45% !important;}
+.width-50, .w-50 {width: 50% !important; max-width: 50% !important;}
+.width-55, .w-55 {width: 55% !important; max-width: 55% !important;}
+.width-60, .w-60 {width: 60% !important; max-width: 60% !important;}
+.width-65, .w-65 {width: 65% !important; max-width: 65% !important;}
+.width-70, .w-70 {width: 70% !important; max-width: 70% !important;}
+.width-75, .w-75 {width: 75% !important; max-width: 75% !important;}
+.width-80, .w-80 {width: 80% !important; max-width: 80% !important;}
+.width-85, .w-85 {width: 85% !important; max-width: 85% !important;}
+.width-90, .w-90 {width: 90% !important; max-width: 90% !important;}
+.width-95, .w-95 {width: 95% !important; max-width: 95% !important;}
+.width-100, .w-100 {width: 100% !important; max-width: 100% !important;}
+
+
+p {
+  font-family: $roboto;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: clamp(1.5rem, 2vw, 2.3rem);
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+ul {list-style: none; padding: 0;}
+img {display: inline-block; max-width: 100%;}
+
+::selection {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+section {position: relative;}
+
+/* Line graph begins */
+.lineContainer {
+  $lineColor: hsla(0,0%,100%,0.1);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  // left: calc(50% - #{$containerWidth / 2});
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  z-index: -1;
+  .col {
+    width: 100%;
+    border-right: 1px solid $lineColor;
+    &:first-child {border-left: 1px solid $lineColor;}
+  }
+}
+/* Line graph Ends */ 
+// @media (min-width: 1280px) {
+//   .container { width: $containerWidth; max-width: $containerWidth; }
+//   .lineContainer {max-width: $containerWidth;}
+// }
+@media (min-width: 768px) { .lineContainer {max-width: 720px;} }
+@media (min-width: 992px) { .lineContainer {max-width: 960px;} }
+@media (min-width: 1200px) { .lineContainer {max-width: 1140px;} }
+@media (min-width: 1400px) { .lineContainer {max-width: 1320px;} }
   
-  .font-roboto-regular,
-  .font-roboto {font-family: $roboto; font-weight: 400;}
-  .font-roboto-thin,
-  .roboto-thin {font-family: $roboto; font-weight: 100;}
-  .font-roboto-light,
-  .roboto-light {font-family: $roboto; font-weight: 300;}
-  .font-roboto-medium,
-  .roboto-medium {font-family: $roboto; font-weight: 500;}
-  .font-roboto-bold,
-  .roboto-bold {font-family: $roboto; font-weight: 700;}
-  .font-roboto-black,
-  .roboto-black {font-family: $roboto; font-weight: 900;}
 
-  .primary-color, .primaryColor { color: var(--primary) !important; }
-  .primary-bg-color, .primaryBgColor { background-color: var(--primary) !important; }
-  .secondary-color, .secondaryColor { color: var(--secondary) !important; }
-  .secondary-bg-color, .secondaryBgColor { background-color: var(--primary) !important; }
-  
-
-  .width-10, .w-10 {width: 10% !important; max-width: 10% !important;}
-  .width-15, .w-15 {width: 15% !important; max-width: 15% !important;}
-  .width-20, .w-20 {width: 20% !important; max-width: 20% !important;}
-  .width-25, .w-25 {width: 25% !important; max-width: 25% !important;}
-  .width-30, .w-30 {width: 30% !important; max-width: 30% !important;}
-  .width-35, .w-35 {width: 35% !important; max-width: 35% !important;}
-  .width-40, .w-40 {width: 40% !important; max-width: 40% !important;}
-  .width-45, .w-45 {width: 45% !important; max-width: 45% !important;}
-  .width-50, .w-50 {width: 50% !important; max-width: 50% !important;}
-  .width-55, .w-55 {width: 55% !important; max-width: 55% !important;}
-  .width-60, .w-60 {width: 60% !important; max-width: 60% !important;}
-  .width-65, .w-65 {width: 65% !important; max-width: 65% !important;}
-  .width-70, .w-70 {width: 70% !important; max-width: 70% !important;}
-  .width-75, .w-75 {width: 75% !important; max-width: 75% !important;}
-  .width-80, .w-80 {width: 80% !important; max-width: 80% !important;}
-  .width-85, .w-85 {width: 85% !important; max-width: 85% !important;}
-  .width-90, .w-90 {width: 90% !important; max-width: 90% !important;}
-  .width-95, .w-95 {width: 95% !important; max-width: 95% !important;}
-  .width-100, .w-100 {width: 100% !important; max-width: 100% !important;}
-
-
-  p {
-    font-family: $roboto;
-    font-size: clamp(1rem, 1.7vw, 1.25rem);
-    line-height: clamp(1.5rem, 2.5vw, 2.3rem);
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--textColor);
-  }
-  ul {list-style: none; padding: 0;}
-  img {display: inline-block; max-width: 100%;}
-
-  ::selection {
-    background-color: var(--secondary);
-    color: var(--white);
-  }
-  section {position: relative;}
-  @media (min-width: 1279px) {
-    .container { width: $containerWidth; }
-  }
-
-  .text-columns { column-count: 2; gap: 5rem; }
+.text-columns { column-count: 2; gap: 5rem; }
 
 /* Common Element's css Ends*/
 
@@ -431,35 +460,13 @@ $padding: 1.5rem;
   }
 }
 
-/* Line graph begins */
-.lineContainer {
-  $lineColor: hsla(0,0%,100%,0.1);
-  position: relative;
-  width: 100%;
-  max-width: $containerWidth;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  // left: calc(50% - #{$containerWidth / 2});
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  user-select: none;
-  display: flex;
-  z-index: -1;
-  .col {
-    width: 100%;
-    border-right: 1px solid $lineColor;
-    &:first-child {border-left: 1px solid $lineColor;}
-  }
-}
-/* Line graph Ends */ 
+
 
 /* Home About Section Begins */
 .homeAboutSection {
   position: relative;
   width: 100%;
-  $sectionHeight: 650px;
+  $sectionHeight: 68vh;
   $topGap: 75px;
   
   .whoWeAreSection {
@@ -492,6 +499,7 @@ $padding: 1.5rem;
       top: $topGap;
       left: 10px;
       box-shadow: 0 20px 50px rgba(var(--baseBgColor), 0.2);
+      background-repeat: no-repeat;
       background-position: center center;
       background-size: auto 100%;
     }
@@ -521,7 +529,7 @@ $padding: 1.5rem;
 /* Common Section Heading Begins */
 .headingText {
   position: relative;
-  .smallText {letter-spacing: 1rem;}
+  .smallText {letter-spacing: 1vw;}
 }
 /* Common Section Heading Ends */
 
@@ -601,7 +609,6 @@ $padding: 1.5rem;
           // -webkit-line-clamp: 4;
           // -webkit-box-orient: vertical;
           // overflow: hidden;
-          line-height: 32px;
         } 
       }
     }
@@ -610,9 +617,8 @@ $padding: 1.5rem;
 .weServeThrough {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   ._block {
     position: relative;
@@ -627,7 +633,9 @@ $padding: 1.5rem;
     text-align: center;
     padding: 1rem;
     text-align: center;
-    min-height: 250px;
+    min-height: 235px;
+    width: calc(100% / 3 - .85rem);
+    h5 {font-size: clamp(1.3rem, 2.5vmin, 2.5rem);}
     .icon {
       width: $iconWidth;
       height: $iconWidth;
@@ -789,7 +797,7 @@ $padding: 1.5rem;
       .homeTestimonials {
         position: relative;
         width: 100%;
-        height: 700px;
+        min-height: 75vh;
         border: 1px solid var(--primary);
         background-color: var(--baseBgColor);
         z-index: 1;
@@ -899,7 +907,6 @@ footer { width: 100%; position: relative; }
     @include flexCenter(space-between, center);
 
     .qtCntnt {
-      flex: 1 0 auto;
       position: relative;
       h3 {
         font-size: 2.85rem;
@@ -1103,7 +1110,7 @@ footer { width: 100%; position: relative; }
   .footerCareerElemContainer {
     position: relative;
     border: 1px solid var(--secondary);
-    background-color: var(--bg-light);
+    background-color: var(--baseBgColor);
     border-left: 0;
     height: 100%;
     padding: $gap;
@@ -1140,7 +1147,6 @@ footer { width: 100%; position: relative; }
       .subWrapper {
         position: relative;
         width: 94%;
-        height: 600px;
         border-radius: 12px;
         overflow: hidden;
         background-color: var(--white);
@@ -1289,8 +1295,8 @@ footer { width: 100%; position: relative; }
       .contentContainer {
         position: relative;
         width: 100%;
-        max-width: 20vw;
-        min-width: 20vw;
+        max-width: 45vmin;
+        min-width: 45vmin;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -1319,8 +1325,8 @@ footer { width: 100%; position: relative; }
           }
         }
         h3 {
-          font-size: clamp(2rem, 4vw, 3.75rem);
-          line-height: clamp(2.5rem, 3.75vw, 4rem);
+          font-size: clamp(2rem, 5.5vmin, 3.75rem);
+          line-height: clamp(2.5rem, 7vmin, 4rem);
         }
 
         .menuSMContainer {
@@ -1545,6 +1551,103 @@ footer { width: 100%; position: relative; }
 }
 /* Hamburger Menu Ends */
 
+.overlaySec {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--baseBgColor);
+  background-color: rgba(#000000, .8);
+  backdrop-filter: blur(3px);
+  // background-image: url('../images/abstract-patten.png');
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  z-index: 21;
+
+  .overlaySub {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include flexCenter(center, center);
+    .closePopup {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 2vw;
+      right: 2vw;
+      font-size: 4rem;
+      font-weight: 100;
+      line-height: 100%;
+      transition: $transition;
+      cursor: pointer;
+      @include flexCenter(center, center);
+      &:hover {background-color: var(--bg-light); color: var(--text-dark);}
+    }
+    .request__form__container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      align-items: center;
+      color: var(--text-light);
+      transition: $transition;
+      opacity: 0;
+      margin-top: 30vh;
+      visibility: hidden;
+      .left__block {
+        padding-right: 5vw;
+        min-width: 350px;
+        h3 {
+          font-size: clamp(1.5rem, 5vw, 3.5rem);
+          font-family: $recoletaMedium;
+          font-weight: 300;
+          margin-bottom: 1.5rem;
+          color: var(--primary);
+        }
+        p {
+          font-size: 1rem;
+          line-height: 26px;
+        }
+      }
+      .right__block {
+        position: relative;
+        background-color: var(--primary);
+        background-image: url('../images/abstract-patten.png');
+        background-blend-mode: color-burn;
+        background-attachment: fixed;
+        padding: 3rem;
+        max-width: 500px;
+        input, textarea, select {
+          width: 100%;
+          height: 55px;
+          border: 1px solid $border;
+          margin-bottom: .75rem;
+          padding: 0 1rem;
+          font-family: $roboto;
+          outline: none;
+          border: 0;
+        }
+        textarea {
+          height: 120px;
+          padding: 1rem;
+        }
+        h3 {
+          margin-bottom: 1.5rem;
+          color: var(--white);
+        }
+        .ctaButtonContainer {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  &.active .overlaySub .request__form__container {
+    margin-top: 0; 
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
 /* ----------------------------- Light Mode [Starts] -------------------------------- */
 body.lightMode {

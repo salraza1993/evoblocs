@@ -150,4 +150,27 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
   });
 
+  const closePopupButton = document.querySelector('.closePopup');
+  const ctaButton = document.querySelectorAll('.ctaButton');
+  const overlayContainer = document.querySelector('.overlaySec');
+  ctaButton.forEach(button => {
+    button.addEventListener('click', function () {
+      setTimeout(() => {
+        document.body.style.overflow = 'hidden';
+        overlayContainer.style.display = 'block';
+      }, 200);
+      setTimeout(() => {
+        overlayContainer.classList.add('active');
+      }, 700);
+    });
+  });
+
+  closePopupButton.addEventListener('click', function () {
+    this.closest('.overlaySec').classList.remove('active');
+    setTimeout(() => {
+      document.body.style.overflow = 'initial';
+      this.closest('.overlaySec').style.display = 'none';
+    }, 1000);
+  });
+
 });

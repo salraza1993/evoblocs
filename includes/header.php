@@ -4,7 +4,7 @@
 			<img src="images/logo_color.svg" alt="">
 		</a>
 	</div>
-	<nav class="navigation hidden-xs">
+	<nav class="navigation hidden-xs hidden-sm hidden-md">
 		<ul class="menu">
 			<li>
 				<a href="javascript:;">About</a>
@@ -29,7 +29,7 @@
 		</ul>
 	</nav>
 	<div class="rightMenuContainer hidden-xs">
-		<a href="javascript:;" class="ctaButtonContainer" buttonVal="Get a Qoute">Get a Qoute</a>
+		<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonVal="Get a Qoute">Get a Qoute</a>
 		<div class="moreMenus"> <i class="fas fa-ellipsis-v"></i> </div>		
 	</div>
 </header>

@@ -26,7 +26,7 @@
 									Stunning Web Design Team
 								</p>
 								<div class="buttonContainer">
-									<a href="javascript:;" class="ctaButtonContainer" buttonVal="Build your website">Build your website</a>
+									<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonVal="Build your website">Build your website</a>
 								</div>
 							</div>
 						</div>
@@ -36,7 +36,7 @@
 								<h2>SEO</h2>
 								<p class="roboto-light">Make sure your customers can find you on the web</p>
 								<div class="buttonContainer">
-									<a href="javascript:;" class="ctaButtonContainer" buttonVal="Build your website">Build your website</a>
+									<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonVal="Build your website">Build your website</a>
 								</div>
 							</div>
 						</div>						
@@ -54,10 +54,10 @@
 			<div class="row">
 				<div class="whoWeAreSection">
 					<div class="row">
-						<div class="col-12 col-md-3">
+						<div class="col-12 col-md-12 col-lg-3">
 							<div class="aboutImageBanner" style="background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
 						</div>
-						<div class="col-12 col-md-9">
+						<div class="col-12 col-md-12 col-lg-9">
 							<div class="aboutContentSlider overflow-hidden" id="aboutContentSlider">
 								<div class="swiper-wrapper">
 									<div class="aboutContentBox swiper-slide">
@@ -226,11 +226,226 @@
 							</div>
 						</div>
 					</div>
-					<div id="data-service-tab-2" class="servicetabData tabData">Search Engine Optimization (SEO</div>
-					<div id="data-service-tab-3" class="servicetabData tabData">Social Media Marketing (SMM)</div>
-					<div id="data-service-tab-4" class="servicetabData tabData">Paid Promotion / Advertising</div>
-					<div id="data-service-tab-5" class="servicetabData tabData">Content Writting</div>
-					<div id="data-service-tab-6" class="servicetabData tabData">Mobile App Development</div>
+					<div id="data-service-tab-2" class="servicetabData tabData">
+						<div class="topContent d-flex flex-column">
+							<p class="roboto-light">
+								Share your story and grow your brand. With a social media strategy that defines a target audience and solidifies a brand mission and voice, we reach out with paid and organic posts, allowing users to easily join your community, visit your website or make a purchase. Increasing engagement across the entire consumer acquisition flow, we will work with you to uncover the right platforms and content creation for the right audience.
+							</p>
+							<p class="roboto-medium">We serve you through:</p>
+							<div class="weServeThrough pt-3">
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/one-page-seo.svg') ?>
+									</div>
+									<h5>On-Page SEO</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/keyword-search.svg') ?>
+									</div>
+									<h5>Keyword Research & Strategy</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/link-building.svg') ?>
+									</div>
+									<h5>Link Building</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/seo-audit.svg') ?>
+									</div>
+									<h5>SEO Audit</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/technichal-seo.svg') ?>
+									</div>
+									<h5>Technical SEO</h5>
+								</div>
+								<div class="_block _knowMoreBlock">
+									<p class="roboto-light text-italic">and much more ...</p>
+									<a href="javascript:;" class="ctaButtonContainer secondaryButton" buttonval="Explore All Now">Explore All Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="data-service-tab-3" class="servicetabData tabData">
+						<div class="topContent d-flex flex-column">
+							<p class="roboto-light">
+								Share your story and grow your brand. With a social media strategy that defines a target audience and solidifies a brand mission and voice, we reach out with paid and organic posts, allowing users to easily join your community, visit your website or make a purchase. Increasing engagement across the entire consumer acquisition flow, we will work with you to uncover the right platforms and content creation for the right audience.
+							</p>
+							<p class="roboto-medium">We serve you through:</p>
+							<div class="weServeThrough pt-3">
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/roadmap.svg') ?>
+									</div>
+									<h5>Strategy & Roadmap</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/content-development.svg') ?>
+									</div>
+									<h5>Content Development & Implementation</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/promotion.svg') ?>
+									</div>
+									<h5>Advertising & Promotion</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/ideation.svg') ?>
+									</div>
+									<h5>Community Development & Management</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/supoort.svg') ?>
+									</div>
+									<h5>Hosting & Domain</h5>
+								</div>
+								<div class="_block _knowMoreBlock">
+									<p class="roboto-light text-italic">and much more ...</p>
+									<a href="javascript:;" class="ctaButtonContainer secondaryButton" buttonval="Explore All Now">Explore All Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="data-service-tab-4" class="servicetabData tabData">
+						<div class="topContent d-flex flex-column">
+							<p class="roboto-light">
+								Drive serious engagement for your business with well-placed advertising campaigns. Helping you run effective ads - our experts target the right keywords for your audiences at the right points in their purchasing journey. Driving traffic to your storefront from multiple carefully selected sources, we can reach your potential customers with buying intent and continually drive more quality leads through campaign optimization.
+							</p>
+							<p class="roboto-medium">We serve you through:</p>
+							<div class="weServeThrough pt-3">
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/webDesign_white1.svg') ?>
+									</div>
+									<h5>Search Ads</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/googleFriendly_white1.svg') ?>
+									</div>
+									<h5>Display Ads</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/socialMedia_white1.svg') ?>
+									</div>
+									<h5>Social Media Ads</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/ssl_white1.svg') ?>
+									</div>
+									<h5>Remarketing Ads</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/domainHosting_white1.svg') ?>
+									</div>
+									<h5>Google Shopping Ads</h5>
+								</div>
+								<div class="_block _knowMoreBlock">
+									<p class="roboto-light text-italic">and much more ...</p>
+									<a href="javascript:;" class="ctaButtonContainer secondaryButton" buttonval="Explore All Now">Explore All Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="data-service-tab-5" class="servicetabData tabData">
+						<div class="topContent d-flex flex-column">
+							<p class="roboto-light">
+								Rising above the noise, our content strategists and writers inspire new and loyal consumers with high-quality, highly discoverable content. Thinking beyond discoverability, we make your brand relatable and grow its reach and personality with meaningful content that resonates with your target audience, every time. We help clients develop content strategies, steer their publications with an editorial calendar and provide the creative and technical resources to keep a consistent flow of quality content that will engage the target audience.
+							</p>
+							<p class="roboto-medium">We serve you through:</p>
+							<div class="weServeThrough pt-3">
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/analysis.svg') ?>
+									</div>
+									<h5>Analysis</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/seo-search.svg') ?>
+									</div>
+									<h5>SEO Research</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/ideation.svg') ?>
+									</div>
+									<h5>Ideation</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/writting.svg') ?>
+									</div>
+									<h5>Writing</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/editing.svg') ?>
+									</div>
+									<h5>Editing</h5>
+								</div>
+								<div class="_block _knowMoreBlock">
+									<p class="roboto-light text-italic">and much more ...</p>
+									<a href="javascript:;" class="ctaButtonContainer secondaryButton" buttonval="Explore All Now">Explore All Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="data-service-tab-6" class="servicetabData tabData">
+						<div class="topContent d-flex flex-column">
+							<p class="roboto-light">
+								Let your business shine across all digital assets. We design responsive websites and applications that are guided by research, focused on the end-user and engineered to meet business goals. Our team of experienced developers build scalable front-end and back-end solutions that are innovative and functional. We’ll help you tell a story with a stunning digital asset and ensure that the traffic generates more revenue while also improving efficiency for your business.
+							</p>
+							<p class="roboto-medium">We serve you through:</p>
+							<div class="weServeThrough pt-3">
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/webDesign_white1.svg') ?>
+									</div>
+									<h5>Custom Strategy</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/googleFriendly_white1.svg') ?>
+									</div>
+									<h5>UI and UX Design</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/socialMedia_white1.svg') ?>
+									</div>
+									<h5>Mock Up Creation</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/ssl_white1.svg') ?>
+									</div>
+									<h5>Backend & Frontend Development</h5>
+								</div>
+								<div class="_block">
+									<div class="icon">
+										<?php include('images/icons/domainHosting_white1.svg') ?>
+									</div>
+									<h5>Q/A Testing</h5>
+								</div>
+								<div class="_block _knowMoreBlock">
+									<p class="roboto-light text-italic">and much more ...</p>
+									<a href="javascript:;" class="ctaButtonContainer secondaryButton" buttonval="Explore All Now">Explore All Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -291,7 +506,7 @@
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
 						</p>
-						<a href="javascript:;" class="ctaButtonContainer" buttonval="Discover More">Discover More</a>
+						<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonval="Discover More">Discover More</a>
 					</div>
 				</div>
 			</div>
@@ -315,7 +530,7 @@
 				</div>
 			</div>
 			<div class="row align-items-center">
-				<div class="col-12 col-md-6 px-0">
+				<div class="col-12 col-md-12 col-lg-6 px-0">
 					<div class="homeTestimonialsContainer">
 						<div class="homeTestimonialsWrapper">
 							<div class="homeTestimonials">
@@ -342,7 +557,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 p-0">
+				<div class="col-12 col-md-12 col-lg-6 p-0">
 					<div class="ctaSection">
 						<h3>
 							<span class="recoleta-light">Let’s create</span>
@@ -394,7 +609,7 @@
 	</section>
 <!-- Client's Section Begin -->
 
-	<!-- <div class="moreMenuAnimativeBox"></div>
+<!-- <div class="moreMenuAnimativeBox"></div>
 	<section class="moreMenuOverlay"></section> -->
 
 

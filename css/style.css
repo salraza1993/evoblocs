@@ -231,8 +231,8 @@ h2 .textLight, h2 .text-light, h2 .lightText, h2 .light-text, .h2 .textLight, .h
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1rem, 1.7vw, 1.25rem);
-  line-height: clamp(1.5rem, 2.5vw, 2.3rem);
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: clamp(1.5rem, 2vw, 2.3rem);
 }
 
 a {
@@ -264,9 +264,58 @@ section {
   position: relative;
 }
 
-@media (min-width: 1279px) {
-  .container {
-    width: 1280px;
+/* Line graph begins */
+.lineContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+}
+
+.lineContainer .col {
+  width: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lineContainer .col:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Line graph Ends */
+@media (min-width: 768px) {
+  .lineContainer {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .lineContainer {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lineContainer {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .lineContainer {
+    max-width: 1320px;
   }
 }
 
@@ -720,38 +769,6 @@ header .rightMenuContainer .moreMenus:hover::after {
   transition: 1000ms ease-in-out;
 }
 
-/* Line graph begins */
-.lineContainer {
-  position: relative;
-  width: 100%;
-  max-width: 1280px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: -1;
-}
-
-.lineContainer .col {
-  width: 100%;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.lineContainer .col:first-child {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Line graph Ends */
 /* Home About Section Begins */
 .homeAboutSection {
   position: relative;
@@ -762,7 +779,7 @@ header .rightMenuContainer .moreMenus:hover::after {
   position: relative;
   width: 100%;
   background-image: linear-gradient(-45deg, #6934d3 0%, #77def3 100%);
-  height: 650px;
+  height: 68vh;
   margin-top: -75px;
 }
 
@@ -783,13 +800,14 @@ header .rightMenuContainer .moreMenus:hover::after {
 
 .homeAboutSection .whoWeAreSection .aboutImageBanner {
   width: 100%;
-  height: 650px;
+  height: 68vh;
   overflow: hidden;
   position: relative;
   top: 75px;
   left: 10px;
   -webkit-box-shadow: 0 20px 50px rgba(var(--baseBgColor), 0.2);
           box-shadow: 0 20px 50px rgba(var(--baseBgColor), 0.2);
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: auto 100%;
 }
@@ -797,7 +815,7 @@ header .rightMenuContainer .moreMenus:hover::after {
 .homeAboutSection .whoWeAreSection .aboutContentBox {
   position: relative;
   width: 100%;
-  height: 650px;
+  height: 68vh;
   padding: 75px 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -832,7 +850,7 @@ header .rightMenuContainer .moreMenus:hover::after {
 }
 
 .headingText .smallText {
-  letter-spacing: 1rem;
+  letter-spacing: 1vw;
 }
 
 /* Common Section Heading Ends */
@@ -953,19 +971,14 @@ header .rightMenuContainer .moreMenus:hover::after {
   height: 100%;
 }
 
-.servicesTabContainer .tabDataContainer .servicetabData .topContent > p:first-child {
-  line-height: 32px;
-}
-
 .weServeThrough {
   width: 100%;
   height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1.25rem;
 }
 
@@ -995,7 +1008,12 @@ header .rightMenuContainer .moreMenus:hover::after {
   text-align: center;
   padding: 1rem;
   text-align: center;
-  min-height: 250px;
+  min-height: 235px;
+  width: calc(100% / 3 - .85rem);
+}
+
+.weServeThrough ._block h5 {
+  font-size: clamp(1.3rem, 2.5vmin, 2.5rem);
 }
 
 .weServeThrough ._block .icon {
@@ -1247,7 +1265,7 @@ header .rightMenuContainer .moreMenus:hover::after {
 .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials {
   position: relative;
   width: 100%;
-  height: 700px;
+  min-height: 75vh;
   border: 1px solid var(--primary);
   background-color: var(--baseBgColor);
   z-index: 1;
@@ -1397,9 +1415,6 @@ footer {
 }
 
 .qoutBxCnt .qtCntntCnt .qtCntnt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
   position: relative;
 }
 
@@ -1682,7 +1697,7 @@ footer {
 .callNCareerContainer .footerCareerElemContainer {
   position: relative;
   border: 1px solid var(--secondary);
-  background-color: var(--bg-light);
+  background-color: var(--baseBgColor);
   border-left: 0;
   height: 100%;
   padding: 2.5rem 2rem;
@@ -1743,7 +1758,6 @@ footer {
 .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper {
   position: relative;
   width: 94%;
-  height: 600px;
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--white);
@@ -1954,8 +1968,8 @@ footer {
 .menuSection .subMenuSection .infoContentContainer .contentContainer {
   position: relative;
   width: 100%;
-  max-width: 20vw;
-  min-width: 20vw;
+  max-width: 45vmin;
+  min-width: 45vmin;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2002,8 +2016,8 @@ footer {
 }
 
 .menuSection .subMenuSection .infoContentContainer .contentContainer h3 {
-  font-size: clamp(2rem, 4vw, 3.75rem);
-  line-height: clamp(2.5rem, 3.75vw, 4rem);
+  font-size: clamp(2rem, 5.5vmin, 3.75rem);
+  line-height: clamp(2.5rem, 7vmin, 4rem);
 }
 
 .menuSection .subMenuSection .infoContentContainer .contentContainer .menuSMContainer {
@@ -2300,6 +2314,145 @@ footer {
 }
 
 /* Hamburger Menu Ends */
+.overlaySec {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--baseBgColor);
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  z-index: 21;
+}
+
+.overlaySec .overlaySub {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.overlaySec .overlaySub .closePopup {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.overlaySec .overlaySub .closePopup:hover {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.overlaySec .overlaySub .request__form__container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--text-light);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  margin-top: 30vh;
+  visibility: hidden;
+}
+
+.overlaySec .overlaySub .request__form__container .left__block {
+  padding-right: 5vw;
+  min-width: 350px;
+}
+
+.overlaySec .overlaySub .request__form__container .left__block h3 {
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  font-family: "Recoleta Medium";
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.overlaySec .overlaySub .request__form__container .left__block p {
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.overlaySec .overlaySub .request__form__container .right__block {
+  position: relative;
+  background-color: var(--primary);
+  background-image: url("../images/abstract-patten.png");
+  background-blend-mode: color-burn;
+  background-attachment: fixed;
+  padding: 3rem;
+  max-width: 500px;
+}
+
+.overlaySec .overlaySub .request__form__container .right__block input, .overlaySec .overlaySub .request__form__container .right__block textarea, .overlaySec .overlaySub .request__form__container .right__block select {
+  width: 100%;
+  height: 55px;
+  border: 1px solid 1px solid rgba(114, 114, 114, 0.25);
+  margin-bottom: .75rem;
+  padding: 0 1rem;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: 0;
+}
+
+.overlaySec .overlaySub .request__form__container .right__block textarea {
+  height: 120px;
+  padding: 1rem;
+}
+
+.overlaySec .overlaySub .request__form__container .right__block h3 {
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.overlaySec .overlaySub .request__form__container .right__block .ctaButtonContainer {
+  margin: 0 auto;
+}
+
+.overlaySec.active .overlaySub .request__form__container {
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
 /* ----------------------------- Light Mode [Starts] -------------------------------- */
 body.lightMode {
   --baseBgColor: rgb(245, 245, 245);

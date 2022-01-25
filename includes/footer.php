@@ -4,7 +4,7 @@
       <?php include('includes/videoQuote.php') ?>
       <div class="callNCareerContainer">
         <div class="row m-0">
-          <div class="col-md-12 col-lg-6 p-0">
+          <div class="col-md-12 col-xl-6 p-0">
             <div class="getACallContainer">
               <h3>
                 <span class="recoleta-light">Get a</span> 
@@ -32,7 +32,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-lg-6 p-0">
+          <div class="col-md-12 col-xl-6 p-0">
             <div class="footerCareerElemContainer">
               <div class="icon"><?php include('images/hand-shake.svg') ?></div>
               <div class="content">
@@ -53,7 +53,7 @@
     <div class="footerLinksContainer pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-3 p-0 hidden-xs">
+          <div class="col-12 col-md-6 col-lg-3 p-0 hidden-xs">
             <div class="footer-links-block">
               <h5>Services</h5>
               <ul class="links">
@@ -67,7 +67,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-3 p-0 hidden-xs">
+          <div class="col-12 col-md-6 col-lg-3 p-0 hidden-xs">
             <div class="footer-links-block">
               <h5>Quick Links</h5>
               <ul class="links">
@@ -81,7 +81,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-12 col-md-6 p-0">
+          <div class="col-12 col-md-12 col-lg-6 p-0">
             <div class="footer-links-block footerAdressBlock">
               <h5>Contact</h5>
               <div class="row mx-0">
@@ -122,7 +122,6 @@
         </div>
       </div>
     </div>
-
   </footer>
   <div class="mobileFtrBtnCnt">
     <a href="javascript:;" class="ctaButtonContainer" buttonVal="Get a Qoute">Get a Qoute</a>
@@ -134,6 +133,7 @@
     </div>
   </div>
   <?php include("includes/hamburger-menu.php") ?>
+  <?php include("includes/request-form.php") ?>
   <div class="hamburgerMenuButtonContainer">
     <button class="hamburgerMenuButton"><i class="fas fa-ellipsis-v"></i></button>
   </div>
