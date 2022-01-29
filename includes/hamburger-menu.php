@@ -25,12 +25,12 @@
         <i class="fas fa-sun"></i>
       </div>
       <ul class="menus">
-        <li><a href="javascript:;" name="Home">Home</a></li>
-        <li><a href="javascript:;" name="About">About</a></li>
-        <li><a href="javascript:;" name="Services">Services</a></li>
-        <li><a href="javascript:;" name="Portfolio">Portfolio</a></li>
-        <li><a href="javascript:;" name="Contact">Contact</a></li>
-        <li><a href="javascript:;" name="Career">Career</a></li>
+        <li><a href="index.php" name="Home">Home</a></li>
+        <li><a href="about.php" name="About">About</a></li>
+        <li><a href="services.php" name="Services">Services</a></li>
+        <li><a href="portfolio.php" name="Portfolio">Portfolio</a></li>
+        <li><a href="contact.php" name="Contact">Contact</a></li>
+        <li><a href="career.php" name="Career">Career</a></li>
         <li><a href="javascript:;" name="Blog">Blog</a></li>
       </ul>
     </aside>

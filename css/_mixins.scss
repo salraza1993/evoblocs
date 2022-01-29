@@ -28,5 +28,11 @@
     z-index: 2;
     border-radius: 10px;
     background-color: $bgColor;
-  transition: $transition;
+  	transition: $transition;
+}
+@mixin abstractBg($bgBlendMode: soft-light) {
+	background-color: var(--baseBgColor);
+  background-image: url('../images/abstract-patten.png');
+  background-blend-mode: $bgBlendMode;
+  background-attachment: fixed;
 }

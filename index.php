@@ -569,7 +569,7 @@
 							<li><span class="star">*</span> We revolutionize brands and generate demand. </li>
 							<li><span class="star">*</span> Choosing us will be your best decision.</li>
 						</ul>
-						<a href="javascript:;" class="ctaButtonContainer whiteButton" buttonval="Let's get started">Let's get started</a>
+						<button type="button" class="ctaButtonContainer ctaButton whiteButton" buttonval="Let's get started">Let's get started</button>
 					</div>
 				</div>
 			</div>
@@ -616,5 +616,24 @@
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <!-- footer begin -->
+<script>
+	// tabs
+  const tabMainParent = document.querySelector('.tabMainContainer');
+  const tabButtons = tabMainParent.querySelectorAll('.tab');
+  const tabData = tabMainParent.querySelectorAll('.tabData');
+  if (tabButtons.length > 0) {
+    tabButtons.forEach(tab => {
+      tab.addEventListener('click', function () {
+        tabButtons.forEach(item => item.classList.remove('active'));
+        tabData.forEach(item => item.classList.remove('active'));
+
+        let thisId = this.getAttribute('id');
+        this.classList.add('active');
+        let currentTabData = document.querySelector(`#data-${thisId}`);
+        currentTabData.classList.add('active');
+      });
+    });
+  }
+</script>
 <?php include('includes/footer.php') ?>
 <!-- footer End -->

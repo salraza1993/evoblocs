@@ -16,6 +16,7 @@
   --text-dark: rgb(35, 35, 35);
   --bg-light: rgb(255,255,255);
   --bg-dark: rgb(35, 35, 35);
+  --semi-dark: #333333;
   --white: rgb(255,255,255);
   --black: rgb(35, 35, 35);
   --particalBgColor: rgb(35, 35, 35);
@@ -1056,7 +1057,8 @@ header .rightMenuContainer .moreMenus:hover::after {
 }
 
 .latestTechContainer p {
-  line-height: 30px;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
 }
 
 .latestTechContainer .discussProject {
@@ -1431,7 +1433,7 @@ footer {
 }
 
 .qoutBxCnt .qtCntntCnt .qtCntnt p a {
-  color: var(--white);
+  color: var(--text-light);
 }
 
 /* VideoBox Before Footer */
@@ -2333,6 +2335,7 @@ footer {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2369,6 +2372,7 @@ footer {
           align-items: center;
   -ms-flex-line-pack: initial;
       align-content: initial;
+  z-index: 5;
 }
 
 .overlaySec .overlaySub .closePopup:hover {
@@ -2386,6 +2390,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--text-light);
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -2414,12 +2421,13 @@ footer {
 
 .overlaySec .overlaySub .request__form__container .right__block {
   position: relative;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   background-image: url("../images/abstract-patten.png");
   background-blend-mode: color-burn;
   background-attachment: fixed;
   padding: 3rem;
   max-width: 500px;
+  color: var(--text-light);
 }
 
 .overlaySec .overlaySub .request__form__container .right__block input, .overlaySec .overlaySub .request__form__container .right__block textarea, .overlaySec .overlaySub .request__form__container .right__block select {
@@ -2453,6 +2461,903 @@ footer {
   visibility: visible;
 }
 
+.heroBannerSection {
+  width: 100%;
+  padding: 148px 0 5vh;
+  background-color: var(--baseBgColor);
+  background-image: url("../images/abstract-patten.png");
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+}
+
+.heroBannerSection .lineContainer {
+  z-index: 0;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.aboutTopSection {
+  position: relative;
+  width: 100%;
+  padding: 148px 0 5vh;
+}
+
+.aboutTopSection .topHeading {
+  position: relative;
+  width: 100%;
+}
+
+.aboutTopSection .topHeading h2 {
+  line-height: 100%;
+  background-color: var(--primary);
+  padding: 2rem;
+  color: var(--text-light);
+  background-image: url("../images/about-heading-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.aboutTopSection .topHeading h2::after {
+  content: 'Who we are';
+  position: absolute;
+  right: calc(100% + .7rem);
+  top: 0;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--textColor);
+  border-bottom: 1px solid rgba(114, 114, 114, 0.25);
+  padding-bottom: .75rem;
+  letter-spacing: .8vw;
+}
+
+.aboutTopSection .topHeading h3 {
+  font-size: clamp(1.2rem, 10vw, 3.75rem);
+}
+
+.aboutTopSection .aboutContent h2 {
+  font-size: clamp(1.2rem, 5vw, 3.8rem);
+}
+
+.aboutTopSection .ctaSection {
+  padding: 2.5rem;
+}
+
+.aboutTopSection .ctaSection h3 {
+  font-size: clamp(1.2rem, 5vw, 2.8rem);
+  line-height: clamp(1.8rem, 7vw, 3.6rem);
+}
+
+.missionSection {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.missionSection::after {
+  content: url("../images/mission-bg-illustration.svg");
+  position: absolute;
+  max-width: 50vw;
+  right: 0;
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.missionSection .misson__container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.missionSection .misson__container h3 {
+  font-size: clamp(1.1rem, 5vw, 2.5rem);
+  line-height: clamp(1.6rem, 7vw, 3.3rem);
+}
+
+.missionSection .missionIllustration {
+  position: relative;
+}
+
+.missionSection .missionIllustration img, .missionSection .missionIllustration svg {
+  max-width: 100%;
+}
+
+.joinTeamSection {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.joinTeamSection .joinTeamContainer {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.joinTeamSection .joinTeamContainer::after {
+  color: var(--semi-dark);
+  font-family: "Recoleta SemiBold";
+  position: absolute;
+  font-size: clamp(1.5rem, 20vw, 10rem);
+  line-height: clamp(1.5rem, 20vw, 10rem);
+  z-index: -1;
+  margin-top: -4.5rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.joinTeamSection .joinTeamContainer.__member::after {
+  content: 'meet';
+}
+
+.joinTeamSection .joinTeamContainer.__career::after {
+  content: 'join';
+}
+
+.joinTeamSection .joinTeamContainer h3 {
+  font-size: clamp(1rem, 5vw, 3.5rem);
+  line-height: clamp(1rem, 5vw, 3.5rem);
+  color: var(--primary);
+  font-family: "Recoleta Medium";
+  border-bottom: 1px solid var(--primary);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.joinTeamSection .joinTeamContainer span {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1rem;
+  color: var(--textColor);
+  font-family: "Roboto", sans-serif;
+}
+
+.joinTeamSection .joinTeamContainer:hover h3, .joinTeamSection .joinTeamContainer:hover span {
+  opacity: 0;
+}
+
+.joinTeamSection .joinTeamContainer:hover::after {
+  color: var(--primary);
+}
+
+.protfolioWorkContainer {
+  position: relative;
+  width: 100%;
+}
+
+.protfolioWorkContainer .col-12 {
+  padding: 0 !important;
+}
+
+.protfolioWorkContainer .porfolioImageBlock {
+  position: relative;
+  z-index: 1;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header {
+  background-color: #EEEEEE;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots {
+  width: 11%;
+  min-width: 80px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: .6rem;
+  gap: .5rem;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: red;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots span:nth-child(1) {
+  background-color: #926CDC;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots span:nth-child(2) {
+  background-color: #FF9900;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots span:nth-child(3) {
+  background-color: #85C43D;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._url {
+  position: relative;
+  width: 100%;
+  max-width: calc(100% - 11%);
+  background-color: var(--white);
+  -webkit-box-shadow: 0 0 15px rgba(var(--black), 0.06);
+          box-shadow: 0 0 15px rgba(var(--black), 0.06);
+  border-radius: 6px;
+  padding: .15rem 1rem;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._url a {
+  height: 40px;
+  color: var(--black);
+  position: relative;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._url:hover {
+  background-color: var(--secondary);
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._url:hover a {
+  color: var(--white);
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._thumbnailContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: 400px;
+}
+
+.protfolioWorkContainer .porfolioImageBlock .subWrapper ._thumbnailContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.protfolioWorkContainer .porfolioContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+  padding-top: 1.5rem;
+}
+
+.protfolioWorkContainer .porfolioContent > div {
+  max-width: 65%;
+}
+
+.protfolioWorkContainer .porfolioContent h3 {
+  font-size: 1.75rem;
+  line-height: 50px;
+}
+
+.protfolioWorkContainer .porfolioContent p {
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.arrodion__container {
+  position: relative;
+  width: 100%;
+}
+
+.arrodion__container::after {
+  content: '';
+  position: absolute;
+  width: calc(100% + 50vw);
+  right: 0;
+  height: 85%;
+  background-color: var(--baseBgColor);
+  background-image: -webkit-gradient(linear, right top, left top, from(var(--baseBgColor)), to(var(--secondary)));
+  background-image: linear-gradient(to left, var(--baseBgColor) 0%, var(--secondary) 100%);
+  bottom: -15%;
+}
+
+.arrodion__container .arrodionImage {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.arrodion__container .arrodionImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.arrodion__container .accordion {
+  position: relative;
+  z-index: 1;
+}
+
+.arrodion__container .accordion .accordion__block {
+  position: relative;
+  width: 100%;
+  border: 1px solid #6a6a6a;
+  border-bottom: 0;
+  background-color: var(--baseBgColor);
+}
+
+.arrodion__container .accordion .accordion__block:last-child {
+  border: 1px solid #6a6a6a;
+}
+
+.arrodion__container .accordion .accordion__block .accordion__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+  padding: 1.5rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.arrodion__container .accordion .accordion__block .accordion__header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.arrodion__container .accordion .accordion__block .accordion__header:hover {
+  background-color: var(--secondary);
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.arrodion__container .accordion .accordion__block .accordion__body {
+  position: relative;
+  width: 100%;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+.arrodion__container .accordion .accordion__block .accordion__body p {
+  margin-top: -100%;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.arrodion__container .accordion .accordion__block.active {
+  border-color: var(--secondary);
+  -webkit-box-shadow: inset 0 -5px 0 var(--secondary);
+          box-shadow: inset 0 -5px 0 var(--secondary);
+}
+
+.arrodion__container .accordion .accordion__block.active .accordion__header {
+  color: var(--secondary);
+}
+
+.arrodion__container .accordion .accordion__block.active .accordion__header h3 {
+  font-family: "Recoleta SemiBold";
+}
+
+.arrodion__container .accordion .accordion__block.active .accordion__header i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.arrodion__container .accordion .accordion__block.active .accordion__header:hover {
+  color: var(--text-light);
+}
+
+.arrodion__container .accordion .accordion__block.active .accordion__body p {
+  margin-top: 0;
+  padding: .5rem 0 1rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.card__main__container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  overflow-x: hidden;
+}
+
+.card__main__container .card__container {
+  position: relative;
+  border: 1px solid rgba(114, 114, 114, 0.25);
+  padding: 1rem;
+  background-color: var(--semi-dark);
+  max-width: 380px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 2.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0 -5px 0 var(--primary);
+          box-shadow: inset 0 -5px 0 var(--primary);
+}
+
+.card__main__container .card__container:first-child {
+  margin-left: calc(calc(100% - 1320px) / 2);
+}
+
+.card__main__container .card__container:last-child {
+  margin-right: calc(calc(100% - 1320px) / 2);
+}
+
+.card__main__container .card__container .card__icon {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 2rem;
+}
+
+.card__main__container .card__container .card__icon img, .card__main__container .card__container .card__icon svg {
+  max-width: 100%;
+}
+
+.card__main__container .card__container .card__body {
+  position: relative;
+  width: 100%;
+}
+
+.card__main__container .card__container .card__body h3 {
+  font-family: "Recoleta Medium";
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.card__main__container .card__container .card__body p {
+  font-weight: 300;
+  line-height: 1.9rem;
+}
+
+@media (min-width: 768px) {
+  .card__main__container .card__container:first-child {
+    margin-left: calc(calc(100% - 720px) / 2);
+  }
+  .card__main__container .card__container:last-child {
+    margin-right: calc(calc(100% - 720px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .card__main__container .card__container:first-child {
+    margin-left: calc(calc(100% - 960px) / 2);
+  }
+  .card__main__container .card__container:last-child {
+    margin-right: calc(calc(100% - 960px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__main__container .card__container:first-child {
+    margin-left: calc(calc(100% - 1140px) / 2);
+  }
+  .card__main__container .card__container:last-child {
+    margin-right: calc(calc(100% - 1140px) / 2);
+  }
+}
+
+@media (min-width: 1400px) {
+  .card__main__container .card__container:first-child {
+    margin-left: calc(calc(100% - 1320px) / 2);
+  }
+  .card__main__container .card__container:last-child {
+    margin-right: calc(calc(100% - 1320px) / 2);
+  }
+}
+
+.teamPageSection {
+  background-color: var(--baseBgColor);
+  background-image: url("../images/abstract-patten.png");
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+}
+
+.teamPageSection .lineContainer {
+  z-index: 0;
+}
+
+.teamPageSection .teamMemberBlock {
+  position: relative;
+  z-index: 1;
+  background-color: var(--baseBgColor);
+  border: 1px solid rgba(114, 114, 114, 0.25);
+  padding: 2.5rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.teamPageSection .teamMemberBlock .profileImage {
+  min-width: 290px;
+  height: 290px;
+  overflow: hidden;
+}
+
+.teamPageSection .teamMemberBlock .profileDetail {
+  padding-left: 3vw;
+  padding-right: 1.5vw;
+  position: relative;
+}
+
+.teamPageSection .teamMemberBlock .profileDetail h3 {
+  font-size: clamp(1.2rem, 6vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.teamPageSection .teamMemberBlock .profileDetail h6 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.teamPageSection .teamMemberBlock .profileDetail p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+.teamPageSection .teamMemberBlock:hover {
+  border-color: var(--secondary);
+}
+
+.specialCtaSection {
+  position: relative;
+}
+
+.specialCtaSection .specialCtaContainer {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary);
+  background-image: url("../images/abstract-patten.png"), linear-gradient(-45deg, #00FFFF 0%, #0066FF 100%);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  color: var(--text-light);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem 0;
+}
+
+.specialCtaSection .specialCtaContainer .__content {
+  padding: 0 10vw 0 2.5rem;
+}
+
+.specialCtaSection .specialCtaContainer .__content h3 {
+  font-size: clamp(1rem, 5vw, 2.8rem);
+}
+
+.contactPageSection {
+  padding-bottom: 4em;
+  position: relative;
+  width: 100%;
+  background-color: red;
+  background-color: var(--baseBgColor);
+  background-image: url("../images/abstract-patten.png");
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+}
+
+.contactPageSection .lineContainer {
+  z-index: 0;
+}
+
+.contactPageSection .contactFormContainer {
+  position: relative;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactPageSection .contactFormContainer .formContainer {
+  width: 100%;
+  padding-right: 15%;
+}
+
+.contactPageSection .contactFormContainer .formContainer .form {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-light);
+  padding: 2.5rem 2rem;
+  color: var(--black);
+  z-index: 1;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contactPageSection .contactFormContainer .formContainer .form .inputContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.contactPageSection .contactFormContainer .formContainer .form .inputContainer label {
+  position: absolute;
+  right: .75rem;
+  top: .3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ff0000;
+  font-family: "Recoleta Regular";
+}
+
+.contactPageSection .contactFormContainer .formContainer .form .inputContainer input, .contactPageSection .contactFormContainer .formContainer .form .inputContainer textarea, .contactPageSection .contactFormContainer .formContainer .form .inputContainer select {
+  width: 100%;
+  height: 60px;
+  padding: 0 1rem;
+  border: 1px solid rgba(114, 114, 114, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.contactPageSection .contactFormContainer .formContainer .form .inputContainer input:focus, .contactPageSection .contactFormContainer .formContainer .form .inputContainer textarea:focus, .contactPageSection .contactFormContainer .formContainer .form .inputContainer select:focus {
+  border-color: var(--secondary);
+}
+
+.contactPageSection .contactFormContainer .formContainer .form .inputContainer textarea {
+  padding: 1rem;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.contactPageSection .contactFormContainer .formContainer .form .ctaButtonContainer {
+  margin-bottom: .5rem;
+  color: var(--text-dark);
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo {
+  position: absolute;
+  background-color: var(--semi-dark);
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  padding: 3.5rem;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 25px 50px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 25px 50px rgba(0, 0, 0, 0.06);
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo h3 {
+  font-size: 2rem;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .address {
+  width: 100%;
+  max-width: 45%;
+  position: relative;
+  margin: 0;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .address li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .address li i {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  top: .2rem;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .address li i.fa-map-marker-alt {
+  font-size: 1.25em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .address li a {
+  display: inline-block;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .address li a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia {
+  position: relative;
+  width: 100%;
+  max-width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia span {
+  margin-right: 1rem;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia .socialMedia {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+  margin: 0;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia .socialMedia li {
+  position: relative;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia .socialMedia li a {
+  width: 45px;
+  height: 45px;
+  font-size: 1.6rem;
+  color: var(--primary);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia .socialMedia li a:hover {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+.contactPageSection .googleMapContainer {
+  position: relative;
+  width: 100%;
+}
+
+.contactPageSection .googleMapContainer .googleIframe {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.contactPageSection .googleMapContainer .googleIframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
 /* ----------------------------- Light Mode [Starts] -------------------------------- */
 body.lightMode {
   --baseBgColor: rgb(245, 245, 245);
@@ -2463,6 +3368,14 @@ body.lightMode {
   --textColor: rgb(78, 78, 78);
   --headerBgColor: rgba(241, 241, 241, 1);
   --stickyHeaderBgColor: rgba(241, 241, 241, 1);
+  --semi-dark: rgb(255,255,255);
+}
+
+body.lightMode {
+  background-color: var(--baseBgColor);
+  background-image: url("../images/abstract-patten.png");
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
 }
 
 body.lightMode .lineContainer .col {
@@ -2717,6 +3630,58 @@ body.lightMode .homeTestimonialSection .homeTestimonialsContainer .homeTestimoni
 body.lightMode .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper::before, body.lightMode .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper::after {
   border-color: #ddd;
   background-color: #f6f6f6;
+}
+
+body.lightMode .heroBannerSection,
+body.lightMode .teamPageSection,
+body.lightMode .contactPageSection {
+  background-color: var(--baseBgColor);
+  background-image: url("../images/abstract-patten.png");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+body.lightMode .portfolioPageSection .porfolioImageBlock .subWrapper {
+  background-color: var(--black);
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 25px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 25px 50px rgba(0, 0, 0, 0.05);
+}
+
+body.lightMode .portfolioPageSection .porfolioImageBlock .subWrapper ._header {
+  background-color: var(--black);
+}
+
+body.lightMode .portfolioPageSection .porfolioImageBlock .subWrapper ._header ._url {
+  background-color: #e6e6e6;
+}
+
+body.lightMode .portfolioPageSection .porfolioImageBlock .subWrapper ._header ._url a {
+  color: var(--white);
+}
+
+body.lightMode .portfolioPageSection .porfolioImageBlock .subWrapper ._header ._url:hover {
+  background-color: var(--secondary);
+}
+
+body.lightMode .portfolioPageSection .porfolioImageBlock .subWrapper ._header ._url:hover a {
+  color: var(--black);
+}
+
+body.lightMode .portfolioPageSection .porfolioContent h3:not(.highlighted) {
+  color: var(--secondary) !important;
+}
+
+body.lightMode .portfolioPageSection .porfolioContent h3.highlighted {
+  background-color: var(--primary);
+}
+
+body.lightMode .portfolioPageSection .porfolioContent h3.highlighted::after {
+  background-color: var(--primary);
+}
+
+body.lightMode .contactPageSection .contactFormContainer .formContainer .form {
+  background-color: var(--secondary);
+  background-image: url("../images/abstract-patten.png"), linear-gradient(-45deg, #6934d3 0%, #77def3 100%);
 }
 
 /* ----------------------------- Light Mode [Ends] -------------------------------- */

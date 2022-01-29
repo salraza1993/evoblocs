@@ -36,23 +36,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
     else topHeader.classList.remove('fixed');
   }
 
-  // tabs
-  const tabMainParent = document.querySelector('.tabMainContainer');
-  const tabButtons = tabMainParent.querySelectorAll('.tab');
-  const tabData = tabMainParent.querySelectorAll('.tabData');
-  tabButtons.forEach(tab => {
-    tab.addEventListener('click', function () {
-      tabButtons.forEach(item => item.classList.remove('active'));
-      tabData.forEach(item => item.classList.remove('active'));
-
-      let thisId = this.getAttribute('id');
-      this.classList.add('active');
-      let currentTabData = document.querySelector(`#data-${thisId}`);
-      currentTabData.classList.add('active');
-    });
-  });
-
-
   // Hamburger Menu
   const animationDelay = 1000;
   const hamburgerMenuButton = document.querySelector('.hamburgerMenuButton');
@@ -172,5 +155,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
       this.closest('.overlaySec').style.display = 'none';
     }, 1000);
   });
+
+
+  const scrollContainer = document.querySelector(".horizontal__scroll__container");
+  scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    console.log(scrollContainer.scrollLeft += evt.deltaY);
+    scrollContainer.scrollLeft += evt.deltaY;
+  });
+
 
 });

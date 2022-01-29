@@ -86,6 +86,7 @@
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    max-width: 100%;
     padding: 80px 0 5vw 8vw;
     background-color: var(--primary);
   }
@@ -117,9 +118,9 @@
   .mobileFtrBtnCnt {
     position: fixed;
     z-index: 9;
-    bottom: 1vh;
-    left: 1.5vw;
-    width: 97vw;
+    bottom: 5vw;
+    width: 90vw;
+    left: calc(50% - calc(90vw / 2));
     background-color: var(--bg-light);
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
@@ -537,6 +538,166 @@
     width: 100%;
     height: 100%;
   }
+  .portfolioPageSection {
+    padding: 0 5vw !important;
+  }
+  .portfolioPageSection .col-12 {
+    padding: 0 !important;
+  }
+  .portfolioPageSection .protfolioWorkContainer {
+    padding: 0;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioImageBlock .subWrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioImageBlock .subWrapper ._header {
+    height: auto;
+    padding: .5rem;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots {
+    min-width: 17vw;
+    gap: .3rem;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots span {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._url {
+    padding: 0 1rem;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioImageBlock .subWrapper ._thumbnailContainer {
+    height: 32vh !important;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioContent {
+    padding: 5vw 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioContent h3 {
+    font-size: 3.6vh;
+    line-height: 130%;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioContent p {
+    line-height: 26px;
+  }
+  .portfolioPageSection .protfolioWorkContainer .porfolioContent > div {
+    max-width: 100%;
+  }
+  .lineBreaker {
+    height: 20px !important;
+  }
+  .heroBannerSection {
+    padding: 13.5vh 5vw 5vh;
+  }
+  .teamPageSection {
+    padding: 0 5vw;
+  }
+  .teamPageSection .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100vw;
+    margin-left: -8vw;
+    padding: 0 5vw;
+    gap: 3vw;
+  }
+  .teamPageSection .teamMemberBlock {
+    padding: 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .teamPageSection .teamMemberBlock .profileImage {
+    min-width: initial;
+    height: auto;
+    margin-bottom: 2.5vw;
+  }
+  .teamPageSection .teamMemberBlock .profileDetail {
+    padding: 5vw 0 0;
+  }
+  .teamPageSection .teamMemberBlock .profileDetail h3 {
+    font-size: clamp(1.2rem, 4vh, 2rem);
+  }
+  .teamPageSection .teamMemberBlock .profileDetail h6 {
+    font-size: 1.0rem;
+    margin-bottom: 1rem;
+  }
+  .teamPageSection .teamMemberBlock .profileDetail p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+  .specialCtaSection {
+    padding: 0 5vw 5vw !important;
+  }
+  .specialCtaSection .specialCtaContainer {
+    padding: 5vw 5vw 7vw;
+  }
+  .specialCtaSection .specialCtaContainer .__content {
+    padding: 0;
+    margin-bottom: 5vh;
+  }
+  .specialCtaSection .specialCtaContainer .__content h3 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  .overlaySec .overlaySub .closePopup {
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    font-size: 3rem;
+    right: 1rem;
+    top: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .overlaySec .overlaySub .request__form__container .right__block {
+    padding: 8vw 3vw;
+    width: 94vw;
+    max-width: 400px;
+    z-index: 0;
+  }
+  .contactPageSection {
+    padding: 0 5vw;
+  }
+  .contactPageSection .contactFormContainer .formContainer {
+    padding: 0;
+  }
+  .contactPageSection .contactFormContainer .formContainer .form {
+    padding: 5vw;
+  }
+  .contactPageSection .contactFormContainer .formContainer .companyInfo {
+    position: relative;
+    -webkit-transform: initial;
+            transform: initial;
+    top: initial;
+    left: initial;
+    padding: 7vw;
+  }
+  .contactPageSection .contactFormContainer .formContainer .companyInfo h3 {
+    font-size: 1.5rem;
+  }
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .address, .contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia {
+    max-width: 100%;
+  }
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .address li {
+    font-size: 1rem;
+  }
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia span {
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -602,6 +763,144 @@
     -webkit-column-count: 1;
             column-count: 1;
   }
+  .homePortfolioSection {
+    padding: 0;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2vh !important;
+    margin-bottom: 0 !important;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock, .homePortfolioSection .homProtfolioWorkContainer .porfolioContent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header {
+    height: auto;
+    padding: .5rem;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots {
+    min-width: 17vw;
+    gap: .3rem;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots span {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._url {
+    padding: 0 1rem;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioContent {
+    height: auto;
+    padding: 5vw 0;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioContent h3 {
+    font-size: 4.2vh;
+    line-height: 130%;
+  }
+  .homePortfolioSection .homProtfolioWorkContainer .porfolioContent p {
+    line-height: 26px;
+  }
+  .homeTestimonialSection {
+    padding: 0 !important;
+  }
+  .homeTestimonialSection .homeTestimonialsContainer {
+    padding: 0;
+  }
+  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper {
+    width: calc(100vw - 30vw);
+    max-width: calc(100vw - 30vw);
+    margin: 0 auto 5vw;
+  }
+  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper::after {
+    width: calc(100% + 2.5rem);
+    height: calc(100% - 4rem);
+  }
+  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper::before {
+    width: calc(100% + 1.5rem);
+    height: calc(100% - 1.5rem);
+  }
+  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials {
+    height: auto;
+    padding: 9vw 5vw 5vw;
+    min-height: 0;
+  }
+  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials .profileImage {
+    width: 15vh;
+    height: 15vh;
+    margin: 0 auto 4vh;
+  }
+  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials .comment p {
+    line-height: 26px;
+  }
+  .ctaSection {
+    padding: 5vw;
+  }
+  .homeClientSection .clientsContainer .clientsBoxContainer li {
+    height: 11vh;
+  }
+  .qoutBxCnt .qtCntntCnt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 5vw 3rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .qoutBxCnt .qtCntntCnt .qtCntnt {
+    margin-bottom: 4vh;
+  }
+  .qoutBxCnt .qtCntntCnt .qtCntnt h3 {
+    font-size: 5.5vw;
+  }
+  .callNCareerContainer .getACallContainer {
+    min-height: initial;
+  }
+  .callNCareerContainer .footerCareerElemContainer {
+    min-height: initial;
+    border-left: 1px solid var(--secondary);
+    border-top: 0;
+  }
+  .footerLinksContainer .footer-links-block {
+    margin-bottom: 2.5rem;
+  }
+  .footerLinksContainer .footer-links-block.footerAdressBlock {
+    margin-bottom: 0;
+  }
+  .specialCtaSection .specialCtaContainer {
+    padding: 5vw;
+  }
+  .specialCtaSection .specialCtaContainer .__content {
+    padding: 0;
+    margin-bottom: 4vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .contactPageSection .contactFormContainer .formContainer {
+    padding: 0;
+  }
+  .contactPageSection .contactFormContainer .formContainer .companyInfo {
+    position: relative;
+    -webkit-transform: initial;
+            transform: initial;
+    top: initial;
+    left: initial;
+  }
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .address, .contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
   .homeServicesSection .container-fluid {
     padding: 0;
   }
@@ -696,118 +995,6 @@
   .homeServicesSection .servicesTabContainer .tabDataContainer .weServeThrough ._block h5 {
     font-size: clamp(1.3rem, 2.7vmin, 2rem);
   }
-  .homePortfolioSection {
-    padding: 0;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-top: 2vh !important;
-    margin-bottom: 0 !important;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock, .homePortfolioSection .homProtfolioWorkContainer .porfolioContent {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header {
-    height: auto;
-    padding: .5rem;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots {
-    min-width: 17vw;
-    gap: .3rem;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._dots span {
-    width: 2.5vw;
-    height: 2.5vw;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header ._url {
-    padding: 0 1rem;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioContent {
-    height: auto;
-    padding: 5vw 0;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioContent h3 {
-    font-size: 4.2vh;
-    line-height: 130%;
-  }
-  .homePortfolioSection .homProtfolioWorkContainer .porfolioContent p {
-    line-height: 26px;
-  }
-  .homeTestimonialSection {
-    padding: 0 !important;
-  }
-  .homeTestimonialSection .homeTestimonialsContainer {
-    padding: 0;
-  }
-  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper {
-    width: calc(100vw - 30vw);
-    max-width: calc(100vw - 30vw);
-    margin: 0 auto 5vw;
-  }
-  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper::after {
-    width: calc(100% + 2.5rem);
-    height: calc(100% - 4rem);
-  }
-  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper::before {
-    width: calc(100% + 1.5rem);
-    height: calc(100% - 1.5rem);
-  }
-  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials {
-    height: auto;
-    padding: 9vw 5vw 5vw;
-    min-height: 0;
-  }
-  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials .profileImage {
-    width: 15vh;
-    height: 15vh;
-    margin: 0 auto 4vh;
-  }
-  .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials .comment p {
-    line-height: 26px;
-  }
-  .ctaSection {
-    padding: 5vw;
-  }
-  .homeClientSection .clientsContainer .clientsBoxContainer li {
-    height: 11vh;
-  }
-  .qoutBxCnt .qtCntntCnt {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem 2rem 3rem;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .qoutBxCnt .qtCntntCnt .qtCntnt {
-    margin-bottom: 4vh;
-  }
-  .qoutBxCnt .qtCntntCnt .qtCntnt h3 {
-    font-size: 5.5vw;
-  }
-  .callNCareerContainer .getACallContainer {
-    min-height: initial;
-  }
-  .callNCareerContainer .footerCareerElemContainer {
-    min-height: initial;
-    border-left: 1px solid var(--secondary);
-    border-top: 0;
-  }
-  .footerLinksContainer .footer-links-block {
-    margin-bottom: 2.5rem;
-  }
-  .footerLinksContainer .footer-links-block.footerAdressBlock {
-    margin-bottom: 0;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -821,6 +1008,14 @@
     min-height: initial;
     border-left: 1px solid var(--secondary);
     border-top: 0;
+  }
+  .protfolioWorkContainer .porfolioImageBlock .subWrapper ._thumbnailContainer {
+    height: 350px;
+  }
+  .teamPageSection .teamMemberBlock {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -840,7 +1035,7 @@
   }
   .homeServicesSection .servicesTabContainer .tabDataContainer .weServeThrough ._block {
     padding: 1rem;
-    min-width: 200px;
+    min-width: 250px;
     width: calc(50% - .65rem);
   }
   .homeServicesSection .servicesTabContainer .tabDataContainer .weServeThrough ._block h5 {

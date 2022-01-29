@@ -71,13 +71,13 @@
             <div class="footer-links-block">
               <h5>Quick Links</h5>
               <ul class="links">
-                <li><a href="javscript:;">Home </a></li>
-                <li><a href="javscript:;">About Us</a></li>
-                <li><a href="javscript:;">Portfolio</a></li>
+                <li><a href="index.php">Home </a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
                 <li><a href="javscript:;">Blog</a></li>
-                <li><a href="javscript:;">Career</a></li>
-                <li><a href="javscript:;">Contact Us</a></li>
-                <li><a href="javscript:;">Privacy Policy</a></li>
+                <li><a href="career.php">Career</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="privacy-policy.php">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
@@ -124,10 +124,10 @@
     </div>
   </footer>
   <div class="mobileFtrBtnCnt">
-    <a href="javascript:;" class="ctaButtonContainer" buttonVal="Get a Qoute">Get a Qoute</a>
+    <button class="ctaButtonContainer ctaButton" buttonVal="Get a Qoute">Get a Qoute</button>
     <div class="numbers d-flex">
       <a href="tel:+971552495750" class="phoneNumber"><i class="fas fa-phone-alt"></i></a>
-      <a class="whtsAppBtn" target="_blank" href="https://wa.me/971552495750/?text=Web Design, SEO, SMM, Ecommerce, SSL Certificates services">
+      <a class="whtsAppBtn" target="_blank" href="https://wa.me/971556581172/?text=Web Design, SEO, SMM, Ecommerce, SSL Certificates services">
           <i class="fab fa-whatsapp"></i>
       </a>
     </div>

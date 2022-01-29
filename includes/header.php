@@ -7,14 +7,14 @@
 	<nav class="navigation hidden-xs hidden-sm hidden-md">
 		<ul class="menu">
 			<li>
-				<a href="javascript:;">About</a>
+				<a href="about.php">About</a>
 				<ul class="subMenu">
-					<li><a href="javascript:;">Our Team</a></li>
-					<li><a href="javascript:;">Career</a></li>
+					<li><a href="team.php">Our Team</a></li>
+					<li><a href="career.php">Career</a></li>
 				</ul>
 			</li>
 			<li>
-				<a href="javascript:;">Services</a>
+				<a href="services.php">Services</a>
 				<ul class="subMenu">
 					<li><a href="javascript:;">Web Development</a></li>
 					<li><a href="javascript:;">App Development</a></li>
@@ -24,12 +24,12 @@
 					<li><a href="javascript:;">Content Writting</a></li>
 				</ul>
 			</li>
-			<li><a href="javascript:;">Portfolio</a></li>
+			<li><a href="portfolio.php">Portfolio</a></li>
 			<li><a href="javascript:;">Blog</a></li>
 		</ul>
 	</nav>
 	<div class="rightMenuContainer hidden-xs">
-		<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonVal="Get a Qoute">Get a Qoute</a>
-		<div class="moreMenus"> <i class="fas fa-ellipsis-v"></i> </div>		
+		<button class="ctaButtonContainer ctaButton" buttonVal="Get a Qoute">Get a Qoute</button>
+		<div class="moreMenus"><i class="fas fa-ellipsis-v"></i></div>
 	</div>
 </header>

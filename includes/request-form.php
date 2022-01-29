@@ -2,7 +2,7 @@
   <div class="overlaySub">
     <div class="closePopup">&times;</div>
     <div class="request__form__container">
-      <div class="left__block">
+      <div class="left__block hidden-xs hidden-sm">
         <h3>Let's work together!</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptates!</p>
       </div>
