@@ -31,8 +31,94 @@
   </section>
 <!-- Hero Banner Ends -->
 
+<section class="teamPageSection pt-2 pb-5">
+  <?php include('includes/lineContainer.php') ?>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 p-0">
+        <div class="teamMemberBlock">
+          <div class="profileImage">
+              <img src="images/catherine.png" alt="">
+          </div>
+          <div class="profileDetail">
+            <h3 class="secondaryColor recoleta-semiBold">Catherine Luparello</h3>
+            <h6>Founder and CEO</h6>
+            <p>
+              Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="teamMemberBlock">
+          <div class="profileImage">
+              <img src="images/amit.png" alt="">
+          </div>
+          <div class="profileDetail">
+            <h3 class="secondaryColor recoleta-semiBold">Amit Chauhan</h3>
+            <h6>Director of Digital Marketing</h6>
+            <p>
+              Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="teamMemberBlock">
+          <div class="profileImage">
+              <img src="images/khyati.png" alt="">
+          </div>
+          <div class="profileDetail">
+            <h3 class="secondaryColor recoleta-semiBold">Khyati Panday</h3>
+            <h6>Editorial Director</h6>
+            <p>
+              Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="teamMemberBlock">
+          <div class="profileImage">
+              <img src="images/harsh.png" alt="">
+          </div>
+          <div class="profileDetail">
+            <h3 class="secondaryColor recoleta-semiBold">Harshvardhana Sharan</h3>
+            <h6>Director of Brand Strategy</h6>
+            <p>
+              Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   Lorem, ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-
+<section class="specialCtaSection py-5">
+  <?php include('includes/lineContainer.php') ?>
+  <div class="container p-0">
+    <div class="specialCtaContainer d-flex flex-wrap">
+      <div class="col-12 col-lg-9 p-0">
+        <div class="__content">
+          <h3>
+            <span class="recoleta-light">If you'd</span> 
+            <span class="recoleta-medium">love</span> 
+            <span class="recoleta-light">to change</span> 
+            <span class="recoleta-medium">thousands of minds</span> 
+            <span class="recoleta-light">and think you may meet</span> 
+            <span class="recoleta-medium">our requirements.</span> 
+          </h3>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 p-0">
+        <div class="__ctaButton">
+          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Get a Qoute">Get a Qoute</button>
+        </div>
+      </div>
+    </div>      
+  </div>
+</section>
 
 <!-- footer begin -->
 <?php include('includes/footer.php') ?>
