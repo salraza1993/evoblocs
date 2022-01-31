@@ -1657,7 +1657,7 @@ footer { width: 100%; position: relative; }
       background-image: url('../images/about-heading-bg.jpg');
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 100%;
+      background-size: cover;
       text-shadow: 2px 3px 4px rgba(#000000, .2);
       position: relative;
       margin-bottom: 4rem;
@@ -1747,8 +1747,8 @@ footer { width: 100%; position: relative; }
       }
       .postion_name {
         position: relative;
-        font-size: clamp(1rem, 5vw, 2.3rem);
-        line-height: clamp(1.5rem, 5vw, 3rem);
+        font-size: clamp(1rem, 3vw, 2.3rem);
+        line-height: clamp(1.5rem, 3vw, 3rem);
         font-family: $recoletaSemiBold;
         color: var(--primary);
         margin-bottom: 1rem;
@@ -1774,6 +1774,7 @@ footer { width: 100%; position: relative; }
         font-size: .9rem;
         box-shadow: 0 10px 15px rgba(#000000, .1);
         font-family: $roboto;
+        white-space: nowrap;
         &:hover {
           background-color: var(--primary);
           border-color: var(--primary);

@@ -24,7 +24,7 @@
               <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Qoute">Get a Qoute</button>
             </div>
           </div>
-          <div class="col-12 col-lg-6 p-0">
+          <div class="col-12 col-lg-6 p-0 hidden-sm hidden-xs">
             <div class="careerIllustration">
               <img src="images/career_illustration.svg" alt="">
             </div>
@@ -39,7 +39,7 @@
   <?php include('includes/lineContainer.php') ?>
   <div class="container">
     <div class="row">
-      <div class="offset-sm-3 col-12 col-lg-9 p-0">
+      <div class="offset-lg-3 col-12 col-lg-9 p-0">
         <div class="currentOpeningContainer">
           <div class="sectionHeading d-flex justify-content-between align-items-center p-0 mb-5">
             <div class="headingText">

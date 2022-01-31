@@ -156,13 +156,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }, 1000);
   });
 
-
-  const scrollContainer = document.querySelector(".horizontal__scroll__container");
-  scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    console.log(scrollContainer.scrollLeft += evt.deltaY);
-    scrollContainer.scrollLeft += evt.deltaY;
-  });
+  if (window.innerWidth > 767) {
+    const scrollContainer = document.querySelector(".horizontal__scroll__container");
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      console.log(scrollContainer.scrollLeft += evt.deltaY);
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+  }
 
 
 });

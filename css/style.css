@@ -2501,7 +2501,7 @@ footer {
   background-image: url("../images/about-heading-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   margin-bottom: 4rem;
@@ -2629,8 +2629,8 @@ footer {
 
 .currentOpenings .currentOpeningCard .card__header .postion_name {
   position: relative;
-  font-size: clamp(1rem, 5vw, 2.3rem);
-  line-height: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1rem, 3vw, 2.3rem);
+  line-height: clamp(1.5rem, 3vw, 3rem);
   font-family: "Recoleta SemiBold";
   color: var(--primary);
   margin-bottom: 1rem;
@@ -2670,6 +2670,7 @@ footer {
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   font-family: "Roboto", sans-serif;
+  white-space: nowrap;
 }
 
 .currentOpenings .currentOpeningCard .card__header .viewDetail:hover {

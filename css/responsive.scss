@@ -57,7 +57,6 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
   }
   .boldIdeaBoldResult { padding: 2rem $mobilePadding; }
   .text-columns { column-count: 1; gap: 0; }
-
   .menuSection {
     .subMenuSection {
       overflow-y: scroll;
@@ -550,6 +549,171 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
     }
   }
 
+  .aboutTopSection {
+    padding: 18.5vh $mobilePadding 1vh !important;
+    .topHeading {
+      h2 {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        &::after {
+          top: -30px;
+          left: 0;
+          white-space: nowrap;
+          width: auto;
+          font-size: .9rem;
+        }
+      }h2 {}
+      p {width: 100% !important; max-width: 100% !important; margin: 0;}
+    }
+    .aboutContent h2 {font-size: clamp(2.3rem, 8vmin, 4.75rem) !important}
+    h2, p {margin-bottom: 0;}
+    .col-12 {margin-bottom: 1.5rem !important; padding: 0 !important;}
+    .ctaSection {
+      padding: 3vh 6vw 5vh !important;
+      h3 {
+        font-size: clamp(1.2rem, 8vw, 3rem) !important;  
+        line-height: clamp(1.4rem, 10vw, 3rem) !important;
+      }
+    }
+  }
+  .howDoWeWorkSection {
+    padding: 3vh $mobilePadding 10vh !important;
+    margin-bottom: 0 !important;
+    .col-12 {padding: 0 !important;}
+    .arrodionImage {
+      height: 25vh;
+      margin-bottom: 1.5rem;
+    }
+    .arrodion__container{
+      &::after { bottom: -5%; height: 95%; }
+      .accordion {
+        .accordion__block {
+          .accordion__header {
+            h3 {font-size: 1.3rem;}
+          }
+        }
+      }
+    }
+  }
+  .ourCoreVal__section {
+    padding: 3vh $mobilePadding !important;
+    margin: 0 !important;
+    .sectionHeading {margin-top: 0 !important; margin-bottom: 1rem !important;}
+  }
+  .missionSection {
+    padding: 0 $mobilePadding !important;
+    &::after {display: none;}
+    .col-12 {padding-right: calc(var(--bs-gutter-x) * 0.5) !important;}
+    .misson__container h3 {
+      padding: 0 !important;
+      font-size: clamp(1.1rem, 6vw, 2rem) !important;
+      line-height: clamp(1.6rem, 9vw, 2.5rem) !important;
+    }
+  }
+  .card__main__container {
+    width: 100vw;
+    margin-left: -$mobilePadding;
+    padding: 0 $mobilePadding;
+    padding: 4vw;
+    overflow-x: scroll;
+    gap: $mobilePadding;
+    .card__container {
+      max-width: 310px;
+      padding: $mobilePadding;
+      &:first-child {margin-left: 0;}
+      &:last-child {margin-right: 0;}
+    }
+  }
+  .joinTeamSection {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+    .joinTeamContainer {
+      min-height: 12vh;
+      &::after {
+        font-size: clamp(1.5rem, 20vw, 7rem);
+        line-height: clamp(1.5rem, 20vw, 8rem);
+      }
+    }
+  }
+
+  .careerHeroSection {
+    padding: 14vh $mobilePadding 7rem;
+    .aboutContent {padding: 0 !important;}
+  }
+  .careerQuoteSection {
+    padding: 1rem $mobilePadding !important;
+    .careerQuoteContainer {
+      text-align: center; 
+      .__icon {
+        height: 13vh;
+        margin-bottom: 3vh;
+        img, svg {max-height: 100%;}
+      } 
+      .__content {
+        h3 {
+          font-size: clamp(1rem, 5vw, 2rem);
+          line-height: clamp(1.5rem, 7vw, 2.8rem);
+        }
+      }
+    }
+  }
+  .currentOpeningSection {
+    padding: 5vh $mobilePadding !important;
+    .currentOpeningCard {
+      .card__header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 7vh $mobilePadding 5vh;
+        .posting_date {top: .7rem; right: .7rem;}
+        .postion_name {
+          font-size: clamp(1rem, 6vw, 2.3rem);
+          line-height: clamp(1.5rem, 3vw, 3rem);
+        }
+        .__ctaButtons {
+          padding-top: $mobilePadding + 5;
+          padding-top: 10vw;
+          min-height: initial;
+          gap: 3vw;
+          margin-left: -5vw;
+          position: relative;
+          width: calc(100% + 10vw);
+          justify-content: center;
+        } 
+      }
+      .card__body {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 21;
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(3px);
+        overflow-y: scroll;
+        padding: 10vw;
+        max-height: 100vh;
+        .card__footer {
+          flex-direction: column;
+          align-items: flex-start;
+          p {
+            margin-top: 5vh;
+            a {margin: 1vh 0 0 0;}
+          }
+        }
+      }
+    }
+  }
+  .careerFormSection {
+    padding: 0 $mobilePadding;
+    .careerFormContainer {
+      flex-wrap: wrap;
+      .__content {
+        max-width: 100%;
+        h2 {line-height: clamp(2rem, 10vw, 5rem);}
+        p br {display: none;}
+      }
+    }
+  }
+
 }
 
 @media (min-width: 768px) {}
@@ -715,6 +879,79 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
       .__content {
         padding: 0;
         margin-bottom: 4vw;
+      }
+    }
+  }
+  .aboutTopSection {
+    padding-bottom: .5rem !important;
+    .topHeading {
+      h2 {
+        margin-bottom: 1.5rem;
+        &::after {
+          top: -40px;
+          left: 0;
+          white-space: nowrap;
+          width: auto;
+        }
+      }
+      p {width: 100% !important; max-width: 100% !important; margin: 0;}
+    }
+    h2, p {margin-bottom: 0;}
+    .col-12 {margin-bottom: 1.5rem !important; padding: 0 !important;}
+  }
+  .howDoWeWorkSection {
+    padding-bottom: 3rem !important;
+    margin-bottom: 0 !important;
+    .col-12 {padding: 0 !important;}
+    .arrodionImage {
+      height: 25vh;
+      margin-bottom: 1.5rem;
+    }
+    .arrodion__container::after { bottom: -5%; height: 95%; }
+  }
+  .ourCoreVal__section {
+    margin-top: 0 !important;
+    .sectionHeading {margin-top: 0 !important;}
+  }
+  .joinTeamSection {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+    .joinTeamContainer {
+      min-height: 12vh;
+      &::after {
+        font-size: clamp(1.5rem, 20vw, 7rem);
+        line-height: clamp(1.5rem, 20vw, 8rem);
+      }
+    }
+  }
+
+  .careerHeroSection {
+    padding: 14vh 0 7rem;
+    .aboutContent {padding: 0 !important;}
+  }
+  .careerQuoteSection {
+    padding: 1rem 0 !important;
+    .careerQuoteContainer {
+      text-align: center; 
+      .__icon {
+        height: 13vh;
+        margin-bottom: 3vh;
+        img, svg {max-height: 100%;}
+      } 
+      .__content {
+        h3 {
+          font-size: clamp(1rem, 5vw, 2rem);
+          line-height: clamp(1.5rem, 7vw, 2.8rem);
+        }
+      }
+    }
+  }
+  .careerFormSection {
+    .careerFormContainer {
+      flex-wrap: wrap;
+      .__content {
+        max-width: 100%;
+        p br {display: none;}
       }
     }
   }

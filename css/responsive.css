@@ -698,6 +698,211 @@
     margin-bottom: 1rem;
     display: inline-block;
   }
+  .aboutTopSection {
+    padding: 18.5vh 5vw 1vh !important;
+  }
+  .aboutTopSection .topHeading h2 {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  .aboutTopSection .topHeading h2::after {
+    top: -30px;
+    left: 0;
+    white-space: nowrap;
+    width: auto;
+    font-size: .9rem;
+  }
+  .aboutTopSection .topHeading p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+  }
+  .aboutTopSection .aboutContent h2 {
+    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
+  }
+  .aboutTopSection h2, .aboutTopSection p {
+    margin-bottom: 0;
+  }
+  .aboutTopSection .col-12 {
+    margin-bottom: 1.5rem !important;
+    padding: 0 !important;
+  }
+  .aboutTopSection .ctaSection {
+    padding: 3vh 6vw 5vh !important;
+  }
+  .aboutTopSection .ctaSection h3 {
+    font-size: clamp(1.2rem, 8vw, 3rem) !important;
+    line-height: clamp(1.4rem, 10vw, 3rem) !important;
+  }
+  .howDoWeWorkSection {
+    padding: 3vh 5vw 10vh !important;
+    margin-bottom: 0 !important;
+  }
+  .howDoWeWorkSection .col-12 {
+    padding: 0 !important;
+  }
+  .howDoWeWorkSection .arrodionImage {
+    height: 25vh;
+    margin-bottom: 1.5rem;
+  }
+  .howDoWeWorkSection .arrodion__container::after {
+    bottom: -5%;
+    height: 95%;
+  }
+  .howDoWeWorkSection .arrodion__container .accordion .accordion__block .accordion__header h3 {
+    font-size: 1.3rem;
+  }
+  .ourCoreVal__section {
+    padding: 3vh 5vw !important;
+    margin: 0 !important;
+  }
+  .ourCoreVal__section .sectionHeading {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  .missionSection {
+    padding: 0 5vw !important;
+  }
+  .missionSection::after {
+    display: none;
+  }
+  .missionSection .col-12 {
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+  .missionSection .misson__container h3 {
+    padding: 0 !important;
+    font-size: clamp(1.1rem, 6vw, 2rem) !important;
+    line-height: clamp(1.6rem, 9vw, 2.5rem) !important;
+  }
+  .card__main__container {
+    width: 100vw;
+    margin-left: -5vw;
+    padding: 0 5vw;
+    padding: 4vw;
+    overflow-x: scroll;
+    gap: 5vw;
+  }
+  .card__main__container .card__container {
+    max-width: 310px;
+    padding: 5vw;
+  }
+  .card__main__container .card__container:first-child {
+    margin-left: 0;
+  }
+  .card__main__container .card__container:last-child {
+    margin-right: 0;
+  }
+  .joinTeamSection {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+  .joinTeamSection .joinTeamContainer {
+    min-height: 12vh;
+  }
+  .joinTeamSection .joinTeamContainer::after {
+    font-size: clamp(1.5rem, 20vw, 7rem);
+    line-height: clamp(1.5rem, 20vw, 8rem);
+  }
+  .careerHeroSection {
+    padding: 14vh 5vw 7rem;
+  }
+  .careerHeroSection .aboutContent {
+    padding: 0 !important;
+  }
+  .careerQuoteSection {
+    padding: 1rem 5vw !important;
+  }
+  .careerQuoteSection .careerQuoteContainer {
+    text-align: center;
+  }
+  .careerQuoteSection .careerQuoteContainer .__icon {
+    height: 13vh;
+    margin-bottom: 3vh;
+  }
+  .careerQuoteSection .careerQuoteContainer .__icon img, .careerQuoteSection .careerQuoteContainer .__icon svg {
+    max-height: 100%;
+  }
+  .careerQuoteSection .careerQuoteContainer .__content h3 {
+    font-size: clamp(1rem, 5vw, 2rem);
+    line-height: clamp(1.5rem, 7vw, 2.8rem);
+  }
+  .currentOpeningSection {
+    padding: 5vh 5vw !important;
+  }
+  .currentOpeningSection .currentOpeningCard .card__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 7vh 5vw 5vh;
+  }
+  .currentOpeningSection .currentOpeningCard .card__header .posting_date {
+    top: .7rem;
+    right: .7rem;
+  }
+  .currentOpeningSection .currentOpeningCard .card__header .postion_name {
+    font-size: clamp(1rem, 6vw, 2.3rem);
+    line-height: clamp(1.5rem, 3vw, 3rem);
+  }
+  .currentOpeningSection .currentOpeningCard .card__header .__ctaButtons {
+    padding-top: 10vw;
+    padding-top: 10vw;
+    min-height: initial;
+    gap: 3vw;
+    margin-left: -5vw;
+    position: relative;
+    width: calc(100% + 10vw);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .currentOpeningSection .currentOpeningCard .card__body {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 21;
+    background: rgba(0, 0, 0, 0.85);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    overflow-y: scroll;
+    padding: 10vw;
+    max-height: 100vh;
+  }
+  .currentOpeningSection .currentOpeningCard .card__body .card__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .currentOpeningSection .currentOpeningCard .card__body .card__footer p {
+    margin-top: 5vh;
+  }
+  .currentOpeningSection .currentOpeningCard .card__body .card__footer p a {
+    margin: 1vh 0 0 0;
+  }
+  .careerFormSection {
+    padding: 0 5vw;
+  }
+  .careerFormSection .careerFormContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .careerFormSection .careerFormContainer .__content {
+    max-width: 100%;
+  }
+  .careerFormSection .careerFormContainer .__content h2 {
+    line-height: clamp(2rem, 10vw, 5rem);
+  }
+  .careerFormSection .careerFormContainer .__content p br {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -881,6 +1086,95 @@
   .specialCtaSection .specialCtaContainer .__content {
     padding: 0;
     margin-bottom: 4vw;
+  }
+  .aboutTopSection {
+    padding-bottom: .5rem !important;
+  }
+  .aboutTopSection .topHeading h2 {
+    margin-bottom: 1.5rem;
+  }
+  .aboutTopSection .topHeading h2::after {
+    top: -40px;
+    left: 0;
+    white-space: nowrap;
+    width: auto;
+  }
+  .aboutTopSection .topHeading p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+  }
+  .aboutTopSection h2, .aboutTopSection p {
+    margin-bottom: 0;
+  }
+  .aboutTopSection .col-12 {
+    margin-bottom: 1.5rem !important;
+    padding: 0 !important;
+  }
+  .howDoWeWorkSection {
+    padding-bottom: 3rem !important;
+    margin-bottom: 0 !important;
+  }
+  .howDoWeWorkSection .col-12 {
+    padding: 0 !important;
+  }
+  .howDoWeWorkSection .arrodionImage {
+    height: 25vh;
+    margin-bottom: 1.5rem;
+  }
+  .howDoWeWorkSection .arrodion__container::after {
+    bottom: -5%;
+    height: 95%;
+  }
+  .ourCoreVal__section {
+    margin-top: 0 !important;
+  }
+  .ourCoreVal__section .sectionHeading {
+    margin-top: 0 !important;
+  }
+  .joinTeamSection {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+  .joinTeamSection .joinTeamContainer {
+    min-height: 12vh;
+  }
+  .joinTeamSection .joinTeamContainer::after {
+    font-size: clamp(1.5rem, 20vw, 7rem);
+    line-height: clamp(1.5rem, 20vw, 8rem);
+  }
+  .careerHeroSection {
+    padding: 14vh 0 7rem;
+  }
+  .careerHeroSection .aboutContent {
+    padding: 0 !important;
+  }
+  .careerQuoteSection {
+    padding: 1rem 0 !important;
+  }
+  .careerQuoteSection .careerQuoteContainer {
+    text-align: center;
+  }
+  .careerQuoteSection .careerQuoteContainer .__icon {
+    height: 13vh;
+    margin-bottom: 3vh;
+  }
+  .careerQuoteSection .careerQuoteContainer .__icon img, .careerQuoteSection .careerQuoteContainer .__icon svg {
+    max-height: 100%;
+  }
+  .careerQuoteSection .careerQuoteContainer .__content h3 {
+    font-size: clamp(1rem, 5vw, 2rem);
+    line-height: clamp(1.5rem, 7vw, 2.8rem);
+  }
+  .careerFormSection .careerFormContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .careerFormSection .careerFormContainer .__content {
+    max-width: 100%;
+  }
+  .careerFormSection .careerFormContainer .__content p br {
+    display: none;
   }
 }
 

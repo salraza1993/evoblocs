@@ -12,7 +12,7 @@
     <?php include('includes/lineContainer.php') ?>
     <div class="container">
       <div class="row">
-        <div class="offset-sm-3 col-12 col-lg-9 p-0 mb-5">
+        <div class="offset-lg-3 col-12 col-lg-9 p-0 mb-5">
           <div class="topHeading">
             <h2>About Us</h2>
             <h4>We Are a Digital Agency with an</h4>
@@ -22,7 +22,7 @@
             </p>
           </div>          
         </div>
-        <div class="d-flex p-0 align-items-center">
+        <div class="d-flex p-0 align-items-center flex-wrap">
           <div class="col-12 col-md-12 col-lg-6 p-0 pe-5">
             <div class="ctaSection">
               <h3>
@@ -69,7 +69,7 @@
         </div>
       </div>
       <div class="arrodion__container">
-        <div class="d-flex">
+        <div class="d-flex flex-wrap">
           <div class="col-12 col-lg-6 pe-5">
             <div class="arrodionImage">
               <img src="https://images.unsplash.com/photo-1542289539-059dea254938?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="">
@@ -229,7 +229,7 @@
   <div class="container p-0">
     <div class="misson__container py-5">
       <div class="row align-items-center">
-        <div class="col-6 col-lg-6 pe-0">
+        <div class="col-12 col-lg-6 pe-0">
           <div class="sectionHeading d-flex justify-content-between align-items-center p-0 mb-4">
             <div class="headingText">
               <h2>
@@ -250,7 +250,7 @@
           </h3>
           <button class="ctaButtonContainer ctaButton mt-5" buttonval="Let's discuss your project">Let's discuss your project</button>
         </div>
-        <div class="col-6 col-lg-6 p-0">
+        <div class="col-6 col-lg-6 p-0 hidden-xs">
           <div class="missionIllustration">
             <img src="images/our-misson-illustration.svg" alt="">
           </div>
