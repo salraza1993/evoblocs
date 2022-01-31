@@ -378,7 +378,7 @@ header .logo__container a {
 header nav {
   position: relative;
   width: 100%;
-  max-width: 670px;
+  max-width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2540,7 +2540,371 @@ footer {
 
 .aboutTopSection .ctaSection h3 {
   font-size: clamp(1.2rem, 5vw, 2.8rem);
-  line-height: clamp(1.8rem, 7vw, 3.6rem);
+  line-height: clamp(1.8rem, 6vw, 3.3rem);
+}
+
+.careerHeroSection {
+  position: relative;
+  width: 100%;
+  padding: 168px 0 7rem;
+  overflow: hidden;
+  background-color: var(--baseBgColor);
+  background-image: url("../images/abstract-patten.png");
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+}
+
+.careerHeroSection::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 20vw solid var(--baseBgColor);
+  z-index: 0;
+}
+
+.careerHeroSection .lineContainer {
+  z-index: 2;
+}
+
+.careerHeroSection .aboutContent h2 {
+  font-size: clamp(1.2rem, 5vw, 3.8rem);
+}
+
+.careerHeroSection .col-12 {
+  position: relative;
+  z-index: 2;
+}
+
+.careerHeroSection .careerIllustration img, .careerHeroSection svg {
+  max-width: 100%;
+  width: 100%;
+}
+
+.currentOpenings {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.currentOpenings .currentOpeningCard {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(114, 114, 114, 0.25);
+  background-color: var(--baseBgColor);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.currentOpenings .currentOpeningCard .card__header {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currentOpenings .currentOpeningCard .card__header .posting_date {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+
+.currentOpenings .currentOpeningCard .card__header .postion_name {
+  position: relative;
+  font-size: clamp(1rem, 5vw, 2.3rem);
+  line-height: clamp(1.5rem, 5vw, 3rem);
+  font-family: "Recoleta SemiBold";
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.currentOpenings .currentOpeningCard .card__header .short_info {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.currentOpenings .currentOpeningCard .card__header .short_info li {
+  position: relative;
+}
+
+.currentOpenings .currentOpeningCard .card__header .short_info li span {
+  display: inline-block;
+}
+
+.currentOpenings .currentOpeningCard .card__header .short_info li ._label {
+  min-width: 80px;
+}
+
+.currentOpenings .currentOpeningCard .card__header .short_info li:not(:last-child) {
+  margin-bottom: 0.35rem;
+}
+
+.currentOpenings .currentOpeningCard .card__header .viewDetail {
+  border: 1px solid rgba(114, 114, 114, 0.25);
+  border-radius: 50px;
+  padding: .75rem 1.5rem;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: var(--textColor);
+  font-size: .9rem;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+
+.currentOpenings .currentOpeningCard .card__header .viewDetail:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--black);
+}
+
+.currentOpenings .currentOpeningCard .card__header .__ctaButtons {
+  min-height: 100px;
+  gap: 2rem;
+}
+
+.currentOpenings .currentOpeningCard .card__body {
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed var(--borderColor);
+  padding: 2rem 3.5rem;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-weight: 300;
+}
+
+.currentOpenings .currentOpeningCard .card__body .lists {
+  position: relative;
+  padding: 0;
+  list-style-type: disc;
+  font-family: "Roboto", sans-serif;
+}
+
+.currentOpenings .currentOpeningCard .card__body .lists li {
+  margin-bottom: .65rem;
+}
+
+.currentOpenings .currentOpeningCard .card__body .card__footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currentOpenings .currentOpeningCard .card__body .card__footer p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.currentOpenings .currentOpeningCard .card__body .card__footer p a {
+  font-size: 1.5rem;
+  display: inline-block;
+  text-decoration: underline;
+  color: var(--primary);
+  margin-left: 1rem;
+}
+
+.currentOpenings .currentOpeningCard .card__body .card__footer p a:hover {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.currentOpenings .currentOpeningCard:hover {
+  border-color: var(--secondary);
+}
+
+.careerQuoteSection {
+  position: relative;
+}
+
+.careerQuoteSection .careerQuoteContainer {
+  position: relative;
+  width: 100%;
+}
+
+.careerQuoteSection .careerQuoteContainer .__icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.careerQuoteSection .careerQuoteContainer .__icon img, .careerQuoteSection .careerQuoteContainer .__icon svg {
+  max-width: 180px;
+}
+
+.careerQuoteSection .careerQuoteContainer .__content {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.careerQuoteSection .careerQuoteContainer .__content h3 {
+  font-size: clamp(1rem, 5vw, 3rem);
+  line-height: clamp(1.5rem, 7vw, 3.8rem);
+  font-weight: 100;
+}
+
+.careerQuoteSection .careerQuoteContainer .__content a {
+  font-style: italic;
+  font-size: clamp(1rem, 5vw, 2.1rem);
+  line-height: clamp(1.5rem, 6vw, 2.7rem);
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.careerQuoteSection .careerQuoteContainer .__content a:hover {
+  text-decoration: underline;
+}
+
+.careerFormSection {
+  position: relative;
+  width: 100%;
+}
+
+.careerFormSection .careerFormContainer {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary);
+  background-image: url("../images/abstract-patten.png"), linear-gradient(-45deg, #00FFFF 0%, #0066FF 100%);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding: 5vw 5vw 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--text-light);
+  gap: 5vw;
+}
+
+.careerFormSection .careerFormContainer .__content {
+  position: relative;
+  max-width: 50%;
+}
+
+.careerFormSection .careerFormContainer .__content h2 {
+  line-height: clamp(2rem, 6vw, 5rem);
+}
+
+.careerFormSection .careerFormContainer .__content p {
+  font-size: clamp(1rem, 3vw, 1.8rem);
+  line-height: clamp(1.6rem, 5vw, 2.5rem);
+  font-weight: 100;
+  font-style: italic;
+}
+
+.careerFormSection .careerFormContainer .__formContainer {
+  position: relative;
+  width: 100%;
+  color: var(--black);
+  z-index: 1;
+}
+
+.careerFormSection .careerFormContainer .__formContainer .inputContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-light);
+}
+
+.careerFormSection .careerFormContainer .__formContainer .inputContainer label {
+  position: absolute;
+  right: .75rem;
+  top: .3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ff0000;
+  font-family: "Recoleta Regular";
+}
+
+.careerFormSection .careerFormContainer .__formContainer .inputContainer input, .careerFormSection .careerFormContainer .__formContainer .inputContainer textarea, .careerFormSection .careerFormContainer .__formContainer .inputContainer select {
+  width: 100%;
+  height: 60px;
+  padding: 0 1rem;
+  border: 1px solid rgba(114, 114, 114, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  display: inherit;
+}
+
+.careerFormSection .careerFormContainer .__formContainer .inputContainer textarea {
+  padding: 1rem;
+  height: 150px;
+}
+
+.careerFormSection .careerFormContainer .__formContainer .inputFileType {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.careerFormSection .careerFormContainer .__formContainer .inputFileType input {
+  border-radius: 0;
+  height: 60px;
+  line-height: 45px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.careerFormSection .careerFormContainer .__formContainer .inputFileType label {
+  position: absolute;
+  right: .75rem;
+  top: .3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ff0000;
+  font-family: "Recoleta Regular";
+  z-index: 1;
+}
+
+.careerFormSection .careerFormContainer .__formContainer .ctaButtonContainer {
+  margin-bottom: .5rem;
+  color: var(--text-dark);
 }
 
 .missionSection {
@@ -2568,8 +2932,8 @@ footer {
 }
 
 .missionSection .misson__container h3 {
-  font-size: clamp(1.1rem, 5vw, 2.5rem);
-  line-height: clamp(1.6rem, 7vw, 3.3rem);
+  font-size: clamp(1.1rem, 5vw, 2rem);
+  line-height: clamp(1.6rem, 7vw, 3rem);
 }
 
 .missionSection .missionIllustration {
@@ -2578,6 +2942,10 @@ footer {
 
 .missionSection .missionIllustration img, .missionSection .missionIllustration svg {
   max-width: 100%;
+}
+
+.latestTechnoSection {
+  z-index: 1;
 }
 
 .joinTeamSection {

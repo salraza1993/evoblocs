@@ -822,6 +822,19 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
   }
   .protfolioWorkContainer .porfolioImageBlock .subWrapper ._thumbnailContainer {height: 350px;}
   .teamPageSection .teamMemberBlock { align-items: flex-start; }
+  .aboutTopSection {
+    .ctaSection {
+      padding: 3vw;
+      h3 {
+        font-size: clamp(1.2rem, 5vw, 2.3rem);
+        line-height: clamp(1.8rem, 6vw, 3.0rem);
+      }
+    }
+  }
+  .missionSection .misson__container h3 {
+    font-size: clamp(1.1rem, 5vw, 1.7rem);
+    line-height: clamp(1.6rem, 7vw, 2.5rem);
+}
 }
 @media (max-width: 1300px) {
   .homeServicesSection {

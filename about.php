@@ -229,7 +229,7 @@
   <div class="container p-0">
     <div class="misson__container py-5">
       <div class="row align-items-center">
-        <div class="col-6 col-lg-6">
+        <div class="col-6 col-lg-6 pe-0">
           <div class="sectionHeading d-flex justify-content-between align-items-center p-0 mb-4">
             <div class="headingText">
               <h2>
