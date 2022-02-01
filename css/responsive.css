@@ -809,6 +809,9 @@
   .careerHeroSection .aboutContent {
     padding: 0 !important;
   }
+  .careerHeroSection .aboutContent h2 {
+    font-size: clamp(2.3rem, 8vmin, 4.75rem);
+  }
   .careerQuoteSection {
     padding: 1rem 5vw !important;
   }

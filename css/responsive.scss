@@ -638,7 +638,10 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
 
   .careerHeroSection {
     padding: 14vh $mobilePadding 7rem;
-    .aboutContent {padding: 0 !important;}
+    .aboutContent {
+      padding: 0 !important;
+      h2 {font-size: clamp(2.3rem, 8vmin, 4.75rem);}
+    }
   }
   .careerQuoteSection {
     padding: 1rem $mobilePadding !important;
