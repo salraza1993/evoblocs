@@ -345,6 +345,23 @@ $padding: 1.5rem;
       background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     }
   }
+  &.blackButton {
+      color: var(--white);
+      &::before { 
+        color: var(--white); 
+        background-image: none;
+        background-color: var(--black);
+      }
+      &__withWhite, &_withWhite {
+        color: var(--white);
+        &::before {color: var(--black);}
+      }
+      &.__withBlack, &._withBlack {
+        color: var(--black);
+        &::before {color: var(--white);}
+      }
+      
+  }
   &.primaryButton {
     color: var(--white);
     &::before {
@@ -1638,6 +1655,33 @@ footer { width: 100%; position: relative; }
   padding: $headerHeight + 60 0 5vh;
   @include abstractBg();
   .lineContainer {z-index: 0;}
+  &.noBgImage {background-image: none !important;}
+  p {
+    &.topBiggerSubText {
+      font-size: 2.1rem;
+      line-height: 3rem;
+      font-weight: 100;
+    }
+  }
+}
+.subHeroSection {
+  position: relative;
+
+  .heighlightedText {
+    line-height: 100%;
+    background-color: var(--primary);
+    padding: 2rem;
+    color: var(--text-light);
+    background-image: url('../images/about-heading-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-shadow: 2px 3px 4px rgba(#000000, .2);
+    font-size: clamp(1.2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    position: relative;
+    margin-bottom: 4rem;
+  }
 }
 .w-60 { width: 60% !important; }
 .w-65 { width: 65% !important; }
@@ -1728,7 +1772,7 @@ footer { width: 100%; position: relative; }
   .currentOpeningCard {
     position: relative;
     width: 100%;
-    border: $border;
+    border: 1px solid var(--secondary);
     background-color: var(--baseBgColor);
     transition: $transition;
     .card__header {
@@ -1859,7 +1903,6 @@ footer { width: 100%; position: relative; }
     }
   }
 }
-
 .careerFormSection {
   position: relative;
   width: 100%;
@@ -2252,6 +2295,21 @@ footer { width: 100%; position: relative; }
     }
 
   }
+  &.percentageCard_container {
+    .card__container {
+      align-items: flex-start;
+      max-width: 330px;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      box-shadow: inset 5px 0 0 var(--secondary);
+      .card__body {
+        h3 {
+          font-family: $recoletaSemiBold;
+          font-size: clamp(1rem, 5vw, 3rem);
+          line-height: clamp(1.5rem, 6vw, 3.5rem);
+        }
+      }
+    }
+  }
 }
 @media (min-width: 768px) { 
   .card__main__container .card__container:first-child {margin-left: calc(calc(100% - 720px) / 2);} 
@@ -2493,6 +2551,132 @@ footer { width: 100%; position: relative; }
   }
 }
 
+.services_box_section {
+  position: relative;
+  width: 100%;
+  
+  .seo_box_container {
+    position: relative;
+    width: 100%;
+    padding: 3rem;
+    align-items: center;
+    background-color: #e6e6e6;
+    gap: 1rem;
+    .__img {
+      min-width: 40%;
+      img, svg {
+        max-width: 95%;
+        display: inherit;
+      }
+    }
+    .__content {
+      max-width: 55%;
+      h3 {
+        font-size: clamp(1rem, 5vw, 2.5rem);
+        font-family: $recoletaMedium;
+        margin-bottom: .75rem;
+        color: var(--white);
+      }
+      p:not(.note_text) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-weight: 300;
+      }
+      p.note_text {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        color: var(--white);
+        font-weight: 300;
+        &::before {
+          content: '';
+          width: 5px;
+          height: 85%;
+          position: absolute;
+          background-color: var(--white);
+          transform: rotate(0deg) translateY(-50%);
+          top: 50%;
+          left: 0;
+        }
+      }
+      .cta__buttons {
+        position: relative;
+        width: 100%;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }  
+    }
+    &.mob-app-box {
+      position: relative;
+      width: 100%;
+      background-color: var(--secondary);
+      padding-left: 0;
+    }
+    &.web-dev-box {
+      padding-right: 1rem;
+      background-color: var(--semi-dark);
+      .__img { min-width: 50%;}
+      .__content { 
+        padding-right: 2%;
+        p.note_text::before {background-color: var(--secondary);} 
+      }
+    }
+    &.content-writing-box {
+      background-color: transparent;
+      border-bottom: 5px solid #4951EC;
+      padding: 2rem 0 0;
+      align-items: flex-end;
+      .__img { min-width: 50%; margin-bottom: -3px;}
+      .__content {
+        padding-right: 1rem;
+        padding-bottom: 3rem;
+        p.note_text::before {background-color: var(--secondary);} 
+      }
+    }
+    &.smo-box {
+      background-color: #CBE4FF;
+      padding: 0;
+      color: var(--text-dark);
+      .__img {
+        max-width: 100%;
+        min-width: 100%;
+        img {max-width: 100%;}
+      }
+      .__content {
+        padding: 0 2.5rem;
+        max-width: initial;
+        padding-bottom: 50px;
+        margin-top: -150px;
+        h3, p {color: var(--text-dark);}
+        p.note_text::before {background-color: var(--secondary);} 
+      }
+    }
+    &.paid-promo-box {
+      padding: 0;
+      .__content {
+        padding: 2.5rem;
+        max-width: initial;
+        padding-bottom: 50px;
+        h3, p {color: var(--text-dark);}
+        p.note_text::before {background-color: var(--secondary);} 
+      }
+      background-color: #FFF7DE;
+      .__img {
+        max-width: 100%;
+        min-width: 100%;
+        margin-top: -130px;
+        img {max-width: 100%;}
+      }
+    }
+    &.seo-box { background-image: $gradient_5; }
+  }
+  
+}
+
 /* ----------------------------- Light Mode [Starts] -------------------------------- */
 body.lightMode {
   --baseBgColor: rgb(245, 245, 245);
@@ -2584,6 +2768,10 @@ body.lightMode {
     &.whiteButton {
       color: var(--black);
       &::before { color: var(--white); }
+    }
+    &.blackButton {
+      color: var(--white);
+      &::before { color: var(--black); }
     }
     &.primaryButton {
       color: var(--black);
@@ -2706,7 +2894,8 @@ body.lightMode {
   }
   .heroBannerSection,
   .teamPageSection,
-  .contactPageSection {
+  .contactPageSection,
+  .careerHeroSection {
     @include abstractBg($bgBlendMode: multiply);
   }
   @include abstractBg();

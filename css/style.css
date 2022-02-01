@@ -604,6 +604,32 @@ header .rightMenuContainer .moreMenus:hover::after {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
+.ctaButtonContainer.blackButton {
+  color: var(--white);
+}
+
+.ctaButtonContainer.blackButton::before {
+  color: var(--white);
+  background-image: none;
+  background-color: var(--black);
+}
+
+.ctaButtonContainer.blackButton__withWhite, .ctaButtonContainer.blackButton_withWhite {
+  color: var(--white);
+}
+
+.ctaButtonContainer.blackButton__withWhite::before, .ctaButtonContainer.blackButton_withWhite::before {
+  color: var(--black);
+}
+
+.ctaButtonContainer.blackButton.__withBlack, .ctaButtonContainer.blackButton._withBlack {
+  color: var(--black);
+}
+
+.ctaButtonContainer.blackButton.__withBlack::before, .ctaButtonContainer.blackButton._withBlack::before {
+  color: var(--white);
+}
+
 .ctaButtonContainer.primaryButton {
   color: var(--white);
 }
@@ -1640,7 +1666,7 @@ footer {
 .callNCareerContainer .getACallContainer {
   position: relative;
   background-color: var(--secondary);
-  background-image: linear-gradient(-45deg, #b80303 0%, #FF723E 100%);
+  background-image: linear-gradient(-45deg, #C40000 0%, #FF723E 100%);
   padding: 2.5rem 2rem;
   min-height: 290px;
   color: var(--text-light);
@@ -2474,6 +2500,36 @@ footer {
   z-index: 0;
 }
 
+.heroBannerSection.noBgImage {
+  background-image: none !important;
+}
+
+.heroBannerSection p.topBiggerSubText {
+  font-size: 2.1rem;
+  line-height: 3rem;
+  font-weight: 100;
+}
+
+.subHeroSection {
+  position: relative;
+}
+
+.subHeroSection .heighlightedText {
+  line-height: 100%;
+  background-color: var(--primary);
+  padding: 2rem;
+  color: var(--text-light);
+  background-image: url("../images/about-heading-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  position: relative;
+  margin-bottom: 4rem;
+}
+
 .w-60 {
   width: 60% !important;
 }
@@ -2598,7 +2654,7 @@ footer {
 .currentOpenings .currentOpeningCard {
   position: relative;
   width: 100%;
-  border: 1px solid rgba(114, 114, 114, 0.25);
+  border: 1px solid var(--secondary);
   background-color: var(--baseBgColor);
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -3372,6 +3428,22 @@ footer {
   line-height: 1.9rem;
 }
 
+.card__main__container.percentageCard_container .card__container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 330px;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  -webkit-box-shadow: inset 5px 0 0 var(--secondary);
+          box-shadow: inset 5px 0 0 var(--secondary);
+}
+
+.card__main__container.percentageCard_container .card__container .card__body h3 {
+  font-family: "Recoleta SemiBold";
+  font-size: clamp(1rem, 5vw, 3rem);
+  line-height: clamp(1.5rem, 6vw, 3.5rem);
+}
+
 @media (min-width: 768px) {
   .card__main__container .card__container:first-child {
     margin-left: calc(calc(100% - 720px) / 2);
@@ -3727,6 +3799,192 @@ footer {
   height: 100%;
 }
 
+.services_box_section {
+  position: relative;
+  width: 100%;
+}
+
+.services_box_section .seo_box_container {
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e6e6e6;
+  gap: 1rem;
+}
+
+.services_box_section .seo_box_container .__img {
+  min-width: 40%;
+}
+
+.services_box_section .seo_box_container .__img img, .services_box_section .seo_box_container .__img svg {
+  max-width: 95%;
+  display: inherit;
+}
+
+.services_box_section .seo_box_container .__content {
+  max-width: 55%;
+}
+
+.services_box_section .seo_box_container .__content h3 {
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  font-family: "Recoleta Medium";
+  margin-bottom: .75rem;
+  color: var(--white);
+}
+
+.services_box_section .seo_box_container .__content p:not(.note_text) {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+.services_box_section .seo_box_container .__content p.note_text {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.services_box_section .seo_box_container .__content p.note_text::before {
+  content: '';
+  width: 5px;
+  height: 85%;
+  position: absolute;
+  background-color: var(--white);
+  -webkit-transform: rotate(0deg) translateY(-50%);
+          transform: rotate(0deg) translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+
+.services_box_section .seo_box_container .__content .cta__buttons {
+  position: relative;
+  width: 100%;
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.services_box_section .seo_box_container.mob-app-box {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary);
+  padding-left: 0;
+}
+
+.services_box_section .seo_box_container.web-dev-box {
+  padding-right: 1rem;
+  background-color: var(--semi-dark);
+}
+
+.services_box_section .seo_box_container.web-dev-box .__img {
+  min-width: 50%;
+}
+
+.services_box_section .seo_box_container.web-dev-box .__content {
+  padding-right: 2%;
+}
+
+.services_box_section .seo_box_container.web-dev-box .__content p.note_text::before {
+  background-color: var(--secondary);
+}
+
+.services_box_section .seo_box_container.content-writing-box {
+  background-color: transparent;
+  border-bottom: 5px solid #4951EC;
+  padding: 2rem 0 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.services_box_section .seo_box_container.content-writing-box .__img {
+  min-width: 50%;
+  margin-bottom: -3px;
+}
+
+.services_box_section .seo_box_container.content-writing-box .__content {
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+}
+
+.services_box_section .seo_box_container.content-writing-box .__content p.note_text::before {
+  background-color: var(--secondary);
+}
+
+.services_box_section .seo_box_container.smo-box {
+  background-color: #CBE4FF;
+  padding: 0;
+  color: var(--text-dark);
+}
+
+.services_box_section .seo_box_container.smo-box .__img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.services_box_section .seo_box_container.smo-box .__img img {
+  max-width: 100%;
+}
+
+.services_box_section .seo_box_container.smo-box .__content {
+  padding: 0 2.5rem;
+  max-width: initial;
+  padding-bottom: 50px;
+  margin-top: -150px;
+}
+
+.services_box_section .seo_box_container.smo-box .__content h3, .services_box_section .seo_box_container.smo-box .__content p {
+  color: var(--text-dark);
+}
+
+.services_box_section .seo_box_container.smo-box .__content p.note_text::before {
+  background-color: var(--secondary);
+}
+
+.services_box_section .seo_box_container.paid-promo-box {
+  padding: 0;
+  background-color: #FFF7DE;
+}
+
+.services_box_section .seo_box_container.paid-promo-box .__content {
+  padding: 2.5rem;
+  max-width: initial;
+  padding-bottom: 50px;
+}
+
+.services_box_section .seo_box_container.paid-promo-box .__content h3, .services_box_section .seo_box_container.paid-promo-box .__content p {
+  color: var(--text-dark);
+}
+
+.services_box_section .seo_box_container.paid-promo-box .__content p.note_text::before {
+  background-color: var(--secondary);
+}
+
+.services_box_section .seo_box_container.paid-promo-box .__img {
+  max-width: 100%;
+  min-width: 100%;
+  margin-top: -130px;
+}
+
+.services_box_section .seo_box_container.paid-promo-box .__img img {
+  max-width: 100%;
+}
+
+.services_box_section .seo_box_container.seo-box {
+  background-image: linear-gradient(45deg, #422CCE 0%, #CC4085 100%);
+}
+
 /* ----------------------------- Light Mode [Starts] -------------------------------- */
 body.lightMode {
   --baseBgColor: rgb(245, 245, 245);
@@ -3858,6 +4116,14 @@ body.lightMode .ctaButtonContainer.whiteButton {
 
 body.lightMode .ctaButtonContainer.whiteButton::before {
   color: var(--white);
+}
+
+body.lightMode .ctaButtonContainer.blackButton {
+  color: var(--white);
+}
+
+body.lightMode .ctaButtonContainer.blackButton::before {
+  color: var(--black);
 }
 
 body.lightMode .ctaButtonContainer.primaryButton {
@@ -4003,7 +4269,8 @@ body.lightMode .homeTestimonialSection .homeTestimonialsContainer .homeTestimoni
 
 body.lightMode .heroBannerSection,
 body.lightMode .teamPageSection,
-body.lightMode .contactPageSection {
+body.lightMode .contactPageSection,
+body.lightMode .careerHeroSection {
   background-color: var(--baseBgColor);
   background-image: url("../images/abstract-patten.png");
   background-blend-mode: multiply;
