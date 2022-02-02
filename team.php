@@ -116,7 +116,7 @@
           <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Get a Qoute">Get a Qoute</button>
         </div>
       </div>
-    </div>      
+    </div>
   </div>
 </section>
 

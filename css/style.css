@@ -48,6 +48,11 @@ h2 .textLight, h2 .text-light, h2 .lightText, h2 .light-text, .h2 .textLight, .h
   color: inherit !important;
 }
 
+.font__60 {
+  font-size: clamp(1rem, 5vw, 3.5rem);
+  line-height: clamp(1.5rem, 6vw, 4rem);
+}
+
 .font-recoleta-thin,
 .recoleta-thin {
   font-family: "Recoleta Thin";
@@ -2510,6 +2515,31 @@ footer {
   font-weight: 100;
 }
 
+.heroBannerSection .webDevTopBanner {
+  padding: 4rem 3rem 4rem 0;
+  position: relative;
+  color: var(--text-light);
+}
+
+.heroBannerSection .webDevTopBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% * 1.5);
+  height: 100%;
+  background-color: var(--secondary);
+  background-image: url("../images/coding-image.jpg");
+  background-position: center right;
+  background-size: cover;
+  z-index: 0;
+}
+
+.heroBannerSection .webDevTopBanner h2 {
+  position: relative;
+  z-index: 1;
+}
+
 .subHeroSection {
   position: relative;
 }
@@ -3238,12 +3268,19 @@ footer {
   line-height: 1.5rem;
 }
 
-.arrodion__container {
+.arrodion__container,
+.accordion__container {
   position: relative;
   width: 100%;
 }
 
-.arrodion__container::after {
+.arrodion__container.noBgImage::after,
+.accordion__container.noBgImage::after {
+  display: none;
+}
+
+.arrodion__container::after,
+.accordion__container::after {
   content: '';
   position: absolute;
   width: calc(100% + 50vw);
@@ -3255,7 +3292,8 @@ footer {
   bottom: -15%;
 }
 
-.arrodion__container .arrodionImage {
+.arrodion__container .arrodionImage,
+.accordion__container .arrodionImage {
   position: relative;
   width: 100%;
   height: 460px;
@@ -3263,7 +3301,8 @@ footer {
   z-index: 1;
 }
 
-.arrodion__container .arrodionImage img {
+.arrodion__container .arrodionImage img,
+.accordion__container .arrodionImage img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -3272,12 +3311,14 @@ footer {
      object-position: center;
 }
 
-.arrodion__container .accordion {
+.arrodion__container .accordion,
+.accordion__container .accordion {
   position: relative;
   z-index: 1;
 }
 
-.arrodion__container .accordion .accordion__block {
+.arrodion__container .accordion .accordion__block,
+.accordion__container .accordion .accordion__block {
   position: relative;
   width: 100%;
   border: 1px solid #6a6a6a;
@@ -3285,11 +3326,13 @@ footer {
   background-color: var(--baseBgColor);
 }
 
-.arrodion__container .accordion .accordion__block:last-child {
+.arrodion__container .accordion .accordion__block:last-child,
+.accordion__container .accordion .accordion__block:last-child {
   border: 1px solid #6a6a6a;
 }
 
-.arrodion__container .accordion .accordion__block .accordion__header {
+.arrodion__container .accordion .accordion__block .accordion__header,
+.accordion__container .accordion .accordion__block .accordion__header {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3307,58 +3350,80 @@ footer {
   transition: all 0.3s ease-in;
 }
 
-.arrodion__container .accordion .accordion__block .accordion__header h3 {
+.arrodion__container .accordion .accordion__block .accordion__header h3,
+.accordion__container .accordion .accordion__block .accordion__header h3 {
   margin: 0;
   font-size: 1.5rem;
 }
 
-.arrodion__container .accordion .accordion__block .accordion__header:hover {
+.arrodion__container .accordion .accordion__block .accordion__header:hover,
+.accordion__container .accordion .accordion__block .accordion__header:hover {
   background-color: var(--secondary);
   color: var(--text-light);
   cursor: pointer;
 }
 
-.arrodion__container .accordion .accordion__block .accordion__body {
+.arrodion__container .accordion .accordion__block .accordion__body,
+.accordion__container .accordion .accordion__block .accordion__body {
   position: relative;
   width: 100%;
   padding: 0 1.5rem;
   overflow: hidden;
 }
 
-.arrodion__container .accordion .accordion__block .accordion__body p {
+.arrodion__container .accordion .accordion__block .accordion__body p,
+.accordion__container .accordion .accordion__block .accordion__body p {
   margin-top: -100%;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
 
-.arrodion__container .accordion .accordion__block.active {
+.arrodion__container .accordion .accordion__block.active,
+.accordion__container .accordion .accordion__block.active {
   border-color: var(--secondary);
   -webkit-box-shadow: inset 0 -5px 0 var(--secondary);
           box-shadow: inset 0 -5px 0 var(--secondary);
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__header {
+.arrodion__container .accordion .accordion__block.active .accordion__header,
+.accordion__container .accordion .accordion__block.active .accordion__header {
   color: var(--secondary);
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__header h3 {
+.arrodion__container .accordion .accordion__block.active .accordion__header h3,
+.accordion__container .accordion .accordion__block.active .accordion__header h3 {
   font-family: "Recoleta SemiBold";
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__header i {
+.arrodion__container .accordion .accordion__block.active .accordion__header i,
+.accordion__container .accordion .accordion__block.active .accordion__header i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__header:hover {
+.arrodion__container .accordion .accordion__block.active .accordion__header:hover,
+.accordion__container .accordion .accordion__block.active .accordion__header:hover {
   color: var(--text-light);
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__body p {
+.arrodion__container .accordion .accordion__block.active .accordion__body p,
+.accordion__container .accordion .accordion__block.active .accordion__body p {
   margin-top: 0;
   padding: .5rem 0 1rem;
   font-size: 1.2rem;
   line-height: 1.7rem;
+}
+
+.arrodion__container.faqs_accordion .accordion .accordion__block .accordion__header h3,
+.accordion__container.faqs_accordion .accordion .accordion__block .accordion__header h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.arrodion__container.faqs_accordion .accordion .accordion__block .accordion__body p,
+.accordion__container.faqs_accordion .accordion .accordion__block .accordion__body p {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .card__main__container {
@@ -3428,6 +3493,22 @@ footer {
   line-height: 1.9rem;
 }
 
+.card__main__container .card__container.border-left {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card__main__container .card__container.border-left::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: var(--primary);
+  background-image: linear-gradient(-45deg, #6934d3 0%, #77def3 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .card__main__container.percentageCard_container .card__container {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -3442,6 +3523,65 @@ footer {
   font-family: "Recoleta SemiBold";
   font-size: clamp(1rem, 5vw, 3rem);
   line-height: clamp(1.5rem, 6vw, 3.5rem);
+}
+
+.card__main__container.seo_services_container .card__container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-bottom: .8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 25vw;
+}
+
+.card__main__container.seo_services_container .card__container .card__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.card__main__container.seo_services_container .card__container .card__body p {
+  font-size: 1.0rem;
+  line-height: 1.55rem;
+}
+
+.card__main__container.web_services_container .card__container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-bottom: 1.3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.card__main__container.web_services_container .card__container .card__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+}
+
+.card__main__container.web_services_container .card__container .card__body p {
+  font-size: 1.0rem;
+  line-height: 1.55rem;
 }
 
 @media (min-width: 768px) {
@@ -3551,7 +3691,7 @@ footer {
   position: relative;
 }
 
-.specialCtaSection .specialCtaContainer {
+.specialCtaContainer {
   position: relative;
   width: 100%;
   background-color: var(--primary);
@@ -3565,11 +3705,11 @@ footer {
   padding: 2.5rem 0;
 }
 
-.specialCtaSection .specialCtaContainer .__content {
+.specialCtaContainer .__content {
   padding: 0 10vw 0 2.5rem;
 }
 
-.specialCtaSection .specialCtaContainer .__content h3 {
+.specialCtaContainer .__content h3 {
   font-size: clamp(1rem, 5vw, 2.8rem);
 }
 
@@ -3983,6 +4123,181 @@ footer {
 
 .services_box_section .seo_box_container.seo-box {
   background-image: linear-gradient(45deg, #422CCE 0%, #CC4085 100%);
+}
+
+.specialContentSection {
+  position: relative;
+}
+
+.specialContentSection .specialContentContainer {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 3.5rem;
+  background-image: url("../images/seo-services-bg-illustration.svg"), linear-gradient(135deg, #ffffff 0%, #C6D7F1 100%);
+  background-position: right bottom;
+  background-repeat: no-repeat, repeat;
+  background-size: 400px auto, 100%;
+}
+
+.specialContentSection .specialContentContainer::after {
+  content: '';
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  background-image: url("../images/seo-special-illustration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 360px;
+  height: 250px;
+}
+
+.specialContentSection .specialContentContainer .subSpecialContent {
+  position: relative;
+  padding-right: 3rem;
+}
+
+.specialContentSection .specialContentContainer h3 {
+  font-size: clamp(1rem, 5vw, 3.3rem);
+  line-height: clamp(1.5rem, 6vw, 4.3rem);
+  margin-bottom: 2rem;
+}
+
+.specialContentSection .specialContentContainer p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.includedServices_smallCard {
+  position: relative;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.includedServices_smallCard li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% / 4 - 1.5rem);
+  background-color: var(--semi-dark);
+  color: var(--textColor);
+  min-height: 110px;
+  padding: 1rem 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  line-height: clamp(1.5rem, 6vw, 2.2rem);
+}
+
+.includedServices_smallCard li:nth-child(4n) {
+  width: 25%;
+}
+
+.includedServices_smallCard li::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: var(--primary);
+  background-image: linear-gradient(-45deg, #6934d3 0%, #77def3 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.agile_methodology_section {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary);
+  background-image: url("../images/abstract-patten.png"), linear-gradient(135deg, #6D0DA4 0%, #FD5A1E 100%);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  padding: 4rem 0 10rem;
+}
+
+.agile_methodology_section .optionsGridContainer {
+  position: relative;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: calc(100% / 3);
+  padding: 0 2rem 3.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid .__icon {
+  margin-bottom: 1.5rem;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid h3 {
+  font-family: "Recoleta SemiBold";
+  margin-bottom: 1rem;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid:nth-child(2), .agile_methodology_section .optionsGridContainer .optionGrid:nth-child(5) {
+  padding: 0 2rem;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid:nth-child(3n+3) {
+  border-right: 0;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid:nth-child(1), .agile_methodology_section .optionsGridContainer .optionGrid:nth-child(4) {
+  padding-left: 0;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid:nth-child(3), .agile_methodology_section .optionsGridContainer .optionGrid:nth-child(6) {
+  padding-right: 0;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid:nth-last-child(1), .agile_methodology_section .optionsGridContainer .optionGrid:nth-last-child(2), .agile_methodology_section .optionsGridContainer .optionGrid:nth-last-child(3) {
+  padding-bottom: 0;
+  border-bottom: 0;
+  padding-top: 2.5rem;
+}
+
+.agile_methodology_section .optionsGridContainer .optionGrid:nth-last-child(1) p, .agile_methodology_section .optionsGridContainer .optionGrid:nth-last-child(2) p, .agile_methodology_section .optionsGridContainer .optionGrid:nth-last-child(3) p {
+  margin-bottom: 0;
+}
+
+.specialCtaSection.agile_methodology_specialCtaSection {
+  position: relative;
+  padding-bottom: 2.3rem;
+}
+
+.specialCtaSection.agile_methodology_specialCtaSection .specialCtaContainer {
+  margin-top: -5rem;
 }
 
 /* ----------------------------- Light Mode [Starts] -------------------------------- */

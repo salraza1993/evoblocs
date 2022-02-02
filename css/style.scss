@@ -60,6 +60,11 @@ h2, .h2, .h2_heading {
   }
 }
 
+.font__60 {
+  font-size: clamp(1rem, 5vw, 3.5rem);
+  line-height: clamp(1.5rem, 6vw, 4rem);
+}
+
 .font-recoleta-thin,
 .recoleta-thin {font-family: $recoletaThin;};
 .font-recoleta-light,
@@ -1663,6 +1668,25 @@ footer { width: 100%; position: relative; }
       font-weight: 100;
     }
   }
+  .webDevTopBanner {
+    padding: 4rem 3rem 4rem 0;
+    position: relative;
+    color: var(--text-light);
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(100% * 1.5);
+      height: 100%;
+      background-color: var(--secondary);
+      background-image: url('../images/coding-image.jpg');
+      background-position: center right;
+      background-size: cover;
+      z-index: 0;
+    }
+    h2 {position: relative;z-index: 1;}
+  }
 }
 .subHeroSection {
   position: relative;
@@ -2174,9 +2198,13 @@ footer { width: 100%; position: relative; }
     }
   }
 }
-.arrodion__container {
+.arrodion__container,
+.accordion__container {
   position: relative;
   width: 100%;
+  &.noBgImage {
+    &::after {display: none;}
+  }
   &::after {
     content: '';
     position: absolute;
@@ -2253,6 +2281,19 @@ footer { width: 100%; position: relative; }
       }
     }
   }
+  &.faqs_accordion {
+    .accordion {
+      .accordion__block {
+        .accordion__header {
+          h3 { font-family: $roboto; font-size: 1.2rem; }
+          
+        }
+        .accordion__body {
+          p {font-size: 1rem; font-weight: 300;}
+        }
+      }
+    }
+  }
 }
 
 .card__main__container {
@@ -2293,7 +2334,19 @@ footer { width: 100%; position: relative; }
       }
       p {font-weight: 300; line-height: 1.9rem;}
     }
-
+    &.border-left {
+      box-shadow: none;
+      &::before {
+        content: '';
+        width: 5px;
+        height: 100%;
+        background-color: var(--primary);
+        background-image: $gradient_1;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
   }
   &.percentageCard_container {
     .card__container {
@@ -2307,6 +2360,29 @@ footer { width: 100%; position: relative; }
           font-size: clamp(1rem, 5vw, 3rem);
           line-height: clamp(1.5rem, 6vw, 3.5rem);
         }
+      }
+    }
+  }
+  &.seo_services_container {
+    .card__container {
+      align-items: start;
+      padding-bottom: .8rem;
+      width: fit-content;
+      max-width: 25vw;
+      .card__icon { @include flexCenter(center, center); }
+      .card__body {
+        p { font-size: 1.0rem; line-height: 1.55rem; }
+      }
+    }
+  }
+  &.web_services_container {
+    .card__container {
+      align-items: start;
+      padding-bottom: 1.3rem;
+      width: fit-content;
+      .card__icon { @include flexCenter(center, center); }
+      .card__body {
+        p { font-size: 1.0rem; line-height: 1.55rem; }
       }
     }
   }
@@ -2327,7 +2403,6 @@ footer { width: 100%; position: relative; }
   .card__main__container .card__container:first-child {margin-left: calc(calc(100% - 1320px) / 2);} 
   .card__main__container .card__container:last-child {margin-right: calc(calc(100% - 1320px) / 2);} 
 }
-
 
 
 .teamPageSection {
@@ -2374,20 +2449,20 @@ footer { width: 100%; position: relative; }
 .specialCtaSection {
   position: relative;
   
-  .specialCtaContainer {
-    position: relative;
-    width: 100%;
-    background-color: var(--primary);
-    background-image: url('../images/abstract-patten.png'), $gradient_4;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    color: var(--text-light);
-    align-items: center;
-    padding: 2.5rem 0;
-    .__content {
-      padding: 0 10vw 0 2.5rem;
-      h3 {font-size: clamp(1rem, 5vw, 2.8rem);}
-    }
+}
+.specialCtaContainer {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary);
+  background-image: url('../images/abstract-patten.png'), $gradient_4;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  color: var(--text-light);
+  align-items: center;
+  padding: 2.5rem 0;
+  .__content {
+    padding: 0 10vw 0 2.5rem;
+    h3 {font-size: clamp(1rem, 5vw, 2.8rem);}
   }
 }
 
@@ -2676,6 +2751,126 @@ footer { width: 100%; position: relative; }
   }
   
 }
+
+.specialContentSection {
+  position: relative;
+  
+  .specialContentContainer {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 3.5rem;
+    background-image: url('../images/seo-services-bg-illustration.svg'), $gradient_6;
+    background-position: right bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: 400px auto, 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 1rem;
+      bottom: 0;
+      background-image: url('../images/seo-special-illustration.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 360px;
+      height: 250px;
+    }
+    .subSpecialContent {
+      position: relative;
+      padding-right: 3rem;
+    }
+    h3 {
+      font-size: clamp(1.0rem, 5vw, 3.3rem);
+      line-height: clamp(1.5rem, 6vw, 4.3rem);
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+.includedServices_smallCard {
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: calc(100% / 4 - 1.5rem);
+    background-color: var(--semi-dark);
+    color: var(--textColor);
+    min-height: 110px;
+    padding: 1rem 1.5rem;
+    font-size: clamp(1rem, 5vw, 1.6rem);
+    line-height: clamp(1.5rem, 6vw, 2.2rem);
+    &:nth-child(4n) {width: 25%;}
+    &::before {
+      content: '';
+      width: 5px;
+      height: 100%;
+      background-color: var(--primary);
+      background-image: $gradient_1;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.agile_methodology_section {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary);
+  background-image: url('../images/abstract-patten.png'), $gradient_2;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  padding: 4rem 0 10rem;
+  .optionsGridContainer {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    .optionGrid {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      max-width: calc(100% / 3);
+      padding: 0 2rem 3.5rem;
+      border-right: 1px solid rgba(#ffffff, 0.2);
+      border-bottom: 1px solid rgba(#ffffff, 0.2);
+      text-align: center;
+
+      .__icon {margin-bottom: 1.5rem;}
+      h3 {font-family: $recoletaSemiBold; margin-bottom: 1rem;}
+      p {font-size: 1rem; line-height: 1.7rem;}
+      &:nth-child(2), &:nth-child(5) { padding: 0 2rem; }
+      &:nth-child(3n+3) {border-right: 0;}
+      &:nth-child(1), &:nth-child(4) {padding-left: 0;}
+      &:nth-child(3), &:nth-child(6) {padding-right: 0;}
+      &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3) {
+        padding-bottom: 0;
+        border-bottom: 0;
+        padding-top: 2.5rem;
+        p {margin-bottom: 0;}
+      }
+    }
+  }
+}
+.specialCtaSection.agile_methodology_specialCtaSection {
+  position: relative;
+  padding-bottom: 2.3rem;
+  .specialCtaContainer {
+    margin-top: -5rem;
+  }
+}
+
 
 /* ----------------------------- Light Mode [Starts] -------------------------------- */
 body.lightMode {

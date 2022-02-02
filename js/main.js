@@ -133,6 +133,24 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
   });
 
+
+  // tabs
+  const tabMainParent = document?.querySelector('.tabMainContainer');
+  const tabButtons = document?.querySelectorAll('.tabMainContainer .tab');
+  const tabData = document?.querySelectorAll('.tabMainContainer .tabData');
+  tabButtons.forEach(tab => {
+    tab.addEventListener('click', function () {
+      tabButtons.forEach(item => item.classList.remove('active'));
+      tabData.forEach(item => item.classList.remove('active'));
+
+      let thisId = this.getAttribute('id');
+      this.classList.add('active');
+      let currentTabData = document.querySelector(`#data-${thisId}`);
+      currentTabData.classList.add('active');
+    });
+  });
+
+
   const closePopupButton = document.querySelector('.closePopup');
   const ctaButton = document.querySelectorAll('.ctaButton');
   const overlayContainer = document.querySelector('.overlaySec');
@@ -157,11 +175,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
   });
 
   if (window.innerWidth > 767) {
-    const scrollContainer = document.querySelector(".horizontal__scroll__container");
-    scrollContainer.addEventListener("wheel", (evt) => {
-      evt.preventDefault();
-      console.log(scrollContainer.scrollLeft += evt.deltaY);
-      scrollContainer.scrollLeft += evt.deltaY;
+    const scrollContainerAll = document?.querySelectorAll(".horizontal__scroll__container");
+    scrollContainerAll.forEach(scoller => {
+      scoller.addEventListener('wheel', function (evt) {
+        evt.preventDefault();
+        scoller.scrollLeft += evt.deltaY;
+      });
     });
   }
 

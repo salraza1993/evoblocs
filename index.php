@@ -617,23 +617,7 @@
 <script src="js/app.js"></script>
 <!-- footer begin -->
 <script>
-	// tabs
-  const tabMainParent = document.querySelector('.tabMainContainer');
-  const tabButtons = tabMainParent.querySelectorAll('.tab');
-  const tabData = tabMainParent.querySelectorAll('.tabData');
-  if (tabButtons.length > 0) {
-    tabButtons.forEach(tab => {
-      tab.addEventListener('click', function () {
-        tabButtons.forEach(item => item.classList.remove('active'));
-        tabData.forEach(item => item.classList.remove('active'));
-
-        let thisId = this.getAttribute('id');
-        this.classList.add('active');
-        let currentTabData = document.querySelector(`#data-${thisId}`);
-        currentTabData.classList.add('active');
-      });
-    });
-  }
+	
 </script>
 <?php include('includes/footer.php') ?>
 <!-- footer End -->
