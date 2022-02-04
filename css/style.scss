@@ -60,9 +60,17 @@ h2, .h2, .h2_heading {
   }
 }
 
+.font__50 {
+  font-size: clamp(1rem, 5vw, 3rem);
+  line-height: clamp(1.5rem, 6vw, 3.5rem);
+}
 .font__60 {
   font-size: clamp(1rem, 5vw, 3.5rem);
   line-height: clamp(1.5rem, 6vw, 4rem);
+}
+.font__66 {
+  font-size: clamp(1rem, 5vw, 4rem);
+  line-height: clamp(1.5rem, 6vw, 4.3rem);
 }
 
 .font-recoleta-thin,
@@ -2214,7 +2222,6 @@ footer { width: 100%; position: relative; }
     background-color: var(--baseBgColor);
     background-image: linear-gradient(to left, var(--baseBgColor) 0%, var(--secondary) 100%);
     bottom: -15%;
-
   }
   .arrodionImage {
     position: relative;
@@ -2333,6 +2340,7 @@ footer { width: 100%; position: relative; }
         margin-bottom: 1rem;
       }
       p {font-weight: 300; line-height: 1.9rem;}
+      p:last-child {margin-bottom: 0;}
     }
     &.border-left {
       box-shadow: none;
@@ -2366,7 +2374,6 @@ footer { width: 100%; position: relative; }
   &.seo_services_container {
     .card__container {
       align-items: start;
-      padding-bottom: .8rem;
       width: fit-content;
       max-width: 25vw;
       .card__icon { @include flexCenter(center, center); }
@@ -2386,7 +2393,30 @@ footer { width: 100%; position: relative; }
       }
     }
   }
+  &.content_process_container {
+    .card__container {
+      background-color: var(--bg-light);
+      align-items: start;
+      padding-bottom: 1.3rem;
+      width: fit-content;
+      color: var(--text-dark);
+      &.border-left {
+        &::before {
+          height: 101%;
+          background-image: $gradient_3;
+          left: -1px;
+          top: -1px;
+        }
+      }
+      .card__icon { @include flexCenter(center, center); }
+      .card__body {
+        h3 {color: var(--text-dark);}
+        p { font-size: 1.0rem; line-height: 1.55rem; }
+      }
+    }
+  }
 }
+
 @media (min-width: 768px) { 
   .card__main__container .card__container:first-child {margin-left: calc(calc(100% - 720px) / 2);} 
   .card__main__container .card__container:last-child {margin-right: calc(calc(100% - 720px) / 2);} 
@@ -2403,7 +2433,6 @@ footer { width: 100%; position: relative; }
   .card__main__container .card__container:first-child {margin-left: calc(calc(100% - 1320px) / 2);} 
   .card__main__container .card__container:last-child {margin-right: calc(calc(100% - 1320px) / 2);} 
 }
-
 
 .teamPageSection {
   @include abstractBg();
@@ -2754,7 +2783,12 @@ footer { width: 100%; position: relative; }
 
 .specialContentSection {
   position: relative;
-  
+  &.webSpecialContentSection {
+    .specialContentContainer {
+      background-image: url('../images/web-services-bg-illustration.svg'), $gradient_6;
+      &::after { background-image: url('../images/responsive_mockup.png'); }
+    }
+  }
   .specialContentContainer {
     position: relative;
     width: 100%;
@@ -2776,6 +2810,7 @@ footer { width: 100%; position: relative; }
       width: 360px;
       height: 250px;
     }
+    
     .subSpecialContent {
       position: relative;
       padding-right: 3rem;
@@ -2869,6 +2904,206 @@ footer { width: 100%; position: relative; }
   .specialCtaContainer {
     margin-top: -5rem;
   }
+}
+
+.webMethodologySection {
+  position: relative;
+  width: 100%;
+  padding: 8rem 0;
+
+  .webMethodologyContainer {
+    position: relative;
+    width: 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      width: calc(100% + 25vw);
+      right: 0;
+      height: 118%;
+      background-color: var(--baseBgColor);
+      background-image: linear-gradient(to left, var(--baseBgColor) 0%, var(--secondary) 100%);
+      top: -10%;
+      z-index: -1;
+    }
+    .webMethodology_block {
+      position: relative;
+      padding-right: 15%;
+    }
+    .webPointsContainer {
+      position: relative;
+      .__points {
+        position: relative;
+        width: 100%;
+        li {
+          position: relative;
+          padding: 0 2rem 0 0rem;
+          display: flex;
+          align-items: center;
+          height: 130px;
+
+          &::after {
+            content: '';
+            border-top: 65px solid transparent;
+            border-bottom: 65px solid transparent;
+            border-right: 50px solid red;
+            right: 100%;
+            height: 100%;
+            position: absolute;
+          }
+
+          .__icon {
+            width: 130px;
+            min-width: 130px;
+            height: 130px;
+            @include flexCenter(center, center);
+          }
+          .__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--text-light);
+
+            h3 {
+              font-size: clamp(1rem, 3vw, 1.5rem);
+              line-height: clamp(1.5rem, 3.3vw, 1.8rem);
+              font-family: $recoletaSemiBold;
+              margin-bottom: .5rem;
+            }
+            p {
+              font-size: 1rem;
+              line-height: 1.3rem;
+              margin: 0;
+            }
+          }
+          &:nth-child(1) {
+            background-color: #89BDDF;
+            &::after {border-right: 50px solid #89BDDF;}
+          }
+          &:nth-child(2) {
+            background-color: #64A1C9;
+            &::after {border-right: 50px solid #64A1C9;}
+          }
+          &:nth-child(3) {
+            background-color: #407EA7;
+            &::after {border-right: 50px solid #407EA7;}
+          }
+          &:nth-child(4) {
+            background-color: #2C6991;
+            &::after {border-right: 50px solid #2C6991;}
+          }
+          &:nth-child(5) {
+            background-color: #195074;
+            &::after {border-right: 50px solid #195074;}
+          }
+        }
+      }
+    }
+  }
+}
+
+.smmWhyChoose {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 1.3rem;
+  .smmWhyChoose_block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.8rem;
+    width: calc(100% / 4 - 1.3rem);
+    background-color: #ccc;
+    color: var(--text-light);
+    &:last-child {width: 25%;}
+    &:nth-child(1) {background-image: $gradient_7;}
+    &:nth-child(2) {background-image: $gradient_8;}
+    &:nth-child(3) {background-image: $gradient_9;}
+    &:nth-child(4) {background-image: $gradient_10;}
+
+    .__icon {
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 1rem;
+      font-family: $recoletaSemiBold;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      &:last-child {margin-bottom: 0;}
+    }
+  }
+}
+
+.smmSpecialContentSection {
+  position: relative;
+  width: 100%;
+
+  .smmSpecialContentContainer {
+    position: relative;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    background-color: #ccc;
+    background-image: linear-gradient(135deg, #f0dde0 0%, #dbe8fc 100%);
+    .__icon {
+      text-align: center;
+      img {max-width: 75%;}
+    }
+    h3 {margin-bottom: 1.5rem;}
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      padding-right: 5%;
+      margin-bottom: 2rem;
+    }
+    .lists {
+      position: relative;
+      width: 100%;
+      li {
+        position: relative;
+        padding-left: 2rem;
+        border-left: 3px solid var(--secondary);
+        padding: .7rem .5rem .7rem 2rem;
+        font-size: 22px;
+        line-height: 26px;
+        &::after {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          width: 22px;
+          height: 22px;
+          font-size: .7rem;
+          line-height: 22px;
+          text-align: center;
+          position: absolute;
+          background-color: var(--secondary);
+          left: -13px;
+          top: calc(50% - 11px);
+          border-radius: 25px;
+          color: var(--text-light);
+        }
+      }
+    }
+  }
+}
+
+.content-process-section {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0 !important;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    background-image: linear-gradient(to left, var(--baseBgColor) 0%, var(--secondary) 100%);
+  }  
+  .container, .card__main__container {z-index: 1; position: relative;}
 }
 
 

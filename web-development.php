@@ -42,7 +42,7 @@
       <div class="offset-lg-3 col-12 col-lg-9">
       </div>
     </div>
-    <h5 class="roboto-medium my-5">RAccording to a recent study:</h5>
+    <h5 class="roboto-medium my-5">According to a recent study:</h5>
   </div>
   <div class="card__main__container percentageCard_container horizontal__scroll__container mt-3">
     <div class="card__container">
@@ -92,7 +92,7 @@
   </div>
 </section>
 
-<section class="specialContentSection pt-0 pb-5">
+<section class="specialContentSection webSpecialContentSection pt-0 pb-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container p-0">
     <div class="specialContentContainer text-dark">
@@ -170,7 +170,65 @@
   
 </section>
 
-<h2 class="my-5">Why Choose us to be here</h2>
+<div class="webMethodologySection">
+  <?php include('includes/lineContainer.php') ?>
+  <div class="container">
+    <div class="webMethodologyContainer">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 p-0 pe-4">
+          <div class="webMethodology_block text-white">
+            <h2 class="font__66 mb-4">Our Web Development Methodology</h2>
+            <p>
+              At EvoBlocs, we aim to transform your brand into a future-ready online business that is ideal for your audience and industry. Paying close attention to your USPs, we create a website that will achieve all your business and community goals, hence, when you choose us, you get:
+            </p>
+            <button class="ctaButtonContainer whiteButton mt-5 ctaButton" buttonval="Get a Qoute">Get a Qoute</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-0">
+          <div class="webPointsContainer">
+            <ul class="__points">
+              <li>
+                <div class="__icon"><img src="images/discovery.svg" alt=""></div>
+                <div class="__content">
+                  <h3>Discovery</h3>
+                  <p>We research your company, products, services and target audience.</p>
+                </div>
+              </li>
+              <li>
+                <div class="__icon"><img src="images/define.svg" alt=""></div>
+                <div class="__content">
+                  <h3>Define</h3>
+                  <p>We define a personalized strategy designed to accomplish your specific goals.</p>
+                </div>
+              </li>
+              <li>
+                <div class="__icon"><img src="images/design.svg" alt=""></div>
+                <div class="__content">
+                  <h3>Design</h3>
+                  <p>We design wireframes for your website and then bring your site to life with full-fidelity mockups.</p>
+                </div>
+              </li>
+              <li>
+                <div class="__icon"><img src="images/develope.svg" alt=""></div>
+                <div class="__content">
+                  <h3>Develope</h3>
+                  <p>We develop templates, adding the content, and integrating it all with the CMS, we also test every feature across multiple platforms to ensure everything works as it should.</p>
+                </div>
+              </li>
+              <li>
+                <div class="__icon"><img src="images/deploy.svg" alt=""></div>
+                <div class="__content">
+                  <h3>Deploy</h3>
+                  <p>Once fully satisfied, we will train your team on everything you need to know to manage your website and launch your page.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="our-service-section py-4">
   <?php include('includes/lineContainer.php') ?>
