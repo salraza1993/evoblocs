@@ -230,13 +230,93 @@
       <p>
         Our team knows just how to create and market quality content that can increase your website's traffic, build brand authority with search engines and educate your audience to make smart purchasing decisions, all in one breath!
       </p>
-      <button class="ctaButtonContainer secondaryButton ctaButton mt-4" buttonval="Let's get started">Let's get started</button>
+      <button class="ctaButtonContainer secondaryButton ctaButton my-5" buttonval="Let's get started">Let's get started</button>
     </div>
   </div>
-  
 </section>
 
-<section class="specialCtaSection">
+<section class="contentSpecialSection">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-9 p-0">
+        <div class="__heading">
+          <h3 class="font__66">
+            Search Engine Optimized, <span class="recoleta-semiBold">Tailored Content Writing Services</span>
+          </h3>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 p-0">
+        <div class="__content">
+          <p>
+            Publishing great content is essential for fueling your online presence, targeting user engagement, influencing decisions and creating thought leadership. To help you achieve all of this and more, EvoBlocs offers the following primary services:
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="commontabSection pb-3">
+  <?php include('includes/lineContainer.php') ?>
+  <div class="container p-0">
+    <div class="commonTabContainer tabMainContainer">
+      <div class="tab__header">
+        <ul class="tab__list">
+          <li id="content-tab-1" class="__item tab active">Web Pages</li>
+          <li id="content-tab-2" class="__item tab">Web Blog</li>
+          <li id="content-tab-3" class="__item tab">Third-party Blogs</li>
+        </ul>
+      </div>
+      <div class="tab__body">
+        <div id="data-content-tab-1" class="tab__data tabData active">
+          <p>
+            Your website can be viewed as a 24/7 marketing tool. For this to happen, you need a strong online presence to capitalise on this opportunity fully.
+          </p>
+          <p>
+            What is the first impression that your potential buyers get when they visit your website? Do they find the information that they’re looking for easily? Are your landing pages relevant to their searches? Is the content fluid and grammatically correct, or are there a lot of typos, repetition and disorganized content on the page?
+          </p>
+          <p>
+            EvoBlocs can help you tackle all these issues and make sure that you improve your website’s search engine optimization with original content. When a potential buyer looks at your quality pages, they will surely spend time reading through the content and learning more about your products and services.
+          </p>
+        </div>
+        <div id="data-content-tab-2" class="tab__data tabData">
+          <p>
+            When it comes to marketing a business, web blogs are a great way for achieving short and long-term goals. Blogging is one of the most effective and inexpensive ways for building brand awareness and reach. In fact, with consistent quality blogging you can:
+          </p>
+          <ul class="list ps-4">
+            <li>Drive website traffic</li>
+            <li>Strengthen relationships with existing customers</li>
+            <li>Attract new customers</li>
+            <li>Improve your rankings</li>
+            <li>Increase leads</li>
+            <li>Build industry authority</li>
+            <li>Improve SEO</li>
+            <li>Create a culture of knowledge</li>
+          </ul>
+          <p>
+            Our team of proficient writers creates original blogs for your target audience that establish you as an industry leader. We give you access to the type of content that actually converts.
+          </p>
+        </div>
+        <div id="data-content-tab-3" class="tab__data tabData">
+          <p>
+            While self-hosting blogs is a standard procedure, a robust content marketing strategy demands a healthy mix of both self-hosted and third-party blogs.
+          </p>
+          <p>
+            As we all know, blogs help in increasing user activity and website credibility through backlinks. Having said that however, you cannot always rely on organic traffic through backlinks. Building your audience from the ground up can be difficult - this is why publishing third party content is an important SEO strategy for increasing SERP rankings.
+          </p>
+          <p>
+            Using our third party blog writing services ensures that information about your products and services gets a wider audience. Since third party blogging offers you a built-in pool of highly engaged readers, your business can leverage popular categories to get your posts in front of the right users.
+          </p>
+          <p>
+            Our team of professional content writers offer you a variety of services such as third party article publishing, guest posting, press release etc. We build credibility and authority for your website with backlinks and ensure that your business gets maximum visibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="specialCtaSection py-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container p-0">
     <div class="specialCtaContainer d-flex flex-wrap">
@@ -269,47 +349,81 @@
           </h3>
           <div class="accordion__container faqs_accordion noBgImage">
             <div class="accordion">
-              <div class="accordion__block active">
+              <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Research</h3>
+                  <h3>What is Content Marketing?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    All businesses need content to increase or create brand visibility and sell their products or services. Whether it’s through blogs, videos, infographics or the pages on your website, content marketing helps in increasing exposure and targeting specific audiences that ultimately result in lead generation.
+                  </p>
+                  <p>
+                    Strategic and creative thinking will give you the best of both worlds: impeccable copy coupled with a power-packed marketing approach.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Idea &amp; Concept</h3>
+                  <h3>Is Content Writing a Worthwhile Investment?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    If you want your digital marketing campaign to succeed, you must first succeed in creating effective content. If you do not have quality content, it is extremely difficult to generate brand awareness or boost engagement. This is particularly difficult nowadays as the online space is so competitive.
+                  </p>
+                  <p>
+                    Once you have a compelling copy on your hands, the next step is exactness in implementation, through which you will gain access and exposure to several platforms, providing ample opportunities to communicate with many more potential customers. So yes, it is quite worthwhile!
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Design and Development</h3>
+                  <h3>Are Content Marketing Services Expensive?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    The digital space is becoming increasingly competitive with new entrants offering complex, cutting edge content solutions. If you pair with a team who is laser-focused on generating conversions through targeted content marketing campaigns, your investment will provide you with greater returns.
+                  </p>
+                  <p>
+                    Everyone’s budget is different, likewise there are multiple avenues to explore when looking for a content creator or agency. Find a solution that works best for you to fit your budget and fulfill your business goals.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Testing &amp; Support</h3>
+                  <h3>How Does Content Marketing Help SEO?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Successful SEO strategies align with Google’s criteria to provide relevant results for those searching for information on the web. This means that you need to deliver the type of information that your prospective customers are looking for.
+                  </p>
+                  <p>
+                    If you produce good content, you can fulfill all the criteria, which will make Google view you as an expert in that category. This perceived expertise is known as ‘domain authority’ and if you have high domain authority, your content is going to be ranked higher than your competition’s, because Google is going to consider you to be a trustworthy source. With high domain authority, you will appear at the top search results, and content marketing is the most reliable way to make that happen.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Do You Offer Content Writing as a Standalone Service?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    Yes, absolutely. If you require standalone content writing services, need to support existing activities, or would like to review your approach to improve your current strategy - we offer consultation and content writing services.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>What Type of Results Can I Expect from EvoBlocs’s Content Marketing Services?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    The key performance indicators we look at for content marketing services consist of website traffic and performance on site. We will measure and evaluate these metrics monthly to optimize for conversions and give you the best results.
                   </p>
                 </div>
               </div>

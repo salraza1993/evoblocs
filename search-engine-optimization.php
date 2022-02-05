@@ -132,7 +132,8 @@
       <div class="sectionHeading d-flex justify-content-between align-items-center pb-3">
         <div class="headingText">
           <h2>
-            <span class="primaryColor">OUR SEO </span>
+            <span class="lightText">Our</span>
+            <span class="primaryColor">SEO </span>
             <br>
             <span class="lightText">Services Include</span>
           </h2>

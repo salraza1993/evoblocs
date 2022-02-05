@@ -16,12 +16,12 @@
 			<li>
 				<a href="services.php">Services</a>
 				<ul class="subMenu">
-					<li><a href="javascript:;">Web Development</a></li>
-					<li><a href="javascript:;">App Development</a></li>
-					<li><a href="javascript:;">Search Engine Optimization (SEO)</a></li>
-					<li><a href="javascript:;">Social Media Makerting (SMM)</a></li>
-					<li><a href="javascript:;">Paid Promotion / Advertising</a></li>
-					<li><a href="javascript:;">Content Writting</a></li>
+					<li><a href="web-development.php">Web Design & Development</a></li>
+					<li><a href="mobile-app-development.php">Mobile App Development</a></li>
+					<li><a href="search-engine-optimization.php">Search Engine Optimization (SEO)</a></li>
+					<li><a href="social-media-marketing.php">Social Media Makerting (SMM)</a></li>
+					<li><a href="paid-promotion.php">Paid Promotion / Advertising</a></li>
+					<li><a href="content-marketing-development.php">Content Writting</a></li>
 				</ul>
 			</li>
 			<li><a href="portfolio.php">Portfolio</a></li>

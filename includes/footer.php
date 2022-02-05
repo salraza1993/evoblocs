@@ -57,13 +57,12 @@
             <div class="footer-links-block">
               <h5>Services</h5>
               <ul class="links">
-                <li><a href="javscript:;">Web Design / Development</a></li>
-                <li><a href="javscript:;">E-Commerce Websites</a></li>
-                <li><a href="javscript:;">SEO Services</a></li>
-                <li><a href="javscript:;">Branding / Identity</a></li>
-                <li><a href="javscript:;">Graphics Design</a></li>
-                <li><a href="javscript:;">Application / UX/UI</a></li>
-                <li><a href="javscript:;">SSL Certificates</a></li>
+                <li><a href="web-development.php">Web Development</a></li>
+                <li><a href="mobile-app-development.php">Mobile App Development</a></li>
+                <li><a href="search-engine-optimization.php">Search Engine Optimization (SEO)</a></li>
+                <li><a href="social-media-marketing.php">Social Media Makerting (SMM)</a></li>
+                <li><a href="paid-promotion.php">Paid Promotion / Advertising</a></li>
+                <li><a href="content-marketing-development.php">Content Writting</a></li>
               </ul>
             </div>
           </div>

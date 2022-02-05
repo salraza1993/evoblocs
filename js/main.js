@@ -1,31 +1,31 @@
 document.addEventListener("DOMContentLoaded", function (e) {
 
-  var simpleTextSlider = new Swiper(".simpleTextSlider", {
-    slidesPerView: 1,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-  var aboutContentSlider = new Swiper("#aboutContentSlider", {
-    slidesPerView: 1,
-    speed: 1000,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
+  // var simpleTextSlider = new Swiper(".simpleTextSlider", {
+  //   slidesPerView: 1,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false,
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  // });
+  // var aboutContentSlider = new Swiper("#aboutContentSlider", {
+  //   slidesPerView: 1,
+  //   speed: 1000,
+  //   autoplay: {
+  //     delay: 4000,
+  //     disableOnInteraction: false,
 
-    },
-    navigation: {
-      nextEl: "#onDemandWebinar-swiper-button-next",
-      prevEl: "#onDemandWebinar-swiper-button-prev",
-    },
-    pagination: { el: '.swiper-pagination', clickable: true }
-  });
+  //   },
+  //   navigation: {
+  //     nextEl: "#onDemandWebinar-swiper-button-next",
+  //     prevEl: "#onDemandWebinar-swiper-button-prev",
+  //   },
+  //   pagination: { el: '.swiper-pagination', clickable: true }
+  // });
 
   // Header fixed on scroll
   window.onscroll = getScrollPosition;
@@ -150,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
     });
   });
 
-
   const closePopupButton = document.querySelector('.closePopup');
   const ctaButton = document.querySelectorAll('.ctaButton');
   const overlayContainer = document.querySelector('.overlaySec');
@@ -183,6 +182,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
       });
     });
   }
+
+  const accordionMainContainer = $('.accordion');
+  const accordionButton = accordionMainContainer.find('.accordion__block');
+  accordionButton.on('click', '.accordion__header', function () {
+    $('.accordion__block').find('.accordion__body').slideUp(200);
+    $('.accordion__block').removeClass('active');
+    $(this).parent('.accordion__block').find('.accordion__body').slideDown(200);
+    $(this).parent().toggleClass('active');
+  });
 
 
 });
