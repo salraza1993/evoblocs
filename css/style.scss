@@ -367,19 +367,19 @@ $padding: 1.5rem;
     }
   }
   &.blackButton {
-      color: var(--white);
+      color: var(--text-light);
       &::before { 
-        color: var(--white); 
+        color: var(--text-light); 
         background-image: none;
-        background-color: var(--black);
+        background-color: var(--text-dark);
       }
       &__withWhite, &_withWhite {
-        color: var(--white);
-        &::before {color: var(--black);}
+        color: var(--text-light);
+        &::before {color: var(--text-dark);}
       }
       &.__withBlack, &._withBlack {
-        color: var(--black);
-        &::before {color: var(--white);}
+        color: var(--text-dark);
+        &::before {color: var(--text-light);}
       }
       
   }
@@ -448,10 +448,10 @@ $padding: 1.5rem;
   .simpleTextSlider {
     width: 100%;
     overflow: hidden;
-    padding: 2rem 0;
     .simpleTextBox {
       position: relative;
       text-align: center;
+      padding: 2rem 0;
       h4 {
         font-size: 2.5rem;
         color: var(--text-light);
@@ -545,7 +545,7 @@ $padding: 1.5rem;
       width: 100%;
       height: $sectionHeight;
       padding: $topGap 2vw;
-      display: flex;
+      display: flex !important;
       flex-direction: column;
       justify-content: center;
       h4 {font-size: clamp(1.5rem, 2.3vw, 2.5rem);}
@@ -622,7 +622,10 @@ $padding: 1.5rem;
           order: -1;
           color: var(--white);
           font-family: $recoletaSemiBold;
-          svg {opacity: 1;}
+          svg {
+            opacity: 1;
+            path {fill: var(--white);}
+          }
         }
       }
     }
@@ -685,6 +688,31 @@ $padding: 1.5rem;
   }
 }
 /* Home Services Section Ends */
+
+// ----------------[ whatsapp/Mobile Footer Buttons ]---------------- //
+	.wtsappBtn {
+	    position: fixed;
+	    z-index: 5;
+	    bottom: 3rem;
+	    right: 3rem;
+	    a {
+	    	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	    	border-radius: 50px;
+	    	background-color: $whatAppColor;
+		    display: block;
+		    width: 60px;
+		    height: 60px;
+		    height: 100%;
+		    line-height: 60px;
+		    text-align: center;
+		    font-size: 35px;
+		    color: var(--text-light);
+		    transition: $transition;
+			
+			&:hover { background-color: var(--text-light); color: $whatAppColor; }
+		}
+	}
+// ----------------[ // whatsapp/Mobile Footer Buttons ]---------------- //
 
 /* Latest Technologies section begins */
 .latestTechContainer {
@@ -1184,7 +1212,7 @@ footer { width: 100%; position: relative; }
         width: 94%;
         border-radius: 12px;
         overflow: hidden;
-        background-color: var(--white);
+        // background-color: var(--white);
         
         ._header {
           background-color: #EEEEEE;
@@ -1676,7 +1704,10 @@ footer { width: 100%; position: relative; }
   padding: $headerHeight + 60 0 5vh;
   @include abstractBg();
   .lineContainer {z-index: 0;}
-  &.noBgImage {background-image: none !important;}
+  &.noBgImage {
+    background-image: none !important;
+    > .container { position: relative; z-index: 1;}
+  }
   p {
     &.topBiggerSubText {
       font-size: 2.1rem;
@@ -1812,7 +1843,7 @@ footer { width: 100%; position: relative; }
   .currentOpeningCard {
     position: relative;
     width: 100%;
-    border: 1px solid var(--secondary);
+    border: $border;
     background-color: var(--baseBgColor);
     transition: $transition;
     .card__header {
@@ -1877,6 +1908,7 @@ footer { width: 100%; position: relative; }
       padding: 2rem 3.5rem;
       font-size: clamp(1rem, 3vw, 1.3rem);
       font-weight: 300;
+      display: none;
       .lists {
         position: relative;
         padding: 0;
@@ -1905,7 +1937,7 @@ footer { width: 100%; position: relative; }
       }
 
     }
-    &:hover {
+    &:hover, &.active {
       border-color: var(--secondary);
     }
   }
@@ -2268,9 +2300,10 @@ footer { width: 100%; position: relative; }
         }
       }
       .accordion__body {
+        display: none;
         position: relative;
         width: 100%;
-        padding: .5rem 1.5rem 0;
+        padding: 0 1.5rem;
         overflow: hidden;
         p {
           margin-top: -100%;
@@ -2283,21 +2316,23 @@ footer { width: 100%; position: relative; }
       &.active {
         border-color: var(--secondary);
         box-shadow: inset 0 -5px 0 var(--secondary);
+        background-color: var(--secondary);
+        color: var(--text-light);
         .accordion__header {
-          color: var(--secondary);
-          h3 {
-            font-family: $recoletaSemiBold;
-          }
+          color: var(--text-light);
+          h3 { font-family: $recoletaSemiBold; }
           i {transform: rotate(180deg);}
-          &:hover {color: var(--text-light);}
+          // &:hover {color: var(--text-light);}
         }
-        .accordion__body * {
-          font-family: $roboto;
-          margin-top: 0;
-          line-height: 1.7rem;
-          padding: .5rem 0 0;
-          &:last-child {
-            padding: 0 0 1rem;
+        .accordion__body {
+          border-top: 1px solid rgba(#ffffff, .3);
+          > * {
+            font-family: $roboto;
+            margin-top: 0;
+            line-height: 1.7rem;
+            padding: 0 0 0;
+            &:first-child {padding-top: 1rem;}
+            &:last-child { padding-bottom: 1rem; }
           }
         }
       }
@@ -2465,7 +2500,7 @@ footer { width: 100%; position: relative; }
       width: fit-content;
       max-width: 25vw;
       background-color: var(--text-light);
-      padding: 0 2vw 0 4vw;
+      padding: 0 2.5vw 0 4vw;
       border: 0;
       box-shadow: inset 5px 0 0 var(--primary);
       &::after {
@@ -2475,7 +2510,7 @@ footer { width: 100%; position: relative; }
         top: 50%;
         transform: translateY(-50%);
       }
-      &.span_2 { max-width: 50vw;}
+      &.span_2 { max-width: 30vw;}
       .card__icon { @include flexCenter(center, center); }
       .card__body {
         h3 {color: var(--text-dark);}
@@ -2770,11 +2805,12 @@ footer { width: 100%; position: relative; }
     }
     .__content {
       max-width: 55%;
+      color: var(--text-light);
       h3 {
         font-size: clamp(1rem, 5vw, 2.5rem);
         font-family: $recoletaMedium;
         margin-bottom: .75rem;
-        color: var(--white);
+        color: var(--text-light);
       }
       p:not(.note_text) {
         font-size: 1.2rem;
@@ -2787,14 +2823,14 @@ footer { width: 100%; position: relative; }
         padding-left: 1rem;
         margin-bottom: 1.5rem;
         position: relative;
-        color: var(--white);
+        color: var(--text-light);
         font-weight: 300;
         &::before {
           content: '';
           width: 5px;
           height: 85%;
           position: absolute;
-          background-color: var(--white);
+          background-color: var(--text-light);
           transform: rotate(0deg) translateY(-50%);
           top: 50%;
           left: 0;
@@ -2819,7 +2855,7 @@ footer { width: 100%; position: relative; }
       padding-right: 1rem;
       background-color: var(--semi-dark);
       .__img { min-width: 50%;}
-      .__content { 
+      .__content {
         padding-right: 2%;
         p.note_text::before {background-color: var(--secondary);} 
       }
@@ -2920,7 +2956,7 @@ footer { width: 100%; position: relative; }
     }
   }
 }
-.includedServices_smallCard, {
+.includedServices_smallCard {
   position: relative;
   width: 100%;
   flex-wrap: wrap;
@@ -2957,6 +2993,7 @@ footer { width: 100%; position: relative; }
   background-attachment: fixed;
   background-blend-mode: multiply;
   padding: 4rem 0 10rem;
+  color: var(--text-light);
   .optionsGridContainer {
     position: relative;
     margin-top: 4rem;
@@ -3211,6 +3248,7 @@ footer { width: 100%; position: relative; }
   background-color: var(--secondary);
   background-image: $gradient_11;
   padding: 5rem 0 10rem;
+  color: var(--text-light);
 
   .__heading {padding-right: 10%;}
   p { line-height: 1.8rem; }
@@ -3350,7 +3388,7 @@ body.lightMode {
         box-shadow: -20px 0 50px rgba(#000000, .1);
         .menus {
           li {
-            a {
+             a {
               color: var(--secondary);
               &::after {color: var(--black);}
               &:hover {
@@ -3552,6 +3590,23 @@ body.lightMode {
     background-color: var(--secondary);
     background-image: url('../images/abstract-patten.png'), $gradient_1;
   }
+
+  .services_box_section .seo_box_container {
+    &.web-dev-box, &.content-writing-box, &.paid-promo-box, &.smo-box {
+      --black: var(--white);
+      .__content {
+        color: var(--black);
+        p.note_text {color: var(--black);}
+      }
+    }
+    &.paid-promo-box, &.smo-box {
+      .__content .ctaButtonContainer::before {color: var(--text-light);}
+    }
+    &.content-writing-box {
+      .__content .ctaButtonContainer::before {color: var(--text-dark);}
+    }
+  }
+
 }
 /* ----------------------------- Light Mode [Ends] -------------------------------- */
 

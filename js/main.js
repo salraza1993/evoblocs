@@ -27,6 +27,31 @@ document.addEventListener("DOMContentLoaded", function (e) {
   //   pagination: { el: '.swiper-pagination', clickable: true }
   // });
 
+  $('.simpleTextSlider').slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+  $('#aboutContentSlider').slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+  $('.homProtfolioWorks').slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+  $('.testimonialSlider').slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+
   // Header fixed on scroll
   window.onscroll = getScrollPosition;
   const topHeader = document.querySelector('#topHeader');
@@ -186,11 +211,28 @@ document.addEventListener("DOMContentLoaded", function (e) {
   const accordionMainContainer = $('.accordion');
   const accordionButton = accordionMainContainer.find('.accordion__block');
   accordionButton.on('click', '.accordion__header', function () {
-    $('.accordion__block').find('.accordion__body').slideUp(200);
-    $('.accordion__block').removeClass('active');
-    $(this).parent('.accordion__block').find('.accordion__body').slideDown(200);
-    $(this).parent().toggleClass('active');
+    $(".accordion__body").slideUp(300);
+    $(this).next().slideToggle(300);
+
+    $(".accordion__block").not($(this).closest(".accordion__block")).removeClass("active");
+    $(this).closest(".accordion__block").toggleClass("active");
   });
 
+  const currentOpenings = $('.currentOpenings');
+  const viewDetailButton = currentOpenings.find('.viewDetail');
+  viewDetailButton.on('click', function () {
+    $(this).closest('.currentOpenings').find(".card__body").slideUp(300).removeClass('active');
+    $(this).closest('.currentOpenings').find(".currentOpeningCard").removeClass('active');
+
+    $(this).closest('.currentOpeningCard').find('.card__body').slideToggle(300);
+    $(this).closest('.currentOpeningCard').toggleClass('active');
+
+  });
+
+  $(".cvFormButton").click(function () {
+    $('html,body').animate({
+      scrollTop: $(".careerFormSection").offset().top
+    }, '250');
+  });
 
 });

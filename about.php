@@ -45,7 +45,7 @@
                 <span class="recoleta-medium primaryColor">EvoBlocs!</span>
               </h2>
               <p>
-                While all our clients may be different, they all share the need for having digital solutions that are built to generate revenue streams, establish communication channels or streamline business operations. Hence, EvoBlocs’s team of dedicated tech-savvy enthusiasts, developers, designers and writers, leverage our large knowledge base and experience of 15+ years in the industry, to deliver solutions that meet our clients’ needs, business and budget expectations.
+                While our clients may be different, they all share the need to have digital solutions built to generate revenue streams, establish communication channels, and streamline business operations. Our team of dedicated tech-savvy enthusiasts, designers, strategists, writers, and marketing experts work together leveraging our knowledge base, research, and experience of 15+ years in the industry, to do what we love, deliver innovative well-designed solutions to fit your needs, your business, and your budget expectations. 
               </p>
             </div>
           </div>
@@ -206,7 +206,7 @@
       <div class="card__body">
         <h3>Quality</h3>
         <p>
-          We derive our sense of fulfilment from the delivery and maintenance of the highest standards of work, which are in line with the best of current industry trends and practices.
+          We derive our sense of fulfillment from the delivery and maintenance of the highest standards of work, which are on concentrating and constructing the foundational elements that propel businesses to win marketplaces.
         </p>
       </div>
     </div>
@@ -266,13 +266,13 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <a href="team.php" class="joinTeamContainer __member my-5">
-          <h3>Out Team</h3>
+          <h3>Our Team</h3>
           <span>Members</span>
         </a>
       </div>
       <div class="col-12 col-md-6">
         <a href="career.php" class="joinTeamContainer __career my-5">
-          <h3>Out Team</h3>
+          <h3>Our Team</h3>
           <span>Career</span>
         </a>
       </div>

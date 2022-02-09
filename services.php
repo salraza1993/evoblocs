@@ -42,15 +42,15 @@
                 We make sure that your brand soars upwards in organic rankings of any search engine and makes it to that all-important first results page. Focusing on proper website structure, clear information architecture, informative metadata, markups and combining the elements with outstanding content, we provide users with the experience and information they want. ...
               </p>
               <div class="cta__buttons">
-                <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Know More">Know More</button>
+                <a href="search-engine-optimization.php" class="ctaButtonContainer whiteButton" buttonval="Know More">Know More</a>
                 <button class="ctaButtonContainer blackButton ctaButton" buttonval="Let's discuss your project">Let's discuss your project</button>
               </div>
             </div>
         </div>
       </div>
     </div>
-    <div class="d-flex gy-5 mb-5 p-0">
-      <div class="col-12 col-lg-6 ps-0 pe-4">
+    <div class="d-flex gy-5 mb-5 p-0 flex-wrap">
+      <div class="col-12 col-xl-6 ps-0 pe-xl-4">
         <div class="seo_box_container smo-box d-flex flex-column">
             <div class="__img">
               <img src="images/social-media-illustration.png" alt="">
@@ -68,13 +68,13 @@
             </div>
         </div>
       </div>      
-      <div class="col-12 col-lg-6 ps-4 pe-0">
+      <div class="col-12 col-xl-6 ps-xl-4 pe-0">
         <div class="seo_box_container paid-promo-box d-flex flex-column">
             <div class="__content">
               <h3>Paid Advertising</h3>
               <p class="note_text">Improve Your ROI with Scalable PPC Marketing </p>
               <p>
-                Drive serious engagement for your business with well-placed advertising campaigns. Helping you run effective ads - our experts target the right keywords for your audiences at the right points in their purchasing journey. Driving traffic to your storefront from multiple carefully selected sources, we can reach your potential customers with buying intent and continually drive more quality leads through campaign optimization...v
+                Drive serious engagement for your business with well-placed advertising campaigns. Helping you run effective ads - our experts target the right keywords for your audiences at the right points in their purchasing journey. Driving traffic to your storefront from multiple carefully selected sources, we can reach your potential customers with buying intent and continually drive more quality leads through campaign optimization...
               </p>
               <div class="cta__buttons">
                 <button class="ctaButtonContainer secondaryButton blackNWhite ctaButton" buttonval="Know More">Know More</button>

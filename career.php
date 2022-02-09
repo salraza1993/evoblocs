@@ -74,8 +74,8 @@
                   </ul>
                 </div>
                 <div class="right_block d-flex align-items-end __ctaButtons">
-                  <button class="viewDetail">View Full Details</button>
-                  <button class="ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
+                  <button type="button" class="viewDetail">View Full Details</button>
+                  <button type="button" class="cvFormButton ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
                 </div>
               </div>
               <div class="card__body">
@@ -108,7 +108,7 @@
                   <span class="primaryColor fw-bold">29 Dec 2021</span>
                 </span>                
                 <div class="left_block">
-                  <h3 class="postion_name">UX/UI Designer</h3>
+                  <h3 class="postion_name">Full Stack Developer</h3>
                   <ul class="short_info">
                     <li>
                       <span class="_label">Experience</span>
@@ -125,8 +125,30 @@
                   </ul>
                 </div>
                 <div class="right_block d-flex align-items-end __ctaButtons">
-                  <button class="viewDetail">View Full Details</button>
+                  <button type="button" class="viewDetail">View Full Details</button>
+                  <button type="button" class="cvFormButton ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
+                </div>
+              </div>
+              <div class="card__body">
+                <ul class="lists">
+                  <li>Strong organizational and project management skills.</li>
+                  <li>Proficiency with fundamental front end languages such as HTML, CSS and JavaScript.</li>
+                  <li>Familiarity with JavaScript frameworks such as Angular JS, React and VueJs.</li>
+                  <li>Proficiency with server side languages such as NodeJs, PHP and Python.</li>
+                  <li>Familiarity with database technology such as MySQL, Postgres and MongoDB.</li>
+                  <li>Familiarity with web severs such as Apache and NGINX.</li>
+                  <li>Excellent verbal communication skills.</li>
+                  <li>Good problem solving skills.</li>
+                  <li>Ability to project manage.</li>
+                  <li>Ability to communicate in English fluently and idiomatically.</li>
+                </ul>
+
+                <div class="card__footer mt-5 mb-3">
                   <button class="ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
+                  <p>
+                    or send your cv/resume at:
+                    <a href="mailto:career@evoblocs.com">career@evoblocs.com</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -137,7 +159,7 @@
                   <span class="primaryColor fw-bold">29 Dec 2021</span>
                 </span>                
                 <div class="left_block">
-                  <h3 class="postion_name">UX/UI Designer</h3>
+                  <h3 class="postion_name">Full Stack Developer</h3>
                   <ul class="short_info">
                     <li>
                       <span class="_label">Experience</span>
@@ -154,8 +176,30 @@
                   </ul>
                 </div>
                 <div class="right_block d-flex align-items-end __ctaButtons">
-                  <button class="viewDetail">View Full Details</button>
+                  <button type="button" class="viewDetail">View Full Details</button>
+                  <button type="button" class="cvFormButton ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
+                </div>
+              </div>
+              <div class="card__body">
+                <ul class="lists">
+                  <li>Strong organizational and project management skills.</li>
+                  <li>Proficiency with fundamental front end languages such as HTML, CSS and JavaScript.</li>
+                  <li>Familiarity with JavaScript frameworks such as Angular JS, React and VueJs.</li>
+                  <li>Proficiency with server side languages such as NodeJs, PHP and Python.</li>
+                  <li>Familiarity with database technology such as MySQL, Postgres and MongoDB.</li>
+                  <li>Familiarity with web severs such as Apache and NGINX.</li>
+                  <li>Excellent verbal communication skills.</li>
+                  <li>Good problem solving skills.</li>
+                  <li>Ability to project manage.</li>
+                  <li>Ability to communicate in English fluently and idiomatically.</li>
+                </ul>
+
+                <div class="card__footer mt-5 mb-3">
                   <button class="ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
+                  <p>
+                    or send your cv/resume at:
+                    <a href="mailto:career@evoblocs.com">career@evoblocs.com</a>
+                  </p>
                 </div>
               </div>
             </div>

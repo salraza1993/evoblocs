@@ -81,7 +81,7 @@
                 </li>
                 <li>
                   <i class="fas fa-phone-alt"></i>
-                  <a href="tel:+918954482719">+91 89544 82719</a>
+                  <a href="tel:+1985-707-3153">+1 985-707-3153</a>
                 </li>
                 <li>
                   <i class="fas fa-envelope"></i>
@@ -91,7 +91,7 @@
               <div class="contactSocialMedia">
                 <span>Stay Connected with:</span>
                 <ul class="socialMedia">
-                  <li><a href="http://fb.com"><i class="fab fa-facebook-f"></i></a></li>
+                  <!-- <li><a href="http://fb.com"><i class="fab fa-whatsapp"></i></a></li> -->
                   <li><a href="http://fb.com"><i class="fab fa-instagram"></i></a></li>
                   <li><a href="http://fb.com"><i class="fab fa-twitter"></i></a></li>
                   <li><a href="http://fb.com"><i class="fab fa-linkedin-in"></i></a></li>
@@ -116,7 +116,7 @@
         </div>
       </div>
       <div class="googleIframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7002.260637134198!2d77.23633557682999!3d28.655816394379475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfce274e3e18f%3A0x40209eb01fb00526!2sLal%20Qila%2C%20Chandni%20Chowk%2C%20New%20Delhi%2C%20Delhi%20110006%2C%20India!5e0!3m2!1sen!2sae!4v1641852830106!5m2!1sen!2sae" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.4246357745915!2d-89.75965238487926!3d30.28197078179653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889de6933ae80d5d%3A0x574b56dabc98f32a!2s1927%20Corporate%20Square%20Dr%2C%20Slidell%2C%20LA%2070458%2C%20USA!5e0!3m2!1sen!2smx!4v1644338229147!5m2!1sen!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </div>
@@ -136,7 +136,7 @@
       </div>
       <div class="col-12 col-lg-3 p-0">
         <div class="__ctaButton">
-          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Get a Qoute">Get a Qoute</button>
+          <a href="career.php" class="ctaButtonContainer whiteButton ctaButton" buttonval="Explore All Openings">Explore All Openings</a>
         </div>
       </div>
     </div>      

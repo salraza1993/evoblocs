@@ -10,12 +10,12 @@
               <span class="recoleta-light">or</span> 
               Social Media
             </h3>
-            <p class="mb-0">
+            <!-- <p class="mb-0">
               Or Email us your project requirements to 
               <a href="mailto:sales@evoblocs.com"> <u>sales@evoblocs.com</u> </a>
-            </p>
+            </p> -->
         </div>
-        <a href="javascript:;" class="ctaButtonContainer secondaryButton" buttonval="Let's Get Started">Let's Get Started</a>
+        <button type="button" class="ctaButtonContainer ctaButton secondaryButton" buttonval="Let's Get Started">Let's Get Started</button>
     </div>
     <video class="qoutBxVideo" autobuffer muted autoloop loop controls="false" autoplay playsinline style="pointer-events: none;">
         <!-- <source src="/media/video.oga"> -->

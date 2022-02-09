@@ -630,29 +630,29 @@ header .rightMenuContainer .moreMenus:hover::after {
 }
 
 .ctaButtonContainer.blackButton {
-  color: var(--white);
+  color: var(--text-light);
 }
 
 .ctaButtonContainer.blackButton::before {
-  color: var(--white);
+  color: var(--text-light);
   background-image: none;
-  background-color: var(--black);
+  background-color: var(--text-dark);
 }
 
 .ctaButtonContainer.blackButton__withWhite, .ctaButtonContainer.blackButton_withWhite {
-  color: var(--white);
+  color: var(--text-light);
 }
 
 .ctaButtonContainer.blackButton__withWhite::before, .ctaButtonContainer.blackButton_withWhite::before {
-  color: var(--black);
+  color: var(--text-dark);
 }
 
 .ctaButtonContainer.blackButton.__withBlack, .ctaButtonContainer.blackButton._withBlack {
-  color: var(--black);
+  color: var(--text-dark);
 }
 
 .ctaButtonContainer.blackButton.__withBlack::before, .ctaButtonContainer.blackButton._withBlack::before {
-  color: var(--white);
+  color: var(--text-light);
 }
 
 .ctaButtonContainer.primaryButton {
@@ -756,12 +756,12 @@ header .rightMenuContainer .moreMenus:hover::after {
 .sliderContainer .simpleTextSlider {
   width: 100%;
   overflow: hidden;
-  padding: 2rem 0;
 }
 
 .sliderContainer .simpleTextSlider .simpleTextBox {
   position: relative;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .sliderContainer .simpleTextSlider .simpleTextBox h4 {
@@ -869,9 +869,9 @@ header .rightMenuContainer .moreMenus:hover::after {
   width: 100%;
   height: 68vh;
   padding: 75px 2vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1001,6 +1001,10 @@ header .rightMenuContainer .moreMenus:hover::after {
   opacity: 1;
 }
 
+.servicesTabContainer .tabListContainer .tabLists li.active svg path {
+  fill: var(--white);
+}
+
 .servicesTabContainer .tabDataContainer {
   width: 100%;
   -webkit-box-shadow: inset 0 0 0 0.25rem var(--secondary);
@@ -1094,6 +1098,35 @@ header .rightMenuContainer .moreMenus:hover::after {
 }
 
 /* Home Services Section Ends */
+.wtsappBtn {
+  position: fixed;
+  z-index: 5;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.wtsappBtn a {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  background-color: #25d366;
+  display: block;
+  width: 60px;
+  height: 60px;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 35px;
+  color: var(--text-light);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.wtsappBtn a:hover {
+  background-color: var(--text-light);
+  color: #25d366;
+}
+
 /* Latest Technologies section begins */
 .latestTechContainer {
   position: relative;
@@ -1813,7 +1846,6 @@ footer {
   width: 94%;
   border-radius: 12px;
   overflow: hidden;
-  background-color: var(--white);
 }
 
 .homePortfolioSection .homProtfolioWorkContainer .porfolioImageBlock .subWrapper ._header {
@@ -2529,6 +2561,11 @@ footer {
   background-image: none !important;
 }
 
+.heroBannerSection.noBgImage > .container {
+  position: relative;
+  z-index: 1;
+}
+
 .heroBannerSection p.topBiggerSubText {
   font-size: 2.1rem;
   line-height: 3rem;
@@ -2704,7 +2741,7 @@ footer {
 .currentOpenings .currentOpeningCard {
   position: relative;
   width: 100%;
-  border: 1px solid var(--secondary);
+  border: 1px solid rgba(114, 114, 114, 0.25);
   background-color: var(--baseBgColor);
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -2797,6 +2834,7 @@ footer {
   padding: 2rem 3.5rem;
   font-size: clamp(1rem, 3vw, 1.3rem);
   font-weight: 300;
+  display: none;
 }
 
 .currentOpenings .currentOpeningCard .card__body .lists {
@@ -2842,7 +2880,7 @@ footer {
   color: var(--secondary);
 }
 
-.currentOpenings .currentOpeningCard:hover {
+.currentOpenings .currentOpeningCard:hover, .currentOpenings .currentOpeningCard.active {
   border-color: var(--secondary);
 }
 
@@ -3387,9 +3425,10 @@ footer {
 
 .arrodion__container .accordion .accordion__block .accordion__body,
 .accordion__container .accordion .accordion__block .accordion__body {
+  display: none;
   position: relative;
   width: 100%;
-  padding: .5rem 1.5rem 0;
+  padding: 0 1.5rem;
   overflow: hidden;
 }
 
@@ -3410,11 +3449,13 @@ footer {
   border-color: var(--secondary);
   -webkit-box-shadow: inset 0 -5px 0 var(--secondary);
           box-shadow: inset 0 -5px 0 var(--secondary);
+  background-color: var(--secondary);
+  color: var(--text-light);
 }
 
 .arrodion__container .accordion .accordion__block.active .accordion__header,
 .accordion__container .accordion .accordion__block.active .accordion__header {
-  color: var(--secondary);
+  color: var(--text-light);
 }
 
 .arrodion__container .accordion .accordion__block.active .accordion__header h3,
@@ -3428,22 +3469,27 @@ footer {
           transform: rotate(180deg);
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__header:hover,
-.accordion__container .accordion .accordion__block.active .accordion__header:hover {
-  color: var(--text-light);
+.arrodion__container .accordion .accordion__block.active .accordion__body,
+.accordion__container .accordion .accordion__block.active .accordion__body {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__body *,
-.accordion__container .accordion .accordion__block.active .accordion__body * {
+.arrodion__container .accordion .accordion__block.active .accordion__body > *,
+.accordion__container .accordion .accordion__block.active .accordion__body > * {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
   line-height: 1.7rem;
-  padding: .5rem 0 0;
+  padding: 0 0 0;
 }
 
-.arrodion__container .accordion .accordion__block.active .accordion__body *:last-child,
-.accordion__container .accordion .accordion__block.active .accordion__body *:last-child {
-  padding: 0 0 1rem;
+.arrodion__container .accordion .accordion__block.active .accordion__body > *:first-child,
+.accordion__container .accordion .accordion__block.active .accordion__body > *:first-child {
+  padding-top: 1rem;
+}
+
+.arrodion__container .accordion .accordion__block.active .accordion__body > *:last-child,
+.accordion__container .accordion .accordion__block.active .accordion__body > *:last-child {
+  padding-bottom: 1rem;
 }
 
 .arrodion__container.faqs_accordion .accordion .accordion__block .accordion__header h3,
@@ -3720,7 +3766,7 @@ footer {
   width: fit-content;
   max-width: 25vw;
   background-color: var(--text-light);
-  padding: 0 2vw 0 4vw;
+  padding: 0 2.5vw 0 4vw;
   border: 0;
   -webkit-box-shadow: inset 5px 0 0 var(--primary);
           box-shadow: inset 5px 0 0 var(--primary);
@@ -3736,7 +3782,7 @@ footer {
 }
 
 .card__main__container.appDevelopmentProcess .card__container.span_2 {
-  max-width: 50vw;
+  max-width: 30vw;
 }
 
 .card__main__container.appDevelopmentProcess .card__container .card__icon {
@@ -4204,13 +4250,14 @@ footer {
 
 .services_box_section .seo_box_container .__content {
   max-width: 55%;
+  color: var(--text-light);
 }
 
 .services_box_section .seo_box_container .__content h3 {
   font-size: clamp(1rem, 5vw, 2.5rem);
   font-family: "Recoleta Medium";
   margin-bottom: .75rem;
-  color: var(--white);
+  color: var(--text-light);
 }
 
 .services_box_section .seo_box_container .__content p:not(.note_text) {
@@ -4225,7 +4272,7 @@ footer {
   padding-left: 1rem;
   margin-bottom: 1.5rem;
   position: relative;
-  color: var(--white);
+  color: var(--text-light);
   font-weight: 300;
 }
 
@@ -4234,7 +4281,7 @@ footer {
   width: 5px;
   height: 85%;
   position: absolute;
-  background-color: var(--white);
+  background-color: var(--text-light);
   -webkit-transform: rotate(0deg) translateY(-50%);
           transform: rotate(0deg) translateY(-50%);
   top: 50%;
@@ -4463,6 +4510,7 @@ footer {
   background-attachment: fixed;
   background-blend-mode: multiply;
   padding: 4rem 0 10rem;
+  color: var(--text-light);
 }
 
 .agile_methodology_section .optionsGridContainer {
@@ -4858,6 +4906,7 @@ footer {
   background-color: var(--secondary);
   background-image: linear-gradient(135deg, #FF2129 0%, #034EFF 100%);
   padding: 5rem 0 10rem;
+  color: var(--text-light);
 }
 
 .contentSpecialSection .__heading {
@@ -5307,6 +5356,26 @@ body.lightMode .portfolioPageSection .porfolioContent h3.highlighted::after {
 body.lightMode .contactPageSection .contactFormContainer .formContainer .form {
   background-color: var(--secondary);
   background-image: url("../images/abstract-patten.png"), linear-gradient(-45deg, #6934d3 0%, #77def3 100%);
+}
+
+body.lightMode .services_box_section .seo_box_container.web-dev-box, body.lightMode .services_box_section .seo_box_container.content-writing-box, body.lightMode .services_box_section .seo_box_container.paid-promo-box, body.lightMode .services_box_section .seo_box_container.smo-box {
+  --black: var(--white);
+}
+
+body.lightMode .services_box_section .seo_box_container.web-dev-box .__content, body.lightMode .services_box_section .seo_box_container.content-writing-box .__content, body.lightMode .services_box_section .seo_box_container.paid-promo-box .__content, body.lightMode .services_box_section .seo_box_container.smo-box .__content {
+  color: var(--black);
+}
+
+body.lightMode .services_box_section .seo_box_container.web-dev-box .__content p.note_text, body.lightMode .services_box_section .seo_box_container.content-writing-box .__content p.note_text, body.lightMode .services_box_section .seo_box_container.paid-promo-box .__content p.note_text, body.lightMode .services_box_section .seo_box_container.smo-box .__content p.note_text {
+  color: var(--black);
+}
+
+body.lightMode .services_box_section .seo_box_container.paid-promo-box .__content .ctaButtonContainer::before, body.lightMode .services_box_section .seo_box_container.smo-box .__content .ctaButtonContainer::before {
+  color: var(--text-light);
+}
+
+body.lightMode .services_box_section .seo_box_container.content-writing-box .__content .ctaButtonContainer::before {
+  color: var(--text-dark);
 }
 
 /* ----------------------------- Light Mode [Ends] -------------------------------- */

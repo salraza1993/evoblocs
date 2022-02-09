@@ -8,16 +8,16 @@
 <!-- Header End -->
 
 <!-- Hero Banner Begins -->
-  <section class="heroBannerSection noBgImage">
+  <section class="heroBannerSection mobileAppHeroBanner noBgImage">
     <?php include('includes/lineContainer.php') ?>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6 p-0 pe-4">
-          <div class="heroBannerImg pe-5">
+        <div class="col-12 col-xl-6 p-0 pe-xl-4">
+          <div class="heroBannerImg pe-xl-5">
             <img src="images/mobile-app-illustration.svg" alt="">
           </div>
         </div>
-        <div class="col-12 col-lg-6 p-0">
+        <div class="col-12 col-xl-6 p-0">
           <h2 class="mb-4">
             <span class="primary-color">Mobile App</span>
             <span class="text-light">Development</span> 
@@ -32,7 +32,7 @@
   </section>
 <!-- Hero Banner Ends -->
 
-<section class="subHeroSection py-5">
+<section class="subHeroSection mobileSubHeroSectoin py-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container">
     <div class="row">
@@ -168,7 +168,7 @@
   </div>
 </section>
 
-<section class="our-service-section py-5">
+<section class="our-service-section mobileOurServiceSection  py-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container p-0">
     <div class="offset-lg-3 col-12 col-lg-9">
@@ -390,7 +390,7 @@
   <div class="container mt-5">
     <div class="col-12 p-0">
       <div class="row content_block_container gy-4">
-        <div class="col-12 col-lg-6 col-xl-9 pe-xl-4 ps-0">
+        <div class="col-12 col-lg-6 col-xl-9 pe-md-3 pe-xl-4 ps-0">
           <div class="content_block _1">
             <h3>Cloud Application Development</h3>
             <p>
@@ -398,7 +398,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-6 col-xl-3 ps-xl-0 pe-xl-0">
+        <div class="col-12 col-lg-6 col-xl-3 ps-md-3 pe-md-0 ps-xl-0 pe-xl-0">
           <div class="content_block _2">
             <h3>Data Migration & Consolidation Services</h3>
             <p>
@@ -406,7 +406,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-6 col-xl-6 pe-xl-4 ps-0">
+        <div class="col-12 col-lg-6 col-xl-6 pe-md-3 pe-xl-4 ps-0">
           <div class="content_block _3">
             <h3>API Integrations</h3>
             <p>
@@ -414,7 +414,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-6 col-xl-6 ps-0">
+        <div class="col-12 col-lg-6 ps-md-3 col-xl-6 p-0">
           <div class="content_block _4">
             <h3>Security & Compliance</h3>
             <p>
@@ -453,7 +453,7 @@
   <div class="container">
     <div class="faqsContainer mb-3">
       <div class="row">
-        <div class="offset-lg-3 col-12 col-lg-6 p-0">
+        <div class="offset-xl-3 col-12 col-xl-6 p-0">
           <h3 class="mb-4">
             <span class="recoleta-semiBold">FAQs</span>
             <span class="recoleta-light">(frequently asked questions)</span>

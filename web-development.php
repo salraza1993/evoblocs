@@ -12,7 +12,7 @@
     <?php include('includes/lineContainer.php') ?>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6 p-0">
+        <div class="col-12 col-lg-6 p-0 mb-sm-4">
           <div class="heroBannerImg webDevTopBanner pe-5">
             <h2 class="mb-4">
               <span class="white-color">Web Development</span>
@@ -20,7 +20,7 @@
             </h2>
           </div>
         </div>
-        <div class="col-12 col-lg-6 ps-5 p-0">          
+        <div class="col-12 col-lg-6 p-0 ps-lg-5">          
           <p class="topBiggerSubText fst-italic">
             Web Development with a Purpose – See Results and Get Connected with our Innovative, Responsive, Optimized Websites.
           </p>
@@ -76,7 +76,7 @@
       </div>
     </div>
   </div>
-  <div class="container p-0 my-5">
+  <div class="container p-0 my-5 mb-sm-0">
     <div class="d-flex flex-wrap">
       <div class="col-12 col-lg-6 pe-5">
         <p>
@@ -106,7 +106,7 @@
             <span class="lightText">need it?</span> 
           </h3>
         </div>
-        <div class="col-12 col-lg-9 p-0">
+        <div class="col-12 col-xl-9 p-0">
           <div class="subSpecialContent pr-5">
             <div class="text-columns roboto-light fz-16">
               <p>
@@ -175,7 +175,7 @@
   <div class="container">
     <div class="webMethodologyContainer">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6 p-0 pe-4">
+        <div class="col-12 col-lg-6 p-0 pe-4 mb-sm-5">
           <div class="webMethodology_block text-white">
             <h2 class="font__66 mb-4">Our Web Development Methodology</h2>
             <p>
@@ -338,12 +338,12 @@
 	</section>
 <!-- Latest Technologies section End -->
 
-<section class="faqSection py-5">
+<section class="faqSection py-5 pt-lg-0 pb-lg-3">
   <?php include('includes/lineContainer.php') ?>
   <div class="container">
     <div class="faqsContainer mb-3">
       <div class="row">
-        <div class="offset-lg-3 col-12 col-lg-6 p-0">
+        <div class="offset-xl-3 col-12 col-xl-6 p-0">
           <h3 class="mb-4">
             <span class="recoleta-semiBold">FAQs</span>
             <span class="recoleta-light">(frequently asked questions)</span>

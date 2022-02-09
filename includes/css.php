@@ -3,7 +3,8 @@
 <link rel="stylesheet" href="css/fonts/fonts-style.css" />
 <!-- <link rel="stylesheet" href="css/bootstrap-grid.css" /> -->
 <link rel="stylesheet" href="css/normalize.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+<link rel="stylesheet" href="css/slick.css" />
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/responsive.css" />

@@ -3,7 +3,7 @@
     <div class="col-12 col-md-12 col-xl-9 p-0">
       <div class="technoligesContainer">
         <div class="topContent">
-          <p class="mb-2 roboto-light">We always deal with</p>
+          <p class="mb-2 roboto-light">We always deal with the</p>
           <h3 class="recoleta-semiBold">Latest Technologies</h3>
         </div>
         <ul class="technoList">
@@ -35,10 +35,10 @@
     </div>
     <div class="col-12 col-md-12 col-xl-3 p-0">
       <div class="discussProject">
-        <p class="mb-2 roboto-light">Let's discuss about</p>
+        <p class="mb-2 roboto-light">Let's discuss</p>
         <h3 class="recoleta-semiBold">Your Project</h3>
-        <p class="roboto-light mb-4">Get free consultation and let us know your project idea to turn it into an amazing digital product.</p>
-        <a href="javascript:;" class=" mt-2 ctaButtonContainer whiteButton" buttonval="Talk to Our Expert">Talk to Our Expert</a>
+        <p class="roboto-light mb-4">Let’s turn your idea into an amazing digital product. Contact us today for a free consultation. </p>
+        <a href="javascript:;" class=" mt-2 ctaButtonContainer ctaButton whiteButton" buttonval="Talk to Our Expert">Talk to Our Expert</a>
       </div>
     </div>
   </div>

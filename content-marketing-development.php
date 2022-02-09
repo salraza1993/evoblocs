@@ -184,7 +184,7 @@
   </div>
 </section>
 
-<section class="our-service-section py-5">
+<section class="our-service-section contentOurSrviceSection py-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container p-0">
     <div class="offset-lg-3 col-12 col-lg-9">
@@ -342,7 +342,7 @@
   <div class="container">
     <div class="faqsContainer mb-3">
       <div class="row">
-        <div class="offset-lg-3 col-12 col-lg-6 p-0">
+        <div class="offset-xl-3 col-12 col-xl-6 p-0">
           <h3 class="mb-4">
             <span class="recoleta-semiBold">FAQs</span>
             <span class="recoleta-light">(frequently asked questions)</span>

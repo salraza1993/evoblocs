@@ -27,7 +27,17 @@
       <ul class="menus">
         <li><a href="index.php" name="Home">Home</a></li>
         <li><a href="about.php" name="About">About</a></li>
-        <li><a href="services.php" name="Services">Services</a></li>
+        <li>
+          <a href="services.php" name="Services">Services</a>
+          <ul class="subMenu d-none">
+            <li><a href="web-development.php">Web Design & Development</a></li>
+            <li><a href="mobile-app-development.php">Mobile App Development</a></li>
+            <li><a href="search-engine-optimization.php">Search Engine Optimization (SEO)</a></li>
+            <li><a href="social-media-marketing.php">Social Media Makerting (SMM)</a></li>
+            <li><a href="paid-promotion.php">Paid Promotion / Advertising</a></li>
+            <li><a href="content-marketing-development.php">Content Writting</a></li>
+          </ul>
+        </li>
         <li><a href="portfolio.php" name="Portfolio">Portfolio</a></li>
         <li><a href="contact.php" name="Contact">Contact</a></li>
         <li><a href="career.php" name="Career">Career</a></li>
