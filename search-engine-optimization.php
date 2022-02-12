@@ -278,7 +278,7 @@
       </div>
       <div class="optionGrid">
         <div class="__icon">
-          <img src="images/anylyse.svg" alt="">
+          <img src="images/strategize.svg" alt="">
         </div>
         <div class="__body">
           <h3>Strategize</h3>
@@ -357,47 +357,145 @@
           </h3>
           <div class="accordion__container faqs_accordion noBgImage">
             <div class="accordion">
-              <div class="accordion__block active">
+              <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Research</h3>
+                  <h3>What is Search Engine Optimization?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Search Engine Optimization (SEO) is a process that involves making changes in your website so that search engines like Google and Bing can find, read, and understand your content and display it in search results when a user enters their search query for your industry.
+                  </p>
+                  <p>
+                    SEO is how your website is discovered by people on the internet. The primary objective of search engine optimization is enhancing a website’s discoverability by helping it rank at the highest possible spot for a range of user queries or “keywords”.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Idea &amp; Concept</h3>
+                  <h3>How Does SEO Work?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    A lot of things go into search engine optimization. In simpler terms, SEO works by making your website attractive to search engines like Google. This means that your website needs to possess all the components that the algorithms of search engines love so that they give you a higher ranking.
+                  </p>
+                  <p>
+                    Making these changes (or optimizations) in your website include things like putting up title tags, writing a meta description, putting up alt tags, reducing the size of images, making your website load faster, etc. These practices make it easier for the search engines to crawl and index your website treating you as a good resource that users should visit, resulting in good rankings.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Design and Development</h3>
+                  <h3>What if I Don’t Do SEO?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Without search engine optimization practically all internet users won’t know your website exists. Unless your website is easily locatable by search engines like Google, your business will not receive the brand visibility that you are looking for. You can only maximize the benefits of having a website if you rank among the top 10 results on the first page of search engines. A good SEO company can help you gain traction and make your way into the top rank.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Testing &amp; Support</h3>
+                  <h3>How Long Does it Take Before I Start Seeing Better Rankings?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    The time taken for your website’s rankings to start improving generally depends upon a variety of its KPIs prior to performing SEO. As a rule of thumb, all the websites that have high authority backlink portfolios, garner more trust from search engines, hence they end up climbing rankings much faster than an average website.
+                  </p>
+                  <p>
+                    The average website takes anywhere between 8-10 weeks to display some improvement since search engines need time to crawl, evaluate, re-index new content and react to enhanced website performance. But keep in mind, SEO is a service for the long run, you will begin to see more significant progress after 6 months to 1 years time and so forth.
+                  </p>
+                  <p>
+                    Many factors determine the speed at which you'll see full results, hence, our team of SEO experts will let you know from the beginning what to expect.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Do I Need Different SEO Strategies For Different Search Engines?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    At the outset, all search engines work in the same way – you enter a search query and they display various websites that will offer you further information on the topic. But yes, there are some intrinsic differences in how the algorithms and protocols of a particular search engine work. However, it does not deeply affect the search engine optimization strategy as all search engines want to show the most relevant and useful search results to the user. This can be achieved for almost all search engines with similar techniques. Google has the largest market share, so optimizing your website for Google is the best way to move forward.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Why Choose EvoBlocs for SEO Services ?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    At EvoBlocs, we understand that your brand's overall online image is just as important to you as high search engine rankings are. Every improvement we make to your website's search rankings would also strengthen either its content, its usability, or its long-term web visibility. Our goal is to help you achieve high rankings for your most competitive search terms and help you stay there. We believe in "doing it right the first time" so that any Search Engine updates or changes to the algorithm are unlikely to adversely affect your ranking.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Can I Do SEO Myself?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    With some learning, trial and error, yes you can implement a basic SEO strategy on your own. Performing SEO activities on your own more often than not conclude in not seeing your desired results. Incomplete knowledge can affect SEO badly. Google Webmaster i.e. GSC can categorize your website in manual action (meaning, your website can be marked as spam) the outcome will be additional efforts to right the wrongs. First they will have to neutralize the mistakes and then start over from scratch. Not to mention, the tools required for analysis and reports can be quite a hefty investment.
+                  </p>
+                  <p>
+                    SEO is a time-consuming activity that shows results in the long run. In order to see tangible outcomes, you’ll have to implement technical SEO, on-page SEO, take up off-page SEO, and stay on top of the trends to implement changes. Hence, it is advisable to have an expert on board who can handle these activities or consult you through the process.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Will Blogging Help SEO?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    Content is an integral part of search engine optimization. Users read content on your website to find answers to their questions, gain knowledge or solve their problems. This content is scanned by bots for keywords and helps them judge if it is worthy enough to be included in SERPs or not. So, yes, blogging helps SEO.
+                  </p>
+                  <p>
+                    By publishing blogs you show search engines that you know what you are talking about and are willing to share free knowledge with the world which boosts your rankings as more and more users start visiting your webpage. Blogging helps build brand awareness and subject matter authority that attracts high-quality visitors.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>How Much Does Search Engine Optimization Cost?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    Since the amount of work needed to optimise a website varies widely from one project to another; therefore, so does pricing. Various factors influence the cost of an SEO project, such as:
+                  </p>
+                  <ul class="list">
+                    <li>Competitive online landscape</li>
+                    <li>Your current performance in search engines</li>
+                    <li>The number of web pages on your site</li>
+                    <li>Your website’s age</li>
+                    <li>The volume of authoritative websites that backlink to yours</li>
+                    <li>The construction of your website</li>
+                    <li>Content optimization, it’s overall design, and the structure of each page</li>
+                    <li>Number of technical bugs present in the website</li>
+                    <li>User intent and user experience (UI/UX)</li>
+                  </ul>
+                  <p>
+                    Hence, after a thorough analysis of project deliverables, a company's experts will send a custom quote to you
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Will Conducting Search Engine Optimization Change the look of my website?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    Generally, not. When needed, there may be subtle editing to your website's content that is seamlessly integrated and matches your brand's style and voice. In certain cases, additional web pages may be added or the page or site structure may be improved upon or recommendations may be made for the usage of more usable and efficient navigation. Whichever path is best for your website's success in search engine rankings, its implications on the usability of your website and your brand image, should be given equal priority.
                   </p>
                 </div>
               </div>

@@ -62,7 +62,7 @@
 										<h4 class="text-white mb-3">We Are a Digital Agency with an </h4>
 										<h2 class="text-white text-shadow mb-3">Entrepreneurial Spirit</h2>
 										<p class="text-white roboto-light">
-											Founded by Business and Marketing Leadership Experts – EvoBlocs Brings Industry Specific, Unique, and Effective Design, Development, and Marketing Solutions to Our Partners World-Wide.
+											Founded by Business and Marketing Leadership Experts – <strong>EvoBlocs</strong> Brings Industry Specific, Unique, and Effective Design, Development, and Marketing Solutions to Our Partners World-Wide.
 										</p>
 										<a href="about.php" class="ctaButtonContainer ct whiteButton mt-4" buttonval="Know More">Know More</a>
 									</div>
@@ -73,7 +73,7 @@
 										<h4 class="text-white mb-3">Growing is Great Evolving is</h4>
 										<h2 class="text-white text-shadow mb-3">Better</h2>
 										<p class="text-white roboto-light">
-											EvoBlocs Helps Organizations of All Sizes Develop and Succeed with Expert Strategy, Award-Winning Websites, Applications, and Powerful Creatives – Providing Ease and Excellence of the Overall Digital Experience, no matter which side you’re on. 
+											<strong>EvoBlocs</strong> Helps Organizations of All Sizes Develop and Succeed with Expert Strategy, Award-Winning Websites, Applications, and Powerful Creatives – Providing Ease and Excellence of the Overall Digital Experience, no matter which side you’re on. 
 										</p>
 										<a href="services.php" class="ctaButtonContainer whiteButton mt-4" buttonval="Know More">Know More</a>
 									</div>
@@ -101,7 +101,7 @@
 							We augment business outcomes and growth velocity with first-class strategies, nurturing them from idea to launch. 
 						</p>
 						<p>
-							Combining the creative inspiration of an artist with the analytical expertise of a scientist - EvoBlocs is smart, agile, and result-oriented. We provide businesses with their unique blend of strategy and execution - Identifying and Capitalizing on Opportunities Timely to Achieve Sustainable, Consistent Growth, Irrespective of Scale. 
+							Combining the creative inspiration of an artist with the analytical expertise of a scientist - <strong></strong>EvoBlocs is smart, agile, and result-oriented. We provide businesses with their unique blend of strategy and execution - Identifying and Capitalizing on Opportunities Timely to Achieve Sustainable, Consistent Growth, Irrespective of Scale. 
 						</p>
 						<p>
 							With solid expertise in all fields of Digital Tech - from Development to Paid Advertising, Content Writing to Search Engine Optimization - Our Strategists, Growth Hackers, and Creative Heads do it all - And do it well!
@@ -132,7 +132,11 @@
 									<span class="lightText">in</span>
 								</h2>
 							</div>
-							<a href="services.php" class="ctaButtonContainer mt-5" style="margin-right: -25px;" buttonval="Explore Our Services">Explore Our Services</a>
+							<a href="services.php" class="mobileCtaBtton d-none">
+								Explore All Services
+								<i class="fas fa-chevron-right"></i>
+							</a>
+							<a href="services.php" class="ctaButtonContainer mt-5 hidden-xs" style="margin-right: -25px;" buttonval="Explore Our Services">Explore Our Services</a>
 						</div>
 					</div>
 				</div>
@@ -475,7 +479,11 @@
 							<span class="primaryColor">Work</span>
 						</h2>
 					</div>
-					<a href="portfolio.php" class="ctaButtonContainer mt-5" style="margin-right: -25px;" buttonval="Explore Our Work">Explore Our Work</a>
+					<a href="portfolio.php" class="mobileCtaBtton d-none">
+								Explore All Work
+								<i class="fas fa-chevron-right"></i>
+							</a>
+					<a href="portfolio.php" class="ctaButtonContainer mt-5 hidden-xs" style="margin-right: -25px;" buttonval="Explore Our Work">Explore Our Work</a>
 				</div>
 			</div>
 		</div>
@@ -498,13 +506,13 @@
 								</div>
 							</div>
 							<div class="_thumbnailContainer">
-								<img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+								<img src="images/fitness_banner.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="porfolioContent w-25">
-						<h3 class="highlighted recoleta-semiBold">EvoBlocs</h3>
-						<h3 class="primaryColor">Website Re-design</h3>
+						<h3 class="highlighted recoleta-semiBold">Rug & Rig</h3>
+						<h3 class="primaryColor">SEO and Paid Ads</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
 						</p>
@@ -530,13 +538,13 @@
 								</div>
 							</div>
 							<div class="_thumbnailContainer">
-								<img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+								<img src="images/radha_jewellers.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="porfolioContent w-25">
-						<h3 class="highlighted recoleta-semiBold">EvoBlocs</h3>
-						<h3 class="primaryColor">Website Re-design</h3>
+						<h3 class="highlighted recoleta-semiBold">Radha Jewellers</h3>
+						<h3 class="primaryColor">SEO, Web Design & Promotion</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
 						</p>
@@ -645,7 +653,7 @@
 							<span class="primaryColor">Clients</span>
 						</h2>
 					</div>
-					<a href="javascript:;" class="ctaButtonContainer mt-5" style="margin-right: -25px;" buttonval="Get Listed with Us">Get Listed with Us</a>
+					<a href="javascript:;" class="ctaButtonContainer mt-5 hidden-xs" style="margin-right: -25px;" buttonval="Get Listed with Us">Get Listed with Us</a>
 				</div>
 				<div class="clientsContainer p-0">
 					<ul class="clientsBoxContainer">

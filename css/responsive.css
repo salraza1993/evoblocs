@@ -3,7 +3,7 @@
     padding-bottom: 90px;
   }
   h2, .h2, .h2_heading {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem);
+    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
   }
   .lineContainer {
     max-width: calc(100vw - (5vw * 2));
@@ -114,9 +114,30 @@
   .animationWrapper {
     background-size: 35vh;
   }
+  .mobileCtaBtton {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    border: 1px solid #666;
+    height: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 4vw;
+    border-radius: 35px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .mobileCtaBtton i {
+    margin-left: 1rem;
+    font-size: 90%;
+  }
   .sectionHeading {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: .75rem !important;
+    margin-bottom: .75rem !important;
   }
   .sectionHeading .headingText {
     width: 100% !important;
@@ -237,7 +258,7 @@
     padding: 5vw 10vw;
   }
   .latestTechnoSection .latestTechContainer h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem);
+    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
   }
   .latestTechnoSection .latestTechContainer .discussProject {
     padding: 0 5vw 8vw;
@@ -440,7 +461,7 @@
     min-height: initial;
   }
   .callNCareerContainer .getACallContainer h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem);
+    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
   }
   .callNCareerContainer .getACallContainer .inputContainer {
     margin-left: -4%;
@@ -460,6 +481,7 @@
   }
   .callNCareerContainer .getACallContainer .inputContainer form input {
     width: 100%;
+    height: 60px;
   }
   .callNCareerContainer .getACallContainer .inputContainer form .ctaButtonContainer {
     margin: 3vh auto;
@@ -491,7 +513,7 @@
     min-height: 100%;
   }
   .callNCareerContainer .footerCareerElemContainer h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem);
+    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
     margin-bottom: 2vw;
     margin-bottom: 1rem;
   }
@@ -518,7 +540,7 @@
     margin-bottom: 8vw !important;
   }
   .qoutBxCnt .qtCntntCnt .qtCntnt h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem);
+    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
   }
   .qoutBxCnt .qoutBxVideo {
     width: auto;
@@ -1322,6 +1344,39 @@
   .agile_methodology_section .optionsGridContainer .optionGrid:nth-child(1) {
     padding-left: 0 !important;
   }
+  .social_media_content_section {
+    padding: 5vw !important;
+  }
+  .social_media_content_section .sm__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 5vw;
+    overflow-x: auto;
+    width: 100vw;
+    margin-left: -5vw;
+    padding: 0 5vw;
+  }
+  .social_media_content_section .sm__container .sm__block {
+    padding: 5vw;
+    width: 85vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .social_media_content_section .sm__container .sm__block:not(:nth-child(2n+2)) {
+    width: 85vw;
+  }
+  .social_media_content_section .sm__container .sm__block .__icon {
+    margin-bottom: 1.5rem;
+  }
+  .social_media_content_section .sm__container .sm__block .__icon img {
+    width: 15vw;
+  }
+  .social_media_content_section .sm__container .sm__block p {
+    font-size: 1rem;
+  }
+  .overlaySec .overlaySub .request__form__container .right__block {
+    min-width: initial;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1606,6 +1661,12 @@
   }
   .heroBannerImg img {
     max-width: 60% !important;
+  }
+  .social_media_content_section .sm__container .sm__block {
+    width: 100%;
+  }
+  .social_media_content_section .sm__container .sm__block:not(:nth-child(2n+2)) {
+    width: 100%;
   }
 }
 

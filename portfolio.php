@@ -48,15 +48,15 @@
 								</div>
 							</div>
 							<div class="_thumbnailContainer">
-								<img src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="" />
+								<img src="images/fitness_banner.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="porfolioContent">
             <div class="">
-              <h3 class="primaryColor">EvoBlocs Website Re-design</h3>
+              <h3 class="primaryColor">Rug & Rig</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+                SEO and Paid Ads, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
               </p>
             </div>
 						<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonval="Discover More">Discover More</a>
@@ -81,15 +81,15 @@
 								</div>
 							</div>
 							<div class="_thumbnailContainer">
-								<img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+								<img src="images/radha_jewellers.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="porfolioContent">
             <div class="">
-              <h3 class="primaryColor">EvoBlocs Website Re-design</h3>
+              <h3 class="primaryColor">Radha Jewellers</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+                SEO, Web Design & Promotion, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
               </p>
             </div>
 						<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonval="Discover More">Discover More</a>

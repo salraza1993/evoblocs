@@ -350,47 +350,72 @@
           </h3>
           <div class="accordion__container faqs_accordion noBgImage">
             <div class="accordion">
-              <div class="accordion__block active">
+              <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Research</h3>
+                  <h3>How Long Does it Take to Design a Website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    The time taken for website development depends on a variety of factors. Things like the size of the website, its type, the functionalities required, the client's availability for feedback, the pace of content creation etc. determine the speed of completion. It is quite natural that a simple website is going to take less time for development as compared to a massive e-commerce website. Apart from this, if you are looking for custom functionalities, it too will impact the turnaround time.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Idea &amp; Concept</h3>
+                  <h3>Can You Redesign My Existing Website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    If you are looking for redesign services we can help you with that. We can offer you a website redesign, retaining your company or corporate style, and give you a completely new image. Is your website up to date? We can redesign your website to leverage the latest web technologies and grow your business.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Design and Development</h3>
+                  <h3>What is a Responsive Website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Businesses earlier, generally had to develop two different websites depending upon if they would be viewed on a desktop or a mobile device. With the advent of responsive design, this need has been negated. Responsive websites can auto adjust according to the device it is being viewed on. All your content, be it textual or visual, will be optimised automatically to deliver the best user experience.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Testing &amp; Support</h3>
+                  <h3>What is an SEO Friendly Website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    An SEO-friendly website is one that is fully accessible and indexable by search engines. It possesses certain features and characteristics that help search engines understand what the website is all about and rank it for better visibility. Optimized features like unique meta titles and descriptions, well-formatted URLs, fast loading webpages, unique content etc. can help your business attract higher organic traffic, offer your brand credibility and thus better ROI.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>How Much Input Do I Have in the Process?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    A lot! Your feedback and inputs are crucial to our design process and content creation. We begin with thoroughly analysing your needs, likes and wants so that we can offer you a product that has the perfect look and functionality as per your requirements.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>How Often Should My Website Be Updated?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    Updating your website offers various advantages such as enhanced security, keeping your content relevant, ensuring your website design is fresh etc. It can also give you the chance to fix any mistakes that may be costing you visitors, or worse, potential customers. These issues might include blog pages without content, having too many navigational menu options, incorrect or missing contact information or having no call to action etc.
+                  </p>
+                  <p>
+                    Nearly every website in existence needs to have a major overhaul at least every 5 years to catch up with modern advances in design and to stay in step with competitors.
                   </p>
                 </div>
               </div>

@@ -97,7 +97,7 @@
   <div class="card__main__container content_process_container horizontal__scroll__container my-5">
     <div class="card__container border-left">
       <div class="card__icon">
-				<?php include('images/analysis.svg') ?>
+				<?php include('images/low_barrier.svg') ?>
       </div>
       <div class="card__body">
         <h3>Low Entry Barrier</h3>
@@ -108,7 +108,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/seo-research.svg" alt="">
+        <img src="images/boosting.svg" alt="">
       </div>
       <div class="card__body">
         <h3>Boosting Other Marketing Initiatives</h3>
@@ -119,7 +119,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/ideation.svg" alt="">
+        <img src="images/target.svg" alt="">
       </div>
       <div class="card__body">
         <h3>Focused Targeting</h3>
@@ -130,7 +130,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/writing.svg" alt="">
+        <img src="images/quick-result.svg" alt="">
       </div>
       <div class="card__body">
         <h3>Quick Results</h3>
@@ -141,7 +141,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/editing.svg" alt="">
+        <img src="images/trackable.svg" alt="">
       </div>
       <div class="card__body">
         <h3>Trackable</h3>
@@ -152,7 +152,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/publishing.svg" alt="">
+        <img src="images/cost-effective.svg" alt="">
       </div>
       <div class="card__body">
         <h3>Cost-Effective</h3>
@@ -214,7 +214,7 @@
   <div class="card__main__container ads_includedServices horizontal__scroll__container my-5">
     <div class="card__container border-left">
       <div class="card__icon">
-				<?php include('images/one-page-seo.svg') ?>
+				<?php include('images/search-ads.svg') ?>
       </div>
       <div class="card__body">
         <h3>Search Ads</h3>
@@ -225,7 +225,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/keyword-searching.svg" alt="">
+				<?php include('images/display_ads.svg') ?>
       </div>
       <div class="card__body">
         <h3>Display Ads</h3>
@@ -236,7 +236,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/link-building.svg" alt="">
+        <img src="images/social_media_ads.svg" alt="">
       </div>
       <div class="card__body">
         <h3>Social Media Ads</h3>
@@ -247,7 +247,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/link-building.svg" alt="">
+        <img src="images/remarketing_ads.svg" alt="">
       </div>
       <div class="card__body">
         <h3>Remarketing Ads</h3>
@@ -258,7 +258,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/link-building.svg" alt="">
+				<?php include('images/google_ads.svg') ?>
       </div>
       <div class="card__body">
         <h3>Google Shopping Ads</h3>
@@ -269,7 +269,7 @@
     </div>
     <div class="card__container border-left">
       <div class="card__icon">
-        <img src="images/link-building.svg" alt="">
+        <img src="images/youtube_ads.svg" alt="">
       </div>
       <div class="card__body">
         <h3>YouTube Ads</h3>
@@ -316,45 +316,70 @@
             <div class="accordion">
               <div class="accordion__block active">
                 <div class="accordion__header">
-                  <h3>Research</h3>
+                  <h3>What is Paid Advertising?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Paid advertising refers to advertisements that businesses pay for, to have users visit their website or show them brand messages displayed on web apps or any other digital device. Paid advertising requires advertisers to pay for media placements from different publishers on their platforms. Advertisers pay for either text-based ads, display ads or video ads to spread their message to their target audience and bring them to their websites or storefronts.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Idea &amp; Concept</h3>
+                  <h3>What is the Difference Between Paid Advertising Campaigns & SEO?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Paid advertising is quite different from SEO. When it comes to SEO, the search engines use algorithms which determine the relevance of websites being searched for by users. With SEO you cannot pay higher to get your sites ranked higher, what you can pay for is for optimization that will help in increasing the relevance of your website and thus cause it to appear higher in searches. With paid advertising, on the other hand, you can choose your own criteria regarding when you want your ads to show (things like schedule, bid, keywords etc.) and you can also raise your bids to improve your ad's position and help them reach a wider audience.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Design and Development</h3>
+                  <h3>What Determines When and Where My Ad Shows Up?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Various factors are considered to determine when an ad shows up. These factors include criteria such as the quality score of each keyword, the relevance of the keywords, ad copy, specific bid for each keyword and also the landing pages for the search items. Optimizing all these factors will help you receive a great ROI with high traffic and conversions.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Testing &amp; Support</h3>
+                  <h3>Is Running a Paid Advertisement Campaign Expensive?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    A lot! Your feedback and inputs are crucial to our design process and content creation. We begin with thoroughly analysing your needs, likes and wants so that we can offer you a product that has the perfect look and functionality as per your requirements.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>What is Click-Through Rate?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    CTR or Click Through Rate is calculated by dividing the number of clicks that an ad, keyword, ad group or campaign receives by the number of impressions generated. Click-through rate is an important factor for any paid advertising campaign, as it directly impacts the quality score throughout the campaign.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Do I Need a Landing Page?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    Landing pages that have been designed properly have a profound impact on the ROI of your business. A landing page helps in directing your visitors - enabling them in picking up where the ad left off by guiding them to perform the objective of the ad, whether it is to make a purchase, fill out a form or make a phone call.
+                  </p>
+                  <p>
+                    Generally, landing pages are very helpful for a paid advertising campaign, however, there are times when campaigns have experienced success without them as well. Our managers will assist you in determining whether you need a landing page for your campaign or not.
                   </p>
                 </div>
               </div>

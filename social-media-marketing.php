@@ -108,7 +108,6 @@
   </div>
 </section>
 
-
 <section class="smmSpecialContentSection py-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container p-0">
@@ -143,7 +142,81 @@
   </div>
 </section>
 
-<section class="our-service-section py-4">
+<section class="social_media_content_section py-5">
+  <?php include('includes/lineContainer.php') ?>
+  <div class="container p-0">
+    <div class="sm__container">
+      <div class="sm__block facebook">
+        <div class="__icon">
+          <img src="images/facebook.png" alt="">
+          <h4 class="recoleta-semiBold font__46">Facebook</h4>
+        </div>
+        <div class="__content">
+          <p>
+            Social media marketing is a revelation in its own right! With dwindling attention spans, wielding the power of creative content has never been more essential or effective. With over <strong>2.60 billion monthly active users</strong>, no business can ignore this social media giant. Home to the <strong>most diverse users in the world</strong>, Facebook is guaranteed to host your dream demographic. Every business needs a Facebook business page!
+          </p>
+        </div>
+      </div>
+      <div class="sm__block instagram">
+        <div class="__icon">
+          <img src="images/instagram.png" alt="">
+          <h4 class="recoleta-semiBold font__46">Instagram</h4>
+        </div>
+        <div class="__content">
+          <p>
+            With the help of the right post, displayed at the right time, to the right audience, EvoBlocs can help you build brand authority and connectedness  through growing your community amongst Instagram’s over 1 billion monthly active users. Alongside growing and sustaining your brand and community don't forget that 31% of global shoppers are to be found  on Instagram. Instagram uses Facebook’s demographic data, to display ads to your ideal customers, which is incredibly valuable when trying to target a niche audience and generate sales.
+          </p>
+        </div>
+      </div>
+      <div class="sm__block twitter">
+        <div class="__icon">
+          <img src="images/twitter.png" alt="">
+          <h4 class="recoleta-semiBold font__46">Twitter</h4>
+        </div>
+        <div class="__content">
+          <p>
+            The third-largest social media platform, Twitter with its 199 million monetizable daily active users, is a veritable treasure trove for businesses. With its inbuilt search features making it easy for your business to search for individuals who meet your brand’s target audience requirements, it is much easier to establish direct communication with your audience and influence their purchasing decisions by creating more engagement.
+          </p>
+        </div>
+      </div>
+      <div class="sm__block linkedin">
+        <div class="__icon">
+          <img src="images/linkedin.png" alt="">
+          <h4 class="recoleta-semiBold font__46">LinkedIn</h4>
+        </div>
+        <div class="__content">
+          <p>
+            Generally referred to as ‘the social media platform’ for professionals, LinkedIn is the place to be for B2B companies with over 450 million users and 3 million businesses on board. EvoBlocs can help you in creating brand awareness and generating web traffic and leads, so that you gain access to fellow business owners and form strategic partnerships that can help your business grow.
+          </p>
+        </div>
+      </div>
+      <div class="sm__block pinterest">
+        <div class="__icon">
+          <img src="images/pinterest.png" alt="">
+          <h4 class="recoleta-semiBold font__46">Pinterest</h4>
+        </div>
+        <div class="__content">
+          <p>
+            80% of Pinterest users are women from high-income demographic households and apart from Instagram, Pinterest is the go-to platform for lifestyle and fashion. For a B2C brand in this segment, the 300 million monthly users that Pinterest provides, can easily translate to exponential sales.
+          </p>
+        </div>
+      </div>
+      <div class="sm__block youtube">
+        <div class="__icon">
+          <img src="images/youtube.png" alt="">
+          <h4 class="recoleta-semiBold font__46">YouTube</h4>
+        </div>
+        <div class="__content">
+          <p>
+            YouTube is a video streaming platform that is a powerful social media marketing tool for any business. You can upload anything on YouTube ranging from 'how to' videos to product videos to company documentaries, to creative inter-platform promotions that increase your audience. Leveraging YouTube’s reach of 2 billion daily views,  via embedded videos on your website, can help you increase the dwell-time on your page, which results in enhanced search engine exposure, higher rankings and more traffic.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-service-section py-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container p-0">
     <div class="offset-lg-3 col-12 col-lg-9">
@@ -313,47 +386,113 @@
           </h3>
           <div class="accordion__container faqs_accordion noBgImage">
             <div class="accordion">
-              <div class="accordion__block active">
+              <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Research</h3>
+                  <h3>What Is Social Media Marketing?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Social media marketing is one of the most important digital marketing channels for any brand, especially for those in the B2C industry. With a combination of eye-catching ad design and intelligent data, social media marketing is an incredibly powerful tool that helps capture user attention at all stages of the buying journey. Most of your customers spend their time on social media, therefore putting your products in front of their eyes can lead to big results. From Instagram to LinkedIn, a social media agency will put your campaigns on the best social networks to fit your goals. Planning, implementing and optimising a social media marketing strategy can be incredibly effective for your brand, and help you boost your reach, ROAS and revenue.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Idea &amp; Concept</h3>
+                  <h3>Digital Marketing vs. Social Media Marketing: What’s the Difference?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Digital marketing is the big pool where all kinds of marketing techniques live while social media marketing is a type of digital marketing where the primary focal points for actions and activities are to build an engaged community and establish thought leadership. Social media marketing aims to bridge the gap between the business element and the human element, forging deeper ties between the consumer and the brand or business.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Design and Development</h3>
+                  <h3>What are the Benefits of Social Media Marketing Services?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    Hiring social media marketing services is beneficial in two ways. To begin with, you do not need to hire an in-house team and secondly, you do not have to worry about social channels. Most businesses think that social media marketing is easy, all you have to do is post some images and boom, followers will start raining in like anything - But this is not true at all! Social media marketing agencies have dedicated experts for each platform who handle all of the post creation, publishing, engagement, and refine these processes by monitoring analytics continuously.
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Testing &amp; Support</h3>
+                  <h3>How to Market on Social Media?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officiis mollitia quia inventore, sit quidem architecto sunt blanditiis veritatis ab voluptatem aliquid. Optio magni reprehenderit eveniet aliquid iste quo. Nobis.
+                    There is no right way to market on social media. But here’s something that you should always keep in mind – use social media to connect with your audience! People want clear and benefit oriented content, they want content that addresses their real needs, problems and questions, they want to be introduced to the man behind the mask and see who you are, they want content that is easy to consume and digest and they want to witness your efforts and become part of your journey through interaction. Social media marketing is built to fill these gaps while establishing thought leadership in your industry. By leveraging various social media channels where your audience is present and sharing relevant content, you can gain their attention more easily. The right social media marketing strategy will generate organic leads, build an online community and turn your customers into loyal brand advocates.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>Why Should I Use Social Media for My Business?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    It is no secret that the world has gone social! In fact, 30% of all time spent online is allocated to social media. What makes it so relevant today, is the fact that it is highly accessible and also considerably cheaper than traditional marketing channels. If you want your business to be in front of many people, social media is the way to do it. Whether you are looking for brand awareness, sponsored content or both, social media marketing is a viable platform.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>What Social Media Platforms Should I Sign Up For?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    It is quite easy to get caught up in the hype regarding new social media platforms but the fact remains that every social media channel you adopt, requires time, energy and budget in order to effectively meet your market goals. An important thing that you should keep in mind is your target audience, for example, if you are a B2C business, you should use a social media channel where you can interact with your customers directly, similarly if you are a B2B business, you should use a channel where you can connect with other businesses. If you are talking about a starting point, then choose one or two platforms that make the most sense for your business and capitalise on them by making frequent, high-quality posts or save yourself the efforts and hire a team of experts!
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>How Often Will EvoBlocs Post on My Social Channels?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    This depends on your business goals, for instance are you trying to build brand awareness or targeting a sales strategy for a product release or service. The frequency of posts varies on different social media platforms because different media channels have their own best practices. On average, we post 1 to 2 posts per day, for optimum user engagement and lead generation.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>What is the Difference Between an Ad and a Post on Social Media?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    The basic difference between an ad and a post on social media is that a post is content shared on your account that your followers will see organically, while an ad is a paid post that is used to target an audience outside of your followers list, on the basis of demographics and interests. The biggest reason why ads work today is because social media algorithms now limit the number of followers who can see the content you share organically, for this reason promoting your products and services through relevant posts, guarantees a wider reach.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>What are Boosted or Sponsored Social Posts?</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    Every platform has its own term for ads that are posted, irrespective of the term used, they all fulfill the same purpose which is increasing reach and engagement through the social media advertising platform. Boosted or sponsored posts, generally enable analytics, so that you can monitor the engagement and widen the net for the target audience.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__block">
+                <div class="accordion__header">
+                  <h3>How Much Should I Spend on Social Media Marketing??</h3>
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    There is no fixed amount, rather according to your business goals and relevant analytics reports you can get an understanding of how much money should be invested to reach your aim. There are two aspects to keep in mind for social media marketing - the first - posting content and growing a community organically, which admittedly is a slower process - the second option - spend money promoting posts and running ads to boost conversions which gives faster results. It all boils down to your business's goals, your budget and the given timeline.
                   </p>
                 </div>
               </div>

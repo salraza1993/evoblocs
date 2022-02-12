@@ -3,7 +3,7 @@
         <div class="qtCntnt">
             <h3>
               <span class="recoleta-light">Need a</span>
-              Qoute
+              Quote
               <span class="recoleta-light">for</span>
               <br>
               Web Design, SEO 

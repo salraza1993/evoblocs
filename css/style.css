@@ -1506,8 +1506,9 @@ footer {
 
 .qoutBxCnt .qtCntntCnt .qtCntnt h3 {
   font-size: 2.85rem;
+  line-height: 3.5rem;
   font-family: "Recoleta SemiBold";
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .qoutBxCnt .qtCntntCnt .qtCntnt p {
@@ -3468,6 +3469,7 @@ footer {
 .arrodion__container .accordion .accordion__block .accordion__body ul.list,
 .accordion__container .accordion .accordion__block .accordion__body ul.list {
   list-style: disc;
+  padding-left: 2rem;
 }
 
 .arrodion__container .accordion .accordion__block.active,
@@ -5047,6 +5049,92 @@ footer {
   padding-top: 270px;
   padding-bottom: 5rem;
   background-color: var(--bg-light);
+}
+
+.social_media_content_section {
+  width: 100%;
+}
+
+.social_media_content_section .sm__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.social_media_content_section .sm__container .sm__block {
+  position: relative;
+  width: 50%;
+  padding: 2rem;
+}
+
+.social_media_content_section .sm__container .sm__block:not(:nth-child(2n+2)) {
+  width: calc(50% - 2rem);
+}
+
+.social_media_content_section .sm__container .sm__block.facebook {
+  background-color: #E8EFFF;
+  color: #305194;
+}
+
+.social_media_content_section .sm__container .sm__block.instagram {
+  background-color: #ffe9f3;
+  color: #E83285;
+}
+
+.social_media_content_section .sm__container .sm__block.instagram p {
+  color: var(--bg-dark);
+}
+
+.social_media_content_section .sm__container .sm__block.pinterest {
+  background-color: #f7dddd;
+  color: #FF1E37;
+}
+
+.social_media_content_section .sm__container .sm__block.pinterest p {
+  color: var(--bg-dark);
+}
+
+.social_media_content_section .sm__container .sm__block.twitter {
+  background-color: #E7F8FE;
+  color: #00B0EB;
+}
+
+.social_media_content_section .sm__container .sm__block.linkedin {
+  background-color: #D9F1FF;
+  color: #006FB1;
+}
+
+.social_media_content_section .sm__container .sm__block.youtube {
+  background-color: #fddddd;
+  color: #CF2120;
+}
+
+.social_media_content_section .sm__container .sm__block.youtube p {
+  color: var(--bg-dark);
+}
+
+.social_media_content_section .sm__container .sm__block .__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.social_media_content_section .sm__container .sm__block .__icon h4 {
+  margin-bottom: 0;
+}
+
+.social_media_content_section .sm__container .sm__block p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* ----------------------------- Light Mode [Starts] -------------------------------- */

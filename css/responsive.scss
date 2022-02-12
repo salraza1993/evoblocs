@@ -3,7 +3,7 @@
 
 $lineColor: hsla(0,0%,100%,0.1);
 $mobilePadding: 5vw;
-$mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
+$mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
 
 // @media (min-width: 1024px) and (max-width: 1279px) {
 //   .container {
@@ -96,8 +96,22 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
   }
   .lightModeButton {left: 8vw;}
   .animationWrapper {background-size: 35vh;}
+  .mobileCtaBtton {
+    display: flex !important;
+    border: 1px solid #666;
+    height: 40px;
+    align-items: center;
+    padding: 0 4vw;
+    border-radius: 35px;
+    font-family: $roboto;
+    font-size: 14px;
+    margin-top: 1rem;
+    i {margin-left: 1rem;font-size: 90%;}
+  }
   .sectionHeading {
     flex-wrap: wrap;
+    padding-bottom: .75rem !important;
+    margin-bottom: .75rem !important;
     .headingText {
       width: 100% !important;
       max-width: 100% !important;
@@ -369,7 +383,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
           flex-wrap: wrap;
           > div {border-bottom: 1px solid #ccc;}
           select {height: clamp(45px, 10vh, 4.5rem);}
-          input {width: 100%;}
+          input {width: 100%; height: 60px;}
           .ctaButtonContainer {margin: 3vh auto;}
         }
       }
@@ -1042,7 +1056,35 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
       }
     }
   }
-
+  .social_media_content_section {
+    padding: $mobilePadding !important;
+    .sm__container {
+      flex-wrap: nowrap;
+      gap: $mobilePadding;
+      overflow-x: auto;
+      width: 100vw;
+      margin-left: -$mobilePadding;
+      padding: 0 $mobilePadding;
+      .sm__block {
+        padding: 5vw;
+        width: 85vw;
+        flex-shrink: 0;
+        &:not(:nth-child(2n+2)) {width: 85vw;}
+        .__icon {
+          img {width: 15vw;}
+          margin-bottom: 1.5rem;
+        }
+        p {font-size: 1rem;}
+      }
+    }
+  }
+  .overlaySec {
+    .overlaySub {
+      .request__form__container {
+        .right__block {min-width: initial;}
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {}
@@ -1290,8 +1332,14 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem);
       &:nth-child(4n) {width: 50%;}
     }
   }
-  .heroBannerImg img {
-    max-width: 60% !important;
+  .heroBannerImg img { max-width: 60% !important; }
+  .social_media_content_section {
+    .sm__container {
+      .sm__block {
+        width: 100%;
+        &:not(:nth-child(2n+2)) {width: 100%;}
+      }
+    }
   }
 }
 @media (max-width: 992px) {
