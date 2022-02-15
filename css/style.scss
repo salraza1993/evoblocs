@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
 }
-
+html {font-size: 16px;}
 :root {
   // Colors
   --primary: rgb(145, 221, 234);
@@ -1824,6 +1824,17 @@ footer { width: 100%; position: relative; }
       font-size: clamp(1.2rem, 5vw, 2.8rem);
       line-height: clamp(1.8rem, 6vw, 3.3rem);
     }
+    ul {
+      position: relative;
+      font-size: clamp(1rem, 2.5vw, 2rem);
+      line-height: clamp(1.5rem, 3vw, 2.5rem);
+      margin-bottom: 2rem;
+      li {
+        border-left: 2px dashed rgba(#ffffff, .3);
+        padding-left: 1.5rem;
+        &:not(:last-child) {margin-bottom: 1.5rem;}
+      }
+    }
   }
 }
 
@@ -2284,7 +2295,7 @@ footer { width: 100%; position: relative; }
   .arrodionImage {
     position: relative;
     width: 100%;
-    height: 460px;
+    height: 300px;
     overflow: hidden;
     z-index: 1;
     img {
@@ -2599,7 +2610,13 @@ footer { width: 100%; position: relative; }
     border: $border;
     padding: 2.5rem;
     transition: $transition;
-    @include flexCenter(flex-start, center);
+    @include flexCenter(flex-start, start);
+    ul.list {
+      list-style: disc;
+      padding-left: 2rem;
+      font-family: $roboto;
+      li:not(:last-child) {margin-bottom: .5rem;}
+    }
     .profileImage {
       min-width: 290px;
       height: 290px;

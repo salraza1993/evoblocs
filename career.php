@@ -20,8 +20,8 @@
                 <span class="recoleta-light">always looking for </span>
                 <span class="recoleta-semiBold primaryColor">Talented People</span>
               </h2>
-              <p>Don’t find a suitable position that matches your skill set, but still interested? Get in touch with us!</p>
-              <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Qoute">Get a Qoute</button>
+              <p>Don’t see a suitable position that matches your expertise, but still interested? Get in touch with us! </p>
+              <button class="ctaButtonContainer cvFormButton mt-4" buttonval="Get in touch">Get in touch</button>
             </div>
           </div>
           <div class="col-12 col-lg-6 p-0 hidden-sm hidden-xs">
@@ -222,8 +222,9 @@
         </div>
         <div class="col-12 col-lg-9 p-0">
           <div class="__content">
-            <h3>If you'd love to change thousands of minds and think you may meet our requirements.</h3>
-            <a href="mailto:career@evoblocs.com" class="secondaryColor">career@evoblocs.com</a>
+            <h3>If you'd love to impress thousands of minds and think you may meet our requirements.</h3>
+            <h3 class="mt-4 secondaryColor"><i>Get the ball rolling today!</i></h3>
+            <!-- <a href="mailto:career@evoblocs.com" class="secondaryColor">career@evoblocs.com</a> -->
           </div>
         </div>
       </div>

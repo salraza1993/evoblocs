@@ -35,12 +35,12 @@
               <div class="icon"><?php include('images/hand-shake.svg') ?></div>
               <div class="content">
                 <p class="mb-0">Looking for new a</p>
-                <h3 class="recoleta-semiBold">Career Opportunity?</h3>
-                <p class="mb-4">
+                <h3 class="recoleta-semiBold mb-4 mt-2">Career Opportunity?</h3>
+                <!-- <p class="mb-4">
                   Drop your CV at:  
                   <a class="primary-color" href="mailto:career@evoblocs.com">career@evoblocs.com</a>
                   <span class="or">or</span>
-                </p>
+                </p> -->
                 <a href="career.php" class="ctaButtonContainer" buttonval="Explore All Openings">Explore All Openings</a>
               </div>
             </div>

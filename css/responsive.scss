@@ -491,13 +491,14 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
   .heroBannerSection { padding: 13.5vh 5vw 5vh; }
   .teamPageSection {
     padding: 0 $mobilePadding;
+    .col-12 {width: 85vw;}
     .row {
       flex-wrap: nowrap;
       overflow-x: scroll;
       width: 100vw;
       margin-left: -8vw;
       padding: 0 5vw;
-      gap: 3vw;
+      gap: 4.92vw;
     }
     .teamMemberBlock {
       padding: $mobilePadding;

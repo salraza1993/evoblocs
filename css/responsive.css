@@ -643,6 +643,9 @@
   .teamPageSection {
     padding: 0 5vw;
   }
+  .teamPageSection .col-12 {
+    width: 85vw;
+  }
   .teamPageSection .row {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -650,7 +653,7 @@
     width: 100vw;
     margin-left: -8vw;
     padding: 0 5vw;
-    gap: 3vw;
+    gap: 4.92vw;
   }
   .teamPageSection .teamMemberBlock {
     padding: 5vw;
