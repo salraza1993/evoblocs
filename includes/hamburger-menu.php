@@ -40,6 +40,7 @@
         </li>
         <li><a href="portfolio.php" name="Portfolio">Portfolio</a></li>
         <li><a href="contact.php" name="Contact">Contact</a></li>
+        <li><a href="team.php" name="Career">Our Team</a></li>
         <li><a href="career.php" name="Career">Career</a></li>
         <li><a href="javascript:;" name="Blog">Blog</a></li>
       </ul>

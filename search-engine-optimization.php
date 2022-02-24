@@ -25,7 +25,7 @@
           <p class="topBiggerSubText fst-italic">
             Grow your organic traffic, boost your search engine rankings and skyrocket your leads with our SEO services
           </p>
-          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Qoute">Get a Qoute</button>
+          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Quote">Get a Quote</button>
         </div>
       </div>
     </div>
@@ -338,7 +338,7 @@
       </div>
       <div class="col-12 col-lg-3 p-0">
         <div class="__ctaButton">
-          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Talk to our expert">Talk to our expert</button>
+          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Talk to our experts">Talk to our experts</button>
         </div>
       </div>
     </div>
@@ -373,7 +373,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Does SEO Work?</h3>
+                  <h3>How does SEO work?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -387,7 +387,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>What if I Don’t Do SEO?</h3>
+                  <h3>What if I don’t do SEO?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -398,7 +398,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Long Does it Take Before I Start Seeing Better Rankings?</h3>
+                  <h3>How long does it take before I start seeing better rankings?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -415,7 +415,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Do I Need Different SEO Strategies For Different Search Engines?</h3>
+                  <h3>Do I need different SEO strategies for different search engines?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -426,7 +426,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Why Choose EvoBlocs for SEO Services ?</h3>
+                  <h3>Why choose EvoBlocs for SEO services?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -437,7 +437,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Can I Do SEO Myself?</h3>
+                  <h3>Can I do SEO myself?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -451,7 +451,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Will Blogging Help SEO?</h3>
+                  <h3>Will blogging help SEO?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -465,7 +465,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Much Does Search Engine Optimization Cost?</h3>
+                  <h3>How much does Search Engine Optimization cost?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -490,7 +490,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Will Conducting Search Engine Optimization Change the look of my website?</h3>
+                  <h3>Will conducting Search Engine Optimization change the look of my website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">

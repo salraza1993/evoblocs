@@ -23,7 +23,7 @@
             At EvoBlocs, we believe that quality is quantity and a first impression is a long-lasting one! This is why we commit to delivering state of the art, engaging, easy to use web and mobile applications, that make your business grow and bring real value for your customers. We offer you a chance to build solid and scalable digital products with a partner who understands your journey.
           </p>
           <p>
-            We are a team of 40+ professionals scaling the field of digitization from design to development connecting technologies with real life business solutions. Our in-house team consists of digital marketing experts including SEO, SEM, PPC, and email marketers, editorial team of writers and editors, creatives team of graphic designers and video productions, brand development advisors, project managers, and web and app designers and developers. Together we provide you best-in-class solutions at a competitive cost across the globe.
+            We are a team of 40+ professionals scaling the field of digitization from design to development connecting technologies with real life business solutions. Our in-house team consists of brand strategists, digital marketing experts, an editorial team, a creatives team, project managers, and web and app designers and developers. Together we provide you with best-in-class solutions at a competitive cost across the globe.
           </p>
         </div>
       </div>
@@ -44,19 +44,19 @@
             <h3 class="secondaryColor recoleta-semiBold">Catherine Luparello</h3>
             <h6>Founder and CEO</h6>
             <p>
-              Catherine has her base in Economics, a field she has been interested in since the tender age of 13 when she had her first day trading account. Since then, she has found ways to combine her passions with her organizational and entrepreneurial skills to develop clubs and small businesses suitable for creating the lifestyle and environments which she and her fellow community have been desirous of.
+              Catherine has her base in Economics, with her professional start in trading and finance. She has found ways to combine her passions with her organizational and entrepreneurial skills to develop clubs and small businesses suitable for creating the lifestyle and environments which she and her fellow community have been desirous of.       
             </p>
             <p>
-              “Let the systems and tools which we create serve the vision and welfare of the people practically.”
+              “Let the systems and tools which we create serve the vision and welfare of the people -practically.”
             </p>
             <p>
-              After switching gears for 7 years, living in India studying and practicing yoga, philosophy, and language she has returned to the world of entrepreneurship and began EvoBlocs, digital marketing and development firm. Catherine’s approach to EvoBlocs and the culture of the work environment is in creating a space where expertise is paired with balance, communication, and support.
+              After switching gears for 7 years, living in India studying and practicing yoga, philosophy, and language she has returned to the world of entrepreneurship and began EvoBlocs, digital marketing and development firm. Catherine’s approach to EvoBlocs and the culture of the work environment is in creating a space where expertise is paired with balance, communication, and support.	
             </p>
             <p>
               “We want to think and see beyond what the client is asking, in order to create the greatest experience for both the provider and the user. And we like to do it in such a way that we feel as if we are working alongside our companions of many years.”
             </p>
             <p>
-              When Catherine is not engaged in projects related to EvoBlocs, she can be found reading and/ or translating books from Hindi into English, doing services in the temple where she lives in India, enjoying the sun or perhaps keeping up with the latest crypto news.
+              When Catherine is not engaged in projects related to EvoBlocs, she can be found reading, doing service activities, enjoying the sun, or keeping up with the latest crypto news.
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@
               "Moreover, it is not a job for me it is my passion now. Also, I realized that it’s inter-disciplinary. It is a part of pre & post   production and somewhere it is all related to what I have done before."
             </p>
             <p>
-              Furthermore, Harsh has attended marketing conferences such as Asia Pacific Market organized by Facebook in Singapore. He is a leader, strategist, believer, brainstormer and motivator. He experiences immense joy inspiring others. In his spare time, you can catch him at the movie theatres, restaurants, and marketing conferences
+              Furthermore, Harsh has attended marketing conferences such as Asia Pacific Market organized by Facebook in Singapore. He is a leader, strategist, believer, brainstormer and motivator. He experiences immense joy inspiring others. In his spare time, you can catch him at the movie theatres, restaurants, and marketing conferences.
             </p>
           </div>
         </div>
@@ -162,7 +162,7 @@
       </div>
       <div class="col-12 col-lg-3 p-0">
         <div class="__ctaButton">
-          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Get a Qoute">Get a Qoute</button>
+          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Join Our Team">Join Our Team</button>
         </div>
       </div>
     </div>

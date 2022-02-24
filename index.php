@@ -1,7 +1,5 @@
-<?php include('includes/top-html.php') ?>
-  
+<?php include('includes/top-html.php') ?>  
 	<title>Welcome to Eveblocs | Home Page</title>
-
 	<?php include("includes/css.php") ?>
 </head>
 <body>
@@ -34,7 +32,7 @@
 							<h2>Our Blood! </h2>
 							<p class="roboto-light">Connect with your Audience, Build Relationships, and Grow your Business.  </p>
 							<div class="buttonContainer">
-								<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonVal="Get Started">Build your website</a>
+								<a href="javascript:;" class="ctaButtonContainer ctaButton" buttonVal="Get Started">Get Started</a>
 							</div>
 						</div>
 					</div>
@@ -101,7 +99,7 @@
 							We augment business outcomes and growth velocity with first-class strategies, nurturing them from idea to launch. 
 						</p>
 						<p>
-							Combining the creative inspiration of an artist with the analytical expertise of a scientist - <strong></strong>EvoBlocs is smart, agile, and result-oriented. We provide businesses with their unique blend of strategy and execution - Identifying and Capitalizing on Opportunities Timely to Achieve Sustainable, Consistent Growth, Irrespective of Scale. 
+							Combining the creative inspiration of an artist with the analytical expertise of a scientist - EvoBlocs is smart, agile, and result-oriented. We provide businesses with A unique blend of strategy and execution - Identifying and Capitalizing on Opportunities Timely to Achieve Sustainable, Consistent Growth, Irrespective of Scale.
 						</p>
 						<p>
 							With solid expertise in all fields of Digital Tech - from Development to Paid Advertising, Content Writing to Search Engine Optimization - Our Strategists, Growth Hackers, and Creative Heads do it all - And do it well!
@@ -460,7 +458,8 @@
   	<?php include('includes/lineContainer.php') ?>
 		<div class="container">
 			<div class="row ">
-				<?php include('includes/latestTechnologies.php') ?>
+				<?php include('includes/latestTechnologies.php') 
+				?>
 			</div>
 		</div>
 	</section>
@@ -475,7 +474,7 @@
 					<div class="headingText width-70">
 						<p class="smallText text-uppercase roboto-light">Our portfolio</p>
 						<h2>
-							<span class="lightText">Our</span> 
+							<span class="lightText">The</span> 
 							<span class="primaryColor">Work</span>
 						</h2>
 					</div>
@@ -632,7 +631,7 @@
 							<li><span class="star">*</span> We revolutionize brands and generate demand. </li>
 							<li><span class="star">*</span> Choosing us will be your best decision.</li>
 						</ul>
-						<button type="button" class="ctaButtonContainer ctaButton whiteButton" buttonval="Let's get started">Let's get started</button>
+						<button type="button" class="ctaButtonContainer ctaButton whiteButton" buttonval="Get started">Get started</button>
 					</div>
 				</div>
 			</div>
@@ -657,11 +656,7 @@
 				</div>
 				<div class="clientsContainer p-0">
 					<ul class="clientsBoxContainer">
-						<li><img src="https://skyje.com/wp-content/uploads/2019/04/3-1-800x515.png" alt=""></li>
-						<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMM8gpKs1eYLbgie2MTJx-JGfmSfpErVBjkw&usqp=CAU" alt=""></li>
-						<li>Client's Logo</li>
-						<li>Client's Logo</li>
-						<li>Client's Logo</li>
+						<li><img src="images/malady_logo.svg" alt=""></li>
 						<li>Client's Logo</li>
 						<li>Client's Logo</li>
 						<li>Client's Logo</li>

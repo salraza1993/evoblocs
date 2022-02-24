@@ -120,7 +120,7 @@
     <p class="mb-5">
       If there’s one thing that these numbers show, it’s that mobile applications have become an essential platform for businesses to reach their target audience, increase user engagement, promote their brand and get a high ROI.  Hiring EvoBlocs’s mobile app development services means that you get a team of developers, designers and testers who have unparalleled knowledge and experience in their field and offer you full-stack development services that will accomplish the goals set forth by your business.
     </p>
-    <h5 class="roboto-medium mb-5">Here are the major reasons why your business needs a mobile application:</h5>
+    <h5 class="roboto-light mb-5 font__36">Here are the major reasons why your business needs a mobile application:</h5>
   </div>
 </section>
 
@@ -434,8 +434,8 @@
       <div class="col-12 col-lg-9 p-0">
         <div class="__content">
           <h3>
-            <span class="recoleta-light">Can't find </span> 
-            <span class="recoleta-medium">your ranking solution?</span> 
+            <span class="recoleta-light">Let’s craft </span> 
+            <span class="recoleta-medium">your dream app together </span> 
           </h3>
         </div>
       </div>
@@ -462,7 +462,7 @@
             <div class="accordion">
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Much Does a Mobile App Cost?</h3>
+                  <h3>How much does a Mobile App cost?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -501,7 +501,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Much Time Does It Take to Develop a Mobile App from Scratch?</h3>
+                  <h3>How much time does it Take to develop a Mobile App from scratch?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -512,7 +512,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Are You Willing to Collaborate with Our In-House Technical, Design, And Marketing Teams?</h3>
+                  <h3>Are you willing to collaborate with our in-house Technical, Design, & Marketing Teams?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -523,7 +523,7 @@
               </div>
               <div class="accordion__block ">
                 <div class="accordion__header">
-                  <h3>What Kind of Apps Can You Create?</h3>
+                  <h3>What kind of Apps can you create?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">

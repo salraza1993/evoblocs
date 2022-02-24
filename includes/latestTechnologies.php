@@ -35,8 +35,7 @@
     </div>
     <div class="col-12 col-md-12 col-xl-3 p-0">
       <div class="discussProject">
-        <p class="mb-2 roboto-light">Let's discuss</p>
-        <h3 class="recoleta-semiBold">Your Project</h3>
+        <h3 class="recoleta-semiBold">Get Started</h3>
         <p class="roboto-light mb-4">Let’s turn your idea into an amazing digital product. Contact us today for a free consultation. </p>
         <a href="javascript:;" class=" mt-2 ctaButtonContainer ctaButton whiteButton" buttonval="Talk to Our Expert">Talk to Our Expert</a>
       </div>

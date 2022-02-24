@@ -60,6 +60,14 @@ h2, .h2, .h2_heading {
   }
 }
 
+.font__30 {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  line-height: clamp(1.5rem, 6vw, 2rem);
+}
+.font__36 {
+  font-size: clamp(1rem, 5vw, 2.0rem);
+  line-height: clamp(1.5rem, 6vw, 2.5rem);
+}
 .font__46 {
   font-size: clamp(1rem, 5vw, 2.5rem);
   line-height: clamp(1.5rem, 6vw, 3.3rem);
@@ -327,11 +335,11 @@ $padding: 1.5rem;
   padding-left: $padding - .20;
   padding-right: $padding;
   font-size: 1.4rem;
+  line-height: 1.4rem;
   color: var(--white);
   height: $ctaButtonHeight - 5;
   white-space: nowrap;
   transition: $transition;
-  line-height: 1.4rem;
   max-width: fit-content;
   border: none;
   background-color: transparent;
@@ -1943,6 +1951,7 @@ footer { width: 100%; position: relative; }
         padding: 0;
         list-style-type: disc;
         font-family: $roboto;
+        font-size: 1rem;
         li {margin-bottom: .65rem;}
       }
       .card__footer {

@@ -25,7 +25,7 @@
           <p class="topBiggerSubText fst-italic">
             Enhance your social media performance to drive deeper brand loyalty, higher customer advocacy, longer lifetime value and unlock your true potential!
           </p>
-          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Qoute">Get a Qoute</button>
+          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Quote">Get a Quote</button>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
       <p>
         The proof is in the statistics! While out of the 3.8 billion your target audience may be a small portion, however, an effective social media strategy plays a crucial role in reaching them directly. When we say, an effective social media marketing strategy, we mean that it needs to be more than just publishing posts and creating ads, it has to be fresh, targeted, engaging, and personalised.
       </p>
-      <button class="ctaButtonContainer secondaryButton ctaButton mt-4" buttonval="Get a Qoute">Get a Qoute</button>
+      <button class="ctaButtonContainer secondaryButton ctaButton mt-4" buttonval="Get a Quote">Get a Quote</button>
     </div>
   </div>
 </section>
@@ -367,7 +367,7 @@
       </div>
       <div class="col-12 col-lg-3 p-0">
         <div class="__ctaButton">
-          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Talk to our expert">Talk to our expert</button>
+          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Level up your SMM">Level up your SMM</button>
         </div>
       </div>
     </div>

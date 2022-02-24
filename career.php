@@ -54,18 +54,18 @@
               <div class="card__header">
                 <span class="posting_date">
                   <span>Posted on:</span>
-                  <span class="primaryColor fw-bold">29 Dec 2021</span>
+                  <span class="primaryColor fw-bold">25 Feb 2022</span>
                 </span>                
                 <div class="left_block">
-                  <h3 class="postion_name">Full Stack Developer</h3>
+                  <h3 class="postion_name">SEO Specialist</h3>
                   <ul class="short_info">
                     <li>
                       <span class="_label">Experience</span>
-                      <span for="_value">: 1 to 4 years</span>
+                      <span for="_value">: 3 to 5 years</span>
                     </li>
                     <li>
                       <span class="_label">Postion</span>
-                      <span for="_value">: 02</span>
+                      <span for="_value">: 01</span>
                     </li>
                     <li>
                       <span class="_label">Location</span>
@@ -79,19 +79,34 @@
                 </div>
               </div>
               <div class="card__body">
-                <ul class="lists">
-                  <li>Strong organizational and project management skills.</li>
-                  <li>Proficiency with fundamental front end languages such as HTML, CSS and JavaScript.</li>
-                  <li>Familiarity with JavaScript frameworks such as Angular JS, React and VueJs.</li>
-                  <li>Proficiency with server side languages such as NodeJs, PHP and Python.</li>
-                  <li>Familiarity with database technology such as MySQL, Postgres and MongoDB.</li>
-                  <li>Familiarity with web severs such as Apache and NGINX.</li>
-                  <li>Excellent verbal communication skills.</li>
-                  <li>Good problem solving skills.</li>
-                  <li>Ability to project manage.</li>
-                  <li>Ability to communicate in English fluently and idiomatically.</li>
+                <span class="close__button d-none">&times;</span>
+                <h3 class="recoleta-semiBold primaryColor mb-3">Job Overview</h3>
+                <p class="mb-4">
+                  EvoBlocs is one of the leading companies in our field in the Digital Marketing and Web Design and Development. We are hiring a talented SEO Specialist professional to join our team. If you're excited to be part of a winning team, EvoBlocs is a great place to grow your career. You'll be glad you applied to EvoBlocs.
+                </p>
+                <h5 class="secondaryColor mb-3">Responsibilities for SEO Specialist</h5>
+                <ul class="lists mb-4 fz-16">
+                  <li>Develop optimization strategies that increase the company's search engine results rankings</li>
+                  <li>Research SEO keywords to use throughout the company's website and marketing materials</li>
+                  <li>Set measurable goals that demonstrate improvement in marketing efforts</li>
+                  <li>Monitor daily performance metrics to understand SEO strategy performance</li>
+                  <li>Efficiently communicate with other marketing professionals to align goals</li>
+                  <li>Collaborate with others within the marketing department to manage SEO strategy</li>
+                  <li>Write compelling and high-quality website content, including blog posts and page descriptions</li>
+                  <li>Update content and website links for maximum optimization and search engine rankings</li>
                 </ul>
-
+                <h5 class="secondaryColor mb-3">Qualifications for SEO Specialist</h5>
+                <ul class="lists mb-4 fz-16">
+                  <li>Two to three years of experience in successfully developing and executing SEO campaigns</li>
+                  <li>Understanding of search engine algorithms and ranking methods</li>
+                  <li>Experience with SEO industry programs, such as Google Analytics or Adobe Analytics</li>
+                  <li>Knowledge of keyword research and data mining tools</li>
+                  <li>Able to complete competitive analysis of other companies within the industry</li>
+                  <li>Excellent written and verbal communication skills (email, phone, etc.)</li>
+                  <li>Comfortable analyzing high volumes of data on a daily basis</li>
+                  <li>Familiarity with WordPress or other content management systems</li>
+                  <li>Experience with other aspects of marketing, such as customer growth and promotion, is a plus</li>
+                </ul>
                 <div class="card__footer mt-5 mb-3">
                   <button class="ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
                   <p>
@@ -105,18 +120,18 @@
               <div class="card__header">
                 <span class="posting_date">
                   <span>Posted on:</span>
-                  <span class="primaryColor fw-bold">29 Dec 2021</span>
+                  <span class="primaryColor fw-bold">25 Feb 2022</span>
                 </span>                
                 <div class="left_block">
-                  <h3 class="postion_name">Full Stack Developer</h3>
+                  <h3 class="postion_name">Content Writer</h3>
                   <ul class="short_info">
                     <li>
                       <span class="_label">Experience</span>
-                      <span for="_value">: 1 to 4 years</span>
+                      <span for="_value">: 3 to 5 years</span>
                     </li>
                     <li>
                       <span class="_label">Postion</span>
-                      <span for="_value">: 02</span>
+                      <span for="_value">: 01</span>
                     </li>
                     <li>
                       <span class="_label">Location</span>
@@ -130,70 +145,34 @@
                 </div>
               </div>
               <div class="card__body">
-                <ul class="lists">
-                  <li>Strong organizational and project management skills.</li>
-                  <li>Proficiency with fundamental front end languages such as HTML, CSS and JavaScript.</li>
-                  <li>Familiarity with JavaScript frameworks such as Angular JS, React and VueJs.</li>
-                  <li>Proficiency with server side languages such as NodeJs, PHP and Python.</li>
-                  <li>Familiarity with database technology such as MySQL, Postgres and MongoDB.</li>
-                  <li>Familiarity with web severs such as Apache and NGINX.</li>
-                  <li>Excellent verbal communication skills.</li>
-                  <li>Good problem solving skills.</li>
-                  <li>Ability to project manage.</li>
-                  <li>Ability to communicate in English fluently and idiomatically.</li>
+                <span class="close__button d-none">&times;</span>
+                <h3 class="recoleta-semiBold primaryColor mb-3">Job Overview</h3>
+                <p class="mb-4">
+                  Here at EvoBlocs., we are the leading company in our industry in the Digital Marketing and Web/App Design and Development. We are hiring an experienced Content Writer to help us keep growing. If you're dedicated and ambitious, EvoBlcos is an excellent place to grow your career. Don't hesitate to apply.
+                </p>
+                <h5 class="secondaryColor mb-3">Responsibilities for Content Writer</h5>
+                <ul class="lists mb-4 fz-16">
+                  <li>Produce well-researched content for publication online and in print</li>
+                  <li>Organize writing schedules to complete drafts of content or finished projects within deadlines</li>
+                  <li>Utilize industry best practices and familiarity with the organization's mission to inspire ideas and content</li>
+                  <li>Communicate and cooperate with a writing team, including a content manager, editors, and web publishers</li>
+                  <li>Follow an editorial calendar, collaborating with other members of the content production team to ensure timely delivery of materials</li>
+                  <li>Develop related content for multiple platforms, such as websites, email marketing, product descriptions, videos, and blogs</li>
+                  <li>Monitor and analyze the performance of key performance indicators (KPIs) to offer suggestions for improvement</li>
+                  <li>Use search engine optimization (SEO) strategies in writing to maximize the online visibility of a website in search results</li>
                 </ul>
-
-                <div class="card__footer mt-5 mb-3">
-                  <button class="ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
-                  <p>
-                    or send your cv/resume at:
-                    <a href="mailto:career@evoblocs.com">career@evoblocs.com</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="currentOpeningCard">
-              <div class="card__header">
-                <span class="posting_date">
-                  <span>Posted on:</span>
-                  <span class="primaryColor fw-bold">29 Dec 2021</span>
-                </span>                
-                <div class="left_block">
-                  <h3 class="postion_name">Full Stack Developer</h3>
-                  <ul class="short_info">
-                    <li>
-                      <span class="_label">Experience</span>
-                      <span for="_value">: 1 to 4 years</span>
-                    </li>
-                    <li>
-                      <span class="_label">Postion</span>
-                      <span for="_value">: 02</span>
-                    </li>
-                    <li>
-                      <span class="_label">Location</span>
-                      <span for="_value">: New Delhi, India</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="right_block d-flex align-items-end __ctaButtons">
-                  <button type="button" class="viewDetail">View Full Details</button>
-                  <button type="button" class="cvFormButton ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
-                </div>
-              </div>
-              <div class="card__body">
-                <ul class="lists">
-                  <li>Strong organizational and project management skills.</li>
-                  <li>Proficiency with fundamental front end languages such as HTML, CSS and JavaScript.</li>
-                  <li>Familiarity with JavaScript frameworks such as Angular JS, React and VueJs.</li>
-                  <li>Proficiency with server side languages such as NodeJs, PHP and Python.</li>
-                  <li>Familiarity with database technology such as MySQL, Postgres and MongoDB.</li>
-                  <li>Familiarity with web severs such as Apache and NGINX.</li>
-                  <li>Excellent verbal communication skills.</li>
-                  <li>Good problem solving skills.</li>
-                  <li>Ability to project manage.</li>
-                  <li>Ability to communicate in English fluently and idiomatically.</li>
+                <h5 class="secondaryColor mb-3">Responsibilities for Content Writer</h5>
+                <ul class="lists mb-4 fz-16">
+                  <li>Proven record of excellent writing demonstrated in a professional portfolio</li>
+                  <li>Impeccable grasp of the English language, including idioms and current trends in slang and expressions</li>
+                  <li>Ability to work independently with little or no daily supervision</li>
+                  <li>Strong interpersonal skills and willingness to communicate with clients, colleagues, and management</li>
+                  <li>Ability to work on multiple projects with different objectives simultaneously</li>
+                  <li>Strict adherence to the style guides of each company and their policies for publication</li>
+                  <li>Good time management skills, including prioritizing, scheduling, and adapting as necessary</li>
+                  <li>Proficiency with computers, especially writing programs, such as Google Docs and Microsoft Word, Excel, Outlook, and PowerPoint</li>
+                  <li>Familiarity with each client's requirements and the company's brand image, products, and services</li>
                 </ul>
-
                 <div class="card__footer mt-5 mb-3">
                   <button class="ctaButtonContainer" buttonval="Apply Now">Apply Now</button>
                   <p>

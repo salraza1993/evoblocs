@@ -5,10 +5,9 @@
               <span class="recoleta-light">Need a</span>
               Quote
               <span class="recoleta-light">for</span>
-              <br>
-              Web Design, SEO 
+              Design, Development  
               <span class="recoleta-light">or</span> 
-              Social Media
+              Marketing
             </h3>
             <!-- <p class="mb-0">
               Or Email us your project requirements to 

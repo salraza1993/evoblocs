@@ -22,13 +22,13 @@
 }
 
 @mixin bulletPoint($bgColor: $white){
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    z-index: 2;
-    border-radius: 10px;
-    background-color: $bgColor;
-  	transition: $transition;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	z-index: 2;
+	border-radius: 10px;
+	background-color: $bgColor;
+	transition: $transition;
 }
 @mixin abstractBg($bgBlendMode: soft-light) {
 	background-color: var(--baseBgColor);

@@ -288,14 +288,14 @@
       <div class="col-12 col-lg-9 p-0">
         <div class="__content">
           <h3>
-            <span class="recoleta-light">Can't find </span> 
-            <span class="recoleta-medium">your ranking solution?</span> 
+            <span class="recoleta-light">Get started with </span> 
+            <span class="recoleta-medium">pay per click marketing</span> 
           </h3>
         </div>
       </div>
       <div class="col-12 col-lg-3 p-0">
         <div class="__ctaButton">
-          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Talk to our expert">Talk to our expert</button>
+          <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Generate leads now">Generate leads now</button>
         </div>
       </div>
     </div>

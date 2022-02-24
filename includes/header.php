@@ -29,7 +29,7 @@
 		</ul>
 	</nav>
 	<div class="rightMenuContainer hidden-xs">
-		<button class="ctaButtonContainer ctaButton" buttonVal="Get a Qoute">Get a Qoute</button>
+		<button class="ctaButtonContainer ctaButton" buttonVal="Get a Quote">Get a Quote</button>
 		<div class="moreMenus"><i class="fas fa-ellipsis-v"></i></div>
 	</div>
 </header>

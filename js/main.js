@@ -207,6 +207,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
       });
     });
   }
+  if (window.innerWidth < 768) {
+    $('.close__button').on('click', function () {
+      $(this).closest('.card__body').slideUp();
+    });
+  }
 
   const accordionMainContainer = $('.accordion');
   const accordionButton = accordionMainContainer.find('.accordion__block');

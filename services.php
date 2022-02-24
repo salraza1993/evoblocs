@@ -18,7 +18,7 @@
                 <span class="primary-color">Services</span>
               </h2>
               <p>
-                Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ipsam illo asperiores rerum labore neque libero fugit cupiditate quod, minima, iure ratione doloribus. Id sint ut fuga architecto, tenetur earum, nam?   
+                At EvoBlocs, we pride ourselves on giving companies an amazing product they feel they couldn't get elsewhere. Adding passion into each project makes all the difference. 
               </p>
         </div>
       </div>
@@ -29,6 +29,44 @@
 <section class="services_box_section pb-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container p-0">
+    <div class="row gy-5 mb-sm-5">
+      <div class="col-12">
+        <div class="seo_box_container web-dev-box d-flex">
+            <div class="__content">
+              <h3 class="primaryColor">Web Design & Development</h3>
+              <p class="note_text">Result-Driven Solutions for Intuitive and Immersive Web Experiences</p>
+              <p>
+                Let your business shine across all digital assets. We design responsive websites and applications that are guided by research, focused on the end-user and engineered to meet business goals. Our team of experienced developers build scalable front-end and back-end solutions that are innovative and functional. We’ll help you tell a story with a stunning digital asset ….
+              </p>
+              <div class="cta__buttons">
+                <a href="web-development.php" class="ctaButtonContainer whiteButton" buttonval="Know More">Know More</a>
+                <button class="ctaButtonContainer ctaButton" buttonval="Let's discuss your project">Let's discuss your project</button>
+              </div>
+            </div>
+            <div class="__img">
+              <img src="images/web-dev-illustration.svg" alt="">
+            </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="seo_box_container mob-app-box d-flex">
+            <div class="__img">
+              <img src="images/mobile-app-illustration.svg" alt="">
+            </div>
+            <div class="__content">
+              <h3>Mobile App Development</h3>
+              <p class="note_text">Perfect Blend of Form and Function</p>
+              <p>
+                EvoBlocs uses the latest technologies and frameworks to give you mobile applications that are not only built with high-quality code but are stunning, intuitive and the perfect representation of your brand. Our agile process ensures the best results, as we design apps keeping in mind the habits and desires of the end-user. Our customised mobile applications can help ...
+              </p>
+              <div class="cta__buttons">
+                <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Know More">Know More</button>
+                <button class="ctaButtonContainer blackButton ctaButton" buttonval="Let's discuss your project">Let's discuss your project</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
     <div class="row gy-5 mb-5">
       <div class="col-12">
         <div class="seo_box_container seo-box d-flex">
@@ -87,43 +125,7 @@
         </div>
       </div>
     </div>
-    <div class="row gy-5">
-      <div class="col-12">
-        <div class="seo_box_container web-dev-box d-flex">
-            <div class="__content">
-              <h3 class="primaryColor">Web Design & Development</h3>
-              <p class="note_text">Result-Driven Solutions for Intuitive and Immersive Web Experiences</p>
-              <p>
-                Let your business shine across all digital assets. We design responsive websites and applications that are guided by research, focused on the end-user and engineered to meet business goals. Our team of experienced developers build scalable front-end and back-end solutions that are innovative and functional. We’ll help you tell a story with a stunning digital asset ….
-              </p>
-              <div class="cta__buttons">
-                <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Know More">Know More</button>
-                <button class="ctaButtonContainer ctaButton" buttonval="Let's discuss your project">Let's discuss your project</button>
-              </div>
-            </div>
-            <div class="__img">
-              <img src="images/web-dev-illustration.svg" alt="">
-            </div>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="seo_box_container mob-app-box d-flex">
-            <div class="__img">
-              <img src="images/mobile-app-illustration.svg" alt="">
-            </div>
-            <div class="__content">
-              <h3>Mobile App Development</h3>
-              <p class="note_text">Perfect Blend of Form and Function</p>
-              <p>
-                EvoBlocs uses the latest technologies and frameworks to give you mobile applications that are not only built with high-quality code but are stunning, intuitive and the perfect representation of your brand. Our agile process ensures the best results, as we design apps keeping in mind the habits and desires of the end-user. Our customised mobile applications can help ...
-              </p>
-              <div class="cta__buttons">
-                <button class="ctaButtonContainer whiteButton ctaButton" buttonval="Know More">Know More</button>
-                <button class="ctaButtonContainer blackButton ctaButton" buttonval="Let's discuss your project">Let's discuss your project</button>
-              </div>
-            </div>
-        </div>
-      </div>
+    <div class="row">
       <div class="col-12">
         <div class="seo_box_container content-writing-box d-flex">
           <div class="__content">
@@ -142,7 +144,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
 </section>
 

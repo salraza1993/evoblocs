@@ -28,10 +28,9 @@
         <div class="d-flex p-0 align-items-center flex-wrap">
           <div class="col-12 col-md-12 col-lg-7 p-0 pe-5">
             <div class="ctaSection">
-              <ul class="listContent">
-                <li>We deliver revenue-generating digital marketing services and technology platforms.</li>
-                <li>At EvoBlocs, we pride ourselves on giving companies an amazing product they feel they couldn't get elsewhere. Adding passion into each project makes all the difference. </li>
-              </ul>
+              <h3>
+                We deliver <span class="recoleta-semiBold">revenue-generating digital marketing services</span> and <span class="recoleta-semiBold">technology platforms.</span>
+              </h3>
               <button type="button" class="ctaButtonContainer mt-3 ctaButton whiteButton" buttonval="Let's get started">Let's get started</button>
             </div>
           </div>
@@ -62,7 +61,7 @@
         <div class="headingText">
           <p class="smallText text-uppercase roboto-light">working process</p>
           <h2>
-            <span class="lightText">How do</span> 
+            <span class="lightText">How</span> 
             <span class="primaryColor">We Work</span>
           </h2>
         </div>
@@ -83,7 +82,7 @@
                 </div>
                 <div class="accordion__body" style="display: block;">
                   <p>
-                    We understand your story, your business, your industry, your products, services, and your target audience. Your point of distinction and valuation. 
+                    We understand your story, business, industry, products, services, and target audience - Your point of distinction and valuation.
                   </p>
                 </div>
               </div>
@@ -94,18 +93,18 @@
                 </div>
                 <div class="accordion__body">
                   <p>
-                    We clarify your concept and the stages of employment including the best applications of resources and time.
+                    We clarify your concept and employment stages, including the best applications of resources and time. 
                   </p>
                 </div>
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Design and Development</h3>
+                  <h3>Analyze & Optimization</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
                   <p>
-                    We get a clear picture of our performance and reassess to drive desired results. Keeping a clean record of what we’ve built, where we’ve been, and where we’re going.
+                    We get a clear picture of our performance and reassess to drive desired results, keeping a clean record of where we’ve been, where we’re going and the technologies and strategies we’ve employed to get there.
                   </p>
                 </div>
               </div>
@@ -161,7 +160,7 @@
       <div class="card__body">
         <h3>Knowledge</h3>
         <p>
-          We employ some of the brightest minds in the industry giving us an edge in identifying the most effective and efficient solutions for any business challenge. 
+          We employ some of the industry’s brightest minds, giving us an edge in identifying the most effective and efficient solutions for any business challenge.
         </p>
       </div>
     </div>

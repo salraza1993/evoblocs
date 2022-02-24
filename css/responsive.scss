@@ -3,7 +3,11 @@
 
 $lineColor: hsla(0,0%,100%,0.1);
 $mobilePadding: 5vw;
-$mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
+$mobileHeadingSize: calc(2.35rem + .6vw) !important;
+$mobileFontSize: calc(14px + .25vw);
+$mobileLineHeight: calc(24px + .25vw);
+$buttonHeight: 45px;
+
 
 // @media (min-width: 1024px) and (max-width: 1279px) {
 //   .container {
@@ -15,6 +19,31 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
 @media (min-width: 320px) and (max-width: 767px) {
   $headerHeight: 70px;
   body {padding-bottom: $headerHeight + 20;}
+  .headingText {
+    h2 {line-height: calc(3rem + 1vw) !important;}
+  }
+  .ctaButtonContainer {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    &::before {
+      width: $buttonHeight + 5;
+      height: $buttonHeight + 5;
+      border-radius: $buttonHeight / 1;
+    }
+  }
+  .currentOpenings {
+    .currentOpeningCard {
+      .card__header {
+        .short_info, .viewDetail {
+          font-size: $mobileFontSize;
+        }
+        .viewDetail {
+          padding: .65rem 1.2rem;
+        }
+      }
+    }
+  }
+
   h2, .h2, .h2_heading { font-size: $mobileHeadingSize; }
   .lineContainer {
     max-width: calc(100vw - (#{$mobilePadding} * 2));
@@ -51,7 +80,11 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     .simpleTextSlider {
       .simpleTextBox {
         h2 {margin: .6rem 0;}
-        p {padding: 0 $mobilePadding;}
+        p {
+          padding: 0 $mobilePadding;
+          font-size: $mobileFontSize;
+          line-height: $mobileLineHeight;
+        }
       }
     }
   }
@@ -343,7 +376,10 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
             margin: 0 auto 4vh;
           }
           .comment{ 
-            p {line-height: 26px;}
+            p {
+              font-size: $mobileFontSize;
+              line-height: $mobileLineHeight;
+            }
           }
         }
       }
@@ -406,19 +442,33 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
         svg {min-width: 100%; min-height: 100%;}
       }
       h3 {font-size: $mobileHeadingSize; margin-bottom: $mobilePadding - 3; margin-bottom: 1rem;}
-      p {margin-bottom: $mobilePadding !important;}
+      p {
+        margin-bottom: $mobilePadding !important; 
+        font-size: $mobileFontSize;
+        line-height: $mobileLineHeight;
+      }
       .ctaButtonContainer {margin-top: $mobilePadding;}
     }
   }
   footer { padding: 0 $mobilePadding; }
+  p, 
+  .latestTechContainer p, 
+  .ctaSection .list li {
+    font-size: $mobileFontSize;
+    line-height: $mobileLineHeight;
+  }
   .qoutBxCnt {
     .qtCntntCnt {
       padding: $mobilePadding + 1 $mobilePadding $mobilePadding + 3;
       flex-wrap: wrap;
       .qtCntnt {
         flex: initial;
-        p {margin-bottom: $mobilePadding + 3 !important;}
-        h3 {font-size: $mobileHeadingSize;}
+        p {
+          margin-bottom: $mobilePadding + 3 !important;
+          font-size: $mobileFontSize;
+          line-height: $mobileLineHeight;
+        }
+        h3 {font-size: $mobileHeadingSize; line-height: calc(3rem + .75vw); margin-bottom: 5vh;}
       }
     }
     .qoutBxVideo {
@@ -432,7 +482,11 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       align-items: flex-start;
       margin: 0;
       padding-top: 5vh;
-      p { margin: 0px 0 1rem; }
+      p { 
+        margin: 0px 0 1rem; 
+        font-size: $mobileFontSize;
+        line-height: $mobileLineHeight;
+      }
       .footerSocialMedia {
         flex-direction: column;
         align-items: flex-start;
@@ -447,6 +501,10 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
           margin-left: -5vw;
           height: 25vh;
           iframe {width: 100%; height: 100%;}
+          .footerAdress {
+            font-size: $mobileFontSize;
+            line-height: $mobileLineHeight;
+          }
         }
       }
     }
@@ -481,8 +539,8 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
         padding: $mobilePadding 0;
         flex-direction: column;
         align-items: flex-start;
-        h3 { font-size: 3.6vh; line-height: 130%;}
-        p {line-height: 26px;}
+        h3 { font-size: 4vh; line-height: 5.5vh;}
+        p {font-size: $mobileFontSize !important; line-height: $mobileLineHeight !important;}
         > div {max-width: 100%;}
       }
     }
@@ -513,8 +571,8 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
         h3 {font-size: clamp(1.2rem, 4vh, 2rem);}
         h6 {font-size: 1.0rem; margin-bottom: 1rem;}
         p {
-          font-size: 1rem;
-          line-height: 1.5rem;
+          font-size: $mobileFontSize;
+          line-height: $mobileLineHeight;
           font-weight: 400;
         }
       }
@@ -571,7 +629,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
           h3 {font-size: 1.5rem;}
           .address, .contactSocialMedia { max-width: 100%;}
           .address {
-            li {font-size: 1rem;}
+            li {font-size: $mobileFontSize; line-height: $mobileLineHeight;}
           }
           .contactSocialMedia {
             span {margin-bottom: 1rem; display: inline-block;}
@@ -641,19 +699,27 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       font-size: clamp(1.1rem, 6vw, 2rem) !important;
       line-height: clamp(1.6rem, 9vw, 2.5rem) !important;
     }
-  }
+  }  
   .card__main__container {
     width: 100vw;
     margin-left: -$mobilePadding;
-    padding: 0 $mobilePadding;
-    padding: 4vw;
+    padding: 0 $mobilePadding $mobilePadding;
     overflow-x: scroll;
     gap: $mobilePadding;
     .card__container {
       max-width: 310px;
       padding: $mobilePadding;
+      &.border-left {
+        padding: $mobilePadding + 1 $mobilePadding + 2;
+      }
       &:first-child {margin-left: 0;}
       &:last-child {margin-right: 0;}
+      .card__body {
+        p {
+          font-size: $mobileFontSize;
+          line-height: $mobileLineHeight;
+        }
+      }
     }
   }
   .joinTeamSection {
@@ -668,7 +734,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     }
   }
   .careerHeroSection {
-    padding: 14vh $mobilePadding 7rem;
+    padding: 14vh $mobilePadding 8vh;
     .aboutContent {
       padding: 0 !important;
       h2 {font-size: clamp(2.3rem, 8vmin, 4.75rem);}
@@ -694,6 +760,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
   .currentOpeningSection {
     padding: 5vh $mobilePadding !important;
     .currentOpeningCard {
+      font-size: $mobileFontSize;
       .card__header {
         flex-direction: column;
         align-items: flex-start;
@@ -707,11 +774,12 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
           padding-top: $mobilePadding + 5;
           padding-top: 10vw;
           min-height: initial;
-          gap: 3vw;
+          gap: $mobilePadding;
           margin-left: -5vw;
           position: relative;
           width: calc(100% + 10vw);
-          justify-content: center;
+          justify-content: space-between;
+          padding: $mobilePadding + 3 $mobilePadding 0;
         } 
       }
       .card__body {
@@ -723,8 +791,23 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
         background: rgba(0,0,0,0.85);
         backdrop-filter: blur(3px);
         overflow-y: scroll;
-        padding: 10vw;
+        padding: 18vw 10vw 10vw;
         max-height: 100vh;
+        .close__button {
+          width: 40px;
+          height: 40px;
+          display: block !important;
+          position: absolute;
+          right: 3vw;
+          top: 3vw;
+          font-size: 5vh;
+          line-height: 37px;
+          margin-bottom: 1rem;
+          color: #ffffff;
+          background-color: rgba(#ffffff, 0.2);
+          text-align: center;
+          border-radius: 40px;
+        }
         .card__footer {
           flex-direction: column;
           align-items: flex-start;
@@ -737,9 +820,10 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     }
   }
   .careerFormSection {
-    padding: 0 $mobilePadding;
+    padding: 0 !important;
     .careerFormContainer {
       flex-wrap: wrap;
+      padding: $mobilePadding + 5 $mobilePadding;
       .__content {
         max-width: 100%;
         h2 {line-height: clamp(2rem, 10vw, 5rem);}
@@ -759,15 +843,16 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       }
       .__content {
         h3 {
-          font-size: clamp(1rem, 6vw, 2.5rem);
-          line-height: clamp(1.5rem, 8vw, 3.2rem);
+          font-size: clamp(1rem, 4.5vh, 2.5rem);
+          line-height: clamp(1.5rem, 5.5vh, 3.2rem);
+          margin-bottom: 1.3rem;
         }
         p {
           &:not(.note_text) {
-            font-size: 1rem;
-            line-height: 1.55rem;
+            font-size: $mobileFontSize;
+            line-height: $mobileLineHeight;
           }
-          &.note_text {font-size: 1.1rem; line-height: 1.5rem;}
+          &.note_text {font-size: 1rem; line-height: 1.5rem;}
         }
       }
       &.smo-box {
@@ -815,15 +900,6 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     }
   }
   .our-service-section { padding: 0 $mobilePadding; }
-  .faqSection { padding: 0 $mobilePadding !important; }
-  .font__66 {
-    font-size: clamp(1rem, 4.5vh, 4rem);
-    line-height: clamp(1.5rem, 6.3vh, 4.8rem);
-  }
-  .font__60 {
-    font-size: clamp(1rem, 4.5vh, 4rem);
-    line-height: clamp(1.5rem, 6vh, 4.8rem);
-  }
   .webMethodologySection { 
     padding: 5vh $mobilePadding;
     .webMethodologyContainer {
@@ -851,7 +927,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
               border-bottom: initial;
               border-bottom: $pointWidth solid inherit;
               bottom: 100%;
-              left: $mobilePadding;
+              left: $mobilePadding + 7;
               top: initial;
               height: initial;
             }
@@ -875,23 +951,33 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
               background-color: #195074;
               &::after {border-bottom: $pointWidth solid #195074; border-right: $pointWidth solid transparent;}
             }
+            .__content {
+              h3 {
+                font-size: 3vh;
+                margin-bottom: 1rem;
+              }
+              p {
+                font-size: $mobileFontSize;
+                line-height: $mobileLineHeight;
+              }
+            }
           }
         }
       }
     }
   }
-  .faqSection {
-    padding-bottom: $mobilePadding !important;
-  }
+  .faqSection { padding-bottom: $mobilePadding !important; }
   .specialContentSection {
     padding: 0 $mobilePadding 3vw !important;
     .specialContentContainer {
       padding: $mobilePadding + 3;
+      margin-top: $mobilePadding;
       h3 {
-        font-size: clamp(1rem, 4.5vh, 3.3rem);
-        line-height: clamp(1.5rem, 5.7vh, 4.3rem);
+        font-size: calc(1.65rem + .6vw);
+        line-height: calc(2.35rem + 1vw);
         margin-bottom: 1.5rem;
       }
+      p {font-size: $mobileFontSize; line-height: $mobileLineHeight;}
     }
   }
   .subHeroSection {
@@ -904,8 +990,8 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     .container.p-0.my-5.mb-sm-0 {margin-top: 1.5rem !important; margin-bottom: 0 !important;}
     .col-12 {padding: 0 !important;}
     .heighlightedText {
-      font-size: clamp(1.5rem, 4vw, 3rem) !important;
-      line-height: clamp(2rem, 5vw, 3.5rem) !important;
+      font-size: calc(2rem + 0.6vw) !important;
+      line-height: calc(3rem + 0.6vw) !important;
       padding: 5vw;
       margin-bottom: $mobilePadding + 2 !important;
     }
@@ -918,8 +1004,8 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       .card__container {
         .card__body {
           h3 {
-            font-size: clamp(1rem, 5vh, 3rem);
-            line-height: clamp(1.5rem, 6vh, 3.5rem);
+            font-size: calc(2.0rem + 0.6vw);
+            line-height: calc(2.5rem + 1vw);
           }
         }
       }
@@ -938,7 +1024,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     }
     .col-12 {padding: 0 !important;}
     p.topBiggerSubText {
-      font-size: 3.75vh;
+      font-size: 3.5vh;
       line-height: 5.3vh;
     }
   }
@@ -949,9 +1035,9 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       }
     }
   }
-  .font__46 {
-    font-size: clamp(1rem, 3.2vh, 2.5rem) !important;
-    line-height: clamp(1.5rem, 3vh, 3.3rem) !important;
+  .font__46, .font__86, .font__66, .font__60 {
+    font-size: calc(1.75rem + 0.6vw) !important;
+    line-height: calc(2.5rem + 0.6vw) !important;
   }
   .content-process-section {
     padding: 12vw 5vw !important;
@@ -992,9 +1078,9 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       &.appDevelopmentProcess {
         margin: 0 !important;
         .card__container{
-          max-width: 100vh !important;
+          max-width: 60vh !important;
           padding: 0 4vh 0 8.5vh !important;
-          width: 100vh !important;
+          width: 60vh !important;
           &.span_2 {
             max-width: 150vh !important;
             width: 150vh !important;
@@ -1006,10 +1092,10 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
   .additionalFeatureSection {
     padding-bottom: 5vh;
     .content_block_container {
-      .content_block {
+      .content_block, .content_block._2 {
         padding: 1.5rem !important;
-        p { font-size: 1rem; line-height: 1.5rem; }
-        h3 {font-size: clamp(1rem, 10vw, 1.6rem); line-height: clamp(1.5rem, 12vw, 2.1rem);}
+        p { font-size: $mobileFontSize; line-height: $mobileLineHeight; }
+        h3 {font-size: calc(1.5rem + .6vw); line-height: calc(2rem + 1vw);}
       }
     }
   }
@@ -1022,19 +1108,40 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     .col-12 {padding: 0  !important;}
     .smmSpecialContentContainer {
       .__icon {margin-bottom: $mobilePadding + 5;}
-      h3 { font-size: 8.5vw; line-height: 10.5vw; }
-      p {font-size: 1rem; line-height: 1.5rem; margin-bottom: 1rem;}
-    }
-  }
-  .card__main__container {
-    &.ads_includedServices {
-      margin: 0 -5vw !important;
-      .card__container {
-        max-width: 70vh;
-        width: 70vh;
-        .card__body p {font-size: 1rem; line-height: 1.5rem;}
+      h3 { font-size: calc(2.0rem + 0.6vw); line-height: calc(2.5rem + 1vw); }
+      p {
+        font-size: $mobileFontSize;
+        line-height: $mobileLineHeight;
+        margin-bottom: 1.5rem;
+      }
+      .lists li {
+        position: relative;
+        padding-left: 2rem;
+        border-left: 3px solid var(--secondary);
+        padding: 0.7rem 0.5rem 0.7rem 2rem;
+        font-size: calc(1.2rem + .6vw);
+        line-height: calc(1.75rem + 1vw);
       }
     }
+  }
+  
+  .card__main__container {
+    &.web_services_container,
+    &.ads_includedServices,
+    &.appDevelopmentProcess, 
+    &.seo_services_container,
+    &.content_process_container {
+      .card__container {
+        .card__body {
+          p {font-size: $mobileFontSize !important; line-height: $mobileLineHeight !important;}
+        }
+      }
+    }
+    &.ads_includedServices {
+      margin: 0 -5vw !important;
+      .card__container { max-width: 70vh; width: 70vh; }
+    }
+    &.content_process_container {margin-bottom: 0 !important;}
   }
   .agile_methodology_section {    
     padding: $mobilePadding + 5 $mobilePadding $mobilePadding * 5;
@@ -1044,6 +1151,8 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       width: 100vw;
       margin-left: -$mobilePadding;
       padding: 0 $mobilePadding;
+      margin-top: $mobilePadding;
+      margin-bottom: $mobilePadding;
       .optionGrid {
         max-width: 85vw !important;
         min-width: 85vw;
@@ -1054,6 +1163,11 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
         align-items: start;
         &:not(:last-child) {border-right: 1px solid rgba(#ffffff, 0.2) !important;}
         &:nth-child(1) {padding-left: 0 !important;}
+        h3 {
+          font-size: calc(1.75rem + 0.6vw);
+          line-height: calc(2rem + 1vw);
+        }
+        p {font-size: $mobileFontSize; line-height: $mobileLineHeight;}
       }
     }
   }
@@ -1075,7 +1189,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
           img {width: 15vw;}
           margin-bottom: 1.5rem;
         }
-        p {font-size: 1rem;}
+        p {font-size: $mobileFontSize; line-height: $mobileLineHeight;}
       }
     }
   }
@@ -1086,6 +1200,30 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
       }
     }
   }
+  .smmWhyChoose .smmWhyChoose_block {
+    p {font-size: $mobileFontSize; line-height: $mobileLineHeight;}
+  }
+  .faqSection { 
+    padding: 0 $mobilePadding !important; 
+    .faqsContainer {
+      margin-top: 1rem;
+      .arrodion__container, .accordion__container {
+        .accordion {
+          .accordion__block {
+            .accordion__header {
+              padding: $mobilePadding - 1.5;
+              h3 { font-size: calc(.9rem + .6vw); line-height: calc(1.5rem + .6vw); }
+            }
+            .accordion__body {
+              padding: 0 $mobilePadding;
+              p {font-size: $mobileFontSize; line-height: $mobileLineHeight;}
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media (min-width: 768px) {}
@@ -1597,7 +1735,7 @@ $mobileHeadingSize: clamp(2.3rem, 8vmin, 4.75rem) !important;
     .smmSpecialContentContainer {
       padding: 8vmin;
       .__icon {
-        margin-bottom: 3vw;
+        margin-bottom: 10vw;
         img {max-width: 50%;}
       }
     }

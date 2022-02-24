@@ -2,8 +2,26 @@
   body {
     padding-bottom: 90px;
   }
+  .headingText h2 {
+    line-height: calc(3rem + 1vw) !important;
+  }
+  .ctaButtonContainer {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  .ctaButtonContainer::before {
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+  }
+  .currentOpenings .currentOpeningCard .card__header .short_info, .currentOpenings .currentOpeningCard .card__header .viewDetail {
+    font-size: calc(14px + .25vw);
+  }
+  .currentOpenings .currentOpeningCard .card__header .viewDetail {
+    padding: .65rem 1.2rem;
+  }
   h2, .h2, .h2_heading {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
+    font-size: calc(2.35rem + .6vw) !important;
   }
   .lineContainer {
     max-width: calc(100vw - (5vw * 2));
@@ -53,6 +71,8 @@
   }
   .sliderContainer .simpleTextSlider .simpleTextBox p {
     padding: 0 5vw;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .boldIdeaBoldResult {
     padding: 2rem 5vw;
@@ -258,7 +278,7 @@
     padding: 5vw 10vw;
   }
   .latestTechnoSection .latestTechContainer h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
+    font-size: calc(2.35rem + .6vw) !important;
   }
   .latestTechnoSection .latestTechContainer .discussProject {
     padding: 0 5vw 8vw;
@@ -434,7 +454,8 @@
     margin: 0 auto 4vh;
   }
   .homeTestimonialSection .homeTestimonialsContainer .homeTestimonialsWrapper .homeTestimonials .comment p {
-    line-height: 26px;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .ctaSection {
     padding: 7vw 5vw;
@@ -461,7 +482,7 @@
     min-height: initial;
   }
   .callNCareerContainer .getACallContainer h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
+    font-size: calc(2.35rem + .6vw) !important;
   }
   .callNCareerContainer .getACallContainer .inputContainer {
     margin-left: -4%;
@@ -513,18 +534,26 @@
     min-height: 100%;
   }
   .callNCareerContainer .footerCareerElemContainer h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
+    font-size: calc(2.35rem + .6vw) !important;
     margin-bottom: 2vw;
     margin-bottom: 1rem;
   }
   .callNCareerContainer .footerCareerElemContainer p {
     margin-bottom: 5vw !important;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .callNCareerContainer .footerCareerElemContainer .ctaButtonContainer {
     margin-top: 5vw;
   }
   footer {
     padding: 0 5vw;
+  }
+  p,
+  .latestTechContainer p,
+  .ctaSection .list li {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .qoutBxCnt .qtCntntCnt {
     padding: 6vw 5vw 8vw;
@@ -538,9 +567,13 @@
   }
   .qoutBxCnt .qtCntntCnt .qtCntnt p {
     margin-bottom: 8vw !important;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .qoutBxCnt .qtCntntCnt .qtCntnt h3 {
-    font-size: clamp(2.3rem, 8vmin, 4.75rem) !important;
+    font-size: calc(2.35rem + .6vw) !important;
+    line-height: calc(3rem + .75vw);
+    margin-bottom: 5vh;
   }
   .qoutBxCnt .qoutBxVideo {
     width: auto;
@@ -559,6 +592,8 @@
   }
   .footerLinksContainer .copyrightText p {
     margin: 0px 0 1rem;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .footerLinksContainer .copyrightText .footerSocialMedia {
     -webkit-box-orient: vertical;
@@ -581,6 +616,10 @@
   .footerLinksContainer .footer-links-block.footerAdressBlock .footerGoogleMap iframe {
     width: 100%;
     height: 100%;
+  }
+  .footerLinksContainer .footer-links-block.footerAdressBlock .footerGoogleMap .footerAdress {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .portfolioPageSection {
     padding: 0 5vw !important;
@@ -625,11 +664,12 @@
             align-items: flex-start;
   }
   .portfolioPageSection .protfolioWorkContainer .porfolioContent h3 {
-    font-size: 3.6vh;
-    line-height: 130%;
+    font-size: 4vh;
+    line-height: 5.5vh;
   }
   .portfolioPageSection .protfolioWorkContainer .porfolioContent p {
-    line-height: 26px;
+    font-size: calc(14px + .25vw) !important;
+    line-height: calc(24px + .25vw) !important;
   }
   .portfolioPageSection .protfolioWorkContainer .porfolioContent > div {
     max-width: 100%;
@@ -678,8 +718,8 @@
     margin-bottom: 1rem;
   }
   .teamPageSection .teamMemberBlock .profileDetail p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
     font-weight: 400;
   }
   .specialCtaSection {
@@ -739,7 +779,8 @@
     max-width: 100%;
   }
   .contactPageSection .contactFormContainer .formContainer .companyInfo .address li {
-    font-size: 1rem;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia span {
     margin-bottom: 1rem;
@@ -824,8 +865,7 @@
   .card__main__container {
     width: 100vw;
     margin-left: -5vw;
-    padding: 0 5vw;
-    padding: 4vw;
+    padding: 0 5vw 5vw;
     overflow-x: scroll;
     gap: 5vw;
   }
@@ -833,11 +873,18 @@
     max-width: 310px;
     padding: 5vw;
   }
+  .card__main__container .card__container.border-left {
+    padding: 6vw 7vw;
+  }
   .card__main__container .card__container:first-child {
     margin-left: 0;
   }
   .card__main__container .card__container:last-child {
     margin-right: 0;
+  }
+  .card__main__container .card__container .card__body p {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .joinTeamSection {
     padding-top: 0 !important;
@@ -851,7 +898,7 @@
     line-height: clamp(1.5rem, 20vw, 8rem);
   }
   .careerHeroSection {
-    padding: 14vh 5vw 7rem;
+    padding: 14vh 5vw 8vh;
   }
   .careerHeroSection .aboutContent {
     padding: 0 !important;
@@ -879,6 +926,9 @@
   .currentOpeningSection {
     padding: 5vh 5vw !important;
   }
+  .currentOpeningSection .currentOpeningCard {
+    font-size: calc(14px + .25vw);
+  }
   .currentOpeningSection .currentOpeningCard .card__header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -901,13 +951,14 @@
     padding-top: 10vw;
     padding-top: 10vw;
     min-height: initial;
-    gap: 3vw;
+    gap: 5vw;
     margin-left: -5vw;
     position: relative;
     width: calc(100% + 10vw);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 8vw 5vw 0;
   }
   .currentOpeningSection .currentOpeningCard .card__body {
     display: none;
@@ -919,8 +970,23 @@
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     overflow-y: scroll;
-    padding: 10vw;
+    padding: 18vw 10vw 10vw;
     max-height: 100vh;
+  }
+  .currentOpeningSection .currentOpeningCard .card__body .close__button {
+    width: 40px;
+    height: 40px;
+    display: block !important;
+    position: absolute;
+    right: 3vw;
+    top: 3vw;
+    font-size: 5vh;
+    line-height: 37px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 40px;
   }
   .currentOpeningSection .currentOpeningCard .card__body .card__footer {
     -webkit-box-orient: vertical;
@@ -938,11 +1004,12 @@
     margin: 1vh 0 0 0;
   }
   .careerFormSection {
-    padding: 0 5vw;
+    padding: 0 !important;
   }
   .careerFormSection .careerFormContainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 10vw 5vw;
   }
   .careerFormSection .careerFormContainer .__content {
     max-width: 100%;
@@ -978,15 +1045,16 @@
         align-content: initial;
   }
   .services_box_section .seo_box_container .__content h3 {
-    font-size: clamp(1rem, 6vw, 2.5rem);
-    line-height: clamp(1.5rem, 8vw, 3.2rem);
+    font-size: clamp(1rem, 4.5vh, 2.5rem);
+    line-height: clamp(1.5rem, 5.5vh, 3.2rem);
+    margin-bottom: 1.3rem;
   }
   .services_box_section .seo_box_container .__content p:not(.note_text) {
-    font-size: 1rem;
-    line-height: 1.55rem;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .services_box_section .seo_box_container .__content p.note_text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
   .services_box_section .seo_box_container.smo-box .__content {
@@ -1048,17 +1116,6 @@
   .our-service-section {
     padding: 0 5vw;
   }
-  .faqSection {
-    padding: 0 5vw !important;
-  }
-  .font__66 {
-    font-size: clamp(1rem, 4.5vh, 4rem);
-    line-height: clamp(1.5rem, 6.3vh, 4.8rem);
-  }
-  .font__60 {
-    font-size: clamp(1rem, 4.5vh, 4rem);
-    line-height: clamp(1.5rem, 6vh, 4.8rem);
-  }
   .webMethodologySection {
     padding: 5vh 5vw;
   }
@@ -1098,7 +1155,7 @@
     border-bottom: initial;
     border-bottom: 15px solid inherit;
     bottom: 100%;
-    left: 5vw;
+    left: 12vw;
     top: initial;
     height: initial;
   }
@@ -1137,6 +1194,14 @@
     border-bottom: 15px solid #195074;
     border-right: 15px solid transparent;
   }
+  .webMethodologySection .webMethodologyContainer .webPointsContainer .__points li .__content h3 {
+    font-size: 3vh;
+    margin-bottom: 1rem;
+  }
+  .webMethodologySection .webMethodologyContainer .webPointsContainer .__points li .__content p {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
+  }
   .faqSection {
     padding-bottom: 5vw !important;
   }
@@ -1145,11 +1210,16 @@
   }
   .specialContentSection .specialContentContainer {
     padding: 8vw;
+    margin-top: 5vw;
   }
   .specialContentSection .specialContentContainer h3 {
-    font-size: clamp(1rem, 4.5vh, 3.3rem);
-    line-height: clamp(1.5rem, 5.7vh, 4.3rem);
+    font-size: calc(1.65rem + .6vw);
+    line-height: calc(2.35rem + 1vw);
     margin-bottom: 1.5rem;
+  }
+  .specialContentSection .specialContentContainer p {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .subHeroSection {
     padding: 0 5vw !important;
@@ -1171,8 +1241,8 @@
     padding: 0 !important;
   }
   .subHeroSection .heighlightedText {
-    font-size: clamp(1.5rem, 4vw, 3rem) !important;
-    line-height: clamp(2rem, 5vw, 3.5rem) !important;
+    font-size: calc(2rem + 0.6vw) !important;
+    line-height: calc(3rem + 0.6vw) !important;
     padding: 5vw;
     margin-bottom: 7vw !important;
   }
@@ -1180,8 +1250,8 @@
     padding-bottom: 9vw !important;
   }
   .card__main__container.percentageCard_container .card__container .card__body h3 {
-    font-size: clamp(1rem, 5vh, 3rem);
-    line-height: clamp(1.5rem, 6vh, 3.5rem);
+    font-size: calc(2.0rem + 0.6vw);
+    line-height: calc(2.5rem + 1vw);
   }
   .card__main__container.seo_services_container {
     margin-top: 0 !important;
@@ -1201,15 +1271,15 @@
     padding: 0 !important;
   }
   .heroBannerSection p.topBiggerSubText {
-    font-size: 3.75vh;
+    font-size: 3.5vh;
     line-height: 5.3vh;
   }
   .heroBannerSection.mobileAppHeroBanner .heroBannerImg img {
     max-width: 100% !important;
   }
-  .font__46 {
-    font-size: clamp(1rem, 3.2vh, 2.5rem) !important;
-    line-height: clamp(1.5rem, 3vh, 3.3rem) !important;
+  .font__46, .font__86, .font__66, .font__60 {
+    font-size: calc(1.75rem + 0.6vw) !important;
+    line-height: calc(2.5rem + 0.6vw) !important;
   }
   .content-process-section {
     padding: 12vw 5vw !important;
@@ -1262,9 +1332,9 @@
     margin: 0 !important;
   }
   .appDevelopmentProcessSection .card__main__container.appDevelopmentProcess .card__container {
-    max-width: 100vh !important;
+    max-width: 60vh !important;
     padding: 0 4vh 0 8.5vh !important;
-    width: 100vh !important;
+    width: 60vh !important;
   }
   .appDevelopmentProcessSection .card__main__container.appDevelopmentProcess .card__container.span_2 {
     max-width: 150vh !important;
@@ -1273,16 +1343,16 @@
   .additionalFeatureSection {
     padding-bottom: 5vh;
   }
-  .additionalFeatureSection .content_block_container .content_block {
+  .additionalFeatureSection .content_block_container .content_block, .additionalFeatureSection .content_block_container .content_block._2 {
     padding: 1.5rem !important;
   }
-  .additionalFeatureSection .content_block_container .content_block p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .additionalFeatureSection .content_block_container .content_block p, .additionalFeatureSection .content_block_container .content_block._2 p {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
-  .additionalFeatureSection .content_block_container .content_block h3 {
-    font-size: clamp(1rem, 10vw, 1.6rem);
-    line-height: clamp(1.5rem, 12vw, 2.1rem);
+  .additionalFeatureSection .content_block_container .content_block h3, .additionalFeatureSection .content_block_container .content_block._2 h3 {
+    font-size: calc(1.5rem + .6vw);
+    line-height: calc(2rem + 1vw);
   }
   .contentOurSrviceSection {
     padding-bottom: 0 !important;
@@ -1300,13 +1370,25 @@
     margin-bottom: 10vw;
   }
   .smmSpecialContentSection .smmSpecialContentContainer h3 {
-    font-size: 8.5vw;
-    line-height: 10.5vw;
+    font-size: calc(2.0rem + 0.6vw);
+    line-height: calc(2.5rem + 1vw);
   }
   .smmSpecialContentSection .smmSpecialContentContainer p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
+    margin-bottom: 1.5rem;
+  }
+  .smmSpecialContentSection .smmSpecialContentContainer .lists li {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 3px solid var(--secondary);
+    padding: 0.7rem 0.5rem 0.7rem 2rem;
+    font-size: calc(1.2rem + .6vw);
+    line-height: calc(1.75rem + 1vw);
+  }
+  .card__main__container.web_services_container .card__container .card__body p, .card__main__container.ads_includedServices .card__container .card__body p, .card__main__container.appDevelopmentProcess .card__container .card__body p, .card__main__container.seo_services_container .card__container .card__body p, .card__main__container.content_process_container .card__container .card__body p {
+    font-size: calc(14px + .25vw) !important;
+    line-height: calc(24px + .25vw) !important;
   }
   .card__main__container.ads_includedServices {
     margin: 0 -5vw !important;
@@ -1315,9 +1397,8 @@
     max-width: 70vh;
     width: 70vh;
   }
-  .card__main__container.ads_includedServices .card__container .card__body p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .card__main__container.content_process_container {
+    margin-bottom: 0 !important;
   }
   .agile_methodology_section {
     padding: 10vw 5vw 25vw;
@@ -1329,6 +1410,8 @@
     width: 100vw;
     margin-left: -5vw;
     padding: 0 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
   }
   .agile_methodology_section .optionsGridContainer .optionGrid {
     max-width: 85vw !important;
@@ -1346,6 +1429,14 @@
   }
   .agile_methodology_section .optionsGridContainer .optionGrid:nth-child(1) {
     padding-left: 0 !important;
+  }
+  .agile_methodology_section .optionsGridContainer .optionGrid h3 {
+    font-size: calc(1.75rem + 0.6vw);
+    line-height: calc(2rem + 1vw);
+  }
+  .agile_methodology_section .optionsGridContainer .optionGrid p {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .social_media_content_section {
     padding: 5vw !important;
@@ -1375,10 +1466,35 @@
     width: 15vw;
   }
   .social_media_content_section .sm__container .sm__block p {
-    font-size: 1rem;
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
   .overlaySec .overlaySub .request__form__container .right__block {
     min-width: initial;
+  }
+  .smmWhyChoose .smmWhyChoose_block p {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
+  }
+  .faqSection {
+    padding: 0 5vw !important;
+  }
+  .faqSection .faqsContainer {
+    margin-top: 1rem;
+  }
+  .faqSection .faqsContainer .arrodion__container .accordion .accordion__block .accordion__header, .faqSection .faqsContainer .accordion__container .accordion .accordion__block .accordion__header {
+    padding: 3.5vw;
+  }
+  .faqSection .faqsContainer .arrodion__container .accordion .accordion__block .accordion__header h3, .faqSection .faqsContainer .accordion__container .accordion .accordion__block .accordion__header h3 {
+    font-size: calc(.9rem + .6vw);
+    line-height: calc(1.5rem + .6vw);
+  }
+  .faqSection .faqsContainer .arrodion__container .accordion .accordion__block .accordion__body, .faqSection .faqsContainer .accordion__container .accordion .accordion__block .accordion__body {
+    padding: 0 5vw;
+  }
+  .faqSection .faqsContainer .arrodion__container .accordion .accordion__block .accordion__body p, .faqSection .faqsContainer .accordion__container .accordion .accordion__block .accordion__body p {
+    font-size: calc(14px + .25vw);
+    line-height: calc(24px + .25vw);
   }
 }
 
@@ -1977,7 +2093,7 @@
     padding: 8vmin;
   }
   .smmSpecialContentSection .smmSpecialContentContainer .__icon {
-    margin-bottom: 3vw;
+    margin-bottom: 10vw;
   }
   .smmSpecialContentSection .smmSpecialContentContainer .__icon img {
     max-width: 50%;

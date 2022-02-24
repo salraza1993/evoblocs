@@ -24,7 +24,7 @@
           <p class="topBiggerSubText fst-italic">
             Web Development with a Purpose – See Results and Get Connected with our Innovative, Responsive, Optimized Websites.
           </p>
-          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Qoute">Get a Qoute</button>
+          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Quote">Get a Quote</button>
         </div>
       </div>
     </div>
@@ -181,7 +181,7 @@
             <p>
               At EvoBlocs, we aim to transform your brand into a future-ready online business that is ideal for your audience and industry. Paying close attention to your USPs, we create a website that will achieve all your business and community goals, hence, when you choose us, you get:
             </p>
-            <button class="ctaButtonContainer whiteButton mt-5 ctaButton" buttonval="Get a Qoute">Get a Qoute</button>
+            <button class="ctaButtonContainer whiteButton mt-5 ctaButton" buttonval="Get a Quote">Get a Quote</button>
           </div>
         </div>
         <div class="col-12 col-lg-6 p-0">
@@ -352,7 +352,7 @@
             <div class="accordion">
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Long Does it Take to Design a Website?</h3>
+                  <h3>How long eoes it take to Design a website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -363,7 +363,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Can You Redesign My Existing Website?</h3>
+                  <h3>Can you redesign my existing website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -396,7 +396,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Much Input Do I Have in the Process?</h3>
+                  <h3>How much input do I have in the process?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -407,7 +407,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Often Should My Website Be Updated?</h3>
+                  <h3>How often should my website be updated?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">

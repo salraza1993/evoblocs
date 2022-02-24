@@ -95,7 +95,7 @@
                   </div>
                   <div class="footerAdress">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:info@evoblocs.com">info@evoblocs.com</a>
+                    <a href="mailto:contact@evoblocs.com">contact@evoblocs.com</a>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@
     </div>
   </footer>
   <div class="mobileFtrBtnCnt">
-    <button class="ctaButtonContainer ctaButton" buttonVal="Get a Qoute">Get a Quote</button>
+    <button class="ctaButtonContainer ctaButton" buttonVal="Get a Quote">Get a Quote</button>
     <div class="numbers d-flex">
       <a href="tel:+1985-707-3153" class="phoneNumber"><i class="fas fa-phone-alt"></i></a>
       <a class="whtsAppBtn" target="_blank" href="https://wa.me/+918954482719/?text=Web Design, SEO, SMM, Ecommerce, SSL Certificates services">

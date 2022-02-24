@@ -23,7 +23,7 @@
             <span class="text-light">Development</span> 
           </h2>
           <p class="topBiggerSubText fst-italic"> Now for the Words </p>
-          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Qoute">Get a Qoute</button>
+          <button class="ctaButtonContainer ctaButton mt-4" buttonval="Get a Quote">Get a Quote</button>
         </div>
       </div>
     </div>
@@ -323,8 +323,10 @@
       <div class="col-12 col-lg-9 p-0">
         <div class="__content">
           <h3>
-            <span class="recoleta-light">Can't find </span> 
-            <span class="recoleta-medium">your ranking solution?</span> 
+            <span class="recoleta-light">Get </span> 
+            <span class="recoleta-medium">SEO</span> 
+            <span class="recoleta-light">content that drives </span> 
+            <span class="recoleta-medium">more leads</span> 
           </h3>
         </div>
       </div>
@@ -365,7 +367,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Is Content Writing a Worthwhile Investment?</h3>
+                  <h3>Is Content Writing a worthwhile investment?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -379,7 +381,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Are Content Marketing Services Expensive?</h3>
+                  <h3>Are Content Marketing Services expensive?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -393,7 +395,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How Does Content Marketing Help SEO?</h3>
+                  <h3>How does Content Marketing help SEO?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -407,7 +409,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>Do You Offer Content Writing as a Standalone Service?</h3>
+                  <h3>Do you offer Content Writing as a standalone service?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
@@ -418,7 +420,7 @@
               </div>
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>What Type of Results Can I Expect from EvoBlocs’s Content Marketing Services?</h3>
+                  <h3>What type of results can I expect from EvoBlocs’s Content Marketing Services?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">
