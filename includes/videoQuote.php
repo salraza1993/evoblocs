@@ -14,16 +14,16 @@
               <a href="mailto:sales@evoblocs.com"> <u>sales@evoblocs.com</u> </a>
             </p> -->
         </div>
-        <button type="button" class="ctaButtonContainer ctaButton secondaryButton" buttonval="Let's Get Started">Let's Get Started</button>
+        <button type="button" class="ctaButtonContainer ctaButton secondaryButton" buttonval="Get started">Get started</button>
     </div>
-    <video class="qoutBxVideo" autobuffer muted autoloop loop controls="false" autoplay playsinline style="pointer-events: none;">
+    <video name="CTA Video Section" class="qoutBxVideo" autobuffer muted autoloop loop controls="false" autoplay playsinline style="pointer-events: none;">
         <!-- <source src="/media/video.oga"> -->
         <source src="videos/video.m4v">
         <object type="video/ogg" data="/media/video.oga" width="100%" height="100%">
-        <param name="src" value="/media/video.oga">
-        <param name="autoplay" value="false">
-        <param name="autoStart" value="0">
-        <p><a href="/media/video.oga">Download this video file.</a></p>
+          <param name="src" value="/media/video.oga">
+          <param name="autoplay" value="false">
+          <param name="autoStart" value="0">
+          This video in not for Download.
         </object>
     </video>
 </div>

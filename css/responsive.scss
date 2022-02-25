@@ -407,12 +407,12 @@ $buttonHeight: 45px;
   .callNCareerContainer {
     margin: 3vh 0px 1rem;
     .getACallContainer { 
-      padding: $mobilePadding $mobilePadding $mobilePadding - 3.5;
+      padding: $mobilePadding;
       min-height: initial;
       h3 {font-size: $mobileHeadingSize;}
       .inputContainer {
-        margin-left: -4%;
-        width: 108%;
+        margin-left: 0;
+        width: 100%;
         padding: 0;
         overflow: hidden;
         form {
@@ -450,6 +450,10 @@ $buttonHeight: 45px;
       .ctaButtonContainer {margin-top: $mobilePadding;}
     }
   }
+  .footerLinksContainer .footer-links-block.footerAdressBlock br,
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .address br, 
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia br {display: none;}
+  .contactPageSection .contactFormContainer { margin-bottom: 1.5rem !important; }
   footer { padding: 0 $mobilePadding; }
   p, 
   .latestTechContainer p, 
@@ -1038,6 +1042,10 @@ $buttonHeight: 45px;
   .font__46, .font__86, .font__66, .font__60 {
     font-size: calc(1.75rem + 0.6vw) !important;
     line-height: calc(2.5rem + 0.6vw) !important;
+  }
+  .font__36 {
+    font-size: calc(1.3rem + .6vw);
+    line-height: calc(1.9rem + .6vw);
   }
   .content-process-section {
     padding: 12vw 5vw !important;

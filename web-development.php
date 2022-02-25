@@ -164,7 +164,7 @@
       <p>
         The only way to make this wish come true is with SEO, that gives you end-to-end services and offers your business that cutting-edge advantage. With the right SEO strategies, you can bask in the benefits of optimum business leverage gained at low cost and low risk.
       </p>
-      <button class="ctaButtonContainer secondaryButton ctaButton mt-4" buttonval="Let's get started">Let's get started</button>
+      <button class="ctaButtonContainer secondaryButton ctaButton mt-4" buttonval="Get started">Get started</button>
     </div>
   </div>
   
@@ -211,7 +211,7 @@
               <li>
                 <div class="__icon"><img src="images/develope.svg" alt=""></div>
                 <div class="__content">
-                  <h3>Develope</h3>
+                  <h3>Develop</h3>
                   <p>We develop templates, adding the content, and integrating it all with the CMS, we also test every feature across multiple platforms to ensure everything works as it should.</p>
                 </div>
               </li>
@@ -341,7 +341,7 @@
 <section class="faqSection py-5 pt-lg-0 pb-lg-3">
   <?php include('includes/lineContainer.php') ?>
   <div class="container">
-    <div class="faqsContainer mb-3">
+    <div class="faqsContainer mb-5">
       <div class="row">
         <div class="offset-xl-3 col-12 col-xl-6 p-0">
           <h3 class="mb-4">
@@ -352,7 +352,7 @@
             <div class="accordion">
               <div class="accordion__block">
                 <div class="accordion__header">
-                  <h3>How long eoes it take to Design a website?</h3>
+                  <h3>How long does it take to design a website?</h3>
                   <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="accordion__body">

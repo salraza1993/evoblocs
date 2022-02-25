@@ -342,7 +342,7 @@
 <section class="faqSection py-5">
   <?php include('includes/lineContainer.php') ?>
   <div class="container">
-    <div class="faqsContainer mb-3">
+    <div class="faqsContainer mb-5">
       <div class="row">
         <div class="offset-xl-3 col-12 col-xl-6 p-0">
           <h3 class="mb-4">

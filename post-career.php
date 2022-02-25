@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $mail->Host = "mail.evoblocs.com";
                 $mail->SMTPAuth = true;
                 $mail->Username = "no-reply@evoblocs.com";
-                $mail->Password = "noreply@#2022";
+                $mail->Password = "noreplyEvo@#2022@blocs";
                 $mail->SMTPAutoTLS = false;
                 $mail->SMTPSecure = false;
                 // $mail->SMTPSecure = "SSL";

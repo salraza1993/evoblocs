@@ -478,15 +478,15 @@
     margin: 3vh 0px 1rem;
   }
   .callNCareerContainer .getACallContainer {
-    padding: 5vw 5vw 1.5vw;
+    padding: 5vw;
     min-height: initial;
   }
   .callNCareerContainer .getACallContainer h3 {
     font-size: calc(2.35rem + .6vw) !important;
   }
   .callNCareerContainer .getACallContainer .inputContainer {
-    margin-left: -4%;
-    width: 108%;
+    margin-left: 0;
+    width: 100%;
     padding: 0;
     overflow: hidden;
   }
@@ -545,6 +545,14 @@
   }
   .callNCareerContainer .footerCareerElemContainer .ctaButtonContainer {
     margin-top: 5vw;
+  }
+  .footerLinksContainer .footer-links-block.footerAdressBlock br,
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .address br,
+  .contactPageSection .contactFormContainer .formContainer .companyInfo .contactSocialMedia br {
+    display: none;
+  }
+  .contactPageSection .contactFormContainer {
+    margin-bottom: 1.5rem !important;
   }
   footer {
     padding: 0 5vw;
@@ -1280,6 +1288,10 @@
   .font__46, .font__86, .font__66, .font__60 {
     font-size: calc(1.75rem + 0.6vw) !important;
     line-height: calc(2.5rem + 0.6vw) !important;
+  }
+  .font__36 {
+    font-size: calc(1.3rem + .6vw);
+    line-height: calc(1.9rem + .6vw);
   }
   .content-process-section {
     padding: 12vw 5vw !important;
